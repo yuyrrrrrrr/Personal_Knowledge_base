@@ -1,0 +1,11 @@
+{
+	"nodes":[
+		{"id":"0e7e9affdfeb0c64","x":93,"y":-189,"width":250,"height":60,"type":"text","text":""},
+		{"id":"9f79c14ec74f842f","x":-280,"y":-100,"width":250,"height":60,"type":"text","text":"Foundation"},
+		{"id":"bb9a47689ec24e40","x":93,"y":-40,"width":250,"height":59,"type":"text","text":""}
+	],
+	"edges":[
+		{"id":"a16e05f9be098005","fromNode":"9f79c14ec74f842f","fromSide":"right","toNode":"0e7e9affdfeb0c64","toSide":"left"},
+		{"id":"b294fdbd9a883282","fromNode":"9f79c14ec74f842f","fromSide":"right","toNode":"bb9a47689ec24e40","toSide":"left"}
+	]
+}
