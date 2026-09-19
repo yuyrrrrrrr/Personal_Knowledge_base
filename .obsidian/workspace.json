@@ -4,42 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "ea82d0b9fb7d0161",
+        "id": "9eb2064060abeeea",
         "type": "tabs",
         "children": [
           {
-            "id": "1cd17e4af6bfdcd0",
+            "id": "57fa0ddcb153a040",
             "type": "leaf",
             "state": {
-              "type": "canvas",
-              "state": {
-                "file": "LLM/2-Source/1-Python Foundation/Foundation.canvas",
-                "viewState": {
-                  "x": 0,
-                  "y": 0,
-                  "zoom": 0
-                }
-              },
-              "icon": "lucide-layout-dashboard",
-              "title": "Foundation"
-            }
-          },
-          {
-            "id": "d8b2fe6b7c768180",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Full_Stack/zero-to-FullStack.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "zero-to-FullStack"
+              "title": "新标签页"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -136,7 +114,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Full_Stack/zero-to-FullStack.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -193,7 +170,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 384.83331298828125
+    "width": 306.1666259765625
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -206,29 +183,46 @@
       "bases:新建数据库": false
     }
   },
-  "active": "d8b2fe6b7c768180",
+  "active": "dfbfa98a8caa4b3b",
   "lastOpenFiles": [
     "Article/40人应届生五天淘汰制训练营，自认AI技术最强却被刷，问题出在哪？.md",
-    "Full_Stack/zero-to-FullStack.md",
-    "LLM/2-Source/1-Python Foundation/Foundation.canvas",
-    "Article",
-    "MD语法.md",
-    "Pasted image 20260918104450.png",
-    "未命名.base",
-    "未命名 1.base",
-    "Full_Stack/1-Design",
-    "Full_Stack/6-Deployment",
-    "Full_Stack/7-Operations and Maintenance",
-    "Full_Stack/5-Test",
-    "Full_Stack/4-Database",
-    "Full_Stack/3-Back",
-    "Full_Stack/2-Front",
+    "LLM/4-Book/4 markdown基础语法.pdf",
+    "LLM/4-Book/agentic-ai-guide-zh-v1.1.0.pdf",
+    "LLM/4-Book/AI-Agents-in-Depth-zh-CN.pdf",
+    "LLM/3-Thesis/Attention-is-all-your-need-ZH.pdf",
+    "LLM/3-Thesis/Attention Is All you Need.pdf",
+    "LLM/2-Source/5-Prompt Engineering/3-Domain-specific.md",
+    "LLM/2-Source/5-Prompt Engineering/4-Optimization and Debugging of Prompts.md",
+    "LLM/2-Source/3-Linux/1-System Management.md",
+    "LLM/2-Source/4-MySQL/4-The underlying principles and performance optimization of MySQL",
+    "LLM/2-Source/4-MySQL/3-MySQL High Availability and Production Practices",
+    "LLM/2-Source/4-MySQL/0-README.md",
+    "LLM/2-Source/4-MySQL/2-SQL Practical Application and Advanced Topics",
+    "LLM/2-Source/4-MySQL/1-Database Theory and MySQL Basics",
+    "LLM/2-Source/4-MySQL/1-Database Theory and MySQL Basics.md",
+    "LLM/2-Source/3-Linux/0-README.md",
+    "LLM/2-Source/3-Linux/7-Automated Operations Management.md",
+    "LLM/2-Source/3-Linux/6-Security Reinforce.md",
+    "LLM/2-Source/3-Linux/5-Log Analysis And Fault Troubleshooting.md",
+    "LLM/2-Source/3-Linux/4-System Monitoring.md",
+    "LLM/2-Source/3-Linux/3-Administration of Networks.md",
+    "LLM/2-Source/3-Linux/2-Shell Scripting.md",
+    "LLM/2-Source/5-Prompt Engineering/2-Prompt Advanced.md",
+    "LLM/2-Source/5-Prompt Engineering/1-Prompt Foundation.md",
+    "LLM/2-Source/2-Python Advanced/Advanced Mind.canvas",
+    "LLM/2-Source/2-Python Advanced/9-Design Mode.md",
+    "LLM/2-Source/2-Python Advanced/8-Performance Optimization Techniques.md",
+    "LLM/2-Source/2-Python Advanced/7-Code Quality And Testing.md",
+    "LLM/2-Source/2-Python Advanced/2-Modules and Packages.md",
+    "LLM/2-Source/1-Python Foundation/5-Process Control.md",
+    "LLM/2-Source/1-Python Foundation/4-Data Container.md",
+    "LLM/2-Source/1-Python Foundation/3-String Details.md",
+    "LLM/2-Source/1-Python Foundation/Foundation Mind.canvas",
+    "LLM/2-Source/1-Python Foundation/2-Data Types And Operators.md",
+    "LLM/2-Source/1-Python Foundation/1-Python Basic Grammer.md",
     "LLM/2-Source/1-Python Foundation/Foundation Summary.md",
-    "LLM/Skill/Plan/Grill-Me兼容版(针对架构、技术方案、功能设计逐题追问,判断用户水平和希望的压力程度，再调整提问深度).md",
-    "LLM/Skill/Plan/Grill-Me(中文多路线版本，包含工程、学术研究、决策和思辨等模式).md",
-    "LLM/Skill/Plan/Grill-Me(会把每次回答持续 checkpoint 到 Markdown 文件。).md",
-    "欢迎.md",
-    "LLM/Skill/Design/“高级前端设计指令集”.md",
-    "LLM/Data analysis/业务分析.md"
+    "LLM/2-Source/2-Python Advanced/Advanced Summary.md",
+    "Article",
+    "Pasted image 20260918104450.png"
   ]
 }

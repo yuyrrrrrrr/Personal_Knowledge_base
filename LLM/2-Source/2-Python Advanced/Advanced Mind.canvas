@@ -1,0 +1,11 @@
+{
+	"nodes":[
+		{"id":"0974333411774bee","x":5,"y":20,"width":250,"height":60,"type":"text","text":""},
+		{"id":"ec5dbf4cceba31fb","x":5,"y":-99,"width":250,"height":60,"type":"text","text":""},
+		{"id":"d099829427b8edfd","x":-320,"y":-39,"width":219,"height":59,"type":"text","text":"Python Advanced "}
+	],
+	"edges":[
+		{"id":"eb7e0678207e3bf2","fromNode":"d099829427b8edfd","fromSide":"right","toNode":"ec5dbf4cceba31fb","toSide":"left"},
+		{"id":"61384727fb4f0bae","fromNode":"d099829427b8edfd","fromSide":"right","toNode":"0974333411774bee","toSide":"left"}
+	]
+}
