@@ -1,0 +1,18 @@
+{
+	"nodes":[
+		{"id":"40f92c39d6c33db6","x":-303,"y":-116,"width":143,"height":60,"color":"6","type":"text","text":"1. 问题定义"},
+		{"id":"3d07f05e01cdfc2c","x":-100,"y":-116,"width":140,"height":60,"color":"6","type":"text","text":"2. 数据收集"},
+		{"id":"bd71951ceb044a9a","x":100,"y":-116,"width":140,"height":60,"color":"6","type":"text","text":"3. 数据清洗"},
+		{"id":"c490cde83fd4d4fd","x":340,"y":-116,"width":160,"height":60,"color":"6","type":"text","text":"4. 探索性分析"},
+		{"id":"1db4c0186f0802d4","x":600,"y":-116,"width":110,"height":60,"color":"6","type":"text","text":"5. 建模"},
+		{"id":"caaa89808eaef25a","x":800,"y":-116,"width":166,"height":60,"color":"6","type":"text","text":"6. 部署监控"}
+	],
+	"edges":[
+		{"id":"4773e7e4be107d77","fromNode":"40f92c39d6c33db6","fromSide":"right","toNode":"3d07f05e01cdfc2c","toSide":"left"},
+		{"id":"e56d506f22b94932","fromNode":"3d07f05e01cdfc2c","fromSide":"right","toNode":"bd71951ceb044a9a","toSide":"left"},
+		{"id":"31fedecd94fc3fca","fromNode":"bd71951ceb044a9a","fromSide":"right","toNode":"c490cde83fd4d4fd","toSide":"left"},
+		{"id":"cee081560d6363ad","fromNode":"c490cde83fd4d4fd","fromSide":"right","toNode":"1db4c0186f0802d4","toSide":"left"},
+		{"id":"16176409e0257760","fromNode":"caaa89808eaef25a","fromSide":"bottom","toNode":"1db4c0186f0802d4","toSide":"bottom","color":"1","label":"模型衰减"},
+		{"id":"b8c25464680068d5","fromNode":"1db4c0186f0802d4","fromSide":"top","toNode":"caaa89808eaef25a","toSide":"top"}
+	]
+}

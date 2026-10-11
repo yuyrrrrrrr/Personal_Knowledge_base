@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "9eb2064060abeeea",
+        "id": "38933d1d61add1a0",
         "type": "tabs",
         "children": [
           {
-            "id": "57fa0ddcb153a040",
+            "id": "9e22aad278a10d1a",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "LLM/2-Source/6-Agent/大模型应用开发.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "新标签页"
+              "title": "大模型应用开发"
             }
           }
         ]
@@ -37,7 +41,7 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": false,
+                "autoReveal": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
@@ -114,6 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "LLM/AI Concept.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -156,7 +161,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Full_Stack/zero-to-FullStack.md",
+                "file": "LLM/AI Concept.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -166,11 +171,12 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 306.1666259765625
+    "width": 236.1666259765625,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -183,46 +189,62 @@
       "bases:新建数据库": false
     }
   },
-  "active": "dfbfa98a8caa4b3b",
+  "active": "9e22aad278a10d1a",
   "lastOpenFiles": [
-    "Article/40人应届生五天淘汰制训练营，自认AI技术最强却被刷，问题出在哪？.md",
-    "LLM/4-Book/4 markdown基础语法.pdf",
-    "LLM/4-Book/agentic-ai-guide-zh-v1.1.0.pdf",
-    "LLM/4-Book/AI-Agents-in-Depth-zh-CN.pdf",
-    "LLM/3-Thesis/Attention-is-all-your-need-ZH.pdf",
-    "LLM/3-Thesis/Attention Is All you Need.pdf",
-    "LLM/2-Source/5-Prompt Engineering/3-Domain-specific.md",
-    "LLM/2-Source/5-Prompt Engineering/4-Optimization and Debugging of Prompts.md",
-    "LLM/2-Source/3-Linux/1-System Management.md",
-    "LLM/2-Source/4-MySQL/4-The underlying principles and performance optimization of MySQL",
-    "LLM/2-Source/4-MySQL/3-MySQL High Availability and Production Practices",
-    "LLM/2-Source/4-MySQL/0-README.md",
-    "LLM/2-Source/4-MySQL/2-SQL Practical Application and Advanced Topics",
-    "LLM/2-Source/4-MySQL/1-Database Theory and MySQL Basics",
-    "LLM/2-Source/4-MySQL/1-Database Theory and MySQL Basics.md",
-    "LLM/2-Source/3-Linux/0-README.md",
+    "LLM/2-Source/5-Prompt Engineering/Prompt Engineering Mind.canvas",
+    "LLM/2-Source/4-MySQL/MySQL Mind.canvas",
+    "LLM/2-Source/3-Linux/Linux Mind.canvas",
+    "LLM/2-Source/3-Linux/学习总结.md",
+    "LLM/2-Source/0-Git/Git Mind.canvas",
     "LLM/2-Source/3-Linux/7-Automated Operations Management.md",
     "LLM/2-Source/3-Linux/6-Security Reinforce.md",
-    "LLM/2-Source/3-Linux/5-Log Analysis And Fault Troubleshooting.md",
-    "LLM/2-Source/3-Linux/4-System Monitoring.md",
-    "LLM/2-Source/3-Linux/3-Administration of Networks.md",
-    "LLM/2-Source/3-Linux/2-Shell Scripting.md",
-    "LLM/2-Source/5-Prompt Engineering/2-Prompt Advanced.md",
-    "LLM/2-Source/5-Prompt Engineering/1-Prompt Foundation.md",
-    "LLM/2-Source/2-Python Advanced/Advanced Mind.canvas",
+    "LLM/1-Plan and Outline/AI 大模型应用开发学习路线 _ 25 年最新零基础到精通一条龙（万人收藏⭐️）.pdf",
+    "LLM/4-Book/机器学习的数学 (雷明) (z-library.sk, 1lib.sk, z-lib.sk).pdf",
+    "LLM/4-Book/深度学习的数学 (涌泉良幸, 涌泉井美) (z-library.sk, 1lib.sk, z-lib.sk).pdf",
+    "LLM/4-Book/Mathmatics for Machine Learning-book.pdf",
+    "LLM/4-Book/Python神经网络编程 (塔里克·拉希德) (z-library.sk, 1lib.sk, z-lib.sk).pdf",
+    "LLM/4-Book/人工智能 一种现代的方法 (罗素 诺维格) (z-library.sk, 1lib.sk, z-lib.sk).pdf",
+    "LLM/4-Book/4 markdown基础语法.pdf",
+    "LLM/4-Book/动手学深度学习-PyTorch(第二版) (Aston Zhang, Zachary C. Lipton, 李沐 etc.) (z-library.sk, 1lib.sk, z-lib.sk).pdf",
+    "LLM/2-Source/7-Machine Learning/Machine Learning.canvas",
+    "LLM/2-Source/7-Machine Learning/机器学习概述.md",
+    "LLM/2-Source/7-Machine Learning/线性回归.md",
+    "LLM/2-Source/4-MySQL/2-SQL Practical Application and Advanced Topics.md",
+    "LLM/2-Source/1-Python Foundation/3-String Details.md",
+    "LLM/2-Source/1-Python Foundation/Foundation Mind.canvas",
+    "联想截图_20240924130116.png",
+    "Full_Stack/3-Backend/Spring AI/未命名.canvas",
+    "Full_Stack/3-Backend/Spring AI",
+    "LLM/2-Source/8-Deep Learning/Deep Learning.canvas",
+    "LLM/知识框架.canvas",
+    "LLM/AI Concept.md",
+    "LLM/参考文献.md",
+    "LLM/Contextual Design Mechanism.md",
+    "LLM/Official Document.md",
+    "5e2aeebafca7c01ba7b8388dc833f4a.jpg",
+    "LLM/1-Plan and Outline/企业项目研发流程.pdf",
+    "LLM/2-Source/5-Prompt Engineering/5-Project Practice.md",
+    "LLM/2-Source/5-Prompt Engineering/学习总结.md",
+    "Pasted image 20261010172418.png",
+    "Pasted image 20261010172155.png",
+    "LLM/Data analysis/未命名.canvas",
+    "Article/学习开源项目时我们应该画哪些图？.md",
+    "Article/40人应届生五天淘汰制训练营，自认AI技术最强却被刷，问题出在哪？.md",
+    "Full_Stack/Zero-to-FullStack.md",
+    "Pasted image 20260918104450.png",
+    "Pasted image 20260920160927.png",
+    "欢迎.md",
+    "Article/做 RAG 检索天天翻车？扒完 6.7 万星的 Docling，我终于找到了文档解析的最优解！.md",
+    "Pasted image 20261006193217.png",
+    "MD语法.md",
     "LLM/2-Source/2-Python Advanced/9-Design Mode.md",
     "LLM/2-Source/2-Python Advanced/8-Performance Optimization Techniques.md",
     "LLM/2-Source/2-Python Advanced/7-Code Quality And Testing.md",
-    "LLM/2-Source/2-Python Advanced/2-Modules and Packages.md",
-    "LLM/2-Source/1-Python Foundation/5-Process Control.md",
-    "LLM/2-Source/1-Python Foundation/4-Data Container.md",
-    "LLM/2-Source/1-Python Foundation/3-String Details.md",
-    "LLM/2-Source/1-Python Foundation/Foundation Mind.canvas",
-    "LLM/2-Source/1-Python Foundation/2-Data Types And Operators.md",
-    "LLM/2-Source/1-Python Foundation/1-Python Basic Grammer.md",
-    "LLM/2-Source/1-Python Foundation/Foundation Summary.md",
-    "LLM/2-Source/2-Python Advanced/Advanced Summary.md",
-    "Article",
-    "Pasted image 20260918104450.png"
+    "LLM/2-Source/2-Python Advanced/6-Advanced Features.md",
+    "LLM/2-Source/2-Python Advanced/5-OOP (object-oriented programming).md",
+    "LLM/2-Source/2-Python Advanced/4-Exception Handing.md",
+    "Pasted image 20260927105444.png",
+    "Pasted image 20260927103818.png",
+    "Pasted image 20260927102340.png"
   ]
 }

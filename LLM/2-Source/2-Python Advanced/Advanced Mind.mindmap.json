@@ -1,0 +1,1115 @@
+{
+  "version": 2,
+  "meta": {
+    "title": "Python Advanced 知识体系",
+    "language": "zh-CN",
+    "purpose": "结合笔记与 XMind 提炼函数、工程、并发和性能知识图"
+  },
+  "layout": {
+    "mode": "split",
+    "maxFirstLevel": 7,
+    "maxDepth": 5,
+    "leftTypes": [
+      "concept",
+      "principle",
+      "limit",
+      "pitfall",
+      "compare",
+      "question",
+      "summary",
+      "theme"
+    ],
+    "rightTypes": [
+      "function",
+      "method",
+      "command",
+      "step",
+      "example",
+      "config",
+      "reference"
+    ]
+  },
+  "nodes": [
+    {
+      "id": "python-advanced",
+      "text": "Python Advanced 知识体系",
+      "type": "root",
+      "importance": 5,
+      "recall": "核心概念、依赖关系、限制与工程路径"
+    },
+    {
+      "id": "function-abstraction",
+      "text": "函数与抽象",
+      "type": "theme",
+      "importance": 5,
+      "recall": "函数、闭包和装饰器构成抽象与复用主线",
+      "side": "left"
+    },
+    {
+      "id": "function-model",
+      "text": "函数模型",
+      "type": "concept",
+      "importance": 5,
+      "recall": "函数定义、参数和返回值如何形成可复用抽象？"
+    },
+    {
+      "id": "function-object",
+      "text": "函数是一等对象",
+      "type": "concept",
+      "importance": 4,
+      "recall": "函数为什么可以赋值、传参和返回？"
+    },
+    {
+      "id": "parameter-binding",
+      "text": "参数绑定规则",
+      "type": "principle",
+      "importance": 4,
+      "recall": "位置参数、关键字参数和默认参数如何绑定？"
+    },
+    {
+      "id": "closures",
+      "text": "闭包",
+      "type": "concept",
+      "importance": 5,
+      "recall": "闭包如何保存外层函数状态？"
+    },
+    {
+      "id": "enclosing-scope",
+      "text": "外层作用域查找",
+      "type": "principle",
+      "importance": 4,
+      "recall": "LEGB 查找顺序是什么？"
+    },
+    {
+      "id": "nonlocal-state",
+      "text": "nonlocal 状态更新",
+      "type": "principle",
+      "importance": 4,
+      "recall": "nonlocal 解决什么问题？"
+    },
+    {
+      "id": "decorators",
+      "text": "装饰器",
+      "type": "concept",
+      "importance": 5,
+      "recall": "装饰器如何在不改原函数调用方式的情况下增加行为？"
+    },
+    {
+      "id": "wrapper-function",
+      "text": "包装函数与参数转发",
+      "type": "concept",
+      "importance": 4,
+      "recall": "wrapper 如何兼容不同参数？"
+    },
+    {
+      "id": "functools-wraps",
+      "text": "functools.wraps",
+      "type": "method",
+      "importance": 4,
+      "recall": "wraps 保留哪些函数元数据？",
+      "note": "签名：functools.wraps(wrapped)\n用途：保留名称、文档字符串和元数据\n限制：仅用于包装函数定义\n示例：@wraps(func)"
+    },
+    {
+      "id": "module-file-exception",
+      "text": "模块、文件与异常",
+      "type": "theme",
+      "importance": 5,
+      "recall": "模块组织代码，文件承载数据，异常保证边界可靠",
+      "side": "right"
+    },
+    {
+      "id": "module-import",
+      "text": "模块导入",
+      "type": "concept",
+      "importance": 5,
+      "recall": "模块、导入方式和执行入口之间是什么关系？"
+    },
+    {
+      "id": "import-styles",
+      "text": "导入方式",
+      "type": "compare",
+      "importance": 4,
+      "recall": "import、from import 和别名导入有什么区别？"
+    },
+    {
+      "id": "name-main",
+      "text": "__name__ 与执行入口",
+      "type": "principle",
+      "importance": 4,
+      "recall": "模块直接运行和导入时有什么区别？"
+    },
+    {
+      "id": "file-io",
+      "text": "文件操作",
+      "type": "concept",
+      "importance": 5,
+      "recall": "文件读写为什么要关注模式、编码和资源释放？"
+    },
+    {
+      "id": "open-close",
+      "text": "打开与关闭",
+      "type": "step",
+      "importance": 4,
+      "recall": "r/w/a/x 模式分别有什么影响？"
+    },
+    {
+      "id": "path-formats",
+      "text": "路径与数据格式",
+      "type": "concept",
+      "importance": 4,
+      "recall": "pathlib、CSV 和 JSON 分别解决什么问题？"
+    },
+    {
+      "id": "exception-flow",
+      "text": "异常处理",
+      "type": "concept",
+      "importance": 5,
+      "recall": "try/except/else/finally 的执行顺序是什么？"
+    },
+    {
+      "id": "capture-specific",
+      "text": "捕获具体异常",
+      "type": "principle",
+      "importance": 4,
+      "recall": "为什么优先捕获具体异常？"
+    },
+    {
+      "id": "custom-exception",
+      "text": "自定义异常与传播",
+      "type": "concept",
+      "importance": 4,
+      "recall": "何时定义业务异常，如何保留异常链？"
+    },
+    {
+      "id": "oop-design",
+      "text": "面向对象与设计",
+      "type": "theme",
+      "importance": 5,
+      "recall": "封装边界、继承复用、多态解耦和模式组合",
+      "side": "left"
+    },
+    {
+      "id": "class-model",
+      "text": "类与对象",
+      "type": "concept",
+      "importance": 5,
+      "recall": "类、实例、属性和方法之间是什么关系？"
+    },
+    {
+      "id": "init-self",
+      "text": "__init__ 与 self",
+      "type": "method",
+      "importance": 4,
+      "recall": "init 和 self 各自负责什么？",
+      "note": "签名：__init__(self, ...)\n用途：初始化实例属性\n限制：不是构造对象本身\n示例：User('Alice')"
+    },
+    {
+      "id": "attribute-method",
+      "text": "属性与方法的归属",
+      "type": "principle",
+      "importance": 4,
+      "recall": "实例属性、类属性和方法如何区分？"
+    },
+    {
+      "id": "inheritance-poly",
+      "text": "继承与多态",
+      "type": "concept",
+      "importance": 5,
+      "recall": "继承复用和多态解耦分别如何实现？"
+    },
+    {
+      "id": "super-mro",
+      "text": "super 与 MRO",
+      "type": "principle",
+      "importance": 4,
+      "recall": "方法解析顺序如何影响 super 调用？"
+    },
+    {
+      "id": "duck-typing",
+      "text": "鸭子类型与协议",
+      "type": "principle",
+      "importance": 4,
+      "recall": "为什么 Python 多态依赖行为而非具体类型？"
+    },
+    {
+      "id": "design-patterns",
+      "text": "设计模式",
+      "type": "concept",
+      "importance": 5,
+      "recall": "常见模式分别解决创建、组合还是协作问题？"
+    },
+    {
+      "id": "factory-strategy",
+      "text": "工厂与策略",
+      "type": "compare",
+      "importance": 4,
+      "recall": "工厂模式和策略模式分别解决什么问题？"
+    },
+    {
+      "id": "observer",
+      "text": "观察者与事件协作",
+      "type": "concept",
+      "importance": 4,
+      "recall": "观察者模式如何实现发布订阅？"
+    },
+    {
+      "id": "advanced-language",
+      "text": "高级语法与数据处理",
+      "type": "theme",
+      "importance": 5,
+      "recall": "以惰性、组合、拷贝和文本模式提升数据处理能力",
+      "side": "right"
+    },
+    {
+      "id": "iterators-generators",
+      "text": "迭代器与生成器",
+      "type": "concept",
+      "importance": 5,
+      "recall": "迭代器协议和生成器如何实现惰性数据流？"
+    },
+    {
+      "id": "iterator-protocol",
+      "text": "iter 与 next 协议",
+      "type": "principle",
+      "importance": 4,
+      "recall": "可迭代对象和迭代器有什么区别？"
+    },
+    {
+      "id": "yield-lazy",
+      "text": "yield 与惰性计算",
+      "type": "principle",
+      "importance": 4,
+      "recall": "yield 何时暂停、何时恢复？"
+    },
+    {
+      "id": "functional-tools",
+      "text": "函数式与迭代工具",
+      "type": "concept",
+      "importance": 4,
+      "recall": "map、filter、functools 和 itertools 各适合什么任务？"
+    },
+    {
+      "id": "map-filter",
+      "text": "map 与 filter",
+      "type": "method",
+      "importance": 4,
+      "recall": "map 和 filter 的输入输出分别是什么？",
+      "note": "签名：map(func, iterable) / filter(func, iterable)\n用途：转换或筛选数据\n限制：返回惰性迭代器\n示例：list(map(str, nums))"
+    },
+    {
+      "id": "functools-itertools",
+      "text": "functools 与 itertools",
+      "type": "concept",
+      "importance": 3
+    },
+    {
+      "id": "data-control",
+      "text": "数据控制",
+      "type": "concept",
+      "importance": 4,
+      "recall": "深浅拷贝、上下文管理和正则如何控制数据与资源？"
+    },
+    {
+      "id": "copy-model",
+      "text": "深浅拷贝",
+      "type": "compare",
+      "importance": 4,
+      "recall": "浅拷贝和深拷贝在嵌套对象上有什么区别？"
+    },
+    {
+      "id": "regex-text",
+      "text": "正则与文本处理",
+      "type": "concept",
+      "importance": 3
+    },
+    {
+      "id": "network-concurrency",
+      "text": "网络与并发",
+      "type": "theme",
+      "importance": 5,
+      "recall": "通信端点、TCP 流程和并发选型",
+      "side": "left"
+    },
+    {
+      "id": "network-basics",
+      "text": "网络基础",
+      "type": "concept",
+      "importance": 4,
+      "recall": "IP、端口和协议如何确定通信端点？"
+    },
+    {
+      "id": "three-elements",
+      "text": "网络三要素",
+      "type": "concept",
+      "importance": 4,
+      "recall": "IP、端口和协议分别解决什么问题？"
+    },
+    {
+      "id": "encoding-conversion",
+      "text": "Python 编码转换",
+      "type": "principle",
+      "importance": 3
+    },
+    {
+      "id": "socket-tcp",
+      "text": "Socket 与 TCP",
+      "type": "concept",
+      "importance": 5,
+      "recall": "TCP 服务端和客户端的连接流程是什么？"
+    },
+    {
+      "id": "server-flow",
+      "text": "服务端流程",
+      "type": "step",
+      "importance": 4,
+      "recall": "socket、bind、listen、accept 的顺序是什么？"
+    },
+    {
+      "id": "client-flow",
+      "text": "客户端流程",
+      "type": "step",
+      "importance": 4,
+      "recall": "客户端 connect、send、recv 如何配合？"
+    },
+    {
+      "id": "concurrency-models",
+      "text": "并发模型",
+      "type": "compare",
+      "importance": 5,
+      "recall": "进程、线程和协程分别适合什么任务？"
+    },
+    {
+      "id": "process-thread",
+      "text": "进程与线程",
+      "type": "compare",
+      "importance": 4,
+      "recall": "内存隔离和共享状态有什么区别？"
+    },
+    {
+      "id": "async-coroutine",
+      "text": "协程与异步 I/O",
+      "type": "principle",
+      "importance": 4,
+      "recall": "事件循环和 await 如何切换任务？"
+    },
+    {
+      "id": "quality-performance",
+      "text": "工程质量与性能",
+      "type": "theme",
+      "importance": 5,
+      "recall": "质量、测试、调试和性能形成工程闭环",
+      "side": "right"
+    },
+    {
+      "id": "code-quality",
+      "text": "代码质量",
+      "type": "concept",
+      "importance": 4,
+      "recall": "规范、类型注解和静态检查如何提高质量？"
+    },
+    {
+      "id": "typing-annotation",
+      "text": "类型注解",
+      "type": "concept",
+      "importance": 4,
+      "recall": "类型注解如何帮助编辑器、测试和阅读？"
+    },
+    {
+      "id": "lint-format",
+      "text": "格式与静态检查",
+      "type": "config",
+      "importance": 3
+    },
+    {
+      "id": "testing-debug",
+      "text": "测试与调试",
+      "type": "concept",
+      "importance": 5,
+      "recall": "单元测试、fixture 和调试日志如何协同定位问题？"
+    },
+    {
+      "id": "pytest-unit",
+      "text": "pytest 与单元测试",
+      "type": "method",
+      "importance": 4,
+      "recall": "断言、参数化和 fixture 分别解决什么问题？",
+      "note": "签名：pytest.test_func()\n用途：验证单元行为\n限制：测试之间应独立\n示例：assert add(1, 2) == 3"
+    },
+    {
+      "id": "logging-debug",
+      "text": "日志与断点调试",
+      "type": "principle",
+      "importance": 4,
+      "recall": "日志级别和断点分别适合什么场景？"
+    },
+    {
+      "id": "performance-opt",
+      "text": "性能优化",
+      "type": "concept",
+      "importance": 5,
+      "recall": "为什么要先测量瓶颈再优化？"
+    },
+    {
+      "id": "profiling",
+      "text": "性能分析",
+      "type": "principle",
+      "importance": 4,
+      "recall": "timeit、cProfile、tracemalloc 分别测量什么？"
+    },
+    {
+      "id": "optimization",
+      "text": "优化策略",
+      "type": "principle",
+      "importance": 4,
+      "recall": "算法、缓存、I/O、并发和内存如何影响性能？"
+    },
+    {
+      "id": "knowledge-relations",
+      "text": "知识联系主线",
+      "type": "theme",
+      "importance": 5,
+      "recall": "用跨分支依赖和理解顺序串联高级知识",
+      "side": "left"
+    },
+    {
+      "id": "function-to-decorator",
+      "text": "函数 -> 闭包 -> 装饰器",
+      "type": "principle",
+      "importance": 5,
+      "recall": "三者的依赖顺序是什么？"
+    },
+    {
+      "id": "closure-dependency",
+      "text": "闭包依赖函数对象",
+      "type": "concept",
+      "importance": 3
+    },
+    {
+      "id": "decorator-dependency",
+      "text": "装饰器依赖闭包",
+      "type": "concept",
+      "importance": 3
+    },
+    {
+      "id": "module-to-file-exception",
+      "text": "模块 -> 文件 -> 异常",
+      "type": "principle",
+      "importance": 5,
+      "recall": "代码组织、数据 I/O 和异常边界如何衔接？"
+    },
+    {
+      "id": "module-boundary",
+      "text": "模块边界",
+      "type": "concept",
+      "importance": 3
+    },
+    {
+      "id": "io-exception-boundary",
+      "text": "I/O 异常边界",
+      "type": "concept",
+      "importance": 3
+    },
+    {
+      "id": "oop-to-design",
+      "text": "面向对象 -> 设计模式",
+      "type": "principle",
+      "importance": 5,
+      "recall": "封装、继承、多态如何支撑设计模式？"
+    },
+    {
+      "id": "composition-choice",
+      "text": "组合优于继承",
+      "type": "principle",
+      "importance": 4,
+      "recall": "什么时候优先组合而不是继承？"
+    },
+    {
+      "id": "pattern-intent",
+      "text": "模式意图",
+      "type": "concept",
+      "importance": 3
+    },
+    {
+      "id": "language-to-engineering",
+      "text": "语言基础到工程能力",
+      "type": "summary",
+      "importance": 5,
+      "recall": "基础语法如何支撑工程化代码？"
+    },
+    {
+      "id": "foundation-dependency",
+      "text": "变量与容器依赖",
+      "type": "concept",
+      "importance": 3
+    },
+    {
+      "id": "flow-dependency",
+      "text": "流程控制依赖",
+      "type": "concept",
+      "importance": 3
+    },
+    {
+      "id": "correctness-to-performance",
+      "text": "正确性到性能",
+      "type": "principle",
+      "importance": 5,
+      "recall": "为什么正确性和可测试性优先于性能？"
+    },
+    {
+      "id": "test-first",
+      "text": "测试保护重构",
+      "type": "principle",
+      "importance": 3
+    },
+    {
+      "id": "measure-before-optimize",
+      "text": "测量后再优化",
+      "type": "principle",
+      "importance": 3
+    },
+    {
+      "id": "single-to-concurrent",
+      "text": "单任务到并发任务",
+      "type": "principle",
+      "importance": 5,
+      "recall": "何时需要进程、线程或异步？"
+    },
+    {
+      "id": "io-cpu-choice",
+      "text": "I/O 与 CPU 选型",
+      "type": "compare",
+      "importance": 3
+    },
+    {
+      "id": "shared-state-risk",
+      "text": "共享状态风险",
+      "type": "pitfall",
+      "importance": 3,
+      "note": "现象：共享变量出现竞态或结果不稳定；原因：多个线程同时读写且缺乏同步；正确：使用锁、队列或消息传递，并缩小临界区。"
+    },
+    {
+      "id": "function-call-trace",
+      "text": "调用栈与返回路径",
+      "type": "concept",
+      "importance": 2
+    },
+    {
+      "id": "json-schema",
+      "text": "JSON 结构与序列化边界",
+      "type": "concept",
+      "importance": 2
+    },
+    {
+      "id": "mro-order",
+      "text": "MRO 方法查找顺序",
+      "type": "principle",
+      "importance": 3
+    },
+    {
+      "id": "lazy-pipeline",
+      "text": "惰性数据管道",
+      "type": "principle",
+      "importance": 3
+    },
+    {
+      "id": "tcp-handshake",
+      "text": "TCP 建连与释放",
+      "type": "principle",
+      "importance": 3
+    },
+    {
+      "id": "hotspot-analysis",
+      "text": "热点函数识别",
+      "type": "step",
+      "importance": 3
+    },
+    {
+      "id": "composition-example",
+      "text": "组合关系示例",
+      "type": "example",
+      "importance": 2
+    }
+  ],
+  "edges": [
+    {
+      "from": "python-advanced",
+      "to": "function-abstraction",
+      "type": "tree"
+    },
+    {
+      "from": "function-abstraction",
+      "to": "function-model",
+      "type": "tree"
+    },
+    {
+      "from": "function-model",
+      "to": "function-object",
+      "type": "tree"
+    },
+    {
+      "from": "function-model",
+      "to": "parameter-binding",
+      "type": "tree"
+    },
+    {
+      "from": "function-abstraction",
+      "to": "closures",
+      "type": "tree"
+    },
+    {
+      "from": "closures",
+      "to": "enclosing-scope",
+      "type": "tree"
+    },
+    {
+      "from": "closures",
+      "to": "nonlocal-state",
+      "type": "tree"
+    },
+    {
+      "from": "function-abstraction",
+      "to": "decorators",
+      "type": "tree"
+    },
+    {
+      "from": "decorators",
+      "to": "wrapper-function",
+      "type": "tree"
+    },
+    {
+      "from": "decorators",
+      "to": "functools-wraps",
+      "type": "tree"
+    },
+    {
+      "from": "python-advanced",
+      "to": "module-file-exception",
+      "type": "tree"
+    },
+    {
+      "from": "module-file-exception",
+      "to": "module-import",
+      "type": "tree"
+    },
+    {
+      "from": "module-import",
+      "to": "import-styles",
+      "type": "tree"
+    },
+    {
+      "from": "module-import",
+      "to": "name-main",
+      "type": "tree"
+    },
+    {
+      "from": "module-file-exception",
+      "to": "file-io",
+      "type": "tree"
+    },
+    {
+      "from": "file-io",
+      "to": "open-close",
+      "type": "tree"
+    },
+    {
+      "from": "file-io",
+      "to": "path-formats",
+      "type": "tree"
+    },
+    {
+      "from": "module-file-exception",
+      "to": "exception-flow",
+      "type": "tree"
+    },
+    {
+      "from": "exception-flow",
+      "to": "capture-specific",
+      "type": "tree"
+    },
+    {
+      "from": "exception-flow",
+      "to": "custom-exception",
+      "type": "tree"
+    },
+    {
+      "from": "python-advanced",
+      "to": "oop-design",
+      "type": "tree"
+    },
+    {
+      "from": "oop-design",
+      "to": "class-model",
+      "type": "tree"
+    },
+    {
+      "from": "class-model",
+      "to": "init-self",
+      "type": "tree"
+    },
+    {
+      "from": "class-model",
+      "to": "attribute-method",
+      "type": "tree"
+    },
+    {
+      "from": "oop-design",
+      "to": "inheritance-poly",
+      "type": "tree"
+    },
+    {
+      "from": "inheritance-poly",
+      "to": "super-mro",
+      "type": "tree"
+    },
+    {
+      "from": "inheritance-poly",
+      "to": "duck-typing",
+      "type": "tree"
+    },
+    {
+      "from": "oop-design",
+      "to": "design-patterns",
+      "type": "tree"
+    },
+    {
+      "from": "design-patterns",
+      "to": "factory-strategy",
+      "type": "tree"
+    },
+    {
+      "from": "design-patterns",
+      "to": "observer",
+      "type": "tree"
+    },
+    {
+      "from": "python-advanced",
+      "to": "advanced-language",
+      "type": "tree"
+    },
+    {
+      "from": "advanced-language",
+      "to": "iterators-generators",
+      "type": "tree"
+    },
+    {
+      "from": "iterators-generators",
+      "to": "iterator-protocol",
+      "type": "tree"
+    },
+    {
+      "from": "iterators-generators",
+      "to": "yield-lazy",
+      "type": "tree"
+    },
+    {
+      "from": "advanced-language",
+      "to": "functional-tools",
+      "type": "tree"
+    },
+    {
+      "from": "functional-tools",
+      "to": "map-filter",
+      "type": "tree"
+    },
+    {
+      "from": "functional-tools",
+      "to": "functools-itertools",
+      "type": "tree"
+    },
+    {
+      "from": "advanced-language",
+      "to": "data-control",
+      "type": "tree"
+    },
+    {
+      "from": "data-control",
+      "to": "copy-model",
+      "type": "tree"
+    },
+    {
+      "from": "data-control",
+      "to": "regex-text",
+      "type": "tree"
+    },
+    {
+      "from": "python-advanced",
+      "to": "network-concurrency",
+      "type": "tree"
+    },
+    {
+      "from": "network-concurrency",
+      "to": "network-basics",
+      "type": "tree"
+    },
+    {
+      "from": "network-basics",
+      "to": "three-elements",
+      "type": "tree"
+    },
+    {
+      "from": "network-basics",
+      "to": "encoding-conversion",
+      "type": "tree"
+    },
+    {
+      "from": "network-concurrency",
+      "to": "socket-tcp",
+      "type": "tree"
+    },
+    {
+      "from": "socket-tcp",
+      "to": "server-flow",
+      "type": "tree"
+    },
+    {
+      "from": "socket-tcp",
+      "to": "client-flow",
+      "type": "tree"
+    },
+    {
+      "from": "network-concurrency",
+      "to": "concurrency-models",
+      "type": "tree"
+    },
+    {
+      "from": "concurrency-models",
+      "to": "process-thread",
+      "type": "tree"
+    },
+    {
+      "from": "concurrency-models",
+      "to": "async-coroutine",
+      "type": "tree"
+    },
+    {
+      "from": "python-advanced",
+      "to": "quality-performance",
+      "type": "tree"
+    },
+    {
+      "from": "quality-performance",
+      "to": "code-quality",
+      "type": "tree"
+    },
+    {
+      "from": "code-quality",
+      "to": "typing-annotation",
+      "type": "tree"
+    },
+    {
+      "from": "code-quality",
+      "to": "lint-format",
+      "type": "tree"
+    },
+    {
+      "from": "quality-performance",
+      "to": "testing-debug",
+      "type": "tree"
+    },
+    {
+      "from": "testing-debug",
+      "to": "pytest-unit",
+      "type": "tree"
+    },
+    {
+      "from": "testing-debug",
+      "to": "logging-debug",
+      "type": "tree"
+    },
+    {
+      "from": "quality-performance",
+      "to": "performance-opt",
+      "type": "tree"
+    },
+    {
+      "from": "performance-opt",
+      "to": "profiling",
+      "type": "tree"
+    },
+    {
+      "from": "performance-opt",
+      "to": "optimization",
+      "type": "tree"
+    },
+    {
+      "from": "python-advanced",
+      "to": "knowledge-relations",
+      "type": "tree"
+    },
+    {
+      "from": "knowledge-relations",
+      "to": "function-to-decorator",
+      "type": "tree"
+    },
+    {
+      "from": "function-to-decorator",
+      "to": "closure-dependency",
+      "type": "tree"
+    },
+    {
+      "from": "function-to-decorator",
+      "to": "decorator-dependency",
+      "type": "tree"
+    },
+    {
+      "from": "knowledge-relations",
+      "to": "module-to-file-exception",
+      "type": "tree"
+    },
+    {
+      "from": "module-to-file-exception",
+      "to": "module-boundary",
+      "type": "tree"
+    },
+    {
+      "from": "module-to-file-exception",
+      "to": "io-exception-boundary",
+      "type": "tree"
+    },
+    {
+      "from": "knowledge-relations",
+      "to": "oop-to-design",
+      "type": "tree"
+    },
+    {
+      "from": "oop-to-design",
+      "to": "composition-choice",
+      "type": "tree"
+    },
+    {
+      "from": "oop-to-design",
+      "to": "pattern-intent",
+      "type": "tree"
+    },
+    {
+      "from": "language-to-engineering",
+      "to": "foundation-dependency",
+      "type": "tree"
+    },
+    {
+      "from": "language-to-engineering",
+      "to": "flow-dependency",
+      "type": "tree"
+    },
+    {
+      "from": "correctness-to-performance",
+      "to": "test-first",
+      "type": "tree"
+    },
+    {
+      "from": "correctness-to-performance",
+      "to": "measure-before-optimize",
+      "type": "tree"
+    },
+    {
+      "from": "single-to-concurrent",
+      "to": "io-cpu-choice",
+      "type": "tree"
+    },
+    {
+      "from": "single-to-concurrent",
+      "to": "shared-state-risk",
+      "type": "tree"
+    },
+    {
+      "from": "closures",
+      "to": "function-model",
+      "type": "depends",
+      "label": "依赖函数对象"
+    },
+    {
+      "from": "decorators",
+      "to": "closures",
+      "type": "depends",
+      "label": "依赖闭包"
+    },
+    {
+      "from": "exception-flow",
+      "to": "file-io",
+      "type": "depends",
+      "label": "保护 I/O 边界"
+    },
+    {
+      "from": "inheritance-poly",
+      "to": "class-model",
+      "type": "depends",
+      "label": "依赖类模型"
+    },
+    {
+      "from": "design-patterns",
+      "to": "inheritance-poly",
+      "type": "depends",
+      "label": "依赖抽象机制"
+    },
+    {
+      "from": "yield-lazy",
+      "to": "iterator-protocol",
+      "type": "implements",
+      "label": "实现迭代协议"
+    },
+    {
+      "from": "async-coroutine",
+      "to": "socket-tcp",
+      "type": "related",
+      "label": "异步网络 I/O"
+    },
+    {
+      "from": "optimization",
+      "to": "profiling",
+      "type": "sequence",
+      "order": 1,
+      "label": "测量后优化"
+    },
+    {
+      "from": "knowledge-relations",
+      "to": "language-to-engineering",
+      "type": "tree"
+    },
+    {
+      "from": "knowledge-relations",
+      "to": "correctness-to-performance",
+      "type": "tree"
+    },
+    {
+      "from": "knowledge-relations",
+      "to": "single-to-concurrent",
+      "type": "tree"
+    },
+    {
+      "from": "closure-dependency",
+      "to": "function-call-trace",
+      "type": "tree"
+    },
+    {
+      "from": "path-formats",
+      "to": "json-schema",
+      "type": "tree"
+    },
+    {
+      "from": "super-mro",
+      "to": "mro-order",
+      "type": "tree"
+    },
+    {
+      "from": "yield-lazy",
+      "to": "lazy-pipeline",
+      "type": "tree"
+    },
+    {
+      "from": "server-flow",
+      "to": "tcp-handshake",
+      "type": "tree"
+    },
+    {
+      "from": "profiling",
+      "to": "hotspot-analysis",
+      "type": "tree"
+    },
+    {
+      "from": "composition-choice",
+      "to": "composition-example",
+      "type": "tree"
+    }
+  ],
+  "groups": []
+}

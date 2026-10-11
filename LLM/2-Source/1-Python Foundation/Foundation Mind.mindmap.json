@@ -1,0 +1,859 @@
+{
+  "version": 2,
+  "meta": {
+    "title": "Python Foundation 知识体系",
+    "language": "zh-CN",
+    "purpose": "按知识原子、依赖关系和复习提示重构基础导图"
+  },
+  "layout": {
+    "mode": "split",
+    "maxFirstLevel": 7,
+    "maxDepth": 5,
+    "leftTypes": [
+      "concept",
+      "principle",
+      "limit",
+      "pitfall",
+      "compare",
+      "question",
+      "summary",
+      "theme"
+    ],
+    "rightTypes": [
+      "function",
+      "method",
+      "command",
+      "step",
+      "example",
+      "config",
+      "reference"
+    ]
+  },
+  "nodes": [
+    {
+      "id": "python-foundation",
+      "text": "Python Foundation 知识体系",
+      "type": "root",
+      "importance": 5,
+      "recall": "核心概念、依赖关系与复习路径"
+    },
+    {
+      "id": "entry",
+      "text": "Python 入门与运行环境",
+      "type": "theme",
+      "importance": 5,
+      "recall": "从概念、特点到可运行入口",
+      "side": "left"
+    },
+    {
+      "id": "programming-execution",
+      "text": "编程与解释执行",
+      "type": "concept",
+      "importance": 4,
+      "recall": "程序从代码到结果经历了什么？"
+    },
+    {
+      "id": "source-code",
+      "text": "源码任务表达",
+      "type": "principle",
+      "importance": 3,
+      "note": "程序描述问题解决步骤。"
+    },
+    {
+      "id": "interpreter-role",
+      "text": "解释器转换与执行",
+      "type": "principle",
+      "importance": 3,
+      "note": "解释器把程序翻译为机器可执行指令。"
+    },
+    {
+      "id": "python-characteristics",
+      "text": "Python 特点",
+      "type": "concept",
+      "importance": 4,
+      "recall": "Python 的核心优势和边界是什么？"
+    },
+    {
+      "id": "python-strengths",
+      "text": "语法简洁与生态丰富",
+      "type": "concept",
+      "importance": 3
+    },
+    {
+      "id": "python-boundaries",
+      "text": "能力边界与适用场景",
+      "type": "limit",
+      "importance": 3,
+      "note": "条件：依赖运行环境；影响：能力判断失真；替代：结合测试和工具验证。"
+    },
+    {
+      "id": "environment-flow",
+      "text": "环境与首次运行",
+      "type": "step",
+      "importance": 4,
+      "recall": "从安装到运行第一段代码要经过哪些步骤？"
+    },
+    {
+      "id": "interpreter-install",
+      "text": "解释器安装",
+      "type": "step",
+      "importance": 3
+    },
+    {
+      "id": "first-program-run",
+      "text": "第一个程序",
+      "type": "example",
+      "importance": 3
+    },
+    {
+      "id": "syntax",
+      "text": "基础语法",
+      "type": "theme",
+      "importance": 5,
+      "recall": "从代码书写规则到程序输入输出",
+      "side": "right"
+    },
+    {
+      "id": "literals-variables",
+      "text": "字面量与变量",
+      "type": "concept",
+      "importance": 4,
+      "recall": "字面量和变量之间如何建立绑定？"
+    },
+    {
+      "id": "literal-rules",
+      "text": "字面量规则",
+      "type": "concept",
+      "importance": 3
+    },
+    {
+      "id": "assignment-rules",
+      "text": "赋值与引用",
+      "type": "concept",
+      "importance": 3
+    },
+    {
+      "id": "comments-identifiers",
+      "text": "注释与标识符",
+      "type": "concept",
+      "importance": 3
+    },
+    {
+      "id": "comment-types",
+      "text": "注释类型",
+      "type": "concept",
+      "importance": 3
+    },
+    {
+      "id": "identifier-naming",
+      "text": "命名规则与规范",
+      "type": "concept",
+      "importance": 3
+    },
+    {
+      "id": "input-output",
+      "text": "输入与输出",
+      "type": "function",
+      "importance": 4,
+      "recall": "输入、输出和类型转换如何衔接？",
+      "note": "签名：input(prompt) / print(*objects, sep=' ', end='\\\\n')\\n用途：读取用户输入并输出内容\\n限制：input 返回字符串，数值计算前需转换\\n示例：name = input('姓名：'); print(name)"
+    },
+    {
+      "id": "input-string",
+      "text": "input 返回字符串",
+      "type": "function",
+      "importance": 3,
+      "note": "签名：input(prompt)\\n用途：读取用户输入\\n限制：返回值始终为字符串，数值计算前需转换\\n示例：age = int(input('年龄：'))"
+    },
+    {
+      "id": "print-format",
+      "text": "print 输出与格式化",
+      "type": "function",
+      "importance": 3,
+      "note": "签名：print(*objects, sep=' ', end='\\\\n')\\n用途：输出一个或多个对象\\n限制：分隔符和结束符受参数控制\\n示例：print('score', 90, sep=': ')"
+    },
+    {
+      "id": "types-operators",
+      "text": "数据类型与运算符",
+      "type": "theme",
+      "importance": 5,
+      "recall": "类型决定值域、运算和转换边界",
+      "side": "right"
+    },
+    {
+      "id": "data-types",
+      "text": "数据类型",
+      "type": "concept",
+      "importance": 5,
+      "recall": "常见类型分别适合什么数据？"
+    },
+    {
+      "id": "number-types",
+      "text": "数字类型 int/float/complex",
+      "type": "concept",
+      "importance": 4,
+      "recall": "三种数字类型在精度和用途上有什么区别？"
+    },
+    {
+      "id": "boolean-type",
+      "text": "布尔与真值",
+      "type": "concept",
+      "importance": 4,
+      "recall": "哪些值会被判断为 False？"
+    },
+    {
+      "id": "type-conversion",
+      "text": "类型转换",
+      "type": "principle",
+      "importance": 4,
+      "recall": "哪些值可以转换，失败时会发生什么？"
+    },
+    {
+      "id": "conversion-rules",
+      "text": "转换规则",
+      "type": "principle",
+      "importance": 3
+    },
+    {
+      "id": "conversion-pitfalls",
+      "text": "转换边界与易错点",
+      "type": "pitfall",
+      "importance": 4,
+      "recall": "ValueError 的常见原因是什么？",
+      "note": "现象：抛出 ValueError 或精度变化；原因：格式不合法或类型不兼容；正确：先校验再转换。"
+    },
+    {
+      "id": "operators",
+      "text": "运算符体系",
+      "type": "concept",
+      "importance": 5,
+      "recall": "不同类型支持哪些运算符？"
+    },
+    {
+      "id": "arithmetic-assignment",
+      "text": "算术与赋值",
+      "type": "concept",
+      "importance": 4,
+      "recall": "算术运算和复合赋值分别怎么用？"
+    },
+    {
+      "id": "comparison-logical",
+      "text": "比较与逻辑",
+      "type": "concept",
+      "importance": 4,
+      "recall": "比较运算和逻辑运算如何组合条件？"
+    },
+    {
+      "id": "strings-containers",
+      "text": "字符串、序列与容器",
+      "type": "theme",
+      "importance": 5,
+      "recall": "从字符串到列表、元组、字典和集合",
+      "side": "left"
+    },
+    {
+      "id": "string-model",
+      "text": "字符串模型",
+      "type": "concept",
+      "importance": 5,
+      "recall": "字符串为什么不可变，索引与切片如何取数？"
+    },
+    {
+      "id": "string-immutable",
+      "text": "不可变性与新对象",
+      "type": "principle",
+      "importance": 4,
+      "recall": "修改字符串后为什么原对象不变？"
+    },
+    {
+      "id": "index-slice",
+      "text": "索引与切片",
+      "type": "principle",
+      "importance": 4,
+      "recall": "start、stop、step 的边界如何理解？"
+    },
+    {
+      "id": "container-structures",
+      "text": "容器结构",
+      "type": "compare",
+      "importance": 5,
+      "recall": "四类容器在可变性、重复性和访问方式上有什么区别？"
+    },
+    {
+      "id": "list-tuple",
+      "text": "列表与元组",
+      "type": "compare",
+      "importance": 4,
+      "recall": "列表和元组在可变性上有什么区别？"
+    },
+    {
+      "id": "dict-set",
+      "text": "字典与集合",
+      "type": "compare",
+      "importance": 4,
+      "recall": "字典键和集合元素有什么共同限制？"
+    },
+    {
+      "id": "common-container-ops",
+      "text": "通用操作与推导式",
+      "type": "principle",
+      "importance": 4,
+      "recall": "如何遍历容器并把转换、过滤组合起来？"
+    },
+    {
+      "id": "iteration-throughput",
+      "text": "遍历与聚合",
+      "type": "principle",
+      "importance": 3
+    },
+    {
+      "id": "comprehension-model",
+      "text": "推导式与过滤",
+      "type": "principle",
+      "importance": 3
+    },
+    {
+      "id": "control-flow",
+      "text": "流程控制",
+      "type": "theme",
+      "importance": 5,
+      "recall": "条件、循环和退出控制构成程序流程",
+      "side": "left"
+    },
+    {
+      "id": "condition-branch",
+      "text": "条件分支",
+      "type": "principle",
+      "importance": 4,
+      "recall": "条件真假如何决定互斥分支？"
+    },
+    {
+      "id": "if-elif-else",
+      "text": "if/elif/else",
+      "type": "principle",
+      "importance": 3
+    },
+    {
+      "id": "nested-condition",
+      "text": "嵌套判断与可读性",
+      "type": "pitfall",
+      "importance": 3,
+      "note": "现象：条件分支过深；原因：逻辑未拆分；正确：提取变量或函数。"
+    },
+    {
+      "id": "while-loop",
+      "text": "while 循环",
+      "type": "principle",
+      "importance": 4,
+      "recall": "while 为什么必须保证条件最终为假？"
+    },
+    {
+      "id": "loop-condition",
+      "text": "循环条件",
+      "type": "principle",
+      "importance": 3
+    },
+    {
+      "id": "loop-exit",
+      "text": "出口与死循环",
+      "type": "pitfall",
+      "importance": 4,
+      "recall": "死循环通常由什么原因造成？",
+      "note": "现象：程序持续运行；原因：循环变量未更新；正确：确保条件最终为假或显式退出。"
+    },
+    {
+      "id": "for-loop-control",
+      "text": "for 与循环控制",
+      "type": "principle",
+      "importance": 5,
+      "recall": "for 如何遍历数据，三种控制语句分别做什么？"
+    },
+    {
+      "id": "range-iteration",
+      "text": "range 与可迭代对象",
+      "type": "principle",
+      "importance": 4,
+      "recall": "range 的起始、结束和步长规则是什么？"
+    },
+    {
+      "id": "break-continue-pass",
+      "text": "break/continue/pass",
+      "type": "compare",
+      "importance": 4,
+      "recall": "三者分别在什么情况下使用？"
+    },
+    {
+      "id": "knowledge-relations",
+      "text": "知识联系主线",
+      "type": "theme",
+      "importance": 5,
+      "recall": "把知识点连接成可迁移的学习路径",
+      "side": "left"
+    },
+    {
+      "id": "data-to-type",
+      "text": "数据到类型",
+      "type": "principle",
+      "importance": 4,
+      "recall": "值、变量和类型如何形成第一条知识链？"
+    },
+    {
+      "id": "literal-to-value",
+      "text": "字面量到对象",
+      "type": "concept",
+      "importance": 3
+    },
+    {
+      "id": "type-to-operation",
+      "text": "类型决定操作",
+      "type": "principle",
+      "importance": 3
+    },
+    {
+      "id": "container-to-loop",
+      "text": "容器到循环",
+      "type": "principle",
+      "importance": 4,
+      "recall": "为什么容器和循环是一组依赖关系？"
+    },
+    {
+      "id": "iterable-source",
+      "text": "容器提供可迭代数据",
+      "type": "concept",
+      "importance": 3
+    },
+    {
+      "id": "traversal-logic",
+      "text": "循环负责驱动遍历",
+      "type": "principle",
+      "importance": 3
+    },
+    {
+      "id": "foundation-to-advanced",
+      "text": "基础到进阶",
+      "type": "summary",
+      "importance": 5,
+      "recall": "基础知识如何支撑函数、模块、文件和异常学习？"
+    },
+    {
+      "id": "function-dependency",
+      "text": "函数依赖变量与容器",
+      "type": "concept",
+      "importance": 3
+    },
+    {
+      "id": "module-dependency",
+      "text": "模块依赖组织与异常",
+      "type": "concept",
+      "importance": 3
+    },
+    {
+      "id": "source-code-detail",
+      "text": "问题分解与步骤顺序",
+      "type": "concept",
+      "importance": 2
+    },
+    {
+      "id": "literal-value",
+      "text": "字面量生成对象",
+      "type": "principle",
+      "importance": 2
+    },
+    {
+      "id": "number-precision",
+      "text": "float 精度差异",
+      "type": "limit",
+      "importance": 3,
+      "note": "条件：十进制小数无法精确表示为二进制浮点数；影响：比较或累加可能出现误差；替代：使用 Decimal、容差比较或整数分单位。"
+    },
+    {
+      "id": "slice-step",
+      "text": "切片步长与方向",
+      "type": "principle",
+      "importance": 2
+    },
+    {
+      "id": "branch-truth",
+      "text": "条件真值判断",
+      "type": "concept",
+      "importance": 2
+    },
+    {
+      "id": "operation-example",
+      "text": "类型运算示例",
+      "type": "example",
+      "importance": 2
+    }
+  ],
+  "edges": [
+    {
+      "from": "python-foundation",
+      "to": "entry",
+      "type": "tree"
+    },
+    {
+      "from": "entry",
+      "to": "programming-execution",
+      "type": "tree"
+    },
+    {
+      "from": "programming-execution",
+      "to": "source-code",
+      "type": "tree"
+    },
+    {
+      "from": "programming-execution",
+      "to": "interpreter-role",
+      "type": "tree"
+    },
+    {
+      "from": "entry",
+      "to": "python-characteristics",
+      "type": "tree"
+    },
+    {
+      "from": "python-characteristics",
+      "to": "python-strengths",
+      "type": "tree"
+    },
+    {
+      "from": "python-characteristics",
+      "to": "python-boundaries",
+      "type": "tree"
+    },
+    {
+      "from": "entry",
+      "to": "environment-flow",
+      "type": "tree"
+    },
+    {
+      "from": "environment-flow",
+      "to": "interpreter-install",
+      "type": "tree"
+    },
+    {
+      "from": "environment-flow",
+      "to": "first-program-run",
+      "type": "tree"
+    },
+    {
+      "from": "python-foundation",
+      "to": "syntax",
+      "type": "tree"
+    },
+    {
+      "from": "syntax",
+      "to": "literals-variables",
+      "type": "tree"
+    },
+    {
+      "from": "literals-variables",
+      "to": "literal-rules",
+      "type": "tree"
+    },
+    {
+      "from": "literals-variables",
+      "to": "assignment-rules",
+      "type": "tree"
+    },
+    {
+      "from": "syntax",
+      "to": "comments-identifiers",
+      "type": "tree"
+    },
+    {
+      "from": "comments-identifiers",
+      "to": "comment-types",
+      "type": "tree"
+    },
+    {
+      "from": "comments-identifiers",
+      "to": "identifier-naming",
+      "type": "tree"
+    },
+    {
+      "from": "syntax",
+      "to": "input-output",
+      "type": "tree"
+    },
+    {
+      "from": "input-output",
+      "to": "input-string",
+      "type": "tree"
+    },
+    {
+      "from": "input-output",
+      "to": "print-format",
+      "type": "tree"
+    },
+    {
+      "from": "python-foundation",
+      "to": "types-operators",
+      "type": "tree"
+    },
+    {
+      "from": "types-operators",
+      "to": "data-types",
+      "type": "tree"
+    },
+    {
+      "from": "data-types",
+      "to": "number-types",
+      "type": "tree"
+    },
+    {
+      "from": "data-types",
+      "to": "boolean-type",
+      "type": "tree"
+    },
+    {
+      "from": "types-operators",
+      "to": "type-conversion",
+      "type": "tree"
+    },
+    {
+      "from": "type-conversion",
+      "to": "conversion-rules",
+      "type": "tree"
+    },
+    {
+      "from": "type-conversion",
+      "to": "conversion-pitfalls",
+      "type": "tree"
+    },
+    {
+      "from": "types-operators",
+      "to": "operators",
+      "type": "tree"
+    },
+    {
+      "from": "operators",
+      "to": "arithmetic-assignment",
+      "type": "tree"
+    },
+    {
+      "from": "operators",
+      "to": "comparison-logical",
+      "type": "tree"
+    },
+    {
+      "from": "python-foundation",
+      "to": "strings-containers",
+      "type": "tree"
+    },
+    {
+      "from": "strings-containers",
+      "to": "string-model",
+      "type": "tree"
+    },
+    {
+      "from": "string-model",
+      "to": "string-immutable",
+      "type": "tree"
+    },
+    {
+      "from": "string-model",
+      "to": "index-slice",
+      "type": "tree"
+    },
+    {
+      "from": "strings-containers",
+      "to": "container-structures",
+      "type": "tree"
+    },
+    {
+      "from": "container-structures",
+      "to": "list-tuple",
+      "type": "tree"
+    },
+    {
+      "from": "container-structures",
+      "to": "dict-set",
+      "type": "tree"
+    },
+    {
+      "from": "strings-containers",
+      "to": "common-container-ops",
+      "type": "tree"
+    },
+    {
+      "from": "common-container-ops",
+      "to": "iteration-throughput",
+      "type": "tree"
+    },
+    {
+      "from": "common-container-ops",
+      "to": "comprehension-model",
+      "type": "tree"
+    },
+    {
+      "from": "python-foundation",
+      "to": "control-flow",
+      "type": "tree"
+    },
+    {
+      "from": "control-flow",
+      "to": "condition-branch",
+      "type": "tree"
+    },
+    {
+      "from": "condition-branch",
+      "to": "if-elif-else",
+      "type": "tree"
+    },
+    {
+      "from": "condition-branch",
+      "to": "nested-condition",
+      "type": "tree"
+    },
+    {
+      "from": "control-flow",
+      "to": "while-loop",
+      "type": "tree"
+    },
+    {
+      "from": "while-loop",
+      "to": "loop-condition",
+      "type": "tree"
+    },
+    {
+      "from": "while-loop",
+      "to": "loop-exit",
+      "type": "tree"
+    },
+    {
+      "from": "control-flow",
+      "to": "for-loop-control",
+      "type": "tree"
+    },
+    {
+      "from": "for-loop-control",
+      "to": "range-iteration",
+      "type": "tree"
+    },
+    {
+      "from": "for-loop-control",
+      "to": "break-continue-pass",
+      "type": "tree"
+    },
+    {
+      "from": "python-foundation",
+      "to": "knowledge-relations",
+      "type": "tree"
+    },
+    {
+      "from": "knowledge-relations",
+      "to": "data-to-type",
+      "type": "tree"
+    },
+    {
+      "from": "data-to-type",
+      "to": "literal-to-value",
+      "type": "tree"
+    },
+    {
+      "from": "data-to-type",
+      "to": "type-to-operation",
+      "type": "tree"
+    },
+    {
+      "from": "knowledge-relations",
+      "to": "container-to-loop",
+      "type": "tree"
+    },
+    {
+      "from": "container-to-loop",
+      "to": "iterable-source",
+      "type": "tree"
+    },
+    {
+      "from": "container-to-loop",
+      "to": "traversal-logic",
+      "type": "tree"
+    },
+    {
+      "from": "knowledge-relations",
+      "to": "foundation-to-advanced",
+      "type": "tree"
+    },
+    {
+      "from": "foundation-to-advanced",
+      "to": "function-dependency",
+      "type": "tree"
+    },
+    {
+      "from": "foundation-to-advanced",
+      "to": "module-dependency",
+      "type": "tree"
+    },
+    {
+      "from": "operators",
+      "to": "data-types",
+      "type": "depends",
+      "label": "类型决定运算符"
+    },
+    {
+      "from": "list-tuple",
+      "to": "index-slice",
+      "type": "related",
+      "label": "共享索引和切片"
+    },
+    {
+      "from": "for-loop-control",
+      "to": "container-structures",
+      "type": "depends",
+      "label": "遍历依赖容器"
+    },
+    {
+      "from": "condition-branch",
+      "to": "boolean-type",
+      "type": "depends",
+      "label": "条件依赖布尔值"
+    },
+    {
+      "from": "foundation-to-advanced",
+      "to": "function-dependency",
+      "type": "sequence",
+      "order": 1,
+      "label": "下一步"
+    },
+    {
+      "from": "function-dependency",
+      "to": "module-dependency",
+      "type": "sequence",
+      "order": 1,
+      "label": "再下一步"
+    },
+    {
+      "from": "source-code",
+      "to": "source-code-detail",
+      "type": "tree"
+    },
+    {
+      "from": "literal-rules",
+      "to": "literal-value",
+      "type": "tree"
+    },
+    {
+      "from": "number-types",
+      "to": "number-precision",
+      "type": "tree"
+    },
+    {
+      "from": "index-slice",
+      "to": "slice-step",
+      "type": "tree"
+    },
+    {
+      "from": "if-elif-else",
+      "to": "branch-truth",
+      "type": "tree"
+    },
+    {
+      "from": "type-to-operation",
+      "to": "operation-example",
+      "type": "tree"
+    }
+  ],
+  "groups": []
+}
