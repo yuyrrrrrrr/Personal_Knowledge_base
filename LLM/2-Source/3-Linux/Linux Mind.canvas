@@ -259,5 +259,9 @@
 		{"id":"75901e2cb4dbd4c0","fromNode":"cd6661bc7e03e9ec","fromSide":"right","toNode":"3db1452cf9b72ea8","toSide":"left","color":"1"},
 		{"id":"5d908b8d2457c9c1","fromNode":"cd6661bc7e03e9ec","fromSide":"right","toNode":"892e76448c6772b4","toSide":"left","color":"1"},
 		{"id":"952e6d6b20017821","fromNode":"cd6661bc7e03e9ec","fromSide":"right","toNode":"4e314ba041645f85","toSide":"left","color":"1"}
-	]
+	],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{}
+	}
 }

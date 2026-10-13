@@ -2,5 +2,9 @@
 	"nodes":[
 		{"id":"ac9ac6b6c53faf41","x":-128,"y":-37,"width":128,"height":60,"type":"text","text":"大模型开发"}
 	],
-	"edges":[]
+	"edges":[],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{}
+	}
 }
