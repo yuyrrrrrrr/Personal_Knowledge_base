@@ -225,5 +225,9 @@
 		{"id":"80fa3e858d68eeed","fromNode":"ccbd051b64a4df55","fromSide":"left","toNode":"28bea4bb7fcc8ada","toSide":"right"},
 		{"id":"45e926cbf54884ae","fromNode":"a6082fb2acba0e76","fromSide":"left","toNode":"1218497e3bb36848","toSide":"right"},
 		{"id":"42de7c3517560375","fromNode":"a6082fb2acba0e76","fromSide":"left","toNode":"924a7c298117b5eb","toSide":"right"}
-	]
+	],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{}
+	}
 }

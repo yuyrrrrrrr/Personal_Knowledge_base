@@ -15,9 +15,9 @@
               "state": {
                 "file": "LLM/2-Source/7-Machine Learning/Machine Learning.canvas",
                 "viewState": {
-                  "x": 905.9366595174629,
-                  "y": 315.0526220816015,
-                  "zoom": -3.6666666666666665
+                  "x": 377.4517997163176,
+                  "y": -1543.7526801462789,
+                  "zoom": 0.6930180604918292
                 }
               },
               "icon": "lucide-layout-dashboard",
@@ -164,7 +164,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "LLM/AI Concept.md",
+                "file": "LLM/2-Source/7-Machine Learning/Machine Learning.canvas",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -172,9 +172,21 @@
               "icon": "lucide-list",
               "title": "大纲"
             }
+          },
+          {
+            "id": "d559100f3db9af5a",
+            "type": "leaf",
+            "state": {
+              "type": "file-properties",
+              "state": {
+                "file": "LLM/2-Source/7-Machine Learning/Machine Learning.canvas"
+              },
+              "icon": "lucide-info",
+              "title": "笔记属性"
+            }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
@@ -194,25 +206,42 @@
   },
   "active": "1c69306bfcb953bd",
   "lastOpenFiles": [
+    "LLM/2-Source/8-Deep Learning/Deep Learning.canvas",
+    "LLM/2-Source/7-Machine Learning/Machine Learning.canvas",
+    "LLM/知识框架.canvas",
+    "LLM/3-Thesis/Basic/transformer论文.pdf",
+    "LLM/AI Concept.md",
+    "LLM/参考文献.md",
+    "LLM/Contextual Design Mechanism.md",
+    "LLM/Official Document.md",
+    "5e2aeebafca7c01ba7b8388dc833f4a.jpg",
+    "39fd81f38ec5e86b2917f3d99bcdb8a8.jpg",
+    "39fd81f38ec5e86b2917f3d99bcdb8a8 1.jpg",
+    "0255463d5663bf6be9364316d7812e49.jpg",
+    "欢迎.md",
+    "Data_Base.base",
+    "LLM/3-Thesis/Advanced/2103.00020v1-CLIP.pdf",
+    "LLM/3-Thesis/Advanced/2512.02556v1-deepseekv3.2.pdf",
+    "LLM/3-Thesis/Basic/DeepSeek_V3.pdf",
+    "LLM/3-Thesis/Basic/2501.12948v1-DeepSeek-R1.pdf",
+    "LLM/3-Thesis/Basic/2406.12793v2-GLM4.pdf",
+    "LLM/3-Thesis/Basic/2309.00071v2-yarn.pdf",
+    "LLM/3-Thesis/Basic/2106.09685v2-lora.pdf",
+    "LLM/3-Thesis/Basic/2104.09864v5-旋转位置编码.pdf",
+    "Article/We-dont-have-the-nouns-yet.md",
+    "Article/玩具 Demo 到稳定交付：个人开发者的 3 条 AI 编程工程铁律.md",
+    "Article/把 AI 训成原始人就能省 65% Token 费？扒一扒 GitHub 趋势榜这个十万星的神奇项目.md",
+    "Article/40人应届生五天淘汰制训练营，自认AI技术最强却被刷，问题出在哪？.md",
+    "Pasted image 20261015105746.png",
+    "LLM/2-Source/7-Machine Learning/Data Pre-Processing.md",
+    "联想截图_20240924130116.png",
     "Pasted image 20261014161021.png",
     "Pasted image 20261014160121.png",
     "Pasted image 20261014153316.png",
     "Pasted image 20261014153211.png",
     "LLM/2-Source/7-Machine Learning/模型评估与优化.md",
-    "LLM/2-Source/7-Machine Learning/Machine Learning.canvas",
-    "Pasted image 20261014151414.png",
-    "Pasted image 20261014145749.png",
-    "Pasted image 20261014145714.png",
-    "Pasted image 20261014145512.png",
-    "Pasted image 20261014145430.png",
-    "LLM/2-Source/7-Machine Learning/Data Pre-Processing.md",
     "LLM/2-Source/7-Machine Learning/无监督学习.md",
     "LLM/2-Source/7-Machine Learning/监督学习.md",
-    "LLM/3-Thesis/Basic/DeepSeek_V3.pdf",
-    "Pasted image 20261014103928.png",
-    "LLM/知识框架.canvas",
-    "LLM/AI Concept.md",
-    "LLM/参考文献.md",
     "LLM/2-Source/5-Prompt Engineering/3-Domain-specific.md",
     "LLM/2-Source/5-Prompt Engineering/2-Prompt Advanced.md",
     "LLM/2-Source/5-Prompt Engineering/1-Prompt Foundation.md",
@@ -227,24 +256,6 @@
     "LLM/2-Source/3-Linux/0-README.md",
     "LLM/2-Source/2-Python Advanced/4-Exception Handing.md",
     "LLM/2-Source/2-Python Advanced/3-File Operations.md",
-    "LLM/2-Source/2-Python Advanced/2-Modules and Packages.md",
-    "LLM/2-Source/2-Python Advanced/1-Functional Programming.md",
-    "LLM/Contextual Design Mechanism.md",
-    "LLM/Official Document.md",
-    "LLM/4-Book/Python神经网络编程 (塔里克·拉希德) (z-library.sk, 1lib.sk, z-lib.sk).pdf",
-    "LLM/4-Book/Hello算法Python版—动画图解、一键运行的数据结构与算法教程 (靳宇栋) (z-library.sk, 1lib.sk, z-lib.sk).pdf",
-    "LLM/4-Book/agentic-ai-guide-zh-v1.1.0.pdf",
-    "LLM/4-Book/深度学习的数学 (涌泉良幸, 涌泉井美) (z-library.sk, 1lib.sk, z-lib.sk).pdf",
-    "LLM/4-Book/深度学习入门：基于Python的理论与实现 (斋藤康毅) (z-library.sk, 1lib.sk, z-lib.sk).pdf",
-    "LLM/4-Book/神经网络与深度学习 (邱锡鹏) (z-library.sk, 1lib.sk, z-lib.sk).pdf",
-    "LLM/3-Thesis/Basic/Attention Is All you Need.pdf",
-    "LLM/3-Thesis/Basic/Attention-is-all-your-need-ZH.pdf",
-    "LLM/3-Thesis/Basic/transformer论文.pdf",
-    "Pasted image 20261013082046.png",
-    "LLM/2-Source/7-Machine Learning/Linear Regression.md",
-    "LLM/2-Source/7-Machine Learning/Regularization.md",
-    "LLM/2-Source/6-Agent/大模型应用开发.md",
-    "LLM/2-Source/8-Deep Learning/Deep Learning.canvas",
     "LLM/2-Source/5-Prompt Engineering/Prompt Engineering Mind.canvas",
     "LLM/2-Source/0-Git/Git Mind.canvas",
     "LLM/2-Source/1-Python Foundation/Foundation Mind.canvas",
