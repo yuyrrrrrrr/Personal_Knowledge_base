@@ -11,17 +11,14 @@
             "id": "1c69306bfcb953bd",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "LLM/2-Source/8-Deep Learning/Deep Learning.canvas",
-                "viewState": {
-                  "x": 634.3498110323146,
-                  "y": -1677.3964118287586,
-                  "zoom": -0.3333333333333332
-                }
+                "file": "Deep Dive into LLMs like ChatGPT.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "Deep Learning"
+              "icon": "lucide-file",
+              "title": "Deep Dive into LLMs like ChatGPT"
             }
           }
         ]
@@ -206,6 +203,11 @@
   },
   "active": "1c69306bfcb953bd",
   "lastOpenFiles": [
+    "Karpathy_LLM_训练管线知识图谱.canvas",
+    "Data_Base.base",
+    "欢迎.md",
+    "未命名.base",
+    "LLM/2-Source/8-Deep Learning/Deep Learning.canvas",
     "Pasted image 20261018210705.png",
     "Pasted image 20261018210451.png",
     "Pasted image 20261018210315.png",
@@ -213,8 +215,6 @@
     "Pasted image 20261018204403.png",
     "Pasted image 20261018204228.png",
     "LLM/2-Source/7-Machine Learning/Machine Learning.canvas",
-    "LLM/2-Source/8-Deep Learning/Deep Learning.canvas",
-    "Karpathy_LLM_训练管线知识图谱.canvas",
     "Deep Dive into LLMs like ChatGPT.md",
     "LLM/AI Concept.md",
     "LLM/3-Thesis/Advanced/2103.00020v1-CLIP.pdf",
@@ -225,8 +225,6 @@
     "LLM/3-Thesis/Advanced/VIT论文.pdf",
     "LLM/3-Thesis/Basic/seq2seq论文.pdf",
     "LLM/3-Thesis/Basic/ChatGPT3.5-InstructGPT论文.pdf",
-    "LLM/3-Thesis/Basic/DeepSeek_V3.pdf",
-    "LLM/3-Thesis/Basic/2501.12948v1-DeepSeek-R1.pdf",
     "LLM/2-Source/AGENTS.md",
     "LLM/知识框架.canvas",
     "LLM/参考文献.md",
@@ -236,12 +234,10 @@
     "39fd81f38ec5e86b2917f3d99bcdb8a8.jpg",
     "39fd81f38ec5e86b2917f3d99bcdb8a8 1.jpg",
     "0255463d5663bf6be9364316d7812e49.jpg",
-    "欢迎.md",
     "Article/We-dont-have-the-nouns-yet.md",
     "Article/玩具 Demo 到稳定交付：个人开发者的 3 条 AI 编程工程铁律.md",
     "Article/把 AI 训成原始人就能省 65% Token 费？扒一扒 GitHub 趋势榜这个十万星的神奇项目.md",
     "Article/40人应届生五天淘汰制训练营，自认AI技术最强却被刷，问题出在哪？.md",
-    "Pasted image 20261015105746.png",
     "LLM/2-Source/7-Machine Learning/Data Pre-Processing.md",
     "LLM/2-Source/7-Machine Learning/模型评估与优化.md",
     "LLM/2-Source/7-Machine Learning/无监督学习.md",
