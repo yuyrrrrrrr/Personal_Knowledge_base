@@ -215,7 +215,7 @@
 		{"id":"ec6e2cdbfb1cc0a0","type":"text","text":"交易与订单管理","x":-735,"y":1203,"width":250,"height":60},
 		{"id":"08229e06e08218ce","type":"text","text":"内容检索与展示","x":-735,"y":1103,"width":250,"height":60},
 		{"id":"75444084ab016ee1","type":"text","text":"用户认证与管理","x":-735,"y":1003,"width":250,"height":60},
-		{"id":"bc734c74f1f649f7","type":"file","file":"Pasted image 20260922120120.png","x":-2320,"y":-233,"width":1430,"height":973}
+		{"id":"bc734c74f1f649f7","type":"file","file":"image/Pasted image 20260922120120.png","x":-2320,"y":-233,"width":1430,"height":973}
 	],
 	"edges":[
 		{"id":"dbf2d93d7d727c9c","fromNode":"8256eddf051eb5f6","fromSide":"right","toNode":"553c2ac7e199808d","toSide":"left","color":"4"},

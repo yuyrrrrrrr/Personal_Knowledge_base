@@ -9,7 +9,7 @@ OpenAI首任首席经济学家罗尼·查特吉（Ronnie Chatterji）与应用�
 标题只有短短几个单词，却像一记耳光抽醒了整个经济学界：
 
 **《我们还没有这些名词》（We don’t have the nouns yet）。**
-![](Pasted%20image%2020261015105746.png)
+![](../image/Pasted%20image%2020261015105746.png)
 他们的核心结论冷酷而震撼：**眼下所有关于“AI消灭就业”的恐慌计算，从一开始就全算错了。**
 
 人类语言的演进，往往跟不上技术裂变的速度。  
@@ -72,7 +72,7 @@ https://economicsofai.substack.com/p/we-dont-have-the-nouns-yet
 这股海啸根本没发生在程序员圈子里，它直接撞向了市场营销、HR初筛、财务审计、法律合规与客户服务。
 
 与此同时，领英（LinkedIn）的全球经济图谱监测显示：仅在2023到2025短短两年间，全球劳动力市场就自发涌现了**130万个全新的AI深度绑定角色**。
-![](0255463d5663bf6be9364316d7812e49.jpg)
+![](../image/0255463d5663bf6be9364316d7812e49.jpg)
 看看今天大厂薪酬序列里，那些几年前根本没人听过的怪异头衔吧：
 
 - **前沿部署工程师（Forward-Deployed Engineers, FDE）：**
@@ -159,7 +159,7 @@ https://economicsofai.substack.com/p/we-dont-have-the-nouns-yet
 苏黎世大学经济学教授 Yanagizawa-Drott 在转发 OpenAI 的推文时，留下了一句意味深长的高级嘲讽：
 
 > **“如果超级智能真有那么神，它最该证明自己的能力，就是准确预测出它自己到底能创造出哪些带‘名词’的新工作。那才算一个了不起的世界模型。”**
-![](39fd81f38ec5e86b2917f3d99bcdb8a8%201.jpg)
+![](../image/39fd81f38ec5e86b2917f3d99bcdb8a8%201.jpg)
 
 ## 05终局觉醒：别把今天的工位，当成人类能力的边界
 
