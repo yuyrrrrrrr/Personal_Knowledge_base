@@ -14,5 +14,9 @@
 		{"id":"cee081560d6363ad","fromNode":"c490cde83fd4d4fd","fromSide":"right","toNode":"1db4c0186f0802d4","toSide":"left"},
 		{"id":"16176409e0257760","fromNode":"caaa89808eaef25a","fromSide":"bottom","toNode":"1db4c0186f0802d4","toSide":"bottom","color":"1","label":"模型衰减"},
 		{"id":"b8c25464680068d5","fromNode":"1db4c0186f0802d4","fromSide":"top","toNode":"caaa89808eaef25a","toSide":"top"}
-	]
+	],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{}
+	}
 }
