@@ -21,16 +21,6 @@
 			"height":380
 		},
 		{
-			"id":"9068f8e9a37c5973",
-			"type":"text",
-			"text":"什么是AI大模型(LLM)?",
-			"styleAttributes":{},
-			"x":40,
-			"y":-400,
-			"width":260,
-			"height":60
-		},
-		{
 			"id":"c390b8d07bf27925",
 			"type":"text",
 			"text":"2. 环境搭建与API集成\n创建开发环境\n获取API密钥或本地部署\n集成模型SDK/API\n实现基础调用逻辑",
@@ -104,6 +94,26 @@
 			"width":260,
 			"height":160
 		},
+		{
+			"id":"ad40a82f080a5250",
+			"type":"text",
+			"text":"为什么如此强大?\n《周易·乾》\"用久,见群龙无首,吉\"\n[《涌现 · 无人指挥》_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1CKa16mE83/?trackid=web_pegasus_0.router-web-pegasus-2479516-f6fct.1791894355750.285&spm_id_from=333.1007.tianma.1-1-1.click&vd_source=629cf77d2500705db66282e48a133408)\n涌现能力----随着模型参数量和训练数据量的增加,模型会展现出训练过程中未明确赋予的新能力,比如逻辑推理,代码编写,多步骤问题解决等.",
+			"styleAttributes":{},
+			"x":-280,
+			"y":-340,
+			"width":260,
+			"height":280
+		},
+		{
+			"id":"9068f8e9a37c5973",
+			"type":"text",
+			"text":"什么是AI大模型(LLM)?",
+			"styleAttributes":{},
+			"x":40,
+			"y":-400,
+			"width":260,
+			"height":60
+		},
 		{"id":"ac9ac6b6c53faf41","type":"text","text":"大模型开发","x":68,"y":-43,"width":128,"height":60},
 		{
 			"id":"8bee4ff4320873cc",
@@ -124,16 +134,6 @@
 			"y":-240,
 			"width":260,
 			"height":60
-		},
-		{
-			"id":"ad40a82f080a5250",
-			"type":"text",
-			"text":"为什么如此强大?\n《周易·乾》\"用久,见群龙无首,吉\"\n[《涌现 · 无人指挥》_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1CKa16mE83/?trackid=web_pegasus_0.router-web-pegasus-2479516-f6fct.1791894355750.285&spm_id_from=333.1007.tianma.1-1-1.click&vd_source=629cf77d2500705db66282e48a133408)\n涌现能力----随着模型参数量和训练数据量的增加,模型会展现出训练过程中未明确赋予的新能力,比如逻辑推理,代码编写,多步骤问题解决等.",
-			"styleAttributes":{},
-			"x":-280,
-			"y":-340,
-			"width":260,
-			"height":280
 		},
 		{
 			"id":"2b2271e9a3f258fe",
@@ -176,16 +176,6 @@
 			"height":60
 		},
 		{
-			"id":"d4fca6e6f4848e05",
-			"type":"text",
-			"text":"人脸识别\n自动驾驶",
-			"styleAttributes":{},
-			"x":1140,
-			"y":-760,
-			"width":260,
-			"height":60
-		},
-		{
 			"id":"c7d75f503f8bc78c",
 			"type":"text",
 			"text":"Maths, CS & AI Compendium\nhttps://github.com/HenryNdubuaku/maths-cs-ai-compendium",
@@ -196,16 +186,6 @@
 			"height":140
 		},
 		{
-			"id":"918dca1eb6ce406c",
-			"type":"text",
-			"text":"Google验证\n你是人类吗?\n接受所有小饼干(cookic)",
-			"styleAttributes":{},
-			"x":1200,
-			"y":-650,
-			"width":260,
-			"height":100
-		},
-		{
 			"id":"b636f1baa4f79c6b",
 			"type":"text",
 			"text":"",
@@ -214,6 +194,26 @@
 			"y":-104,
 			"width":260,
 			"height":60
+		},
+		{
+			"id":"d4fca6e6f4848e05",
+			"type":"text",
+			"text":"人脸识别\n自动驾驶",
+			"styleAttributes":{},
+			"x":1140,
+			"y":-760,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"918dca1eb6ce406c",
+			"type":"text",
+			"text":"Google验证\n你是人类吗?\n接受所有小饼干(cookic)",
+			"styleAttributes":{},
+			"x":1200,
+			"y":-650,
+			"width":260,
+			"height":100
 		},
 		{
 			"id":"02b30efe3fc42940",
@@ -271,9 +271,9 @@
 			"text":"我认为要把提示词写好，让输出更符合预期最重要的标准就是消除不确定性，提示词里的每一句话都是为了前面模糊的表达还债，想要用好AI很大程度上要像一个经理一样对齐需求。AI没有聪明到一下子就能get到你的想法跟核心诉求。尽可能避免模糊的表达，提示词的内容尽量落实到输出结果为好 有些人很烦AI经常越界：夺舍用户，给你扣帽子，或者说教。其实是AI给自己加了个隐藏预设，最直接原因你没说清楚，它就自动寻找某些隐藏预设当做默认设定了。另一点很反直觉，某些词如“帮我写个建议”或“你觉得”会直接引爆某些导师预设，训练数据里面就有很多这种说教，替人做道德判断，用“我们”视角代入，加免责声明的样本。解决思路也很简单，就是用自己的约束主动覆盖默认预设 同时很多人误解的一点是认为约束写的越详细越好。消除歧义，表述准确只是其中一部分。模型注意力总量是固定的，是被稀释到上下文里的，不是线性叠加的，这一点和人很像。就比如父母首先希望你注重兴趣，全面但是却经常抓你考试成绩，这时候你也会犯难，这两个东西不冲突，但你的注意力分配总是有限的，你的一天只有24小时时间，这是绝无动摇的，要么兴趣，要么考试。模型也在面临着这种情况。有时候写的看起来整齐，功能明确，文档完善，效果却不如抓住少数几个核心矛盾，解决痛点来的实在 要写好提示词真的得像调试代码一样反复测试修改，AI只是工具，不是全能管家，更不是你的妈妈",
 			"styleAttributes":{},
 			"x":300,
-			"y":-900,
-			"width":270,
-			"height":170
+			"y":-960,
+			"width":320,
+			"height":230
 		}
 	],
 	"edges":[
