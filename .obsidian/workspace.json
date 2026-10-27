@@ -4,24 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "d849b2284a83e58a",
+        "id": "879bff05898f946f",
         "type": "tabs",
         "children": [
           {
-            "id": "1c69306bfcb953bd",
+            "id": "4981ca0ef4933552",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "LLM/2-Source/8-Deep Learning/Deep Learning.canvas",
-                "viewState": {
-                  "x": 1055.2474045562144,
-                  "y": -641.1458466850236,
-                  "zoom": -0.9999999999999996
-                }
+                "file": "Article/玩具 Demo 到稳定交付：个人开发者的 3 条 AI 编程工程铁律.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "Deep Learning"
+              "icon": "lucide-file",
+              "title": "玩具 Demo 到稳定交付：个人开发者的 3 条 AI 编程工程铁律"
             }
           }
         ]
@@ -204,39 +201,38 @@
       "bases:新建数据库": false
     }
   },
-  "active": "1c69306bfcb953bd",
+  "active": "4981ca0ef4933552",
   "lastOpenFiles": [
+    "LLM/2-Source/8-Deep Learning/Deep Learning.canvas",
+    "image/Pasted image 20261027180705.png",
+    "image/Pasted image 20261027170422.png",
+    "image/Pasted image 20261027162543.png",
+    "image/Pasted image 20261027160647.png",
+    "LLM/3-Thesis/Basic/ResNet残差神经网络.pdf",
+    "image/Pasted image 20261027153655.png",
+    "image/Pasted image 20261027151959.png",
+    "image/Pasted image 20261027151122.png",
     "Pasted image 20261027121807.png",
-    "Pasted image 20261027121140.png",
+    "image/Pasted image 20261027121807.png",
+    "image/Pasted image 20261027121140.png",
+    "LLM/4-Book/Hello算法Python版—动画图解、一键运行的数据结构与算法教程 (靳宇栋) (z-library.sk, 1lib.sk, z-lib.sk).pdf",
+    "LLM/4-Book/清华版-DeepSeek从入门到精通.pdf",
+    "LLM/4-Book/深度学习的数学 (涌泉良幸, 涌泉井美) (z-library.sk, 1lib.sk, z-lib.sk).pdf",
+    "LLM/4-Book/深度学习入门：基于Python的理论与实现 (斋藤康毅) (z-library.sk, 1lib.sk, z-lib.sk).pdf",
+    "LLM/4-Book/人工智能 一种现代的方法 (罗素 诺维格) (z-library.sk, 1lib.sk, z-lib.sk).pdf",
+    "LLM/4-Book/神经网络与深度学习 (邱锡鹏) (z-library.sk, 1lib.sk, z-lib.sk).pdf",
+    "LLM/4-Book/AI-Agents-in-Depth-zh-CN.pdf",
+    "LLM/4-Book/agentic-ai-guide-zh-v1.1.0.pdf",
     "LLM/知识框架.canvas",
     "LLM/Official Document.md",
     "LLM/参考文献.md",
     "Data_Base.base",
     "MD语法.md",
-    "image/cosine_annealing_warm_restarts.png",
-    "image/cosine_annealing_plot.png",
-    "image/lr_acc_comparison.png",
-    "image/exponential_decay_plot.png",
-    "image/exponential_decay_curved.png",
-    "image/lr_schedules_comparison_fixed.png",
-    "image/lr_acc_comparison_3lines.png",
-    "image/Pasted image 20261024205057.png",
-    "image/Pasted image 20261024204656.png",
     "LLM/Karpathy_LLM_训练管线知识图谱.canvas",
     "LLM/Deep Dive into LLMs like ChatGPT.md",
     "LLM/Contextual Design Mechanism.md",
     "LLM/AI Concept.md",
-    "LLM/2-Source/8-Deep Learning/Deep Learning.canvas",
     "LLM/2-Source/AGENTS.md",
-    "LLM/3-Thesis/Basic/ResNet残差神经网络.pdf",
-    "LLM/3-Thesis/Basic/2104.09864v5-旋转位置编码.pdf",
-    "LLM/3-Thesis/Basic/2002.05202v1-GLU.pdf",
-    "LLM/3-Thesis/Basic/1910.10683v4-T5.pdf",
-    "LLM/3-Thesis/Basic/1902.00751v2-adapter.pdf",
-    "LLM/3-Thesis/Basic/1602.07261v2-InceptionNetV4.pdf",
-    "LLM/3-Thesis/Basic/1409.4842v1-InceptionNet.pdf",
-    "LLM/3-Thesis/Basic/1409.1556v6-VGG.pdf",
-    "LLM/3-Thesis/Basic/3-2005.14165v4-GPT3.pdf",
     "Article/开发者低估了AI的能力！Claude工程负责人：用旧方法指挥Agent，开发者们反倒成了“传送带”.md",
     "LLM/2-Source/8-Deep Learning/MNIST：深度学习界的 Hello World.md",
     "LLM/2-Source/7-Machine Learning/Machine Learning.canvas",
