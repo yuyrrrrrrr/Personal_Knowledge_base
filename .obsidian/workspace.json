@@ -15,9 +15,9 @@
               "state": {
                 "file": "LLM/2-Source/8-Deep Learning/Deep Learning.canvas",
                 "viewState": {
-                  "x": -4461.2263754474125,
-                  "y": 662.7042669239,
-                  "zoom": -0.6666666666666661
+                  "x": -1663.9125851037084,
+                  "y": 865.303563370027,
+                  "zoom": -0.9999999999999998
                 }
               },
               "icon": "lucide-layout-dashboard",
@@ -58,7 +58,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#2（随机关闭不同神经元）：另外一批节点标有红叉。",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -206,19 +206,19 @@
   },
   "active": "1c69306bfcb953bd",
   "lastOpenFiles": [
+    "LLM/2-Source/AGENTS.md",
+    "LLM/2-Source/8-Deep Learning/Deep Learning.canvas",
+    "Pasted image 20261027115152.png",
+    "Pasted image 20261027103228.png",
+    "Pasted image 20261027102330.png",
+    "Pasted image 20261027102240.png",
+    "Pasted image 20261027101911.png",
+    "Pasted image 20261027100945.png",
+    "Pasted image 20261027095802.png",
+    "Pasted image 20261027095554.png",
     "Pasted image 20261026171136.png",
     "Pasted image 20261026171008.png",
-    "Pasted image 20261026170840.png",
-    "Pasted image 20261026164947.png",
-    "Pasted image 20261026164545.png",
-    "Pasted image 20261026164416.png",
-    "Pasted image 20261026164236.png",
-    "Pasted image 20261026164024.png",
-    "Pasted image 20261026163727.png",
-    "Pasted image 20261026162248.png",
-    "Pasted image 20261026162015.png",
     "LLM/3-Thesis/Basic/ResNet残差神经网络.pdf",
-    "LLM/2-Source/8-Deep Learning/Deep Learning.canvas",
     "LLM/3-Thesis/Basic/2104.09864v5-旋转位置编码.pdf",
     "LLM/3-Thesis/Basic/2002.05202v1-GLU.pdf",
     "LLM/3-Thesis/Basic/1910.10683v4-T5.pdf",
@@ -228,7 +228,6 @@
     "LLM/3-Thesis/Basic/1409.1556v6-VGG.pdf",
     "LLM/3-Thesis/Basic/3-2005.14165v4-GPT3.pdf",
     "LLM/3-Thesis/Basic/2-language_models_are_unsupervised_multitask_learners-GPT2.pdf",
-    "LLM/2-Source/AGENTS.md",
     "Article/开发者低估了AI的能力！Claude工程负责人：用旧方法指挥Agent，开发者们反倒成了“传送带”.md",
     "LLM/2-Source/8-Deep Learning/MNIST：深度学习界的 Hello World.md",
     "LLM/2-Source/7-Machine Learning/Machine Learning.canvas",
