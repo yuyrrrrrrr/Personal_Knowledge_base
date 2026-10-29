@@ -11,14 +11,17 @@
             "id": "4981ca0ef4933552",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "Article/Andrew Karpathy使用AI的四个层级.md",
-                "mode": "source",
-                "source": false
+                "file": "LLM/从零开始的AI学习之路.canvas",
+                "viewState": {
+                  "x": 12.21851453618342,
+                  "y": 82.8278548995867,
+                  "zoom": -0.666666666666667
+                }
               },
-              "icon": "lucide-file",
-              "title": "Andrew Karpathy使用AI的四个层级"
+              "icon": "lucide-layout-dashboard",
+              "title": "从零开始的AI学习之路"
             }
           }
         ]
@@ -203,13 +206,17 @@
   },
   "active": "4981ca0ef4933552",
   "lastOpenFiles": [
-    "image/Pasted image 20261029174653.png",
+    "README.md",
+    "LLM/Karpathy_LLM_训练管线知识图谱.canvas",
     "LLM/从零开始的AI学习之路.canvas",
-    "Article/Andrew Karpathy使用AI的四个层级.md",
+    "image/d711b8028eca6a59e9b997fe5d77d72.webp",
+    "image/2b68fb563235eb4a7628e45707d89ae.webp",
+    "image/02f09b194d98ad0f990fa0a31019e06.webp",
     "LLM/AI Concept.md",
+    "Article/Andrew Karpathy使用AI的四个层级.md",
+    "image/Pasted image 20261029174653.png",
     "LLM/Deep Dive into LLMs like ChatGPT.md",
     "LLM/Contextual Design Mechanism.md",
-    "LLM/Karpathy_LLM_训练管线知识图谱.canvas",
     "LLM/2-Source/8-Deep Learning/Deep Learning.canvas",
     "image/Pasted image 20261028103852.png",
     "image/Pasted image 20261028102035.png",
@@ -220,11 +227,7 @@
     "LLM/2-Source/8-Deep Learning/MNIST：深度学习界的 Hello World.md",
     "Article/玩具 Demo 到稳定交付：个人开发者的 3 条 AI 编程工程铁律.md",
     "image/Pasted image 20261027180705.png",
-    "image/Pasted image 20261027170422.png",
-    "image/Pasted image 20261027162543.png",
-    "image/Pasted image 20261027160647.png",
     "LLM/3-Thesis/Basic/ResNet残差神经网络.pdf",
-    "image/Pasted image 20261027153655.png",
     "LLM/4-Book/Hello算法Python版—动画图解、一键运行的数据结构与算法教程 (靳宇栋) (z-library.sk, 1lib.sk, z-lib.sk).pdf",
     "LLM/4-Book/清华版-DeepSeek从入门到精通.pdf",
     "LLM/4-Book/深度学习的数学 (涌泉良幸, 涌泉井美) (z-library.sk, 1lib.sk, z-lib.sk).pdf",
