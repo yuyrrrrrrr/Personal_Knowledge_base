@@ -31,16 +31,6 @@
 			"height":187
 		},
 		{
-			"id":"41adac2acef1115a",
-			"type":"text",
-			"text":"5.测试与评估\n单元测试\n模型相应质量评估\n用户体验测试\n性能与成本评估",
-			"styleAttributes":{},
-			"x":-960,
-			"y":40,
-			"width":260,
-			"height":160
-		},
-		{
 			"id":"31b941b4c45d051a",
 			"type":"text",
 			"text":"4.功能开发与增强\n实现核心业务逻辑\n开发用户界面\n集成知识库/RAG\n添加工具调用能力",
@@ -63,46 +53,6 @@
 			"y":-240,
 			"width":260,
 			"height":187
-		},
-		{
-			"id":"73a216b9a7944fa6",
-			"type":"text",
-			"text":"3.提示工程与优化\n设计初始提示模板\n测试与迭代优化提示\n构建提示库\n实现上下文管理",
-			"styleAttributes":{},
-			"x":-640,
-			"y":-244,
-			"width":260,
-			"height":190
-		},
-		{
-			"id":"ceb5e4838115f6f5",
-			"type":"text",
-			"text":"6.部署与运维\n准备部署环境\n配置监控与告警\n实施安全措施\n上线与发布",
-			"styleAttributes":{},
-			"x":-640,
-			"y":40,
-			"width":260,
-			"height":160
-		},
-		{
-			"id":"ad40a82f080a5250",
-			"type":"text",
-			"text":"为什么如此强大?\n《周易·乾》\"用久,见群龙无首,吉\"\n[《涌现 · 无人指挥》_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1CKa16mE83/?trackid=web_pegasus_0.router-web-pegasus-2479516-f6fct.1791894355750.285&spm_id_from=333.1007.tianma.1-1-1.click&vd_source=629cf77d2500705db66282e48a133408)\n涌现能力----随着模型参数量和训练数据量的增加,模型会展现出训练过程中未明确赋予的新能力,比如逻辑推理,代码编写,多步骤问题解决等.",
-			"styleAttributes":{},
-			"x":-280,
-			"y":-340,
-			"width":260,
-			"height":280
-		},
-		{
-			"id":"ff04c48a44395f02",
-			"type":"text",
-			"text":"完整的大模型训练流程管线[Karpathy_LLM_训练管线知识图谱](Karpathy_LLM_训练管线知识图谱.canvas)",
-			"styleAttributes":{},
-			"x":-940,
-			"y":-440,
-			"width":260,
-			"height":140
 		},
 		{
 			"id":"5d9b9191b139bf20",
@@ -135,39 +85,6 @@
 			"height":60
 		},
 		{
-			"id":"2b2271e9a3f258fe",
-			"type":"text",
-			"text":"AI在日常生活中的应用",
-			"styleAttributes":{},
-			"x":440,
-			"y":-600,
-			"width":260,
-			"height":60
-		},
-		{
-			"id":"02b30efe3fc42940",
-			"type":"text",
-			"text":"数学直觉",
-			"styleAttributes":{},
-			"x":-200,
-			"y":480,
-			"width":260,
-			"height":60
-		},
-		{
-			"id":"8850cc32d6e65b4f",
-			"type":"text",
-			"text":"我认为要把提示词写好，让输出更符合预期最重要的标准就是消除不确定性，提示词里的每一句话都是为了前面模糊的表达还债，想要用好AI很大程度上要像一个经理一样对齐需求。AI没有聪明到一下子就能get到你的想法跟核心诉求。尽可能避免模糊的表达，提示词的内容尽量落实到输出结果为好 有些人很烦AI经常越界：夺舍用户，给你扣帽子，或者说教。其实是AI给自己加了个隐藏预设，最直接原因你没说清楚，它就自动寻找某些隐藏预设当做默认设定了。另一点很反直觉，某些词如“帮我写个建议”或“你觉得”会直接引爆某些导师预设，训练数据里面就有很多这种说教，替人做道德判断，用“我们”视角代入，加免责声明的样本。解决思路也很简单，就是用自己的约束主动覆盖默认预设 同时很多人误解的一点是认为约束写的越详细越好。消除歧义，表述准确只是其中一部分。模型注意力总量是固定的，是被稀释到上下文里的，不是线性叠加的，这一点和人很像。就比如父母首先希望你注重兴趣，全面但是却经常抓你考试成绩，这时候你也会犯难，这两个东西不冲突，但你的注意力分配总是有限的，你的一天只有24小时时间，这是绝无动摇的，要么兴趣，要么考试。模型也在面临着这种情况。有时候写的看起来整齐，功能明确，文档完善，效果却不如抓住少数几个核心矛盾，解决痛点来的实在 要写好提示词真的得像调试代码一样反复测试修改，AI只是工具，不是全能管家，更不是你的妈妈",
-			"styleAttributes":{},
-			"x":300,
-			"y":-960,
-			"width":320,
-			"height":230
-		},
-		{"id":"65230fdaa9b8434d","type":"file","file":"image/02f09b194d98ad0f990fa0a31019e06.webp","x":-600,"y":-1320,"width":400,"height":243},
-		{"id":"4594fdf2387203d7","type":"file","file":"image/2b68fb563235eb4a7628e45707d89ae.webp","x":-600,"y":-1045,"width":400,"height":225},
-		{"id":"8dcd1b821853736a","type":"file","file":"image/d711b8028eca6a59e9b997fe5d77d72.webp","x":-600,"y":-791,"width":400,"height":311},
-		{
 			"id":"432eac6965357d71",
 			"type":"text",
 			"text":"",
@@ -177,14 +94,23 @@
 			"width":260,
 			"height":60
 		},
-		{"id":"ac9ac6b6c53faf41","type":"text","text":"大模型开发","x":68,"y":-43,"width":128,"height":60},
 		{
-			"id":"8bee4ff4320873cc",
+			"id":"8850cc32d6e65b4f",
 			"type":"text",
-			"text":"",
+			"text":"我认为要把提示词写好，让输出更符合预期最重要的标准就是消除不确定性，提示词里的每一句话都是为了前面模糊的表达还债，想要用好AI很大程度上要像一个经理一样对齐需求。AI没有聪明到一下子就能get到你的想法跟核心诉求。尽可能避免模糊的表达，提示词的内容尽量落实到输出结果为好 有些人很烦AI经常越界：夺舍用户，给你扣帽子，或者说教。其实是AI给自己加了个隐藏预设，最直接原因你没说清楚，它就自动寻找某些隐藏预设当做默认设定了。另一点很反直觉，某些词如“帮我写个建议”或“你觉得”会直接引爆某些导师预设，训练数据里面就有很多这种说教，替人做道德判断，用“我们”视角代入，加免责声明的样本。解决思路也很简单，就是用自己的约束主动覆盖默认预设 同时很多人误解的一点是认为约束写的越详细越好。消除歧义，表述准确只是其中一部分。模型注意力总量是固定的，是被稀释到上下文里的，不是线性叠加的，这一点和人很像。就比如父母首先希望你注重兴趣，全面但是却经常抓你考试成绩，这时候你也会犯难，这两个东西不冲突，但你的注意力分配总是有限的，你的一天只有24小时时间，这是绝无动摇的，要么兴趣，要么考试。模型也在面临着这种情况。有时候写的看起来整齐，功能明确，文档完善，效果却不如抓住少数几个核心矛盾，解决痛点来的实在 要写好提示词真的得像调试代码一样反复测试修改，AI只是工具，不是全能管家，更不是你的妈妈",
 			"styleAttributes":{},
-			"x":400,
-			"y":-74,
+			"x":260,
+			"y":-1350,
+			"width":480,
+			"height":590
+		},
+		{
+			"id":"02b30efe3fc42940",
+			"type":"text",
+			"text":"数学直觉",
+			"styleAttributes":{},
+			"x":1080,
+			"y":683,
 			"width":260,
 			"height":60
 		},
@@ -193,18 +119,58 @@
 			"type":"text",
 			"text":"Maths, CS & AI Compendium\nhttps://github.com/HenryNdubuaku/maths-cs-ai-compendium",
 			"styleAttributes":{},
-			"x":40,
-			"y":260,
+			"x":1320,
+			"y":463,
 			"width":260,
 			"height":140
+		},
+		{
+			"id":"b636f1baa4f79c6b",
+			"type":"text",
+			"text":"",
+			"styleAttributes":{},
+			"x":1190,
+			"y":-90,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"8bee4ff4320873cc",
+			"type":"text",
+			"text":"",
+			"styleAttributes":{},
+			"x":770,
+			"y":-60,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"41adac2acef1115a",
+			"type":"text",
+			"text":"5.测试与评估\n单元测试\n模型相应质量评估\n用户体验测试\n性能与成本评估",
+			"styleAttributes":{},
+			"x":-960,
+			"y":40,
+			"width":260,
+			"height":160
+		},
+		{
+			"id":"dc135f93fce05eef",
+			"type":"text",
+			"text":"学术",
+			"styleAttributes":{},
+			"x":680,
+			"y":930,
+			"width":260,
+			"height":60
 		},
 		{
 			"id":"ef7db7d974a6213b",
 			"type":"text",
 			"text":"CS基础",
 			"styleAttributes":{},
-			"x":140,
-			"y":480,
+			"x":1420,
+			"y":683,
 			"width":260,
 			"height":60
 		},
@@ -213,8 +179,8 @@
 			"type":"text",
 			"text":"机器学习",
 			"styleAttributes":{},
-			"x":460,
-			"y":480,
+			"x":1740,
+			"y":683,
 			"width":260,
 			"height":60
 		},
@@ -223,18 +189,28 @@
 			"type":"text",
 			"text":"系统工程",
 			"styleAttributes":{},
-			"x":800,
-			"y":480,
+			"x":2080,
+			"y":683,
 			"width":260,
 			"height":60
 		},
 		{
-			"id":"50562f08a5ae12c0",
+			"id":"a108aae6cb57e56f",
 			"type":"text",
-			"text":"金融量化",
+			"text":"推理部署",
 			"styleAttributes":{},
-			"x":780,
-			"y":-760,
+			"x":2398,
+			"y":683,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"2b2271e9a3f258fe",
+			"type":"text",
+			"text":"AI在日常生活中的应用",
+			"styleAttributes":{},
+			"x":440,
+			"y":-600,
 			"width":260,
 			"height":60
 		},
@@ -249,25 +225,58 @@
 			"height":60
 		},
 		{
-			"id":"b636f1baa4f79c6b",
+			"id":"50562f08a5ae12c0",
 			"type":"text",
-			"text":"",
+			"text":"金融量化",
 			"styleAttributes":{},
 			"x":820,
-			"y":-104,
+			"y":-760,
 			"width":260,
 			"height":60
 		},
 		{
-			"id":"a108aae6cb57e56f",
+			"id":"73a216b9a7944fa6",
 			"type":"text",
-			"text":"推理部署",
+			"text":"3.提示工程与优化\n设计初始提示模板\n测试与迭代优化提示\n构建提示库\n实现上下文管理",
 			"styleAttributes":{},
-			"x":1118,
-			"y":480,
+			"x":-640,
+			"y":-244,
 			"width":260,
-			"height":60
+			"height":190
 		},
+		{
+			"id":"ceb5e4838115f6f5",
+			"type":"text",
+			"text":"6.部署与运维\n准备部署环境\n配置监控与告警\n实施安全措施\n上线与发布",
+			"styleAttributes":{},
+			"x":-640,
+			"y":40,
+			"width":260,
+			"height":160
+		},
+		{
+			"id":"ff04c48a44395f02",
+			"type":"text",
+			"text":"完整的大模型训练流程管线[Karpathy_LLM_训练管线知识图谱](Karpathy_LLM_训练管线知识图谱.canvas)",
+			"styleAttributes":{},
+			"x":-940,
+			"y":-440,
+			"width":260,
+			"height":140
+		},
+		{"id":"65230fdaa9b8434d","type":"file","file":"image/02f09b194d98ad0f990fa0a31019e06.webp","x":-600,"y":-1320,"width":400,"height":243},
+		{
+			"id":"ad40a82f080a5250",
+			"type":"text",
+			"text":"为什么如此强大?\n《周易·乾》\"用久,见群龙无首,吉\"\n[《涌现 · 无人指挥》_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1CKa16mE83/?trackid=web_pegasus_0.router-web-pegasus-2479516-f6fct.1791894355750.285&spm_id_from=333.1007.tianma.1-1-1.click&vd_source=629cf77d2500705db66282e48a133408)\n涌现能力----随着模型参数量和训练数据量的增加,模型会展现出训练过程中未明确赋予的新能力,比如逻辑推理,代码编写,多步骤问题解决等.",
+			"styleAttributes":{},
+			"x":-280,
+			"y":-340,
+			"width":260,
+			"height":280
+		},
+		{"id":"4594fdf2387203d7","type":"file","file":"image/2b68fb563235eb4a7628e45707d89ae.webp","x":-600,"y":-1045,"width":400,"height":225},
+		{"id":"8dcd1b821853736a","type":"file","file":"image/d711b8028eca6a59e9b997fe5d77d72.webp","x":-600,"y":-791,"width":400,"height":311},
 		{
 			"id":"7cf25034eba7d802",
 			"type":"text",
@@ -293,10 +302,80 @@
 			"type":"text",
 			"text":"Google验证\n你是人类吗?\n接受所有小饼干(cookic)",
 			"styleAttributes":{},
-			"x":1200,
-			"y":-650,
+			"x":1140,
+			"y":-620,
 			"width":260,
 			"height":100
+		},
+		{
+			"id":"f87251ed1e2f18b5",
+			"type":"text",
+			"text":"Hello agent\n从零开始构建agent(中文教程)7w stars\n官网:https://hello-agents.datawhale.cc/#/\ngithub:https://github.com/datawhalechina/Hello-Agents",
+			"styleAttributes":{},
+			"x":-1300,
+			"y":920,
+			"width":260,
+			"height":240
+		},
+		{
+			"id":"e0fae3cb0f9fce72",
+			"type":"text",
+			"text":"ECC:Everything claude code\ngithub 29w stars\nhttps://github.com/affaan-m/ECC\n",
+			"styleAttributes":{},
+			"x":-1140,
+			"y":1240,
+			"width":410,
+			"height":140
+		},
+		{
+			"id":"937fb011f40f27b6",
+			"type":"text",
+			"text":"# Learn Claude Code -- 真正的 Agent Harness 工程\nhttps://github.com/shareAI-lab/learn-claude-code/blob/main/README-zh.md",
+			"styleAttributes":{},
+			"x":-860,
+			"y":960,
+			"width":400,
+			"height":160
+		},
+		{
+			"id":"1a76065db461f578",
+			"type":"text",
+			"text":"工程应用",
+			"styleAttributes":{},
+			"x":-990,
+			"y":800,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"76f50e80b0401445",
+			"type":"text",
+			"text":"算法",
+			"styleAttributes":{},
+			"x":0,
+			"y":930,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"dc4e99a1307340be",
+			"type":"text",
+			"text":"B站\n[偷星九月333的个人空间-偷星九月333个人主页-哔哩哔哩视频](https://space.bilibili.com/349950942?spm_id_from=333.1387.favlist.content.click)",
+			"styleAttributes":{},
+			"x":-100,
+			"y":1120,
+			"width":320,
+			"height":190
+		},
+		{
+			"id":"d3533c4311e0e010",
+			"type":"text",
+			"text":"B站\n[Lau博士的云组会的个人空间-Lau博士的云组会个人主页-哔哩哔哩视频](https://space.bilibili.com/3546659109735216?spm_id_from=333.1387.favlist.content.click)\n\n[Agent智能体深度研究院的个人空间-Agent智能体深度研究院个人主页-哔哩哔哩视频](https://space.bilibili.com/581897590?spm_id_from=333.1007.tianma.1-2-2.click)",
+			"styleAttributes":{},
+			"x":720,
+			"y":1120,
+			"width":360,
+			"height":160
 		}
 	],
 	"edges":[
@@ -355,6 +434,132 @@
 			"toNode":"31b941b4c45d051a",
 			"toSide":"bottom",
 			"label":"持续迭代与优化"
+		},
+		{
+			"id":"b1242a4da3bab922",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"1a76065db461f578",
+			"fromSide":"bottom",
+			"toNode":"f87251ed1e2f18b5",
+			"toSide":"top"
+		},
+		{
+			"id":"ade5daf478b6be64",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"1a76065db461f578",
+			"fromSide":"bottom",
+			"toNode":"937fb011f40f27b6",
+			"toSide":"top"
+		},
+		{
+			"id":"51250b25aefe6660",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"f87251ed1e2f18b5",
+			"fromSide":"bottom",
+			"toNode":"e0fae3cb0f9fce72",
+			"toSide":"top"
+		},
+		{
+			"id":"8ffed615a902a904",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"937fb011f40f27b6",
+			"fromSide":"bottom",
+			"toNode":"e0fae3cb0f9fce72",
+			"toSide":"top"
+		},
+		{
+			"id":"3be38d231bdc5af5",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"76f50e80b0401445",
+			"fromSide":"bottom",
+			"toNode":"dc4e99a1307340be",
+			"toSide":"top"
+		},
+		{
+			"id":"1d21f00638587878",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"dc135f93fce05eef",
+			"fromSide":"bottom",
+			"toNode":"d3533c4311e0e010",
+			"toSide":"top"
+		},
+		{
+			"id":"365064cc085b14c6",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"c7d75f503f8bc78c",
+			"fromSide":"bottom",
+			"toNode":"02b30efe3fc42940",
+			"toSide":"top"
+		},
+		{
+			"id":"fd276a7d4a4f2d15",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"c7d75f503f8bc78c",
+			"fromSide":"bottom",
+			"toNode":"ef7db7d974a6213b",
+			"toSide":"top"
+		},
+		{
+			"id":"1d03f3740477195a",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"c7d75f503f8bc78c",
+			"fromSide":"bottom",
+			"toNode":"211b16718783576e",
+			"toSide":"top"
+		},
+		{
+			"id":"f4cfcee0ddd79a46",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"c7d75f503f8bc78c",
+			"fromSide":"bottom",
+			"toNode":"28c61006e50b2de8",
+			"toSide":"top"
+		},
+		{
+			"id":"1169d9dee2541beb",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"2b2271e9a3f258fe",
+			"fromSide":"right",
+			"toNode":"50562f08a5ae12c0",
+			"toSide":"left"
+		},
+		{
+			"id":"5d70cc9c21b15de8",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"2b2271e9a3f258fe",
+			"fromSide":"right",
+			"toNode":"a3a6c33c648dc05a",
+			"toSide":"left"
+		},
+		{
+			"id":"c838dbcb1fa45595",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"2b2271e9a3f258fe",
+			"fromSide":"right",
+			"toNode":"7cf25034eba7d802",
+			"toSide":"left"
+		},
+		{
+			"id":"1c0dde9787a317b6",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"2b2271e9a3f258fe",
+			"fromSide":"right",
+			"toNode":"d4fca6e6f4848e05",
+			"toSide":"left"
 		}
 	],
 	"metadata":{

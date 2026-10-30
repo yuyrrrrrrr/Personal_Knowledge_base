@@ -102,5 +102,9 @@
 		{"id":"d52367cf07100ff6","fromNode":"90930f3940d45cca","fromSide":"right","toNode":"7f136583b67a794e","toSide":"left"},
 		{"id":"c15ef237df853d7a","fromNode":"071647111c9cb4bb","fromSide":"right","toNode":"7f136583b67a794e","toSide":"left"},
 		{"id":"47550ee14cc16cc9","fromNode":"1f6fd7e2214c5378","fromSide":"right","toNode":"7f136583b67a794e","toSide":"left"}
-	]
+	],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{}
+	}
 }
