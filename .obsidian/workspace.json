@@ -15,9 +15,9 @@
               "state": {
                 "file": "LLM/2-Source/8-Deep Learning/Deep Learning.canvas",
                 "viewState": {
-                  "x": -3574.4160051292934,
-                  "y": 1184.5424741994736,
-                  "zoom": 3.3306690738754696e-16
+                  "x": 470,
+                  "y": 973.5,
+                  "zoom": -4
                 }
               },
               "icon": "lucide-layout-dashboard",
@@ -179,7 +179,7 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "LLM/2-Source/7-Machine Learning/Machine Learning.canvas"
+                "file": "LLM/2-Source/8-Deep Learning/Deep Learning.canvas"
               },
               "icon": "lucide-info",
               "title": "笔记属性"
@@ -206,6 +206,8 @@
   },
   "active": "5654f4ab036589b1",
   "lastOpenFiles": [
+    "LLM/2-Source/7-Machine Learning/Machine Learning.canvas",
+    "LLM/2-Source/8-Deep Learning/Deep Learning.canvas",
     "image/Pasted image 20261101150937.png",
     "image/Pasted image 20261101150739.png",
     "image/Pasted image 20261101150446.png",
@@ -217,7 +219,6 @@
     "Article/40人应届生五天淘汰制训练营，自认AI技术最强却被刷，问题出在哪？.md",
     "Article/D1-AIAgent全链路流程.md",
     "Article/我不得不把才华埋葬在昨天.md",
-    "LLM/2-Source/8-Deep Learning/Deep Learning.canvas",
     "LLM/3-Thesis/Basic/Attention Is All you Need.pdf",
     "image/Pasted image 20261101144943.png",
     "image/Pasted image 20261101144403.png",
@@ -225,7 +226,6 @@
     "image/Pasted image 20261101144029.png",
     "image/Pasted image 20261101143107.png",
     "image/Pasted image 20261101141112.png",
-    "image/Pasted image 20261101114827.png",
     "LLM/AI Concept.md",
     "LLM/Contextual Design Mechanism.md",
     "LLM/从零开始的AI学习之路.canvas",
@@ -239,7 +239,6 @@
     "LLM/3-Thesis/Basic/seq2seq论文.pdf",
     "LLM/2-Source/2-Python Advanced/3-File Operations.md",
     "LLM/2-Source/7-Machine Learning/监督学习.md",
-    "LLM/2-Source/7-Machine Learning/Machine Learning.canvas",
     "LLM/2-Source/2-Python Advanced/2-Modules and Packages.md",
     "LLM/2-Source/8-Deep Learning/MNIST：深度学习界的 Hello World.md",
     "LLM/2-Source/2-Python Advanced/4-Exception Handing.md",
