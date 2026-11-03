@@ -15,9 +15,9 @@
               "state": {
                 "file": "LLM/2-Source/8-Deep Learning/Deep Learning.canvas",
                 "viewState": {
-                  "x": -3245.7195349095596,
-                  "y": 1338.9677907884268,
-                  "zoom": -0.3333333333333332
+                  "x": 470,
+                  "y": 973.5,
+                  "zoom": -3.9170489066549794
                 }
               },
               "icon": "lucide-layout-dashboard",
@@ -206,6 +206,18 @@
   },
   "active": "5654f4ab036589b1",
   "lastOpenFiles": [
+    "LLM/2-Source/7-Machine Learning/Machine Learning.canvas",
+    "LLM/2-Source/8-Deep Learning/NLP.canvas",
+    "LLM/2-Source/8-Deep Learning/MNIST：深度学习界的 Hello World.md",
+    "LLM/2-Source/8-Deep Learning/Deep Learning.canvas",
+    "LLM/2-Source/8-Deep Learning/从函数到Transformer.md",
+    "LLM/2-Source/7-Machine Learning/Data Pre-Processing.md",
+    "LLM/2-Source/11-LangChain/LangChain.canvas",
+    "LLM/2-Source/12-LangGraph/未命名.canvas",
+    "LLM/2-Source/9-RAG/RAG.canvas",
+    "LLM/2-Source/8-Deep Learning/OpenCV.canvas",
+    "image/Pasted image 20261103085227.png",
+    "image/Pasted image 20261103083655.png",
     "image/Pasted image 20261102171842.png",
     "image/Pasted image 20261102171640.png",
     "image/Pasted image 20261102170456.png",
@@ -214,14 +226,9 @@
     "image/Pasted image 20261102160454.png",
     "image/Pasted image 20261102155734.png",
     "image/Pasted image 20261102155347.png",
-    "image/Pasted image 20261102154103.png",
-    "image/Pasted image 20261102152939.png",
     "LLM/4-Book/Hello算法Python版—动画图解、一键运行的数据结构与算法教程 (靳宇栋) (z-library.sk, 1lib.sk, z-lib.sk).pdf",
     "LLM/4-Book/流畅的 Python (Luciano Ramalho) (z-library.sk, 1lib.sk, z-lib.sk).pdf",
     "LLM/4-Book/机器学习的数学 (雷明) (z-library.sk, 1lib.sk, z-lib.sk).pdf",
-    "LLM/2-Source/8-Deep Learning/Deep Learning.canvas",
-    "image/Pasted image 20261102120608.png",
-    "LLM/2-Source/7-Machine Learning/Machine Learning.canvas",
     "LLM/Karpathy_LLM_训练管线知识图谱.canvas",
     "LLM/4-Book/人工智能 一种现代的方法 (罗素 诺维格) (z-library.sk, 1lib.sk, z-lib.sk).pdf",
     "LLM/4-Book/AI-Agents-in-Depth-zh-CN.pdf",
@@ -241,7 +248,6 @@
     "LLM/2-Source/2-Python Advanced/3-File Operations.md",
     "LLM/2-Source/7-Machine Learning/监督学习.md",
     "LLM/2-Source/2-Python Advanced/2-Modules and Packages.md",
-    "LLM/2-Source/8-Deep Learning/MNIST：深度学习界的 Hello World.md",
     "LLM/2-Source/2-Python Advanced/4-Exception Handing.md",
     "未命名.md",
     "Full_Stack/Zero-to-FullStack.md",
@@ -253,14 +259,7 @@
     "Article/开发者低估了AI的能力！Claude工程负责人：用旧方法指挥Agent，开发者们反倒成了“传送带”.md",
     "LLM/2-Source/4-MySQL/MySQL Mind.canvas",
     "LLM/2-Source/4-MySQL/0-README.md",
-    "LLM/2-Source/5-Prompt Engineering/Prompt Engineering Mind.canvas",
     "LLM/2-Source/6-Agent/大模型应用开发.md",
-    "LLM/2-Source/7-Machine Learning/Data Pre-Processing.md",
-    "LLM/2-Source/7-Machine Learning/模型评估与优化.md",
-    "README.md",
-    "LLM/Data analysis/Data analysis.canvas",
-    "Karpathy_LLM_训练管线知识图谱.canvas",
-    "LLM/2-Source/3-Linux/Linux Mind.canvas",
-    "LLM/2-Source/0-Git/Git Mind.canvas"
+    "LLM/2-Source/7-Machine Learning/模型评估与优化.md"
   ]
 }
