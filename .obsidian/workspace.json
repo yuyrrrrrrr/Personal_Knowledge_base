@@ -4,21 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "274e3305e935f9bf",
+        "id": "88b940729201fb71",
         "type": "tabs",
         "children": [
           {
-            "id": "5654f4ab036589b1",
+            "id": "81348c4db3d7c14a",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "LLM/2-Source/8-Deep Learning/Transformer 前置概念回顾.md",
-                "mode": "source",
-                "source": false
+                "file": "LLM/2-Source/8-Deep Learning/Deep Learning.canvas",
+                "viewState": {
+                  "x": 470,
+                  "y": 973.5,
+                  "zoom": -3.6673728836762045
+                }
               },
-              "icon": "lucide-file",
-              "title": "Transformer 前置概念回顾"
+              "icon": "lucide-layout-dashboard",
+              "title": "Deep Learning"
             }
           }
         ]
@@ -201,17 +204,17 @@
       "bases:新建数据库": false
     }
   },
-  "active": "5654f4ab036589b1",
+  "active": "81348c4db3d7c14a",
   "lastOpenFiles": [
+    "LLM/2-Source/7-Machine Learning/Machine Learning.canvas",
     "LLM/2-Source/8-Deep Learning/Deep Learning.canvas",
-    "LLM/2-Source/8-Deep Learning/MNIST：深度学习界的 Hello World.md",
     "LLM/2-Source/8-Deep Learning/Transformer 前置概念回顾.md",
+    "LLM/2-Source/8-Deep Learning/MNIST：深度学习界的 Hello World.md",
     "LLM/2-Source/8-Deep Learning/从函数到Transformer.md",
     "LLM/2-Source/3-Linux/Linux Mind.canvas",
     "LLM/2-Source/3-Linux/学习总结.md",
     "LLM/2-Source/4-MySQL/MySQL Mind.canvas",
     "LLM/2-Source/5-Prompt Engineering/Prompt Engineering Mind.canvas",
-    "LLM/2-Source/7-Machine Learning/Machine Learning.canvas",
     "LLM/2-Source/6-Agent/Agent.canvas",
     "LLM/2-Source/6-Agent/大模型应用开发.md",
     "LLM/2-Source/6-Agent/WorkFlow.canvas",
