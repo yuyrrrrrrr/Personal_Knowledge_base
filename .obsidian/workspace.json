@@ -15,9 +15,9 @@
               "state": {
                 "file": "LLM/2-Source/8-Deep Learning/Deep Learning.canvas",
                 "viewState": {
-                  "x": 470,
-                  "y": 973.5,
-                  "zoom": -3.6673728836762045
+                  "x": -2756.1882243428868,
+                  "y": -944.3420301375124,
+                  "zoom": -1.157688418212664
                 }
               },
               "icon": "lucide-layout-dashboard",
@@ -86,7 +86,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 336.16668701171875
   },
   "right": {
     "id": "cffc2ac093d9b5b0",
@@ -206,11 +206,19 @@
   },
   "active": "81348c4db3d7c14a",
   "lastOpenFiles": [
-    "LLM/2-Source/7-Machine Learning/Machine Learning.canvas",
+    "LLM/2-Source/8-Deep Learning/NLP概述.md",
     "LLM/2-Source/8-Deep Learning/Deep Learning.canvas",
-    "LLM/2-Source/8-Deep Learning/Transformer 前置概念回顾.md",
+    "LLM/2-Source/8-Deep Learning/注意力机制.md",
+    "LLM/2-Source/8-Deep Learning/Transformer/从函数到Transformer.md",
+    "LLM/2-Source/8-Deep Learning/Transformer/2-手搓 Mini Transformer前需要了解的编码器和解码器.md",
+    "LLM/2-Source/8-Deep Learning/Transformer/0-Transformer 前置概念回顾.md",
+    "LLM/2-Source/8-Deep Learning/Transformer/1-Transformer.md",
+    "LLM/从零开始的AI学习之路.canvas",
+    "LLM/5-Guide/transformers-docs-zh.pdf",
+    "LLM/5-Guide",
+    "LLM/2-Source/8-Deep Learning/Transformer",
+    "LLM/2-Source/7-Machine Learning/Machine Learning.canvas",
     "LLM/2-Source/8-Deep Learning/MNIST：深度学习界的 Hello World.md",
-    "LLM/2-Source/8-Deep Learning/从函数到Transformer.md",
     "LLM/2-Source/3-Linux/Linux Mind.canvas",
     "LLM/2-Source/3-Linux/学习总结.md",
     "LLM/2-Source/4-MySQL/MySQL Mind.canvas",
@@ -228,7 +236,6 @@
     "LLM/2-Source/8-Deep Learning/NLP.canvas",
     "LLM/2-Source/7-Machine Learning/Data Pre-Processing.md",
     "LLM/2-Source/11-LangChain/LangChain.canvas",
-    "LLM/2-Source/12-LangGraph/未命名.canvas",
     "image/Pasted image 20261103085227.png",
     "image/Pasted image 20261103083655.png",
     "image/Pasted image 20261102171842.png",
@@ -246,9 +253,6 @@
     "LLM/Contextual Design Mechanism.md",
     "LLM/Deep Dive into LLMs like ChatGPT.md",
     "LLM/Official Document.md",
-    "Data_Base.base",
-    "LLM/3-Thesis/Basic/Attention-is-all-your-need-ZH.pdf",
-    "LLM/3-Thesis/Basic/BERT.pdf",
     "LLM/2-Source/2-Python Advanced/3-File Operations.md",
     "LLM/2-Source/7-Machine Learning/监督学习.md",
     "LLM/2-Source/2-Python Advanced/2-Modules and Packages.md",
@@ -256,10 +260,6 @@
     "未命名.md",
     "Full_Stack/Zero-to-FullStack.md",
     "MD语法.md",
-    "Article/玩具 Demo 到稳定交付：个人开发者的 3 条 AI 编程工程铁律.md",
-    "Article/We-dont-have-the-nouns-yet.md",
-    "Article/Andrew Karpathy使用AI的四个层级.md",
-    "Article/告别 Agent 研发失控：vibe-workflow 实战指南.md",
-    "Article/开发者低估了AI的能力！Claude工程负责人：用旧方法指挥Agent，开发者们反倒成了“传送带”.md"
+    "Article/玩具 Demo 到稳定交付：个人开发者的 3 条 AI 编程工程铁律.md"
   ]
 }
