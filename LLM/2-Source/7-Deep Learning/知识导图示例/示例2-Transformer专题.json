@@ -1,0 +1,602 @@
+{
+  "version": 2,
+  "meta": {
+    "title": "Transformer 专题知识导图",
+    "language": "zh-CN",
+    "purpose": "覆盖输入表示、Attention、Encoder、Decoder、训练生成与关键对比"
+  },
+  "layout": {
+    "mode": "split",
+    "maxFirstLevel": 7,
+    "maxDepth": 5,
+    "leftTypes": [
+      "concept",
+      "principle",
+      "limit",
+      "pitfall",
+      "compare",
+      "question",
+      "summary",
+      "theme"
+    ],
+    "rightTypes": [
+      "function",
+      "method",
+      "command",
+      "step",
+      "example",
+      "config",
+      "reference"
+    ]
+  },
+  "nodes": [
+    {
+      "id": "root",
+      "text": "Transformer 专题知识导图",
+      "type": "root",
+      "importance": 5,
+      "recall": "能否按输入、注意力、Encoder、Decoder、训练生成解释完整数据流"
+    },
+    {
+      "id": "input",
+      "text": "输入表示",
+      "type": "theme",
+      "importance": 5,
+      "recall": "Token 如何变成带位置信息的向量表示",
+      "side": "right"
+    },
+    {
+      "id": "attn",
+      "text": "Attention 核心",
+      "type": "theme",
+      "importance": 5,
+      "recall": "Q、K、V 如何计算注意力输出",
+      "side": "left"
+    },
+    {
+      "id": "encoder",
+      "text": "Encoder",
+      "type": "theme",
+      "importance": 4,
+      "recall": "Encoder 如何逐层更新序列表示",
+      "side": "right"
+    },
+    {
+      "id": "decoder",
+      "text": "Decoder",
+      "type": "theme",
+      "importance": 5,
+      "recall": "Decoder 如何结合已生成内容和源序列",
+      "side": "right"
+    },
+    {
+      "id": "training",
+      "text": "训练与生成",
+      "type": "theme",
+      "importance": 4,
+      "recall": "训练为什么能并行，生成为什么串行",
+      "side": "left"
+    },
+    {
+      "id": "compare",
+      "text": "对比与易错",
+      "type": "theme",
+      "importance": 5,
+      "recall": "三类注意力、BN/LN、训练/推理的关键区别",
+      "side": "left"
+    },
+    {
+      "id": "input-token",
+      "text": "Token 与词表",
+      "type": "step",
+      "importance": 3
+    },
+    {
+      "id": "input-embed",
+      "text": "Embedding",
+      "type": "concept",
+      "importance": 4,
+      "recall": "离散 Token 如何变成可学习的稠密向量"
+    },
+    {
+      "id": "input-pos",
+      "text": "位置编码",
+      "type": "principle",
+      "importance": 5,
+      "recall": "为什么 Attention 需要位置编码，正弦编码如何表达相对位置"
+    },
+    {
+      "id": "input-mask",
+      "text": "Mask",
+      "type": "concept",
+      "importance": 4,
+      "recall": "Padding Mask 和 Causal Mask 分别遮挡什么"
+    },
+    {
+      "id": "input-pos-add",
+      "text": "位置向量相加",
+      "type": "concept",
+      "importance": 3
+    },
+    {
+      "id": "input-rope",
+      "text": "RoPE",
+      "type": "example",
+      "importance": 3
+    },
+    {
+      "id": "attn-qkv",
+      "text": "Q / K / V",
+      "type": "concept",
+      "importance": 5,
+      "recall": "Q、K、V 分别来自哪里，各自承担什么角色"
+    },
+    {
+      "id": "attn-score",
+      "text": "QK^T 与缩放",
+      "type": "step",
+      "importance": 4,
+      "recall": "为什么要除以 sqrt(d_k)"
+    },
+    {
+      "id": "attn-weight",
+      "text": "Softmax 加权汇总",
+      "type": "step",
+      "importance": 4,
+      "recall": "注意力权重如何作用到 Value 上"
+    },
+    {
+      "id": "attn-multi",
+      "text": "多头注意力",
+      "type": "principle",
+      "importance": 5,
+      "recall": "多个 Head 为什么要拆分表示空间"
+    },
+    {
+      "id": "attn-types",
+      "text": "三类注意力",
+      "type": "compare",
+      "importance": 5,
+      "recall": "Self、Masked、Cross Attention 的 Q/K/V 来源和掩码差异"
+    },
+    {
+      "id": "attn-proj",
+      "text": "线性投影",
+      "type": "concept",
+      "importance": 3
+    },
+    {
+      "id": "attn-head",
+      "text": "子空间",
+      "type": "concept",
+      "importance": 3
+    },
+    {
+      "id": "attn-concat",
+      "text": "拼接与输出映射",
+      "type": "step",
+      "importance": 3
+    },
+    {
+      "id": "enc-self",
+      "text": "Self-Attention",
+      "type": "concept",
+      "importance": 3
+    },
+    {
+      "id": "enc-addnorm",
+      "text": "Add & Norm",
+      "type": "step",
+      "importance": 4,
+      "recall": "残差相加和 LayerNorm 的顺序与作用是什么"
+    },
+    {
+      "id": "enc-ffn",
+      "text": "逐位置 FFN",
+      "type": "principle",
+      "importance": 4,
+      "recall": "FFN 为什么对每个 Token 独立处理"
+    },
+    {
+      "id": "enc-stack",
+      "text": "多层堆叠",
+      "type": "step",
+      "importance": 4,
+      "recall": "多层 Encoder 输出的表示发生了什么变化"
+    },
+    {
+      "id": "enc-ln",
+      "text": "LayerNorm",
+      "type": "concept",
+      "importance": 3
+    },
+    {
+      "id": "dec-masked",
+      "text": "Masked Self-Attention",
+      "type": "concept",
+      "importance": 5,
+      "recall": "Decoder 如何避免看到未来 Token"
+    },
+    {
+      "id": "dec-cross",
+      "text": "Cross-Attention",
+      "type": "concept",
+      "importance": 5,
+      "recall": "Cross-Attention 的 Q 来自哪里，K/V 来自哪里"
+    },
+    {
+      "id": "dec-ffn",
+      "text": "Decoder FFN",
+      "type": "concept",
+      "importance": 3
+    },
+    {
+      "id": "dec-output",
+      "text": "Linear + Softmax",
+      "type": "step",
+      "importance": 4,
+      "recall": "隐藏表示如何变成下一个 Token 的概率分布"
+    },
+    {
+      "id": "dec-generate",
+      "text": "自回归生成",
+      "type": "step",
+      "importance": 5,
+      "recall": "生成一个 Token 的完整步骤是什么"
+    },
+    {
+      "id": "dec-kvcache",
+      "text": "KV Cache",
+      "type": "concept",
+      "importance": 4,
+      "recall": "推理时缓存什么，为什么不缓存 Q"
+    },
+    {
+      "id": "train-teacher",
+      "text": "Teacher Forcing",
+      "type": "concept",
+      "importance": 4,
+      "recall": "训练时 Decoder 的输入来自真实标签还是模型预测"
+    },
+    {
+      "id": "train-parallel",
+      "text": "并行训练 vs 串行推理",
+      "type": "compare",
+      "importance": 5,
+      "recall": "为什么训练可以一次算完整句，推理却必须逐 Token"
+    },
+    {
+      "id": "train-causal",
+      "text": "因果掩码",
+      "type": "concept",
+      "importance": 3
+    },
+    {
+      "id": "train-decoding",
+      "text": "解码策略",
+      "type": "compare",
+      "importance": 4,
+      "recall": "Greedy、Top-K、Top-P 的候选范围如何变化"
+    },
+    {
+      "id": "cmp-attn",
+      "text": "三类注意力对比",
+      "type": "compare",
+      "importance": 4,
+      "recall": "输入来源、掩码和计算过程分别有何不同"
+    },
+    {
+      "id": "cmp-bnln",
+      "text": "BN vs LN",
+      "type": "compare",
+      "importance": 4,
+      "recall": "统计维度、batch 依赖和适用场景有什么区别"
+    },
+    {
+      "id": "cmp-scale",
+      "text": "不缩放的问题",
+      "type": "pitfall",
+      "importance": 4,
+      "recall": "为什么缩放前点积容易让 Softmax 饱和",
+      "note": "现象：注意力分布过尖、梯度变小\n原因：维度增大后点积方差变大\n正确：除以 sqrt(d_k)"
+    },
+    {
+      "id": "cmp-residual",
+      "text": "残差连接",
+      "type": "concept",
+      "importance": 3
+    }
+  ],
+  "edges": [
+    {
+      "from": "root",
+      "to": "input",
+      "type": "tree"
+    },
+    {
+      "from": "root",
+      "to": "attn",
+      "type": "tree"
+    },
+    {
+      "from": "root",
+      "to": "encoder",
+      "type": "tree"
+    },
+    {
+      "from": "root",
+      "to": "decoder",
+      "type": "tree"
+    },
+    {
+      "from": "root",
+      "to": "training",
+      "type": "tree"
+    },
+    {
+      "from": "root",
+      "to": "compare",
+      "type": "tree"
+    },
+    {
+      "from": "input",
+      "to": "input-token",
+      "type": "tree"
+    },
+    {
+      "from": "input",
+      "to": "input-embed",
+      "type": "tree"
+    },
+    {
+      "from": "input",
+      "to": "input-pos",
+      "type": "tree"
+    },
+    {
+      "from": "input",
+      "to": "input-mask",
+      "type": "tree"
+    },
+    {
+      "from": "input-pos",
+      "to": "input-pos-add",
+      "type": "tree"
+    },
+    {
+      "from": "input-pos",
+      "to": "input-rope",
+      "type": "tree"
+    },
+    {
+      "from": "attn",
+      "to": "attn-qkv",
+      "type": "tree"
+    },
+    {
+      "from": "attn",
+      "to": "attn-score",
+      "type": "tree"
+    },
+    {
+      "from": "attn",
+      "to": "attn-weight",
+      "type": "tree"
+    },
+    {
+      "from": "attn",
+      "to": "attn-multi",
+      "type": "tree"
+    },
+    {
+      "from": "attn",
+      "to": "attn-types",
+      "type": "tree"
+    },
+    {
+      "from": "attn-qkv",
+      "to": "attn-proj",
+      "type": "tree"
+    },
+    {
+      "from": "attn-multi",
+      "to": "attn-head",
+      "type": "tree"
+    },
+    {
+      "from": "attn-multi",
+      "to": "attn-concat",
+      "type": "tree"
+    },
+    {
+      "from": "encoder",
+      "to": "enc-self",
+      "type": "tree"
+    },
+    {
+      "from": "encoder",
+      "to": "enc-addnorm",
+      "type": "tree"
+    },
+    {
+      "from": "encoder",
+      "to": "enc-ffn",
+      "type": "tree"
+    },
+    {
+      "from": "encoder",
+      "to": "enc-stack",
+      "type": "tree"
+    },
+    {
+      "from": "enc-addnorm",
+      "to": "enc-ln",
+      "type": "tree"
+    },
+    {
+      "from": "decoder",
+      "to": "dec-masked",
+      "type": "tree"
+    },
+    {
+      "from": "decoder",
+      "to": "dec-cross",
+      "type": "tree"
+    },
+    {
+      "from": "decoder",
+      "to": "dec-ffn",
+      "type": "tree"
+    },
+    {
+      "from": "decoder",
+      "to": "dec-output",
+      "type": "tree"
+    },
+    {
+      "from": "decoder",
+      "to": "dec-generate",
+      "type": "tree"
+    },
+    {
+      "from": "dec-generate",
+      "to": "dec-kvcache",
+      "type": "tree"
+    },
+    {
+      "from": "training",
+      "to": "train-teacher",
+      "type": "tree"
+    },
+    {
+      "from": "training",
+      "to": "train-parallel",
+      "type": "tree"
+    },
+    {
+      "from": "training",
+      "to": "train-causal",
+      "type": "tree"
+    },
+    {
+      "from": "training",
+      "to": "train-decoding",
+      "type": "tree"
+    },
+    {
+      "from": "compare",
+      "to": "cmp-attn",
+      "type": "tree"
+    },
+    {
+      "from": "compare",
+      "to": "cmp-bnln",
+      "type": "tree"
+    },
+    {
+      "from": "compare",
+      "to": "cmp-scale",
+      "type": "tree"
+    },
+    {
+      "from": "compare",
+      "to": "cmp-residual",
+      "type": "tree"
+    },
+    {
+      "from": "input-pos",
+      "to": "attn-score",
+      "type": "depends",
+      "label": "补充顺序"
+    },
+    {
+      "from": "attn-qkv",
+      "to": "attn-score",
+      "type": "sequence",
+      "label": "先投影",
+      "order": 1
+    },
+    {
+      "from": "attn-score",
+      "to": "attn-weight",
+      "type": "sequence",
+      "label": "再汇总",
+      "order": 2
+    },
+    {
+      "from": "attn-weight",
+      "to": "enc-self",
+      "type": "implements",
+      "label": "构成自注意力"
+    },
+    {
+      "from": "enc-self",
+      "to": "attn-multi",
+      "type": "depends",
+      "label": "可扩展多头"
+    },
+    {
+      "from": "enc-stack",
+      "to": "dec-cross",
+      "type": "depends",
+      "label": "提供 K/V"
+    },
+    {
+      "from": "train-teacher",
+      "to": "dec-masked",
+      "type": "depends",
+      "label": "训练输入"
+    },
+    {
+      "from": "dec-masked",
+      "to": "dec-generate",
+      "type": "sequence",
+      "label": "生成步骤",
+      "order": 1
+    },
+    {
+      "from": "dec-cross",
+      "to": "dec-generate",
+      "type": "sequence",
+      "label": "融合源序列",
+      "order": 2
+    },
+    {
+      "from": "dec-kvcache",
+      "to": "dec-generate",
+      "type": "implements",
+      "label": "加速推理"
+    },
+    {
+      "from": "cmp-bnln",
+      "to": "enc-addnorm",
+      "type": "related",
+      "label": "归一化选择"
+    },
+    {
+      "from": "cmp-scale",
+      "to": "attn-score",
+      "type": "limit",
+      "label": "缩放原因"
+    },
+    {
+      "from": "cmp-attn",
+      "to": "attn-types",
+      "type": "related",
+      "label": "同一组对比"
+    },
+    {
+      "from": "enc-ffn",
+      "to": "dec-ffn",
+      "type": "related",
+      "label": "逐位置加工"
+    },
+    {
+      "from": "input-mask",
+      "to": "dec-masked",
+      "type": "related",
+      "label": "掩码约束"
+    }
+  ],
+  "groups": []
+}

@@ -1,0 +1,717 @@
+{
+  "version": 2,
+  "meta": {
+    "title": "深度学习基础总览",
+    "language": "zh-CN",
+    "purpose": "覆盖模型结构、训练机制、稳定性、CNN、实战流程和易错点"
+  },
+  "layout": {
+    "mode": "split",
+    "maxFirstLevel": 7,
+    "maxDepth": 5,
+    "leftTypes": [
+      "concept",
+      "principle",
+      "limit",
+      "pitfall",
+      "compare",
+      "question",
+      "summary",
+      "theme"
+    ],
+    "rightTypes": [
+      "function",
+      "method",
+      "command",
+      "step",
+      "example",
+      "config",
+      "reference"
+    ]
+  },
+  "nodes": [
+    {
+      "id": "root",
+      "text": "深度学习基础总览",
+      "type": "root",
+      "importance": 5,
+      "recall": "能否按模型、训练、稳定性、CNN 和实战流程讲清一条学习链路"
+    },
+    {
+      "id": "model",
+      "text": "模型结构",
+      "type": "theme",
+      "importance": 5,
+      "recall": "模型如何从输入得到预测",
+      "side": "left"
+    },
+    {
+      "id": "train",
+      "text": "训练机制",
+      "type": "theme",
+      "importance": 5,
+      "recall": "参数是如何被梯度下降更新的",
+      "side": "right"
+    },
+    {
+      "id": "stability",
+      "text": "训练稳定性",
+      "type": "theme",
+      "importance": 5,
+      "recall": "初始化、归一化和正则化分别解决什么问题",
+      "side": "left"
+    },
+    {
+      "id": "cnn",
+      "text": "卷积神经网络",
+      "type": "theme",
+      "importance": 5,
+      "recall": "CNN 为什么适合图像，核心组件有哪些",
+      "side": "right"
+    },
+    {
+      "id": "practice",
+      "text": "实战流程",
+      "type": "theme",
+      "importance": 4,
+      "recall": "从数据到模型评估的最短闭环是什么",
+      "side": "right"
+    },
+    {
+      "id": "pitfalls",
+      "text": "常见错误",
+      "type": "theme",
+      "importance": 5,
+      "recall": "遇到训练异常时先检查哪些条件",
+      "side": "left"
+    },
+    {
+      "id": "model-mlp",
+      "text": "感知机与 MLP",
+      "type": "concept",
+      "importance": 4,
+      "recall": "输入层、隐藏层、输出层各自负责什么"
+    },
+    {
+      "id": "model-forward",
+      "text": "前向传播",
+      "type": "principle",
+      "importance": 4,
+      "recall": "前向传播按什么顺序计算张量和损失"
+    },
+    {
+      "id": "model-activation",
+      "text": "激活函数",
+      "type": "concept",
+      "importance": 4,
+      "recall": "为什么没有非线性激活，多层网络会退化成一层"
+    },
+    {
+      "id": "model-loss",
+      "text": "损失函数",
+      "type": "concept",
+      "importance": 4,
+      "recall": "MSE 与交叉熵分别适用于什么任务"
+    },
+    {
+      "id": "model-neuron",
+      "text": "线性变换 + 激活",
+      "type": "principle",
+      "importance": 3
+    },
+    {
+      "id": "model-matrix",
+      "text": "整层矩阵化",
+      "type": "principle",
+      "importance": 3
+    },
+    {
+      "id": "model-graph",
+      "text": "计算图",
+      "type": "concept",
+      "importance": 4,
+      "recall": "为什么计算图能复用中间结果并支持自动求导"
+    },
+    {
+      "id": "model-relu",
+      "text": "ReLU",
+      "type": "example",
+      "importance": 3
+    },
+    {
+      "id": "model-sigmoid",
+      "text": "Sigmoid 饱和",
+      "type": "limit",
+      "importance": 3,
+      "note": "条件：输入过大或过小\n影响：输出饱和、梯度接近 0\n替代：ReLU、GELU 等激活函数"
+    },
+    {
+      "id": "model-ce",
+      "text": "Softmax + CrossEntropy",
+      "type": "example",
+      "importance": 3
+    },
+    {
+      "id": "train-backprop",
+      "text": "反向传播",
+      "type": "principle",
+      "importance": 5,
+      "recall": "链式法则如何沿计算图反向计算每个参数的梯度"
+    },
+    {
+      "id": "train-gd",
+      "text": "梯度下降",
+      "type": "principle",
+      "importance": 4,
+      "recall": "参数沿负梯度方向更新时，学习率控制什么"
+    },
+    {
+      "id": "train-optimizer",
+      "text": "优化器演化",
+      "type": "compare",
+      "importance": 4,
+      "recall": "SGD、Momentum、AdamW 的关键差异是什么"
+    },
+    {
+      "id": "train-lr",
+      "text": "学习率调度",
+      "type": "step",
+      "importance": 4,
+      "recall": "学习率过大和过小分别会出现什么训练现象"
+    },
+    {
+      "id": "train-chain",
+      "text": "链式法则",
+      "type": "concept",
+      "importance": 3
+    },
+    {
+      "id": "train-autograd",
+      "text": "自动微分",
+      "type": "step",
+      "importance": 3
+    },
+    {
+      "id": "train-sgd",
+      "text": "Batch / SGD / Mini-batch",
+      "type": "compare",
+      "importance": 4,
+      "recall": "三种梯度估计方式的稳定性与成本如何取舍"
+    },
+    {
+      "id": "train-adamw",
+      "text": "AdamW",
+      "type": "concept",
+      "importance": 3
+    },
+    {
+      "id": "train-warmup",
+      "text": "Warmup + Cosine",
+      "type": "example",
+      "importance": 3
+    },
+    {
+      "id": "stab-init",
+      "text": "参数初始化",
+      "type": "concept",
+      "importance": 4,
+      "recall": "Xavier 和 He 初始化分别在什么场景使用"
+    },
+    {
+      "id": "stab-norm",
+      "text": "归一化",
+      "type": "compare",
+      "importance": 4,
+      "recall": "BatchNorm 与 LayerNorm 的统计维度和适用场景有什么区别"
+    },
+    {
+      "id": "stab-reg",
+      "text": "正则化",
+      "type": "principle",
+      "importance": 4,
+      "recall": "L1、L2、Dropout、EarlyStopping 各自限制什么"
+    },
+    {
+      "id": "stab-gradient",
+      "text": "梯度消失与爆炸",
+      "type": "pitfall",
+      "importance": 5,
+      "recall": "现象、原因和常见应对分别是什么",
+      "note": "现象：深层网络梯度接近 0 或数值爆炸\n原因：链式连乘与不稳定的激活/初始化\n正确：合理初始化、归一化、残差连接、梯度裁剪"
+    },
+    {
+      "id": "stab-xavier",
+      "text": "Xavier",
+      "type": "example",
+      "importance": 3
+    },
+    {
+      "id": "stab-he",
+      "text": "He",
+      "type": "example",
+      "importance": 3
+    },
+    {
+      "id": "stab-bn",
+      "text": "BatchNorm",
+      "type": "concept",
+      "importance": 3
+    },
+    {
+      "id": "stab-ln",
+      "text": "LayerNorm",
+      "type": "concept",
+      "importance": 3
+    },
+    {
+      "id": "stab-dropout",
+      "text": "Dropout",
+      "type": "concept",
+      "importance": 3
+    },
+    {
+      "id": "stab-early",
+      "text": "Early Stopping",
+      "type": "step",
+      "importance": 3
+    },
+    {
+      "id": "cnn-conv",
+      "text": "卷积层",
+      "type": "principle",
+      "importance": 5,
+      "recall": "卷积核、stride、padding 如何共同决定输出尺寸"
+    },
+    {
+      "id": "cnn-pool",
+      "text": "池化层",
+      "type": "concept",
+      "importance": 3
+    },
+    {
+      "id": "cnn-receptive",
+      "text": "感受野",
+      "type": "concept",
+      "importance": 4,
+      "recall": "层数、卷积核大小和 stride 如何影响感受野"
+    },
+    {
+      "id": "cnn-residual",
+      "text": "残差连接",
+      "type": "principle",
+      "importance": 5,
+      "recall": "残差连接为什么能改善深层网络的梯度和退化问题"
+    },
+    {
+      "id": "cnn-backbone",
+      "text": "经典骨干网络",
+      "type": "example",
+      "importance": 3
+    },
+    {
+      "id": "cnn-kernel",
+      "text": "卷积核与参数共享",
+      "type": "concept",
+      "importance": 3
+    },
+    {
+      "id": "cnn-shortcut",
+      "text": "捷径分支",
+      "type": "concept",
+      "importance": 3
+    },
+    {
+      "id": "practice-data",
+      "text": "数据准备",
+      "type": "step",
+      "importance": 3
+    },
+    {
+      "id": "practice-model",
+      "text": "模型搭建",
+      "type": "step",
+      "importance": 3
+    },
+    {
+      "id": "practice-loop",
+      "text": "训练循环",
+      "type": "step",
+      "importance": 4,
+      "recall": "训练循环的四步和每步职责是什么"
+    },
+    {
+      "id": "practice-eval",
+      "text": "验证与早停",
+      "type": "step",
+      "importance": 4,
+      "recall": "如何根据验证集指标选择模型并决定何时停止"
+    },
+    {
+      "id": "practice-save",
+      "text": "保存与加载",
+      "type": "step",
+      "importance": 3
+    },
+    {
+      "id": "pitfall-overfit",
+      "text": "过拟合",
+      "type": "pitfall",
+      "importance": 4,
+      "recall": "训练集很好、验证集变差说明什么",
+      "note": "现象：训练指标持续提升，验证指标下降\n原因：模型记住了训练集噪声\n正确：正则化、数据增强、早停、增加数据"
+    },
+    {
+      "id": "pitfall-lr",
+      "text": "学习率失配",
+      "type": "pitfall",
+      "importance": 4,
+      "recall": "loss 震荡或下降过慢时先检查什么",
+      "note": "现象：loss 震荡、发散或几乎不下降\n原因：学习率过大或过小\n正确：先做学习率扫描，再使用 Warmup/Cosine 等调度"
+    },
+    {
+      "id": "pitfall-init",
+      "text": "初始化不当",
+      "type": "pitfall",
+      "importance": 3,
+      "note": "现象：训练初期梯度异常\n原因：初始化尺度过大或过小\n正确：使用 Xavier/He 初始化"
+    },
+    {
+      "id": "pitfall-inplace",
+      "text": "in-place 破坏计算图",
+      "type": "pitfall",
+      "importance": 4,
+      "recall": "为什么叶子张量上的 in-place 操作可能让 backward 报错",
+      "note": "现象：backward 报叶子变量被就地修改\n原因：计算图记录的值被原地改写\n正确：避免对 requires_grad 的叶子张量做 in-place"
+    }
+  ],
+  "edges": [
+    {
+      "from": "root",
+      "to": "model",
+      "type": "tree"
+    },
+    {
+      "from": "root",
+      "to": "train",
+      "type": "tree"
+    },
+    {
+      "from": "root",
+      "to": "stability",
+      "type": "tree"
+    },
+    {
+      "from": "root",
+      "to": "cnn",
+      "type": "tree"
+    },
+    {
+      "from": "root",
+      "to": "practice",
+      "type": "tree"
+    },
+    {
+      "from": "root",
+      "to": "pitfalls",
+      "type": "tree"
+    },
+    {
+      "from": "model",
+      "to": "model-mlp",
+      "type": "tree"
+    },
+    {
+      "from": "model",
+      "to": "model-forward",
+      "type": "tree"
+    },
+    {
+      "from": "model",
+      "to": "model-activation",
+      "type": "tree"
+    },
+    {
+      "from": "model",
+      "to": "model-loss",
+      "type": "tree"
+    },
+    {
+      "from": "model-mlp",
+      "to": "model-neuron",
+      "type": "tree"
+    },
+    {
+      "from": "model-mlp",
+      "to": "model-matrix",
+      "type": "tree"
+    },
+    {
+      "from": "model-forward",
+      "to": "model-graph",
+      "type": "tree"
+    },
+    {
+      "from": "model-activation",
+      "to": "model-relu",
+      "type": "tree"
+    },
+    {
+      "from": "model-activation",
+      "to": "model-sigmoid",
+      "type": "tree"
+    },
+    {
+      "from": "model-loss",
+      "to": "model-ce",
+      "type": "tree"
+    },
+    {
+      "from": "train",
+      "to": "train-backprop",
+      "type": "tree"
+    },
+    {
+      "from": "train",
+      "to": "train-gd",
+      "type": "tree"
+    },
+    {
+      "from": "train",
+      "to": "train-optimizer",
+      "type": "tree"
+    },
+    {
+      "from": "train",
+      "to": "train-lr",
+      "type": "tree"
+    },
+    {
+      "from": "train-backprop",
+      "to": "train-chain",
+      "type": "tree"
+    },
+    {
+      "from": "train-backprop",
+      "to": "train-autograd",
+      "type": "tree"
+    },
+    {
+      "from": "train-gd",
+      "to": "train-sgd",
+      "type": "tree"
+    },
+    {
+      "from": "train-optimizer",
+      "to": "train-adamw",
+      "type": "tree"
+    },
+    {
+      "from": "train-lr",
+      "to": "train-warmup",
+      "type": "tree"
+    },
+    {
+      "from": "stability",
+      "to": "stab-init",
+      "type": "tree"
+    },
+    {
+      "from": "stability",
+      "to": "stab-norm",
+      "type": "tree"
+    },
+    {
+      "from": "stability",
+      "to": "stab-reg",
+      "type": "tree"
+    },
+    {
+      "from": "stability",
+      "to": "stab-gradient",
+      "type": "tree"
+    },
+    {
+      "from": "stab-init",
+      "to": "stab-xavier",
+      "type": "tree"
+    },
+    {
+      "from": "stab-init",
+      "to": "stab-he",
+      "type": "tree"
+    },
+    {
+      "from": "stab-norm",
+      "to": "stab-bn",
+      "type": "tree"
+    },
+    {
+      "from": "stab-norm",
+      "to": "stab-ln",
+      "type": "tree"
+    },
+    {
+      "from": "stab-reg",
+      "to": "stab-dropout",
+      "type": "tree"
+    },
+    {
+      "from": "stab-reg",
+      "to": "stab-early",
+      "type": "tree"
+    },
+    {
+      "from": "cnn",
+      "to": "cnn-conv",
+      "type": "tree"
+    },
+    {
+      "from": "cnn",
+      "to": "cnn-pool",
+      "type": "tree"
+    },
+    {
+      "from": "cnn",
+      "to": "cnn-receptive",
+      "type": "tree"
+    },
+    {
+      "from": "cnn",
+      "to": "cnn-residual",
+      "type": "tree"
+    },
+    {
+      "from": "cnn",
+      "to": "cnn-backbone",
+      "type": "tree"
+    },
+    {
+      "from": "cnn-conv",
+      "to": "cnn-kernel",
+      "type": "tree"
+    },
+    {
+      "from": "cnn-residual",
+      "to": "cnn-shortcut",
+      "type": "tree"
+    },
+    {
+      "from": "practice",
+      "to": "practice-data",
+      "type": "tree"
+    },
+    {
+      "from": "practice",
+      "to": "practice-model",
+      "type": "tree"
+    },
+    {
+      "from": "practice",
+      "to": "practice-loop",
+      "type": "tree"
+    },
+    {
+      "from": "practice",
+      "to": "practice-eval",
+      "type": "tree"
+    },
+    {
+      "from": "practice",
+      "to": "practice-save",
+      "type": "tree"
+    },
+    {
+      "from": "pitfalls",
+      "to": "pitfall-overfit",
+      "type": "tree"
+    },
+    {
+      "from": "pitfalls",
+      "to": "pitfall-lr",
+      "type": "tree"
+    },
+    {
+      "from": "pitfalls",
+      "to": "pitfall-init",
+      "type": "tree"
+    },
+    {
+      "from": "pitfalls",
+      "to": "pitfall-inplace",
+      "type": "tree"
+    },
+    {
+      "from": "model-forward",
+      "to": "model-loss",
+      "type": "cause",
+      "label": "产生损失"
+    },
+    {
+      "from": "model-loss",
+      "to": "train-backprop",
+      "type": "depends",
+      "label": "需要求梯度"
+    },
+    {
+      "from": "train-backprop",
+      "to": "train-gd",
+      "type": "depends",
+      "label": "提供梯度"
+    },
+    {
+      "from": "train-gd",
+      "to": "train-optimizer",
+      "type": "related",
+      "label": "优化更新"
+    },
+    {
+      "from": "stab-init",
+      "to": "stab-norm",
+      "type": "related",
+      "label": "稳定工具链"
+    },
+    {
+      "from": "stab-gradient",
+      "to": "train-backprop",
+      "type": "limit",
+      "label": "影响梯度"
+    },
+    {
+      "from": "cnn-residual",
+      "to": "stab-gradient",
+      "type": "cause",
+      "label": "改善梯度"
+    },
+    {
+      "from": "cnn-residual",
+      "to": "cnn-backbone",
+      "type": "implements",
+      "label": "构成骨干"
+    },
+    {
+      "from": "practice-loop",
+      "to": "train-gd",
+      "type": "depends",
+      "label": "调用更新"
+    },
+    {
+      "from": "pitfall-overfit",
+      "to": "stab-reg",
+      "type": "pitfall",
+      "label": "用过拟合"
+    },
+    {
+      "from": "pitfall-lr",
+      "to": "train-lr",
+      "type": "pitfall",
+      "label": "检查学习率"
+    },
+    {
+      "from": "pitfall-inplace",
+      "to": "train-autograd",
+      "type": "pitfall",
+      "label": "破坏计算图"
+    }
+  ],
+  "groups": []
+}

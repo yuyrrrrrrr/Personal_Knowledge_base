@@ -1,0 +1,754 @@
+{
+  "version": 2,
+  "meta": {
+    "title": "Transformer 实战与大模型微调",
+    "language": "zh-CN",
+    "purpose": "覆盖 Transformer 实战、大模型演进、开源模型和参数高效微调"
+  },
+  "layout": {
+    "mode": "split",
+    "maxFirstLevel": 7,
+    "maxDepth": 5,
+    "leftTypes": [
+      "concept",
+      "principle",
+      "limit",
+      "pitfall",
+      "compare",
+      "question",
+      "summary",
+      "theme"
+    ],
+    "rightTypes": [
+      "function",
+      "method",
+      "command",
+      "step",
+      "example",
+      "config",
+      "reference"
+    ]
+  },
+  "nodes": [
+    {
+      "id": "root",
+      "text": "Transformer 实战与大模型微调",
+      "type": "root",
+      "importance": 5,
+      "recall": "能否从 Transformer 原理讲到训练、推理、大模型演进和 PEFT 微调"
+    },
+    {
+      "id": "core",
+      "text": "核心原理",
+      "type": "theme",
+      "importance": 5,
+      "recall": "位置编码、缩放点积注意力和多头注意力如何协作",
+      "side": "left"
+    },
+    {
+      "id": "data",
+      "text": "数据与输入管线",
+      "type": "theme",
+      "importance": 4,
+      "recall": "从原始文本到动态 batch 的完整数据流",
+      "side": "right"
+    },
+    {
+      "id": "impl",
+      "text": "Transformer 实战模块",
+      "type": "theme",
+      "importance": 5,
+      "recall": "Embedding、Attention、Block、Encoder/Decoder 如何搭起来",
+      "side": "right"
+    },
+    {
+      "id": "train",
+      "text": "训练与推理",
+      "type": "theme",
+      "importance": 4,
+      "recall": "mask、损失、warmup、翻译和 BLEU 如何串起来",
+      "side": "right"
+    },
+    {
+      "id": "llm",
+      "text": "大模型演进",
+      "type": "theme",
+      "importance": 5,
+      "recall": "预训练、SFT、GPT/BERT/ChatGPT 的核心变化",
+      "side": "left"
+    },
+    {
+      "id": "open",
+      "text": "开源模型与长上下文",
+      "type": "theme",
+      "importance": 4,
+      "recall": "LLaMA、ChatGLM、RoPE/YaRN、GQA/MoE 解决什么问题",
+      "side": "left"
+    },
+    {
+      "id": "peft",
+      "text": "参数高效微调",
+      "type": "theme",
+      "importance": 5,
+      "recall": "为什么全量 SFT 成本高，PEFT 如何降低成本",
+      "side": "right"
+    },
+    {
+      "id": "core-pos",
+      "text": "位置编码",
+      "type": "principle",
+      "importance": 4,
+      "recall": "绝对位置编码如何给 Token 注入顺序信息"
+    },
+    {
+      "id": "core-sdpa",
+      "text": "缩放点积注意力",
+      "type": "principle",
+      "importance": 5,
+      "recall": "QK^T、缩放、Softmax、加权 V 的计算顺序是什么"
+    },
+    {
+      "id": "core-mha",
+      "text": "多头注意力",
+      "type": "principle",
+      "importance": 5,
+      "recall": "为什么要拆成多个 Head，最后如何合并"
+    },
+    {
+      "id": "core-norm",
+      "text": "LayerNorm",
+      "type": "compare",
+      "importance": 4,
+      "recall": "Transformer 为什么更偏向 LayerNorm 而不是 BatchNorm"
+    },
+    {
+      "id": "core-res",
+      "text": "残差连接",
+      "type": "concept",
+      "importance": 3
+    },
+    {
+      "id": "core-scale",
+      "text": "为什么除以 sqrt(d_k)",
+      "type": "principle",
+      "importance": 4,
+      "recall": "维度增大时点积方差如何变化，缩放有什么作用"
+    },
+    {
+      "id": "core-dot",
+      "text": "为什么使用点积",
+      "type": "concept",
+      "importance": 3
+    },
+    {
+      "id": "core-split",
+      "text": "拆分多头",
+      "type": "step",
+      "importance": 3
+    },
+    {
+      "id": "core-merge",
+      "text": "合并与 W_O",
+      "type": "step",
+      "importance": 3
+    },
+    {
+      "id": "data-moses",
+      "text": "Moses 分词",
+      "type": "step",
+      "importance": 3
+    },
+    {
+      "id": "data-bpe",
+      "text": "Subword / BPE",
+      "type": "principle",
+      "importance": 4,
+      "recall": "BPE 如何缓解未登录词并控制词表大小"
+    },
+    {
+      "id": "data-dataset",
+      "text": "Dataset",
+      "type": "step",
+      "importance": 3
+    },
+    {
+      "id": "data-tokenizer",
+      "text": "Tokenizer",
+      "type": "step",
+      "importance": 4,
+      "recall": "encode 和 decode 分别在数据流中做什么"
+    },
+    {
+      "id": "data-loader",
+      "text": "DataLoader",
+      "type": "step",
+      "importance": 4,
+      "recall": "动态 batch 如何提高 GPU 利用率"
+    },
+    {
+      "id": "impl-embed",
+      "text": "TransformerEmbedding",
+      "type": "concept",
+      "importance": 4,
+      "recall": "Token Embedding 与位置编码如何相加"
+    },
+    {
+      "id": "impl-mha",
+      "text": "MultiheadAttention",
+      "type": "concept",
+      "importance": 5,
+      "recall": "Q/K/V 投影、拆头、mask、Softmax、合并的完整流程"
+    },
+    {
+      "id": "impl-block",
+      "text": "TransformerBlock",
+      "type": "step",
+      "importance": 4,
+      "recall": "Block 内自注意力、交叉注意力和 FFN 的顺序"
+    },
+    {
+      "id": "impl-stack",
+      "text": "Encoder / Decoder 堆叠",
+      "type": "step",
+      "importance": 4,
+      "recall": "多层 Encoder/Decoder 如何循环更新表示"
+    },
+    {
+      "id": "impl-mask",
+      "text": "Mask 生成",
+      "type": "step",
+      "importance": 5,
+      "recall": "Padding Mask 与 Look-ahead Mask 分别在哪里使用"
+    },
+    {
+      "id": "impl-wqkv",
+      "text": "Wq / Wk / Wv",
+      "type": "concept",
+      "importance": 3
+    },
+    {
+      "id": "impl-wo",
+      "text": "W_O 输出映射",
+      "type": "concept",
+      "importance": 3
+    },
+    {
+      "id": "train-loss",
+      "text": "CrossEntropyWithPadding",
+      "type": "concept",
+      "importance": 4,
+      "recall": "如何忽略 PAD 位置并正确计算翻译损失"
+    },
+    {
+      "id": "train-warmup",
+      "text": "Warmup",
+      "type": "step",
+      "importance": 4,
+      "recall": "学习率为什么要先升后降"
+    },
+    {
+      "id": "train-loop",
+      "text": "训练循环",
+      "type": "step",
+      "importance": 4,
+      "recall": "前向、损失、反向、更新的顺序是什么"
+    },
+    {
+      "id": "train-infer",
+      "text": "翻译推理",
+      "type": "step",
+      "importance": 4,
+      "recall": "从原始文本到最终译文的完整推理链路"
+    },
+    {
+      "id": "train-bleu",
+      "text": "BLEU",
+      "type": "concept",
+      "importance": 3
+    },
+    {
+      "id": "llm-pretrain",
+      "text": "预训练 + SFT",
+      "type": "compare",
+      "importance": 5,
+      "recall": "预训练和 SFT 分别学习什么、消耗什么"
+    },
+    {
+      "id": "llm-arch",
+      "text": "三种架构",
+      "type": "compare",
+      "importance": 4,
+      "recall": "Encoder-only、Decoder-only、Encoder-Decoder 的输入输出和典型模型"
+    },
+    {
+      "id": "llm-gpt",
+      "text": "GPT 系列",
+      "type": "concept",
+      "importance": 4,
+      "recall": "GPT-1 到 ChatGPT 的训练目标和能力如何演进"
+    },
+    {
+      "id": "llm-bert",
+      "text": "BERT",
+      "type": "concept",
+      "importance": 4,
+      "recall": "Masked Language Model 与句子级表示如何训练"
+    },
+    {
+      "id": "llm-chatgpt",
+      "text": "ChatGPT 与涌现",
+      "type": "concept",
+      "importance": 4,
+      "recall": "为什么规模扩大后会出现上下文学习和通用任务能力"
+    },
+    {
+      "id": "llm-gpt1",
+      "text": "GPT-1",
+      "type": "example",
+      "importance": 3
+    },
+    {
+      "id": "llm-gpt2",
+      "text": "GPT-2",
+      "type": "example",
+      "importance": 3
+    },
+    {
+      "id": "llm-gpt3",
+      "text": "GPT-3",
+      "type": "example",
+      "importance": 3
+    },
+    {
+      "id": "open-llama",
+      "text": "LLaMA 系列",
+      "type": "concept",
+      "importance": 4,
+      "recall": "LLaMA 1/2/3 的结构与训练技术如何演进"
+    },
+    {
+      "id": "open-chatglm",
+      "text": "ChatGLM",
+      "type": "concept",
+      "importance": 3
+    },
+    {
+      "id": "open-rope",
+      "text": "RoPE / YaRN",
+      "type": "principle",
+      "importance": 5,
+      "recall": "RoPE 如何表达相对位置，YaRN 如何扩展上下文长度"
+    },
+    {
+      "id": "open-gqa",
+      "text": "GQA / MoE",
+      "type": "compare",
+      "importance": 4,
+      "recall": "GQA 和 MoE 分别从注意力与参数利用角度优化什么"
+    },
+    {
+      "id": "open-llama1",
+      "text": "LLaMA 1",
+      "type": "example",
+      "importance": 3
+    },
+    {
+      "id": "open-llama2",
+      "text": "LLaMA 2 / GQA",
+      "type": "example",
+      "importance": 3
+    },
+    {
+      "id": "open-llama3",
+      "text": "LLaMA 3 / MoE",
+      "type": "example",
+      "importance": 3
+    },
+    {
+      "id": "peft-cost",
+      "text": "全量 SFT 的成本",
+      "type": "limit",
+      "importance": 5,
+      "recall": "全量微调的显存、步数、时间和能力破坏风险分别是什么",
+      "note": "条件：数十亿参数全部训练\n影响：显存高、训练久、试错成本大，少量数据可能破坏预训练能力\n替代：PEFT、LoRA、Adapter 等参数高效方法"
+    },
+    {
+      "id": "peft-benefit",
+      "text": "PEFT 的价值",
+      "type": "principle",
+      "importance": 4,
+      "recall": "PEFT 为什么能同时降低训练成本并保留预训练能力"
+    },
+    {
+      "id": "peft-bert",
+      "text": "BERT 基座结构",
+      "type": "concept",
+      "importance": 3
+    },
+    {
+      "id": "peft-sst2",
+      "text": "SST-2 数据",
+      "type": "example",
+      "importance": 3
+    },
+    {
+      "id": "peft-cls",
+      "text": "为什么取 last_hidden_state[0]",
+      "type": "concept",
+      "importance": 4,
+      "recall": "CLS 表示为什么适合句子级分类"
+    }
+  ],
+  "edges": [
+    {
+      "from": "root",
+      "to": "core",
+      "type": "tree"
+    },
+    {
+      "from": "root",
+      "to": "data",
+      "type": "tree"
+    },
+    {
+      "from": "root",
+      "to": "impl",
+      "type": "tree"
+    },
+    {
+      "from": "root",
+      "to": "train",
+      "type": "tree"
+    },
+    {
+      "from": "root",
+      "to": "llm",
+      "type": "tree"
+    },
+    {
+      "from": "root",
+      "to": "open",
+      "type": "tree"
+    },
+    {
+      "from": "root",
+      "to": "peft",
+      "type": "tree"
+    },
+    {
+      "from": "core",
+      "to": "core-pos",
+      "type": "tree"
+    },
+    {
+      "from": "core",
+      "to": "core-sdpa",
+      "type": "tree"
+    },
+    {
+      "from": "core",
+      "to": "core-mha",
+      "type": "tree"
+    },
+    {
+      "from": "core",
+      "to": "core-norm",
+      "type": "tree"
+    },
+    {
+      "from": "core",
+      "to": "core-res",
+      "type": "tree"
+    },
+    {
+      "from": "core-sdpa",
+      "to": "core-scale",
+      "type": "tree"
+    },
+    {
+      "from": "core-sdpa",
+      "to": "core-dot",
+      "type": "tree"
+    },
+    {
+      "from": "core-mha",
+      "to": "core-split",
+      "type": "tree"
+    },
+    {
+      "from": "core-mha",
+      "to": "core-merge",
+      "type": "tree"
+    },
+    {
+      "from": "data",
+      "to": "data-moses",
+      "type": "tree"
+    },
+    {
+      "from": "data",
+      "to": "data-bpe",
+      "type": "tree"
+    },
+    {
+      "from": "data",
+      "to": "data-dataset",
+      "type": "tree"
+    },
+    {
+      "from": "data",
+      "to": "data-tokenizer",
+      "type": "tree"
+    },
+    {
+      "from": "data",
+      "to": "data-loader",
+      "type": "tree"
+    },
+    {
+      "from": "impl",
+      "to": "impl-embed",
+      "type": "tree"
+    },
+    {
+      "from": "impl",
+      "to": "impl-mha",
+      "type": "tree"
+    },
+    {
+      "from": "impl",
+      "to": "impl-block",
+      "type": "tree"
+    },
+    {
+      "from": "impl",
+      "to": "impl-stack",
+      "type": "tree"
+    },
+    {
+      "from": "impl",
+      "to": "impl-mask",
+      "type": "tree"
+    },
+    {
+      "from": "impl-mha",
+      "to": "impl-wqkv",
+      "type": "tree"
+    },
+    {
+      "from": "impl-mha",
+      "to": "impl-wo",
+      "type": "tree"
+    },
+    {
+      "from": "train",
+      "to": "train-loss",
+      "type": "tree"
+    },
+    {
+      "from": "train",
+      "to": "train-warmup",
+      "type": "tree"
+    },
+    {
+      "from": "train",
+      "to": "train-loop",
+      "type": "tree"
+    },
+    {
+      "from": "train",
+      "to": "train-infer",
+      "type": "tree"
+    },
+    {
+      "from": "train",
+      "to": "train-bleu",
+      "type": "tree"
+    },
+    {
+      "from": "llm",
+      "to": "llm-pretrain",
+      "type": "tree"
+    },
+    {
+      "from": "llm",
+      "to": "llm-arch",
+      "type": "tree"
+    },
+    {
+      "from": "llm",
+      "to": "llm-gpt",
+      "type": "tree"
+    },
+    {
+      "from": "llm",
+      "to": "llm-bert",
+      "type": "tree"
+    },
+    {
+      "from": "llm",
+      "to": "llm-chatgpt",
+      "type": "tree"
+    },
+    {
+      "from": "llm-gpt",
+      "to": "llm-gpt1",
+      "type": "tree"
+    },
+    {
+      "from": "llm-gpt",
+      "to": "llm-gpt2",
+      "type": "tree"
+    },
+    {
+      "from": "llm-gpt",
+      "to": "llm-gpt3",
+      "type": "tree"
+    },
+    {
+      "from": "open",
+      "to": "open-llama",
+      "type": "tree"
+    },
+    {
+      "from": "open",
+      "to": "open-chatglm",
+      "type": "tree"
+    },
+    {
+      "from": "open",
+      "to": "open-rope",
+      "type": "tree"
+    },
+    {
+      "from": "open",
+      "to": "open-gqa",
+      "type": "tree"
+    },
+    {
+      "from": "open-llama",
+      "to": "open-llama1",
+      "type": "tree"
+    },
+    {
+      "from": "open-llama",
+      "to": "open-llama2",
+      "type": "tree"
+    },
+    {
+      "from": "open-llama",
+      "to": "open-llama3",
+      "type": "tree"
+    },
+    {
+      "from": "peft",
+      "to": "peft-cost",
+      "type": "tree"
+    },
+    {
+      "from": "peft",
+      "to": "peft-benefit",
+      "type": "tree"
+    },
+    {
+      "from": "peft",
+      "to": "peft-bert",
+      "type": "tree"
+    },
+    {
+      "from": "peft",
+      "to": "peft-sst2",
+      "type": "tree"
+    },
+    {
+      "from": "peft",
+      "to": "peft-cls",
+      "type": "tree"
+    },
+    {
+      "from": "core-pos",
+      "to": "core-sdpa",
+      "type": "depends",
+      "label": "补充位置"
+    },
+    {
+      "from": "core-sdpa",
+      "to": "core-mha",
+      "type": "implements",
+      "label": "扩展多头"
+    },
+    {
+      "from": "data-tokenizer",
+      "to": "impl-embed",
+      "type": "depends",
+      "label": "提供 Token ID"
+    },
+    {
+      "from": "impl-mask",
+      "to": "impl-mha",
+      "type": "limit",
+      "label": "约束注意力"
+    },
+    {
+      "from": "impl-stack",
+      "to": "train-loop",
+      "type": "depends",
+      "label": "前向计算"
+    },
+    {
+      "from": "train-warmup",
+      "to": "train-loop",
+      "type": "related",
+      "label": "学习率调度"
+    },
+    {
+      "from": "core-mha",
+      "to": "llm-arch",
+      "type": "related",
+      "label": "大模型基础组件"
+    },
+    {
+      "from": "llm-gpt",
+      "to": "peft",
+      "type": "depends",
+      "label": "需要微调"
+    },
+    {
+      "from": "open-rope",
+      "to": "open-llama",
+      "type": "implements",
+      "label": "位置编码方案"
+    },
+    {
+      "from": "open-gqa",
+      "to": "open-llama2",
+      "type": "implements",
+      "label": "注意力优化"
+    },
+    {
+      "from": "peft-bert",
+      "to": "peft-cls",
+      "type": "depends",
+      "label": "使用 CLS 表示"
+    },
+    {
+      "from": "peft-cost",
+      "to": "peft-benefit",
+      "type": "contrast",
+      "label": "成本与收益"
+    },
+    {
+      "from": "data-loader",
+      "to": "train-loop",
+      "type": "depends",
+      "label": "提供 batch"
+    },
+    {
+      "from": "train-loss",
+      "to": "train-loop",
+      "type": "depends",
+      "label": "反向传播依据"
+    }
+  ],
+  "groups": []
+}

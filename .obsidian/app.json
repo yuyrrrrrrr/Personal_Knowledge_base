@@ -8,5 +8,6 @@
   },
   "useMarkdownLinks": true,
   "newLinkFormat": "shortest",
-  "attachmentFolderPath": "image"
+  "attachmentFolderPath": "image",
+  "alwaysUpdateLinks": true
 }

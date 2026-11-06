@@ -1,3 +1,5 @@
+# Transformer
+
 ### 要解决的仍是序列到序列
 2017 年，Google 在论文《Attention Is All You Need》中提出了 Transformer，最初要解决的仍然是自然语言处理中的一个经典问题：**如何把一个序列转换成另一个序列。**
 ```text
@@ -5,16 +7,16 @@ I love deep learning -> 我 喜欢 深度 学习
 ```
 #### Transformer 带来的两大优势
 
-|摆脱 RNN 时序依赖|提升并行计算能力|
-|---|---|
-|通过一次 **Self-Attention**，序列所有 Token 直接建立联系，模型更容易建模长距离依赖。|序列训练的**并行计算能力**显著提升，模型更容易利用大规模数据和计算资源不断扩展。|
+| 摆脱 RNN 时序依赖                                             | 提升并行计算能力                                   |
+| ------------------------------------------------------- | ------------------------------------------ |
+| 通过一次 **Self-Attention**，序列所有 Token 直接建立联系，模型更容易建模长距离依赖。 | 序列训练的**并行计算能力**显著提升，模型更容易利用大规模数据和计算资源不断扩展。 |
 
 > [!important] 深远影响  
 > 此后 Transformer 逐渐成为自然语言处理的基础架构，**BERT、GPT、T5** 都建立在它之上，并进一步影响了计算机视觉、语音和多模态等领域。
 
 ### 完整的Transformer
 [Attention Is All you Need](Attention%20Is%20All%20you%20Need.pdf)
-![](Pasted%20image%2020261101143107.png)
+![](../../../../image/Pasted%20image%2020261101143107.png)
 Transformer 的原始架构由左侧的 **Encoder** 和右侧的 **Decoder** 组成，两者内部又堆叠了注意力、残差连接、归一化和前馈神经网络等模块。
 
 所有结构同时出现在一张图中，很容易让人陷入局部细节，看不清整体的数据流向。
@@ -43,7 +45,7 @@ Transformer 与 Seq2Seq 一样，仍然采用 Encoder-Decoder 架构。
 > 整体流程与 Seq2Seq 没有本质区别，真正发生变化的是 **Encoder** 和 **Decoder 内部生成上下文表示的方式**。
 
 ### Positional Encoding: 为 Token 加入位置信息
-![](Pasted%20image%2020261101144029.png)
+![](../../../../image/Pasted%20image%2020261101144029.png)
 Token 先经过 Embedding 变成向量，这一步我们已经很熟悉。但 Transformer 不再像 RNN 那样沿序列逐步计算，Self-Attention 会**同时处理所有位置**——顺序计算的依赖消失了，模型也就无法再从计算顺序中知道谁先谁后。
 ```text
 dog bites man
@@ -53,7 +55,7 @@ man bites dog
 两句用的是同一组单词，只有顺序不同，单靠 Embedding 无法区分。因此 Transformer 单独对位置做编码，并**直接加到对应 Token 的 Embedding 上**，让进入第一层 Encoder 和 Decoder 的向量同时携带内容与位置。
 $$X_i=Embedding(x_i)+PositionalEncoding(i)$$
 ### Self-Attention: 让输入位置直接交换信息
-![](Pasted%20image%2020261101144155.png)
+![](../../../../image/Pasted%20image%2020261101144155.png)
 完成输入表示后，源序列首先进入 Encoder 的**自注意力（Self-Attention）**。
 
 > [!info] RNN 的信息传递方式
@@ -66,7 +68,7 @@ $$
 
 ### 每个 Token 都以自己为 Query 查询全序列
 `I love deep learning`，四个 Token 分别作为 Query，对全序列的 Key / Value 算出一组注意力权重：
-![](Pasted%20image%2020261101144403.png)
+![](../../../../image/Pasted%20image%2020261101144403.png)
 同一层中，各个位置的计算不需要等待前一个位置的结果。只要整段输入已经存在，所有 Token 的注意力计算就可以组织成**矩阵并行完成**——这正是 Transformer 比 RNN 更适合并行训练的重要原因。
 ### Multi-Head Attention：从多个表示空间提取信息
 Transformer 还使用了多头注意力（Multi-Head Attention）：用**多组不同的参数**对同一段输入进行映射，让多个 Attention Head 分别从不同的表示空间提取信息，最后再将各个 Head 的结果**拼接并融合**。
@@ -80,11 +82,11 @@ Transformer 还使用了多头注意力（Multi-Head Attention）：用**多组�
 
 ### Add & Norm: 让信息稳定地穿过深层网络
 
-![](Pasted%20image%2020261101144943.png)
+![](../../../../image/Pasted%20image%2020261101144943.png)
 架构图中的 `Nx` 代表可以堆叠多层。Self-Attention 完成了不同 Token 之间的信息交换，但随着网络不断堆叠，原有信息可能在连续变换中逐渐丢失，各层输出的数值分布也可能发生较大变化。因此 Transformer 会在**每个子层之后**加入 Add & Norm。
 
 > [!info] Add · 残差连接
-> 把原始输入 \(x\) 直接加回子层输出 \(F(x)\)。
+> 把原始输入 $x$ 直接加回子层输出 $F(x)$。
 > 
 > 子层只需学习在原始表示上改什么，梯度也获得一条绕过子层的通路。
 
@@ -125,7 +127,7 @@ $$
 > Transformer 因此不在不同样本之间寻找对应位置，而是**分别处理每个 Token**：对它的多维向量内部做归一化，完全不依赖同一批次中的其他句子。
 
 ### FFN: 进一步加工每个位置的信息
-![](Pasted%20image%2020261101145944.png)
+![](../../../../image/Pasted%20image%2020261101145944.png)
 Self-Attention 已经让每个 Token 从其他位置汇总了与自己相关的信息，但它解决的只是“**关注哪些位置、读多少信息**”。这些上下文表示还需要再加工一次，才能成为更有表达能力的特征。FFN 就是紧跟在它后面的两个线性层，中间夹一个 ReLU：
 
 $$
@@ -155,7 +157,7 @@ $$
 
 
 ### Masked Self-Attention: 训练时也不能看见未来
-![](Pasted%20image%2020261101150446.png)
+![](../../../../image/Pasted%20image%2020261101150446.png)
 现在把视线移到 Decoder。Decoder 的输入是目标序列中已经出现的内容，也可以称为**目标前缀**。比如准备生成“深度”时，Decoder 已经拥有的内容可能是：
 ```text
 <BOS> 我 喜欢
@@ -179,7 +181,7 @@ Decoder 输入:  <BOS>   我    喜欢   深度
 > [!important] 核心解决方案  
 > 模型可能由此找到一条训练时有效、推理时却无法使用的捷径。因此掩码自注意力会在 Self-Attention 基础上增加**因果掩码（Causal Mask）**。
 ### 因果掩码：只能连到自己和前面的位置
-![](Pasted%20image%2020261101150739.png)
+![](../../../../image/Pasted%20image%2020261101150739.png)
 
 | 当前生成 (Query) | 可连线的位置 (Key/Value) | 被掩码的位置 (不能看) | 限制说明 |
 | :--- | :--- | :--- | :--- |
@@ -194,7 +196,7 @@ Decoder 输入:  <BOS>   我    喜欢   深度
 > Transformer 因而能够在**遵守自回归生成规则**的同时，并行完成目标序列中所有位置的训练。
 
 ### Cross-Attention：让 Decoder 查询 Encoder
-![](Pasted%20image%2020261101150937.png)
+![](../../../../image/Pasted%20image%2020261101150937.png)
 掩码自注意力整理了已经生成的目标内容，但只看目标前缀还不足以完成翻译——Decoder 还需要知道**源序列表达了什么**。这一步与 Seq2Seq Attention 的思想如出一辙：**Decoder 先描述当前需要什么信息，再与 Encoder 保存的源序列信息匹配，最后取出相关内容。**
 
 > [!abstract] Q、K、V 的来源
@@ -207,7 +209,7 @@ Q = SW_Q, \quad K = HW_K, \quad V = HW_V
 $$
 
 > [!important] 核心理解
-> \(S\) 表示 Decoder 根据目标前缀生成的上下文表示，\(H\) 表示 Encoder 输出的源序列上下文表示，\(W_Q\)、\(W_K\)、\(W_V\) 是三个不同的线性映射。
+> $S$ 表示 Decoder 根据目标前缀生成的上下文表示，$H$ 表示 Encoder 输出的源序列上下文表示，$W_Q$、$W_K$、$W_V$ 是三个不同的线性映射。
 > **真正决定这一步性质的，是 Q 与 K、V 分别来自哪一侧。**
 
 ### 三种注意力：差别只在信息来源
@@ -233,7 +235,7 @@ $$
 ### Linear 和 Softmax：把隐藏表示变成 Token 概率
 经过多层 Decoder 后，每个目标位置都会得到一个隐藏表示。但这个向量仍然位于模型内部的隐藏空间，**不能直接对应词表中的具体 Token**。
 > [!note] Linear · 映射到词表空间
-> 假设词表中有 \(V\) 个 Token，Linear 就为每个位置输出 \(V\) 个分数（logits），每个分数对应一个**候选 Token**。
+> 假设词表中有 $V$ 个 Token，Linear 就为每个位置输出 $V$ 个分数（logits），每个分数对应一个**候选 Token**。
 > [!abstract] Softmax · 转成概率分布
 > 将这些分数转换成**总和为 1** 的概率分布，表示下一个位置生成各个 Token 的概率。
 ```text
@@ -283,7 +285,7 @@ Decoder 隐藏表示 -> Linear -> 词表分数 -> Softmax -> Token 概率
 > [!important] 核心总结
 > 理解 Transformer 的关键，就是理解序列中的信息如何通过 **Self-Attention 直接流动**。
 
-# Transformer 注意力究竟在做什么
+## Transformer 注意力究竟在做什么
 ### Transformer 中的注意力机制
 
 - **三类注意力**：
@@ -297,8 +299,8 @@ Decoder 隐藏表示 -> Linear -> 词表分数 -> Softmax -> Token 概率
 1. 为什么同一个模型要连续使用这么多次 Attention？
 2. 这些矩阵来回变换究竟在处理什么？
 3. 为什么大模型推理时有 KV Cache，而没有 Q Cache？
-# Attention 是什么
-![](Pasted%20image%2020261102090629.png)
+## Attention 是什么
+![](../../../../image/Pasted%20image%2020261102090629.png)
 Attention 是一种计算序列中不同位置 Token 之间的**匹配关系**，再按照匹配程度**读取并汇总信息**，为每个 Token 生成新的上下文表示的方法。
 ## 案例说明
 
@@ -308,13 +310,13 @@ Attention 是一种计算序列中不同位置 Token 之间的**匹配关系**�
 
 **原理解释：**  
 这句话里，代词 `it` 在更新自身表示时，与 `animal` 的连线明显更粗——这正是不同位置之间匹配程度的可视化。
-# Attention 带来的变化
+## Attention 带来的变化
 
 Attention 机制的核心作用在于**改变 Token 向量的信息构成**：
 - **Attention 之前**：每个 Token 的向量主要表示**自身的语义和位置**。
 - **Attention 之后**：每个 Token 的新向量已经**融合了序列中其他相关位置的信息**。
-![](Pasted%20image%2020261102091014.png)
-# 从 Seq2Seq 的任务重新理解 Attention
+![](../../../../image/Pasted%20image%2020261102091014.png)
+## 从 Seq2Seq 的任务重新理解 Attention
 
 Seq2Seq 和 Transformer 都在完成**把输入序列 A 转换成输出序列 B** 的任务，计算的步骤也很相似：
 ## 计算步骤
@@ -323,12 +325,12 @@ Seq2Seq 和 Transformer 都在完成**把输入序列 A 转换成输出序列 B*
 2. **理解输出序列 B 中已经生成的内容**；
 3. **使用最新 Token 的上下文表示，从输入序列 A 中查找、读取需要的信息**；
 4. **综合信息，预测下一个 Token**。
-![](Pasted%20image%2020261102091223.png)
+![](../../../../image/Pasted%20image%2020261102091223.png)
 ## 核心结论
 
 Seq2Seq Attention 和 Transformer 的主流程类似，**不同的是使用生成序列上下文表示的方法**。
-# Seq2Seq Attention 在做什么
-![](Pasted%20image%2020261102091852.png)
+## Seq2Seq Attention 在做什么
+![](../../../../image/Pasted%20image%2020261102091852.png)
 ## 核心步骤
 
 1. **理解输入序列**  
@@ -374,7 +376,7 @@ Transformer 完成的是相同的任务，只是不再使用 RNN 逐步生成隐
 ### 输入序列预处理
 
 进入 Encoder 之前输入序列会先经过 **Embedding** 和 **Positional Encoding** 处理，转换成一个序列表示矩阵。
-![](Pasted%20image%2020261102093442.png)
+![](../../../../image/Pasted%20image%2020261102093442.png)
 **输入序列**：
 `I love deep learning` （序列长度 = 4）
 
@@ -403,7 +405,7 @@ $$
 $$
 Q = XW_Q, \quad K = XW_K, \quad V = XW_V
 $$
-![](Pasted%20image%2020261102093923.png)
+![](../../../../image/Pasted%20image%2020261102093923.png)
 
 > [!abstract] Q：Query
 > 描述当前位置在更新自身表示时，希望**寻找什么信息**。
@@ -419,7 +421,7 @@ $$
 > - Q、K、V 中每一行仍对应序列中的一个 Token。
 
 ### 一个Token 如何读取整个序列
-![](Pasted%20image%2020261102094421.png)
+![](../../../../image/Pasted%20image%2020261102094421.png)
 ### ① Query 与所有 Key 计算匹配分数
 
 取出 `learning` 对应的 Query 向量 $q_{\text{learning}}$，分别与序列中所有 Token 的 Key 做点积：
@@ -468,7 +470,7 @@ $$
 > 
 > $A$ 的第 $i$ 行、第 $j$ 列，表示第 $i$ 个位置在更新自身表示时，对第 $j$ 个位置分配的**注意力权重**。
 
-> [!abstract] ② 用 \(A\) 加权汇总 VALUE
+> [!abstract] ② 用 $A$ 加权汇总 VALUE
 > 
 > $$
 > O = AV
@@ -486,7 +488,7 @@ $$
 Decoder 中的掩码自注意力与 Encoder 自注意力使用**相同的计算过程**，它的作用是生成目标序列的上下文表示。
 
 > [!info] 推理时
-> Token 是**一个一个生成**的，第 \(t\) 个位置天然只能看到已经生成的内容。
+> Token 是**一个一个生成**的，第 $t$ 个位置天然只能看到已经生成的内容。
 
 > [!warning] 训练时
 > Decoder 一次就接收到**完整的目标序列**。不做任何限制的话，前面的位置就可能直接读取后面的**正确答案**。
@@ -495,11 +497,11 @@ Decoder 中的掩码自注意力与 Encoder 自注意力使用**相同的计算�
 > 掩码是为了防止训练时出现**目标信息泄露**，使模型训练时每个位置的可见范围与推理时自回归生成时**保持一致**。
 
 ### 因果掩码：遮挡未来位置
-![](Pasted%20image%2020261102095710.png)
-模型使用**因果掩码**遮挡未来位置，使第 \(t\) 个位置只能关注自己以及它之前的 Token，不能读取后面的内容。
+![](../../../../image/Pasted%20image%2020261102095710.png)
+模型使用**因果掩码**遮挡未来位置，使第 $t$ 个位置只能关注自己以及它之前的 Token，不能读取后面的内容。
 
 > [!info] 怎么遮
-> 在匹配分数上加一个**掩码矩阵 \(M\)**：允许关注的位置取 `0`，需要遮挡的位置取**负无穷**。
+> 在匹配分数上加一个**掩码矩阵 $M$**：允许关注的位置取 `0`，需要遮挡的位置取**负无穷**。
 
 > [!success] 为何有效
 > 经过 Softmax 后，被遮挡位置的注意力权重会变成 `0`，相当于这些位置在本次计算中**不存在**。
@@ -514,7 +516,7 @@ $$
 \text{Attention}(Q, K, V) = \text{softmax} \left( \frac{QK^T + M}{\sqrt{d_k}} \right) V
 $$
 ### 再看一眼架构图：交叉注意力在哪里
-![](Pasted%20image%2020261101143107.png)
+![](../../../../image/Pasted%20image%2020261101143107.png)
 > [!note] 刚讲完 · 掩码自注意力
 > 发生在 Decoder **内部**：Q、K、V 都来自目标序列，每个位置只能看到当前前缀。
 
@@ -527,7 +529,7 @@ $$
 ### 交叉注意力：根据当前状态读取输入序列
 
 经过掩码自注意力之后，Decoder 已经形成了当前输出序列的上下文表示，但它还需要回到输入序列中，读取预测下一个 Token 所需的信息——之所以称为交叉注意力，是因为 **Query 与 Key、Value 来自两个不同的序列**。
-![](Pasted%20image%2020261102100242.png)
+![](../../../../image/Pasted%20image%2020261102100242.png)
 > [!abstract] 来源区分
 > - **Query** 来自 Decoder 的当前序列表示；
 > - **Key 和 Value** 来自 Encoder 的最终输出。
@@ -540,10 +542,10 @@ $$
 > Decoder 根据当前已经生成的内容形成 **Query**，再用它查询 Encoder 对输入序列的表示，得到预测下一个 Token 所需的**源序列信息**。
 
 ### 一个序列是如何被生成的
-![](Pasted%20image%2020261102100514.png)
+![](../../../../image/Pasted%20image%2020261102100514.png)
 ### 生成一个 Token 的五个步骤
 
-输入序列先经过 Encoder，生成上下文表示 \(H\)。在整个解码过程中输入序列不会改变，因此 Encoder 通常**只需要执行一次**。Decoder 从 `<BOS>` 开始：
+输入序列先经过 Encoder，生成上下文表示 $H$。在整个解码过程中输入序列不会改变，因此 Encoder 通常**只需要执行一次**。Decoder 从 `<BOS>` 开始：
 
 > [!abstract] 生成步骤
 > 1. 掩码自注意力生成当前输出前缀的上下文表示；
@@ -564,7 +566,7 @@ $$
 ### KV Cache 是什么
 
 把历史 Token 在每一层注意力中已经生成的 Key 和 Value 保存下来，生成下一个 Token 时直接复用，这就是 KV Cache。
-![](Pasted%20image%2020261102105352.png)
+![](../../../../image/Pasted%20image%2020261102105352.png)
 > [!info] ① 交叉注意力的 K、V
 > 来自 Encoder 的最终输出。由于输入序列在整个解码过程中不会变化，因此可以**提前计算**，并在每一步解码时**重复使用**。
 
@@ -626,7 +628,7 @@ $$
 ### Multi-Head Attention：多组投影再融合
 
 同一输入走 **8 套独立的 Q、K、V 投影**——上一节讲的 Attention，只是其中的一个 Head。
-![](Pasted%20image%2020261102110736.png)
+![](../../../../image/Pasted%20image%2020261102110736.png)
 $$
 \text{head} = \text{Attention}(Q, K, V)
 $$
@@ -646,7 +648,7 @@ $$
 
 > `The animal didn't cross the street because it was too tired.`
 
-![](Pasted%20image%2020261102111101.png)
+![](../../../../image/Pasted%20image%2020261102111101.png)
 
 > [!note] 多头注意力的分工示例
 > - **指代** | `animal` $\rightarrow$ `it`
@@ -693,7 +695,7 @@ $$
 ### 子空间变小了，注意力矩阵没变
 
 无论子空间多小，每个 Head 得到的注意力权重矩阵**始终是 $N \times N$**——描述的仍是 $N$ 个位置彼此的关系，只是权重分布不同。
-![](Pasted%20image%2020261102115030.png)
+![](../../../../image/Pasted%20image%2020261102115030.png)
 $$
 Q_iK_i^T : (N, 64) \times (64, N) = (N, N)
 $$
@@ -725,7 +727,7 @@ $$
 > [!info] CONCAT
 > 把多个 Head 的结果**放进同一个向量**，各占一段。
 
-> [!abstract] \(W_O\)
+> [!abstract] $W_O$
 > 让每个输出维度都能**同时组合所有 Head**，信息真正混合。
 ### 总结：一套计算逻辑，多组表示空间
 
