@@ -15,9 +15,9 @@
               "state": {
                 "file": "LLM/2-Source/7-Deep Learning/Deep Learning.canvas",
                 "viewState": {
-                  "x": 1372.5460579600058,
-                  "y": 2659.4783962716383,
-                  "zoom": -0.3574672125265554
+                  "x": 780.6656902473147,
+                  "y": 2968.013506569515,
+                  "zoom": -2.6666666666666665
                 }
               },
               "icon": "lucide-layout-dashboard",
@@ -86,8 +86,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 336.16668701171875,
-    "collapsed": true
+    "width": 336.16668701171875
   },
   "right": {
     "id": "cffc2ac093d9b5b0",
@@ -207,8 +206,9 @@
   },
   "active": "c2a76cdfacd11fe4",
   "lastOpenFiles": [
-    "LLM/2-Source/7-Deep Learning/4-Transformer/0-Transformer 前置概念回顾.md",
     "LLM/2-Source/7-Deep Learning/Deep Learning.canvas",
+    "LLM/2-Source/7-Deep Learning/1-Pytorch/0-张量的基础操作.md",
+    "LLM/2-Source/7-Deep Learning/4-Transformer/0-Transformer 前置概念回顾.md",
     "LLM/从零开始的AI学习之路.canvas",
     "LLM/AI Concept.md",
     "LLM/3-Thesis/Basic/LoRA.pdf",
@@ -224,7 +224,6 @@
     "LLM/2-Source/7-Deep Learning/4-Transformer/1-Transformer.md",
     "LLM/2-Source/7-Deep Learning/知识导图示例/示例2-Transformer专题.canvas",
     "LLM/2-Source/7-Deep Learning/知识导图示例/示例3-Transformer实战与大模型微调.canvas",
-    "LLM/2-Source/7-Deep Learning/1-Pytorch/0-张量的基础操作.md",
     "LLM/2-Source/7-Deep Learning/知识导图示例/示例1-深度学习基础总览.canvas",
     "LLM/2-Source/7-Deep Learning/4-Transformer/2-手搓 Mini Transformer前需要了解的编码器和解码器.md",
     "LLM/2-Source/7-Deep Learning/4-Transformer/从函数到Transformer.md",
