@@ -11,17 +11,14 @@
             "id": "be023ac01acada4f",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "LLM/2-Source/7-Deep Learning/Deep Learning.canvas",
-                "viewState": {
-                  "x": 457.293034694876,
-                  "y": 2896.654910269915,
-                  "zoom": -2.766976887648171
-                }
+                "file": "LLM/2-Source/7-Deep Learning/深度学习总结.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "Deep Learning"
+              "icon": "lucide-file",
+              "title": "深度学习总结"
             }
           }
         ]
@@ -206,24 +203,25 @@
   },
   "active": "be023ac01acada4f",
   "lastOpenFiles": [
+    "image/Pasted image 20261109201650.png",
+    "image/Pasted image 20261109201501.png",
+    "image/Pasted image 20261109201357.png",
+    "image/Pasted image 20261109201230.png",
+    "image/Pasted image 20261109201018.png",
+    "image/Pasted image 20261109200839.png",
+    "image/Pasted image 20261109200744.png",
+    "image/Pasted image 20261109200707.png",
+    "image/Pasted image 20261109200557.png",
+    "image/Pasted image 20261109200511.png",
+    "image/Pasted image 20261109200349.png",
+    "LLM/2-Source/7-Deep Learning/Deep Learning.canvas",
     "LLM/2-Source/7-Deep Learning/4-Transformer/5-手搓 Mini-GPT.md",
     "LLM/2-Source/7-Deep Learning/深度学习总结.md",
     "LLM/2-Source/7-Deep Learning/4-Transformer/4-为什么是 Decoder-Only的 GPT赢了.md",
-    "LLM/2-Source/7-Deep Learning/Deep Learning.canvas",
     "LLM/5-Guide/transformers-docs-zh.pdf",
     "LLM/2-Source/7-Deep Learning/Deep Learning.canvas.transforms.new",
     "LLM/2-Source/7-Deep Learning/4-Transformer/2-手搓 Mini Transformer前需要了解的编码器和解码器.md",
     "LLM/2-Source/7-Deep Learning/4-Transformer/1-Transformer.md",
-    "image/Pasted image 20261108172533.png",
-    "image/Pasted image 20261108172441.png",
-    "image/Pasted image 20261108172354.png",
-    "image/Pasted image 20261108172319.png",
-    "image/Pasted image 20261108164455.png",
-    "image/Pasted image 20261108163909.png",
-    "image/Pasted image 20261108163538.png",
-    "image/Pasted image 20261108161536.png",
-    "image/Pasted image 20261108155456.png",
-    "image/Pasted image 20261108155255.png",
     "LLM/2-Source/7-Deep Learning/4-Transformer/从函数到 Transformer.md",
     "LLM/2-Source/7-Deep Learning/4-Transformer/3-手搓 Mini-Transformer.md",
     "LLM/2-Source/8-Agent/Agent.canvas",
