@@ -1,7 +1,6 @@
 {
 	"nodes":[
 		{"id":"2b70e8b62df7c921","type":"text","text":"AI Agent 应用开发学习路线\nby 程序员鱼皮","x":0,"y":196,"width":250,"height":68,"color":"1"},
-		{"id":"99b7f53c7081d0c7","type":"text","text":"工具执行和结果返回","x":1780,"y":1311,"width":250,"height":60},
 		{"id":"2a30e79442ede1e8","type":"text","text":"短期记忆","x":1780,"y":1403,"width":250,"height":60},
 		{"id":"c897a33bbbae1482","type":"text","text":"长期记忆","x":1780,"y":1495,"width":250,"height":60},
 		{"id":"bccf7bde0d37bcec","type":"text","text":"记忆检索和更新","x":1780,"y":1587,"width":250,"height":60},
@@ -41,9 +40,6 @@
 		{"id":"dec8139a9cd58a83","type":"text","text":"决策","x":2350,"y":207,"width":250,"height":60},
 		{"id":"3200f944d25a2756","type":"text","text":"执行","x":2350,"y":299,"width":250,"height":60},
 		{"id":"f932707e6e47b2c0","type":"text","text":"Multi-Agent","x":1780,"y":943,"width":250,"height":60},
-		{"id":"18146e4e7ab58f8f","type":"text","text":"Function Calling","x":1780,"y":1035,"width":250,"height":60},
-		{"id":"bc2c4cbbafae91dc","type":"text","text":"工具定义和描述","x":1780,"y":1127,"width":250,"height":60},
-		{"id":"590f10bd58f0a5ad","type":"text","text":"工具参数解析","x":1780,"y":1219,"width":250,"height":60},
 		{"id":"6e1c81416b06f98c","type":"text","text":"阶段 3：Agent 开发实战","x":-640,"y":-1711,"width":250,"height":60,"color":"3"},
 		{"id":"40306ec3a46c6105","type":"text","text":"阶段 5：Agent 优化和部署","x":-640,"y":-9,"width":250,"height":60,"color":"4"},
 		{"id":"b97aeb37b258a9b9","type":"text","text":"阶段 6：项目实战","x":-640,"y":589,"width":250,"height":60,"color":"5"},
@@ -109,6 +105,30 @@
 			"y":180,
 			"width":260,
 			"height":60
+		},
+		{"id":"18146e4e7ab58f8f","type":"text","text":"Function Calling","x":2350,"y":1046,"width":250,"height":60},
+		{"id":"bc2c4cbbafae91dc","type":"text","text":"工具定义和描述","x":2350,"y":1138,"width":250,"height":60},
+		{"id":"99b7f53c7081d0c7","type":"text","text":"工具执行和结果返回","x":2350,"y":1322,"width":250,"height":60},
+		{"id":"590f10bd58f0a5ad","type":"text","text":"工具参数解析","x":2350,"y":1230,"width":250,"height":60},
+		{
+			"id":"64630ae1b62030f5",
+			"type":"text",
+			"text":"MCP",
+			"styleAttributes":{},
+			"x":2350,
+			"y":973,
+			"width":250,
+			"height":60
+		},
+		{
+			"id":"ae063a653847cbd6",
+			"type":"text",
+			"text":"A2A",
+			"styleAttributes":{},
+			"x":2350,
+			"y":881,
+			"width":250,
+			"height":60
 		}
 	],
 	"edges":[
@@ -149,7 +169,7 @@
 		{"id":"56404be7cd06213e","fromNode":"bc478366c039795e","fromSide":"right","toNode":"d8b19b288400a0be","toSide":"left","color":"2"},
 		{"id":"0d437d32f0c17088","fromNode":"d8b19b288400a0be","fromSide":"right","toNode":"18146e4e7ab58f8f","toSide":"left","color":"2"},
 		{"id":"ce9414531cfe025c","fromNode":"d8b19b288400a0be","fromSide":"right","toNode":"bc2c4cbbafae91dc","toSide":"left","color":"2"},
-		{"id":"5d9abda885315328","fromNode":"d8b19b288400a0be","fromSide":"right","toNode":"590f10bd58f0a5ad","toSide":"left","color":"2"},
+		{"id":"5d9abda885315328","toFloating":false,"fromNode":"d8b19b288400a0be","fromSide":"right","toNode":"590f10bd58f0a5ad","toSide":"left","color":"2"},
 		{"id":"af74e5bbdfa6ab50","fromNode":"d8b19b288400a0be","fromSide":"right","toNode":"99b7f53c7081d0c7","toSide":"left","color":"2"},
 		{"id":"7905fb1055066604","fromNode":"bc478366c039795e","fromSide":"right","toNode":"4751310371080e1b","toSide":"left","color":"2"},
 		{"id":"1c12d7f0b3a0e430","fromNode":"4751310371080e1b","fromSide":"right","toNode":"2a30e79442ede1e8","toSide":"left","color":"2"},
@@ -658,6 +678,26 @@
 			"fromSide":"left",
 			"toNode":"2a0b13bfae8c9b1e",
 			"toSide":"right"
+		},
+		{
+			"id":"182550261e33f0be",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"d8b19b288400a0be",
+			"fromSide":"right",
+			"toNode":"64630ae1b62030f5",
+			"toSide":"left",
+			"color":"2"
+		},
+		{
+			"id":"3c6601173a344fc5",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"d8b19b288400a0be",
+			"fromSide":"right",
+			"toNode":"ae063a653847cbd6",
+			"toSide":"left",
+			"color":"2"
 		}
 	],
 	"metadata":{
