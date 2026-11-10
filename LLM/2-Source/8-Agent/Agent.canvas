@@ -1,17 +1,8 @@
 {
 	"nodes":[
 		{"id":"2b70e8b62df7c921","type":"text","text":"AI Agent 应用开发学习路线\nby 程序员鱼皮","x":0,"y":196,"width":250,"height":68,"color":"1"},
-		{"id":"2a30e79442ede1e8","type":"text","text":"短期记忆","x":1780,"y":1403,"width":250,"height":60},
-		{"id":"c897a33bbbae1482","type":"text","text":"长期记忆","x":1780,"y":1495,"width":250,"height":60},
-		{"id":"bccf7bde0d37bcec","type":"text","text":"记忆检索和更新","x":1780,"y":1587,"width":250,"height":60},
 		{"id":"320d3c5618788779","type":"text","text":"Agent 应用场景","x":1780,"y":575,"width":250,"height":60},
-		{"id":"0a7fa5f1565009c5","type":"text","text":"ReAct","x":1780,"y":667,"width":250,"height":60},
-		{"id":"b474f6030f85191d","type":"text","text":"Plan and Execute","x":1780,"y":759,"width":250,"height":60},
-		{"id":"cfc6287a060c5770","type":"text","text":"Reflection","x":1780,"y":851,"width":250,"height":60},
-		{"id":"9d3047a1c702d7d3","type":"text","text":"Agent 架构模式","x":1210,"y":805,"width":250,"height":60},
 		{"id":"bc478366c039795e","type":"text","text":"阶段 2：Agent 基础概念","x":640,"y":931,"width":250,"height":60,"color":"2"},
-		{"id":"d8b19b288400a0be","type":"text","text":"工具调用 Tool Calling","x":1210,"y":1173,"width":250,"height":60},
-		{"id":"4751310371080e1b","type":"text","text":"记忆系统 Memory","x":1210,"y":1495,"width":250,"height":60},
 		{"id":"93fd8e86aba296e0","type":"text","text":"大模型基础概念","x":1210,"y":-1173,"width":250,"height":60},
 		{"id":"d48e50524532da04","type":"text","text":"阶段 1：AI 大模型基础","x":640,"y":-713,"width":250,"height":60,"color":"1"},
 		{"id":"3394db8dc53feadb","type":"text","text":"Prompt Engineering","x":1210,"y":-713,"width":250,"height":60},
@@ -39,7 +30,6 @@
 		{"id":"e3d167f905614ecf","type":"text","text":"推理","x":2350,"y":115,"width":250,"height":60},
 		{"id":"dec8139a9cd58a83","type":"text","text":"决策","x":2350,"y":207,"width":250,"height":60},
 		{"id":"3200f944d25a2756","type":"text","text":"执行","x":2350,"y":299,"width":250,"height":60},
-		{"id":"f932707e6e47b2c0","type":"text","text":"Multi-Agent","x":1780,"y":943,"width":250,"height":60},
 		{"id":"6e1c81416b06f98c","type":"text","text":"阶段 3：Agent 开发实战","x":-640,"y":-1711,"width":250,"height":60,"color":"3"},
 		{"id":"40306ec3a46c6105","type":"text","text":"阶段 5：Agent 优化和部署","x":-640,"y":-9,"width":250,"height":60,"color":"4"},
 		{"id":"b97aeb37b258a9b9","type":"text","text":"阶段 6：项目实战","x":-640,"y":589,"width":250,"height":60,"color":"5"},
@@ -97,39 +87,466 @@
 		{"id":"c208d5edd1e87d0e","type":"text","text":"协作模式","x":-1920,"y":-646,"width":250,"height":60},
 		{"id":"c55e8505c7b0878b","type":"text","text":"通信机制","x":-1920,"y":-554,"width":250,"height":60},
 		{
-			"id":"7e2e5a9e002c6de7",
+			"id":"23b81b2477036a23",
 			"type":"text",
-			"text":"https://hello-agents.datawhale.cc/#/./README",
+			"text":"在探索任何一个复杂概念时，我们最好从一个简洁的定义开始。在人工智能领域，智能体被定义为任何能够通过**传感器（Sensors）**感知其所处**环境（Environment）**，并**自主**地通过**执行器（Actuators）**采取**行动（Action）**以达成特定目标的实体。",
 			"styleAttributes":{},
-			"x":320,
-			"y":180,
+			"x":1620,
+			"y":23,
+			"width":520,
+			"height":138
+		},
+		{
+			"id":"743cf91dbf562f48",
+			"type":"text",
+			"text":"LLM",
+			"styleAttributes":{},
+			"x":2320,
+			"y":-345,
 			"width":260,
 			"height":60
 		},
-		{"id":"18146e4e7ab58f8f","type":"text","text":"Function Calling","x":2350,"y":1046,"width":250,"height":60},
-		{"id":"bc2c4cbbafae91dc","type":"text","text":"工具定义和描述","x":2350,"y":1138,"width":250,"height":60},
-		{"id":"99b7f53c7081d0c7","type":"text","text":"工具执行和结果返回","x":2350,"y":1322,"width":250,"height":60},
-		{"id":"590f10bd58f0a5ad","type":"text","text":"工具参数解析","x":2350,"y":1230,"width":250,"height":60},
 		{
-			"id":"64630ae1b62030f5",
+			"id":"7ecf919d011bac15",
 			"type":"text",
-			"text":"MCP",
+			"text":"多模态",
 			"styleAttributes":{},
-			"x":2350,
-			"y":973,
+			"x":2320,
+			"y":-265,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"16145ec655fb27f7",
+			"type":"text",
+			"text":"世界模型",
+			"styleAttributes":{},
+			"x":2320,
+			"y":-191,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"7e2e5a9e002c6de7",
+			"type":"text",
+			"text":"Hello-Agents\nhttps://hello-agents.datawhale.cc/#/./README",
+			"styleAttributes":{},
+			"x":640,
+			"y":720,
+			"width":260,
+			"height":120
+		},
+		{
+			"id":"793e918d1d133a67",
+			"type":"text",
+			"text":"基于内部决策结构的分类",
+			"styleAttributes":{},
+			"x":3040,
+			"y":-340,
+			"width":260,
+			"height":60
+		},
+		{"id":"d69e5c2eca48ed12","type":"file","file":"LLM/2-Source/7-Deep Learning/深度学习总结.md","x":2480,"y":-1313,"width":400,"height":400},
+		{
+			"id":"562460a0b5483e75",
+			"type":"text",
+			"text":"[Deep Learning](Deep%20Learning.canvas)",
+			"styleAttributes":{},
+			"x":2100,
+			"y":-1152,
+			"width":260,
+			"height":87
+		},
+		{
+			"id":"2113e12e6c6b1f7c",
+			"type":"text",
+			"text":"传统智能体",
+			"styleAttributes":{},
+			"x":2310,
+			"y":-575,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"4d3da1886b7a1d1a",
+			"type":"text",
+			"text":"LLM驱动下的智能体",
+			"styleAttributes":{},
+			"x":2310,
+			"y":-475,
+			"width":260,
+			"height":60
+		},
+		{"id":"66ee03eadf573f45","type":"file","file":"image/Pasted image 20261110093933.png","x":2650,"y":-545,"width":390,"height":90},
+		{
+			"id":"ed993defeacfde8e",
+			"type":"text",
+			"text":"基于时间与反应性的分类",
+			"styleAttributes":{},
+			"x":3040,
+			"y":-160,
+			"width":260,
+			"height":60
+		},
+		{"id":"030dfd5e32cf81ae","type":"text","text":"反应式智能体:恒温器,简单游戏NPC","x":3382,"y":-251,"width":260,"height":60},
+		{
+			"id":"e0dea6967ac714ed",
+			"type":"text",
+			"text":"规划式智能体:AlphaGo, 物流路径规划系统",
+			"styleAttributes":{},
+			"x":3382,
+			"y":-160,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"0a83a55e1996208c",
+			"type":"text",
+			"text":"混合式智能体: 自动驾驶汽车",
+			"styleAttributes":{},
+			"x":3380,
+			"y":-70,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"401bbfbdbbb2a93a",
+			"type":"text",
+			"text":"反应式->模型式->基于目标和基于效用",
+			"styleAttributes":{},
+			"x":3380,
+			"y":-340,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"6886dc3aaad87635",
+			"type":"text",
+			"text":"符号主义AI (Symbolic AI)",
+			"styleAttributes":{},
+			"x":3380,
+			"y":130,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"49237ed8701f934a",
+			"type":"text",
+			"text":"亚符号主义AI(Sub-symbolic AI)",
+			"styleAttributes":{},
+			"x":3380,
+			"y":20,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"8dbaa9c9935728d2",
+			"type":"text",
+			"text":"神经符号主义AI (Neuro-Symbolic AI)",
+			"styleAttributes":{},
+			"x":3380,
+			"y":230,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"806fa85cc909f010",
+			"type":"text",
+			"text":"基于知识表示的分类",
+			"styleAttributes":{},
+			"x":3040,
+			"y":130,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"05c81c96ae54e6d1",
+			"type":"text",
+			"text":"智能体类型",
+			"styleAttributes":{},
+			"x":2700,
+			"y":-160,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"fd5516c9a7fce2e3",
+			"type":"text",
+			"text":"要理解智能体的运作，我们必须先理解它所处的**任务环境**。在人工智能领域，通常使用**PEAS 模型**来精确描述一个任务环境，即分析其**性能度量(Performance)、环境(Environment)、执行器(Actuators)和传感器(Sensors)** 。",
+			"styleAttributes":{},
+			"x":1620,
+			"y":237,
+			"width":480,
+			"height":122
+		},
+		{"id":"95704090f5d8bd6e","type":"file","file":"image/Pasted image 20261110095138.png","x":1335,"y":161,"width":400,"height":69},
+		{"id":"dcb7ec6936e3e33f","type":"file","file":"image/Pasted image 20261110095200.png","x":2180,"y":421,"width":400,"height":122},
+		{
+			"id":"d36c7fb3104df4c9",
+			"type":"text",
+			"text":"这是循环的起点。智能体通过其传感器（例如，API 的监听端口、用户输入接口）接收来自环境的输入信息。这些信息，即**观察 (Observation)**，既可以是用户的初始指令，也可以是上一步行动所导致的环境状态变化反馈。",
+			"styleAttributes":{},
+			"x":2660,
+			"y":-12,
+			"width":280,
+			"height":125
+		},
+		{
+			"id":"07f16486df4dfdfa",
+			"type":"text",
+			"text":"接收到观察信息后，智能体进入其核心决策阶段。对于 LLM 智能体而言，这通常是由大语言模型驱动的内部推理过程。如图所示，“思考”阶段可进一步细分为两个关键环节：\n\n- **规划 (Planning)**：智能体基于当前的观察和其内部记忆，更新对任务和环境的理解，并制定或调整一个行动计划。这可能涉及将复杂目标分解为一系列更具体的子任务。\n- **工具选择 (Tool Selection)**：根据当前计划，智能体从其可用的工具库中，选择最适合执行下一步骤的工具，并确定调用该工具所需的具体参数。",
+			"styleAttributes":{},
+			"x":2660,
+			"y":130,
+			"width":260,
+			"height":130
+		},
+		{
+			"id":"8a7889f1cbd6af3a",
+			"type":"text",
+			"text":"决策完成后，智能体通过其执行器（Actuators）执行具体的行动。这通常表现为调用一个选定的工具（如代码解释器、搜索引擎 API），从而对环境施加影响，意图改变环境的状态。",
+			"styleAttributes":{},
+			"x":2660,
+			"y":300,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"1b60a70e6851c6f6",
+			"type":"text",
+			"text":"Thought-Action-Observation",
+			"styleAttributes":{},
+			"x":1220,
+			"y":580,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"43b3d7c2419dab99",
+			"type":"text",
+			"text":"workflow和agent的区别",
+			"styleAttributes":{},
+			"x":2100,
+			"y":580,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"cd1830a3ad1588c0",
+			"type":"text",
+			"text":"**Workflow 是让 AI 按部就班地执行指令，而 Agent 则是赋予 AI 自由度去自主达成目标**。",
+			"styleAttributes":{},
+			"x":2400,
+			"y":580,
+			"width":400,
+			"height":60
+		},
+		{"id":"5ba5cac174d3550c","type":"file","file":"image/Pasted image 20261110100434.png","x":2840,"y":420,"width":400,"height":275},
+		{
+			"id":"403e99ed0b11366d",
+			"type":"text",
+			"text":"基于大型语言模型的智能体是一个**具备自主性的、以目标为导向的系统**。",
+			"styleAttributes":{},
+			"x":3340,
+			"y":580,
+			"width":300,
+			"height":100
+		},
+		{
+			"id":"9b84a1d932a794b6",
+			"type":"text",
+			"text":"工作流是一种传统的自动化范式，其核心是**对一系列任务或步骤进行预先定义的、结构化的编排**。",
+			"styleAttributes":{},
+			"x":3340,
+			"y":420,
+			"width":300,
+			"height":100
+		},
+		{
+			"id":"218ec86b23837320",
+			"type":"text",
+			"text":"规划与工具调用",
+			"styleAttributes":{},
+			"x":3740,
+			"y":520,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"d1b4bef3c55a77cc",
+			"type":"text",
+			"text":"推理与决策",
+			"styleAttributes":{},
+			"x":3740,
+			"y":600,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"17627ec7ce47ac50",
+			"type":"text",
+			"text":"生成结果",
+			"styleAttributes":{},
+			"x":3740,
+			"y":680,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"2c04f06d8ab848df",
+			"type":"text",
+			"text":"**这种基于实时信息进行动态推理和决策的能力，正是 Agent 的核心价值所在。**",
+			"styleAttributes":{},
+			"x":4060,
+			"y":580,
+			"width":280,
+			"height":100
+		},
+		{
+			"id":"7b867f9c23dfec8e",
+			"type":"text",
+			"text":"作为开发者工具的智能体",
+			"styleAttributes":{},
+			"x":3760,
+			"y":220,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"478b2495775f6c5f",
+			"type":"text",
+			"text":"DSH (万物皆插件)",
+			"styleAttributes":{},
+			"x":4120,
+			"y":100,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"cd96b0b12abf5a06",
+			"type":"text",
+			"text":"Claude Code (编码专精)",
+			"styleAttributes":{},
+			"x":4120,
+			"y":170,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"c691f54d1400489f",
+			"type":"text",
+			"text":"codex (综合)",
+			"styleAttributes":{},
+			"x":4120,
+			"y":240,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"0116408830e4a983",
+			"type":"text",
+			"text":"作为自主协作者的智能体",
+			"styleAttributes":{},
+			"x":3760,
+			"y":360,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"7132bfe8a822c210",
+			"type":"text",
+			"text":"单智能体自主循环",
+			"styleAttributes":{},
+			"x":4080,
+			"y":320,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"9d16a87658516f39",
+			"type":"text",
+			"text":"多智能体协作",
+			"styleAttributes":{},
+			"x":4080,
+			"y":410,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"1262fe0c4d85ee19",
+			"type":"text",
+			"text":"高级控制流架构",
+			"styleAttributes":{},
+			"x":4080,
+			"y":490,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"8ff3dfcfa10f85f3",
+			"type":"text",
+			"text":"角色扮演式对话\n组织化工作流",
+			"styleAttributes":{},
+			"x":4380,
+			"y":410,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"5b60060987b3479b",
+			"type":"text",
+			"text":"LangGraph",
+			"styleAttributes":{},
+			"x":4380,
+			"y":490,
+			"width":260,
+			"height":60
+		},
+		{"id":"2a30e79442ede1e8","type":"text","text":"短期记忆","x":1790,"y":2200,"width":250,"height":60},
+		{"id":"4751310371080e1b","type":"text","text":"记忆系统 Memory","x":1220,"y":2292,"width":250,"height":60},
+		{"id":"c897a33bbbae1482","type":"text","text":"长期记忆","x":1790,"y":2292,"width":250,"height":60},
+		{"id":"bccf7bde0d37bcec","type":"text","text":"记忆检索和更新","x":1790,"y":2384,"width":250,"height":60},
+		{"id":"d8b19b288400a0be","type":"text","text":"工具调用 Tool Calling","x":1220,"y":1812,"width":250,"height":60},
+		{
+			"id":"ae063a653847cbd6",
+			"type":"text",
+			"text":"A2A (Google 25年)",
+			"styleAttributes":{},
+			"x":2360,
+			"y":1520,
 			"width":250,
 			"height":60
 		},
 		{
-			"id":"ae063a653847cbd6",
+			"id":"64630ae1b62030f5",
 			"type":"text",
-			"text":"A2A",
+			"text":"MCP (Anthropic 24年)",
 			"styleAttributes":{},
-			"x":2350,
-			"y":881,
+			"x":2360,
+			"y":1612,
 			"width":250,
 			"height":60
-		}
+		},
+		{"id":"18146e4e7ab58f8f","type":"text","text":"Function Calling (openai 23年)","x":2360,"y":1685,"width":250,"height":60},
+		{"id":"bc2c4cbbafae91dc","type":"text","text":"工具定义和描述","x":2360,"y":1777,"width":250,"height":60},
+		{"id":"590f10bd58f0a5ad","type":"text","text":"工具参数解析","x":2360,"y":1869,"width":250,"height":60},
+		{"id":"99b7f53c7081d0c7","type":"text","text":"工具执行和结果返回","x":2360,"y":1961,"width":250,"height":60},
+		{"id":"b474f6030f85191d","type":"text","text":"Plan and Execute","x":1790,"y":1132,"width":250,"height":60},
+		{"id":"cfc6287a060c5770","type":"text","text":"Reflection","x":1790,"y":1224,"width":250,"height":60},
+		{"id":"f932707e6e47b2c0","type":"text","text":"Multi-Agent","x":1790,"y":1316,"width":250,"height":60},
+		{"id":"9d3047a1c702d7d3","type":"text","text":"Agent 架构模式","x":1220,"y":1178,"width":250,"height":60},
+		{"id":"0a7fa5f1565009c5","type":"text","text":"ReAct","x":1790,"y":1040,"width":250,"height":60},
+		{
+			"id":"0cd4d1028977f0bb",
+			"type":"text",
+			"text":"一个形象的比喻是：**Function Calling解决“手怎么用”，MCP解决“工具怎么标准化”，而A2A解决“人怎么协作”**。",
+			"styleAttributes":{},
+			"x":1925,
+			"y":1594,
+			"width":350,
+			"height":96
+		},
+		{"id":"80c33bfb5ca98cd2","type":"file","file":"image/Pasted image 20261110102718.png","x":640,"y":446,"width":400,"height":189}
 	],
 	"edges":[
 		{"id":"74c28ce675ae2ec9","fromNode":"2b70e8b62df7c921","fromSide":"right","toNode":"d48e50524532da04","toSide":"left","color":"1"},
@@ -698,6 +1115,240 @@
 			"toNode":"ae063a653847cbd6",
 			"toSide":"left",
 			"color":"2"
+		},
+		{
+			"id":"31042bdb23e21457",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"ed993defeacfde8e",
+			"fromSide":"right",
+			"toNode":"030dfd5e32cf81ae",
+			"toSide":"left"
+		},
+		{
+			"id":"c260fc3bc36f31b2",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"ed993defeacfde8e",
+			"fromSide":"right",
+			"toNode":"e0dea6967ac714ed",
+			"toSide":"left"
+		},
+		{
+			"id":"13cd568101715768",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"ed993defeacfde8e",
+			"fromSide":"right",
+			"toNode":"0a83a55e1996208c",
+			"toSide":"left"
+		},
+		{
+			"id":"fc54dedc57056032",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"806fa85cc909f010",
+			"fromSide":"right",
+			"toNode":"49237ed8701f934a",
+			"toSide":"left"
+		},
+		{
+			"id":"f9b4e620617d795a",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"806fa85cc909f010",
+			"fromSide":"right",
+			"toNode":"6886dc3aaad87635",
+			"toSide":"left"
+		},
+		{
+			"id":"d5a3c19019255de8",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"806fa85cc909f010",
+			"fromSide":"right",
+			"toNode":"8dbaa9c9935728d2",
+			"toSide":"left"
+		},
+		{
+			"id":"2e34a2fc3b010d53",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"05c81c96ae54e6d1",
+			"fromSide":"right",
+			"toNode":"793e918d1d133a67",
+			"toSide":"left"
+		},
+		{
+			"id":"057eec71e1045902",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"05c81c96ae54e6d1",
+			"fromSide":"right",
+			"toNode":"ed993defeacfde8e",
+			"toSide":"left"
+		},
+		{
+			"id":"981bbaef70c05080",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"05c81c96ae54e6d1",
+			"fromSide":"right",
+			"toNode":"806fa85cc909f010",
+			"toSide":"left"
+		},
+		{
+			"id":"d3bedec9da0e758b",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"0cdb1687d7162e46",
+			"fromSide":"right",
+			"toNode":"d36c7fb3104df4c9",
+			"toSide":"left"
+		},
+		{
+			"id":"c7137a0f27376da6",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"dec8139a9cd58a83",
+			"fromSide":"right",
+			"toNode":"07f16486df4dfdfa",
+			"toSide":"left"
+		},
+		{
+			"id":"5b96af9d569a86dd",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"e3d167f905614ecf",
+			"fromSide":"right",
+			"toNode":"07f16486df4dfdfa",
+			"toSide":"left"
+		},
+		{
+			"id":"f2b847bc37f37898",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"3200f944d25a2756",
+			"fromSide":"right",
+			"toNode":"8a7889f1cbd6af3a",
+			"toSide":"left"
+		},
+		{
+			"id":"f8697fdaecdf2a32",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"43b3d7c2419dab99",
+			"fromSide":"right",
+			"toNode":"cd1830a3ad1588c0",
+			"toSide":"left"
+		},
+		{
+			"id":"ce1b7a11be660e70",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"cd1830a3ad1588c0",
+			"fromSide":"right",
+			"toNode":"5ba5cac174d3550c",
+			"toSide":"left"
+		},
+		{
+			"id":"2d9c87280db251fe",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"403e99ed0b11366d",
+			"fromSide":"right",
+			"toNode":"218ec86b23837320",
+			"toSide":"left"
+		},
+		{
+			"id":"3f0e31da5a56bbe3",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"403e99ed0b11366d",
+			"fromSide":"right",
+			"toNode":"d1b4bef3c55a77cc",
+			"toSide":"left"
+		},
+		{
+			"id":"a4c9f863fd84836d",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"403e99ed0b11366d",
+			"fromSide":"right",
+			"toNode":"17627ec7ce47ac50",
+			"toSide":"left"
+		},
+		{
+			"id":"5bfa126bf230bb68",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"7b867f9c23dfec8e",
+			"fromSide":"right",
+			"toNode":"478b2495775f6c5f",
+			"toSide":"left"
+		},
+		{
+			"id":"b75d66a2d4369c19",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"7b867f9c23dfec8e",
+			"fromSide":"right",
+			"toNode":"cd96b0b12abf5a06",
+			"toSide":"left"
+		},
+		{
+			"id":"c881b957f752b25c",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"7b867f9c23dfec8e",
+			"fromSide":"right",
+			"toNode":"c691f54d1400489f",
+			"toSide":"left"
+		},
+		{
+			"id":"abc78c6688a06a06",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"0116408830e4a983",
+			"fromSide":"right",
+			"toNode":"7132bfe8a822c210",
+			"toSide":"left"
+		},
+		{
+			"id":"257a77b75431d688",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"0116408830e4a983",
+			"fromSide":"right",
+			"toNode":"9d16a87658516f39",
+			"toSide":"left"
+		},
+		{
+			"id":"c89c0ed6cda4bdfe",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"0116408830e4a983",
+			"fromSide":"right",
+			"toNode":"1262fe0c4d85ee19",
+			"toSide":"left"
+		},
+		{
+			"id":"7b590a0610c06a88",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"9d16a87658516f39",
+			"fromSide":"right",
+			"toNode":"8ff3dfcfa10f85f3",
+			"toSide":"left"
+		},
+		{
+			"id":"eb975633a70009c8",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"1262fe0c4d85ee19",
+			"fromSide":"right",
+			"toNode":"5b60060987b3479b",
+			"toSide":"left"
 		}
 	],
 	"metadata":{

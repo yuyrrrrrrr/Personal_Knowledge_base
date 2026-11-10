@@ -1,0 +1,762 @@
+{
+  "version": 2,
+  "meta": {
+    "title": "Transformers 自动模型与文本分类实战",
+    "language": "zh-CN",
+    "purpose": "掌握 AutoModel 选型、Tokenizer 预处理、文本分类微调、冻结策略与关键约束"
+  },
+  "layout": {
+    "mode": "split",
+    "maxFirstLevel": 7,
+    "maxDepth": 5,
+    "leftTypes": [
+      "concept",
+      "principle",
+      "limit",
+      "pitfall",
+      "compare",
+      "question",
+      "summary",
+      "theme"
+    ],
+    "rightTypes": [
+      "function",
+      "method",
+      "command",
+      "step",
+      "example",
+      "config",
+      "reference"
+    ]
+  },
+  "nodes": [
+    {
+      "id": "root",
+      "text": "Transformers 自动模型与文本分类实战",
+      "type": "root",
+      "importance": 5,
+      "recall": "从选模型、做预处理到微调和推理，最短闭环是什么"
+    },
+    {
+      "id": "autoclass",
+      "text": "01 AutoModel 选型",
+      "type": "theme",
+      "importance": 5,
+      "recall": "通用 AutoModel、任务专用类和具体模型分别何时使用",
+      "side": "left",
+      "color": "4",
+      "labels": [
+        "官方手册",
+        "AutoClass"
+      ]
+    },
+    {
+      "id": "autoclass-def",
+      "text": "AutoClass 是什么",
+      "type": "concept",
+      "importance": 4,
+      "recall": "它根据什么信息自动检索模型架构",
+      "note": "定义：根据 checkpoint 名称或路径自动检索模型架构。\n使用：同时选择与任务匹配的模型类和预处理类。\n来源：官方手册「使用 AutoClass 加载预训练实例」。"
+    },
+    {
+      "id": "autoclass-contract",
+      "text": "名称/路径 → 架构",
+      "type": "principle",
+      "importance": 3,
+      "note": "同一 checkpoint 标识同时约束配置、权重和预处理约定。"
+    },
+    {
+      "id": "autoclass-general",
+      "text": "通用 AutoModel",
+      "type": "concept",
+      "importance": 4,
+      "recall": "为什么通用类经常还需要任务配置或额外模型头",
+      "note": "加载基础架构；下游任务通常需要在基础模型上增加 head 或完成额外配置。"
+    },
+    {
+      "id": "custom-config",
+      "text": "AutoConfig 自定义架构",
+      "type": "method",
+      "importance": 4,
+      "recall": "改配置后初始化模型，为什么不能直接用于预测",
+      "note": "签名：AutoConfig.from_pretrained(checkpoint, **kwargs)\n用途：修改层数、注意力头数等配置。\n返回：配置对象，可传给 AutoModel.from_config。\n限制：模型属性会随机初始化，必须训练后才可用于任务。\n示例：config = AutoConfig.from_pretrained(ckpt, n_heads=12)\n相关：AutoModel.from_config(config)"
+    },
+    {
+      "id": "autoclass-task",
+      "text": "AutoModelForSequenceClassification",
+      "type": "method",
+      "importance": 5,
+      "recall": "它自动配置了什么，实例化警告为什么正常",
+      "note": "签名：AutoModelForSequenceClassification.from_pretrained(checkpoint, num_labels=2)\n用途：加载带序列分类头的模型。\n参数：checkpoint、num_labels、id2label/label2id。\n返回：模型对象，前向输出 logits。\n限制：模型类必须与任务匹配。\n示例：model = AutoModelForSequenceClassification.from_pretrained(ckpt, num_labels=2)"
+    },
+    {
+      "id": "random-head-warning",
+      "text": "分类头重新初始化",
+      "type": "pitfall",
+      "importance": 4,
+      "recall": "看到未使用权重和随机初始化警告时应怎样判断",
+      "note": "现象：加载时提示部分权重未使用、部分随机初始化。\n原因：预训练 head 被替换为当前任务的分类 head。\n正确：确认 num_labels 与标签映射后继续微调。"
+    },
+    {
+      "id": "autoclass-choice",
+      "text": "选型原则",
+      "type": "compare",
+      "importance": 5,
+      "recall": "快速验证、标准分类、精细控制分别选什么",
+      "note": "pipeline：最快验证。AutoModelFor*：按任务正确加载并配置 head。具体模型类：需要细节控制时使用。"
+    },
+    {
+      "id": "pipeline-fast",
+      "text": "pipeline 快速验证",
+      "type": "method",
+      "importance": 3,
+      "note": "签名：pipeline(task, model=..., tokenizer=...)\n用途：自动下载并组织推理所需组件。\n返回：可调用的任务 pipeline。\n限制：隐藏过多细节，不利于深度定制。\n示例：pipeline(\"sentiment-analysis\")"
+    },
+    {
+      "id": "concrete-control",
+      "text": "具体类精细控制",
+      "type": "concept",
+      "importance": 3,
+      "note": "固定架构类名便于控制输出细节，例如 hidden_states、attentions。"
+    },
+    {
+      "id": "model-chain",
+      "text": "02 具体模型与调用链",
+      "type": "theme",
+      "importance": 5,
+      "recall": "文本从 Tokenizer 到模型输出要经过哪些对象",
+      "side": "right",
+      "color": "2",
+      "labels": [
+        "官方手册",
+        "Tokenizer",
+        "BertForMaskedLM"
+      ]
+    },
+    {
+      "id": "pairing",
+      "text": "分词器与模型同源",
+      "type": "limit",
+      "importance": 5,
+      "recall": "混用不同 checkpoint 的组件会怎样，如何规避",
+      "note": "条件：Tokenizer、模型和 checkpoint 必须来自同一预训练版本。\n影响：词表或分词规则不一致会导致输入错位、形状错误或效果下降。\n替代：优先复用同一 checkpoint；自定义时同步保存和加载。"
+    },
+    {
+      "id": "tokenizer-mismatch",
+      "text": "Tokenizer 与模型混用",
+      "type": "pitfall",
+      "importance": 4,
+      "recall": "症状、根因和正确做法分别是什么",
+      "note": "现象：维度错误、特殊 token 不符或训练效果异常。\n原因：模型和 Tokenizer 使用不同 checkpoint 的词表与规则。\n正确：tokenizer = AutoTokenizer.from_pretrained(same_checkpoint)。"
+    },
+    {
+      "id": "tokenizer",
+      "text": "Tokenizer 三件套",
+      "type": "method",
+      "importance": 4,
+      "recall": "input_ids、token_type_ids、attention_mask 各表示什么",
+      "note": "签名：tokenizer(texts, padding=True, truncation=True, max_length=512, return_tensors=\"pt\")\n用途：文本分词、编号、补齐并组成批量张量。\n返回：BatchEncoding，含 input_ids、token_type_ids、attention_mask。\n限制：参数需与模型的最大长度和任务一致。\n示例：batch = tokenizer(texts, return_tensors=\"pt\")"
+    },
+    {
+      "id": "input-ids",
+      "text": "input_ids",
+      "type": "concept",
+      "importance": 3,
+      "note": "每个整数对应词表中的一个 token，是模型的主要输入。"
+    },
+    {
+      "id": "token-type-ids",
+      "text": "token_type_ids",
+      "type": "concept",
+      "importance": 3,
+      "note": "区分不同文本段，常用于句对、问答等输入。"
+    },
+    {
+      "id": "attention-mask",
+      "text": "attention_mask",
+      "type": "concept",
+      "importance": 3,
+      "note": "1 表示真实 token，0 表示 padding，模型据此忽略补齐位置。"
+    },
+    {
+      "id": "fill-mask",
+      "text": "BERT 完型填空",
+      "type": "method",
+      "importance": 4,
+      "recall": "如何从被遮住的文本得到候选词",
+      "note": "签名：BertTokenizer.from_pretrained(...); BertForMaskedLM.from_pretrained(...)\n用途：预测 [MASK] 位置的候选 token。\n返回：logits 形状为 batch × seq_len × vocab_size。\n限制：只读取 mask 位置，且需用同一词表解码。\n示例：outputs = model(**inputs); tokenizer.decode(outputs.logits[..., mask_index].argmax())\n相关：pipeline(\"fill-mask\")"
+    },
+    {
+      "id": "masked-position",
+      "text": "只读取 [MASK] 位置",
+      "type": "principle",
+      "importance": 3,
+      "note": "对 mask 位置的词表维度取 argmax，再交给 Tokenizer 解码。"
+    },
+    {
+      "id": "forward",
+      "text": "模型前向与 logits",
+      "type": "method",
+      "importance": 5,
+      "recall": "model(**batch) 返回什么，logits 能直接当概率吗",
+      "note": "签名：outputs = model(**batch)\n用途：执行前向计算并返回任务输出对象。\n返回：可通过 outputs.logits 访问原始分类分数。\n限制：logits 不是概率，需按任务选择 softmax、sigmoid 或 argmax。\n示例：logits = model(**batch).logits"
+    },
+    {
+      "id": "softmax",
+      "text": "Softmax → 概率",
+      "type": "concept",
+      "importance": 3,
+      "note": "多类分类常在类别维 dim=-1 上做 softmax，再比较概率。"
+    },
+    {
+      "id": "auto-vs-concrete",
+      "text": "Auto 类 vs 具体类",
+      "type": "compare",
+      "importance": 4,
+      "recall": "两者在架构选择、错误风险和可控性上的差异",
+      "note": "Auto 类按 checkpoint 自动选择架构，代码通用；具体类固定架构，类型和输出更明确。\n两者加载逻辑相近，但具体类便于精细控制和排查。"
+    },
+    {
+      "id": "output-control",
+      "text": "输出细节控制",
+      "type": "compare",
+      "importance": 3,
+      "note": "具体类更容易显式启用隐藏状态、注意力权重等调试信息。"
+    },
+    {
+      "id": "text-cls",
+      "text": "03 文本分类实战",
+      "type": "theme",
+      "importance": 5,
+      "recall": "从数据集到预测标签的最短闭环是什么",
+      "side": "right",
+      "color": "6",
+      "labels": [
+        "官方手册",
+        "文本分类"
+      ]
+    },
+    {
+      "id": "task-data",
+      "text": "任务与数据",
+      "type": "step",
+      "importance": 5,
+      "recall": "IMDb 的输入字段、标签含义和训练目标是什么",
+      "note": "目标：判断评论为正面或负面。\n数据：load_dataset(\"imdb\")；text 为评论，label 为 0/1。\n标签：0 = NEGATIVE，1 = POSITIVE。"
+    },
+    {
+      "id": "labelmap",
+      "text": "id2label / label2id",
+      "type": "config",
+      "importance": 3,
+      "note": "在模型配置中建立编号与可读标签的双向映射。"
+    },
+    {
+      "id": "preprocess",
+      "text": "预处理函数",
+      "type": "method",
+      "importance": 5,
+      "recall": "如何让整份数据集符合模型输入长度",
+      "note": "签名：dataset.map(preprocess_function, batched=True)\n用途：对 text 分词并截断。\n参数：truncation=True；必要时设置 max_length。\n返回：含模型输入字段的数据集。\n限制：截断长度不能超过模型可接受范围。\n示例：tokenizer(examples[\"text\"], truncation=True)"
+    },
+    {
+      "id": "padding",
+      "text": "补齐批次",
+      "type": "limit",
+      "importance": 4,
+      "recall": "为什么批量输入必须等长，动态填充如何省算力",
+      "note": "条件：同一批次中的序列长度不同。\n影响：无法直接组成矩形张量，或产生大量无效 padding。\n替代：使用动态填充，补到批内最长序列。"
+    },
+    {
+      "id": "truncation",
+      "text": "截断超长文本",
+      "type": "limit",
+      "importance": 4,
+      "recall": "超长文本被截断后可能损失什么",
+      "note": "条件：序列长度超过 max_length。\n影响：超出部分不会进入模型，可能丢失关键信息。\n替代：根据任务设合理长度，或在建模前分段与汇总。"
+    },
+    {
+      "id": "dynamic-padding",
+      "text": "动态填充更省算力",
+      "type": "principle",
+      "importance": 3,
+      "note": "将每批补到批内最长，比整份数据集补到全局最长更高效。"
+    },
+    {
+      "id": "collator",
+      "text": "DataCollatorWithPadding",
+      "type": "method",
+      "importance": 4,
+      "recall": "它需要哪个对象，何时完成填充",
+      "note": "签名：DataCollatorWithPadding(tokenizer=tokenizer)\n用途：在整理 batch 时动态填充和生成 mask。\n返回：模型可直接消费的批量字段。\n限制：Tokenizer 必须与模型同源。\n示例：data_collator = DataCollatorWithPadding(tokenizer=tokenizer)"
+    },
+    {
+      "id": "trainer",
+      "text": "Trainer 训练路线",
+      "type": "method",
+      "importance": 5,
+      "recall": "模型、参数、数据、整理器和指标如何装配",
+      "note": "签名：Trainer(model, args, train_dataset, eval_dataset, processing_class, data_collator, compute_metrics)\n用途：封装训练与评估循环。\n流程：加载模型 → 设置参数 → 装配组件 → train()。\n限制：模型类别、标签数、数据字段必须匹配。\n示例：trainer = Trainer(...); trainer.train()"
+    },
+    {
+      "id": "training-args",
+      "text": "TrainingArguments",
+      "type": "config",
+      "importance": 4,
+      "recall": "必填项、常见超参数和评估时机是什么",
+      "note": "output_dir 必填；可设 learning_rate=2e-5、batch_size=16、num_train_epochs=2，并用 eval_strategy=\"epoch\" 周期评估。"
+    },
+    {
+      "id": "eval-strategy",
+      "text": "按 epoch 评估",
+      "type": "config",
+      "importance": 3,
+      "note": "eval_strategy 与 save_strategy 对齐，便于比较检查点并加载最佳模型。"
+    },
+    {
+      "id": "inference",
+      "text": "评估与推理",
+      "type": "step",
+      "importance": 5,
+      "recall": "从 logits 到可读标签的最短路径",
+      "note": "1. model.eval() 并关闭梯度。\n2. Tokenizer 生成输入。\n3. 前向得到 logits。\n4. argmax 得到类别编号。\n5. 用 id2label 转成文本标签。"
+    },
+    {
+      "id": "metrics",
+      "text": "compute_metrics",
+      "type": "method",
+      "importance": 4,
+      "recall": "评估时先对 logits 做什么",
+      "note": "签名：compute_metrics(eval_pred)\n用途：从预测和标签计算 accuracy 等指标。\n参数：eval_pred 通常包含 logits 与 labels。\n返回：指标字典。\n限制：多分类先沿类别维 argmax，再交给 Evaluate。\n示例：np.argmax(logits, axis=-1)"
+    },
+    {
+      "id": "manual-infer",
+      "text": "手动推理路径",
+      "type": "step",
+      "importance": 3,
+      "note": "tokenizer(text, return_tensors=\"pt\") → model(**inputs).logits → argmax → model.config.id2label。"
+    },
+    {
+      "id": "eval-mode",
+      "text": "推理忘记 model.eval()",
+      "type": "pitfall",
+      "importance": 4,
+      "recall": "现象、根因和正确做法分别是什么",
+      "note": "现象：同一输入多次推理结果不稳定。\n原因：模型仍处于 train 模式，Dropout 等层保持训练行为。\n正确：推理前调用 model.eval()，并配合 torch.no_grad() 或推理上下文。"
+    },
+    {
+      "id": "fine-tune",
+      "text": "04 微调与冻结策略",
+      "type": "theme",
+      "importance": 5,
+      "recall": "为什么先训练分类头，何时冻结或解冻主干",
+      "side": "left",
+      "color": "5",
+      "labels": [
+        "官方手册",
+        "迁移学习"
+      ]
+    },
+    {
+      "id": "transfer",
+      "text": "微调 = 换头 + 迁移",
+      "type": "principle",
+      "importance": 5,
+      "recall": "预训练知识如何迁移到当前分类任务",
+      "note": "加载预训练主干，替换或新增任务 head，再用目标任务数据训练，使通用表示适配当前标签体系。"
+    },
+    {
+      "id": "head-replaced",
+      "text": "旧任务 head 被替换",
+      "type": "principle",
+      "importance": 3,
+      "note": "预训练 head 的权重通常不再使用，新 head 从随机初始化开始训练。"
+    },
+    {
+      "id": "freeze-why",
+      "text": "为什么冻结",
+      "type": "principle",
+      "importance": 4,
+      "recall": "冻结分别改善了什么风险和成本",
+      "note": "小数据场景可降低过拟合风险，同时减少梯度计算、优化器状态和显存占用，训练更快。"
+    },
+    {
+      "id": "freeze-how",
+      "text": "冻结参数",
+      "type": "method",
+      "importance": 5,
+      "recall": "如何冻结主干，又让优化器只看到可训练参数",
+      "note": "签名：for p in model.bert.parameters(): p.requires_grad = False\n用途：固定预训练主干参数。\n参数：选择要冻结的模块参数。\n返回：无，直接修改参数标记。\n限制：分类头必须保持可训练。\n示例：optimizer = AdamW(filter(lambda p: p.requires_grad, model.parameters()), lr=2e-5)"
+    },
+    {
+      "id": "optimizer-filter",
+      "text": "优化器只传可训练参数",
+      "type": "method",
+      "importance": 4,
+      "recall": "filter 表达式如何避免把冻结参数交给优化器",
+      "note": "签名：filter(lambda p: p.requires_grad, model.parameters())\n用途：筛出需要优化的参数。\n返回：参数迭代器，可传给 AdamW。\n限制：冻结与优化器创建顺序要正确。\n示例：AdamW(filter(lambda p: p.requires_grad, model.parameters()), lr=2e-5)"
+    },
+    {
+      "id": "optimizer-trap",
+      "text": "优化器仍传全部参数",
+      "type": "pitfall",
+      "importance": 4,
+      "recall": "它会浪费什么，后续为什么容易误更新",
+      "note": "现象：冻结主干后显存或优化器状态仍偏大。\n原因：model.parameters() 包含未训练参数。\n正确：用 requires_grad 过滤，或在解冻后重建/调整优化器。"
+    },
+    {
+      "id": "freeze-strategy",
+      "text": "分层微调策略",
+      "type": "step",
+      "importance": 4,
+      "recall": "从冻结到解冻的处理顺序与判断标准",
+      "note": "1. 先冻结主干，只训练分类头。\n2. 评估验证集效果。\n3. 效果不足时逐层解冻顶层继续微调。"
+    },
+    {
+      "id": "differential-lr",
+      "text": "主干小学习率，头大学习率",
+      "type": "config",
+      "importance": 3,
+      "note": "预训练主干通常使用更小学习率，随机初始化的分类头可使用更大学习率。"
+    },
+    {
+      "id": "fine-limits",
+      "text": "冻结后的完整校验",
+      "type": "limit",
+      "importance": 5,
+      "recall": "除了冻结本身，还要保证哪些一致性",
+      "note": "条件：模型、Tokenizer、最大长度、标签映射和优化器参数集合共同决定训练正确性。\n影响：任一不一致都可能造成报错、无效训练或指标失真。\n替代：沿用同一 checkpoint，先小样本跑通，再全量训练。"
+    }
+  ],
+  "edges": [
+    {
+      "from": "root",
+      "to": "autoclass",
+      "type": "tree"
+    },
+    {
+      "from": "autoclass",
+      "to": "autoclass-def",
+      "type": "tree"
+    },
+    {
+      "from": "autoclass-def",
+      "to": "autoclass-contract",
+      "type": "tree"
+    },
+    {
+      "from": "autoclass",
+      "to": "autoclass-general",
+      "type": "tree"
+    },
+    {
+      "from": "autoclass-general",
+      "to": "custom-config",
+      "type": "tree"
+    },
+    {
+      "from": "autoclass",
+      "to": "autoclass-task",
+      "type": "tree"
+    },
+    {
+      "from": "autoclass-task",
+      "to": "random-head-warning",
+      "type": "tree"
+    },
+    {
+      "from": "autoclass",
+      "to": "autoclass-choice",
+      "type": "tree"
+    },
+    {
+      "from": "autoclass-choice",
+      "to": "pipeline-fast",
+      "type": "tree"
+    },
+    {
+      "from": "autoclass-choice",
+      "to": "concrete-control",
+      "type": "tree"
+    },
+    {
+      "from": "root",
+      "to": "model-chain",
+      "type": "tree"
+    },
+    {
+      "from": "model-chain",
+      "to": "pairing",
+      "type": "tree"
+    },
+    {
+      "from": "pairing",
+      "to": "tokenizer-mismatch",
+      "type": "tree"
+    },
+    {
+      "from": "model-chain",
+      "to": "tokenizer",
+      "type": "tree"
+    },
+    {
+      "from": "tokenizer",
+      "to": "input-ids",
+      "type": "tree"
+    },
+    {
+      "from": "tokenizer",
+      "to": "token-type-ids",
+      "type": "tree"
+    },
+    {
+      "from": "tokenizer",
+      "to": "attention-mask",
+      "type": "tree"
+    },
+    {
+      "from": "model-chain",
+      "to": "fill-mask",
+      "type": "tree"
+    },
+    {
+      "from": "fill-mask",
+      "to": "masked-position",
+      "type": "tree"
+    },
+    {
+      "from": "model-chain",
+      "to": "forward",
+      "type": "tree"
+    },
+    {
+      "from": "forward",
+      "to": "softmax",
+      "type": "tree"
+    },
+    {
+      "from": "model-chain",
+      "to": "auto-vs-concrete",
+      "type": "tree"
+    },
+    {
+      "from": "auto-vs-concrete",
+      "to": "output-control",
+      "type": "tree"
+    },
+    {
+      "from": "root",
+      "to": "text-cls",
+      "type": "tree"
+    },
+    {
+      "from": "text-cls",
+      "to": "task-data",
+      "type": "tree"
+    },
+    {
+      "from": "task-data",
+      "to": "labelmap",
+      "type": "tree"
+    },
+    {
+      "from": "text-cls",
+      "to": "preprocess",
+      "type": "tree"
+    },
+    {
+      "from": "preprocess",
+      "to": "padding",
+      "type": "tree"
+    },
+    {
+      "from": "padding",
+      "to": "dynamic-padding",
+      "type": "tree"
+    },
+    {
+      "from": "preprocess",
+      "to": "truncation",
+      "type": "tree"
+    },
+    {
+      "from": "text-cls",
+      "to": "collator",
+      "type": "tree"
+    },
+    {
+      "from": "text-cls",
+      "to": "trainer",
+      "type": "tree"
+    },
+    {
+      "from": "trainer",
+      "to": "training-args",
+      "type": "tree"
+    },
+    {
+      "from": "training-args",
+      "to": "eval-strategy",
+      "type": "tree"
+    },
+    {
+      "from": "text-cls",
+      "to": "inference",
+      "type": "tree"
+    },
+    {
+      "from": "inference",
+      "to": "metrics",
+      "type": "tree"
+    },
+    {
+      "from": "inference",
+      "to": "manual-infer",
+      "type": "tree"
+    },
+    {
+      "from": "inference",
+      "to": "eval-mode",
+      "type": "tree"
+    },
+    {
+      "from": "root",
+      "to": "fine-tune",
+      "type": "tree"
+    },
+    {
+      "from": "fine-tune",
+      "to": "transfer",
+      "type": "tree"
+    },
+    {
+      "from": "transfer",
+      "to": "head-replaced",
+      "type": "tree"
+    },
+    {
+      "from": "fine-tune",
+      "to": "freeze-why",
+      "type": "tree"
+    },
+    {
+      "from": "fine-tune",
+      "to": "freeze-how",
+      "type": "tree"
+    },
+    {
+      "from": "freeze-how",
+      "to": "optimizer-filter",
+      "type": "tree"
+    },
+    {
+      "from": "optimizer-filter",
+      "to": "optimizer-trap",
+      "type": "tree"
+    },
+    {
+      "from": "fine-tune",
+      "to": "freeze-strategy",
+      "type": "tree"
+    },
+    {
+      "from": "freeze-strategy",
+      "to": "differential-lr",
+      "type": "tree"
+    },
+    {
+      "from": "fine-tune",
+      "to": "fine-limits",
+      "type": "tree"
+    },
+    {
+      "from": "autoclass-choice",
+      "to": "autoclass-task",
+      "type": "depends",
+      "label": "任务选类"
+    },
+    {
+      "from": "pairing",
+      "to": "tokenizer",
+      "type": "limit",
+      "label": "约束"
+    },
+    {
+      "from": "tokenizer",
+      "to": "forward",
+      "type": "depends",
+      "label": "生成输入"
+    },
+    {
+      "from": "fill-mask",
+      "to": "forward",
+      "type": "example",
+      "label": "调用实例"
+    },
+    {
+      "from": "autoclass-task",
+      "to": "trainer",
+      "type": "depends",
+      "label": "分类模型"
+    },
+    {
+      "from": "preprocess",
+      "to": "tokenizer",
+      "type": "depends",
+      "label": "使用分词器"
+    },
+    {
+      "from": "dynamic-padding",
+      "to": "collator",
+      "type": "implements",
+      "label": "动态补齐"
+    },
+    {
+      "from": "labelmap",
+      "to": "inference",
+      "type": "depends",
+      "label": "解释类别"
+    },
+    {
+      "from": "transfer",
+      "to": "random-head-warning",
+      "type": "cause",
+      "label": "换头警告"
+    },
+    {
+      "from": "fine-limits",
+      "to": "pairing",
+      "type": "related",
+      "label": "同源约束"
+    },
+    {
+      "from": "task-data",
+      "to": "preprocess",
+      "type": "sequence",
+      "order": 1,
+      "label": "先预处理"
+    },
+    {
+      "from": "preprocess",
+      "to": "collator",
+      "type": "sequence",
+      "order": 2,
+      "label": "再组批"
+    },
+    {
+      "from": "collator",
+      "to": "trainer",
+      "type": "sequence",
+      "order": 3,
+      "label": "再训练"
+    },
+    {
+      "from": "trainer",
+      "to": "inference",
+      "type": "sequence",
+      "order": 4,
+      "label": "再评估"
+    }
+  ],
+  "groups": []
+}
