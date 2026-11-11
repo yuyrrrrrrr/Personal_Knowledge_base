@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "LLM/2-Source/8-Agent/Agent 开发第一课-50行代码实现极简Agent.md",
+                "file": "LLM/2-Source/8-Agent/初识agent.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Agent 开发第一课-50行代码实现极简Agent"
+              "title": "初识agent"
             }
           },
           {
@@ -217,7 +217,13 @@
   },
   "active": "be023ac01acada4f",
   "lastOpenFiles": [
+    "LLM/2-Source/8-Agent/Thinking.md",
     "LLM/2-Source/8-Agent/初识agent.md",
+    "image/Pasted image 20261110200359.png",
+    "image/Pasted image 20261110195906.png",
+    "image/Pasted image 20261110195713.png",
+    "image/Pasted image 20261110195213.png",
+    "LLM/2-Source/7-Deep Learning/4-Transformer/4-为什么是 Decoder-Only的 GPT赢了.md",
     "LLM/2-Source/8-Agent/Agent 开发第一课-50行代码实现极简Agent.md",
     "LLM/2-Source/7-Deep Learning/Deep Learning.canvas",
     "LLM/2-Source/7-Deep Learning/OpenCV.canvas",
@@ -230,7 +236,6 @@
     "image/Pasted image 20261110095138.png",
     "image/Pasted image 20261110093933.png",
     "LLM/2-Source/7-Deep Learning/Deep Learning-思维导图.md",
-    "LLM/2-Source/7-Deep Learning/4-Transformer/4-为什么是 Decoder-Only的 GPT赢了.md",
     "LLM/5-Guide/transformers-auto-text-classification.canvas",
     "LLM/5-Guide/transformers-docs-zh.pdf",
     "LLM/Official Document.md",
@@ -240,10 +245,6 @@
     "LLM/从零开始的AI学习之路.canvas",
     "LLM/AI Concept.md",
     "image/Pasted image 20261109201650.png",
-    "image/Pasted image 20261109201501.png",
-    "image/Pasted image 20261109201357.png",
-    "image/Pasted image 20261109201230.png",
-    "image/Pasted image 20261109201018.png",
     "LLM/2-Source/7-Deep Learning/4-Transformer/5-手搓 Mini-GPT.md",
     "LLM/2-Source/7-Deep Learning/Deep Learning.canvas.transforms.new",
     "LLM/2-Source/7-Deep Learning/4-Transformer/2-手搓 Mini Transformer前需要了解的编码器和解码器.md",
@@ -271,7 +272,6 @@
     "LLM/2-Source/8-Agent/大模型应用开发.md",
     "LLM/2-Source/7-Deep Learning/深度学习第一课.md",
     "LLM/2-Source/7-Deep Learning/0-深度学习基础/6-梯度下降：神经网络是怎么找到一组好参数的.md",
-    "LLM/2-Source/7-Deep Learning/0-深度学习基础/3-深度学习架构：MLP到神经网络的升级，理解反向传播的基础.md",
-    "LLM/2-Source/7-Deep Learning/0-深度学习基础/2-感知机：深度学习的 Hello World.md"
+    "LLM/2-Source/7-Deep Learning/0-深度学习基础/3-深度学习架构：MLP到神经网络的升级，理解反向传播的基础.md"
   ]
 }
