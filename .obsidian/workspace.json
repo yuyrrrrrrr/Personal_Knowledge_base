@@ -11,31 +11,38 @@
             "id": "be023ac01acada4f",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "LLM/2-Source/8-Agent/初识agent.md",
-                "mode": "source",
-                "source": false
+                "file": "LLM/2-Source/6-Machine Learning/Machine Learning.canvas",
+                "viewState": {
+                  "x": 1223.4729924075118,
+                  "y": -1691.20233551716,
+                  "zoom": -0.2004973694063747
+                }
               },
-              "icon": "lucide-file",
-              "title": "初识agent"
+              "icon": "lucide-layout-dashboard",
+              "title": "Machine Learning"
             }
           },
           {
             "id": "0c42028da10691dc",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "LLM/2-Source/7-Deep Learning/4-Transformer/4-为什么是 Decoder-Only的 GPT赢了.md",
-                "mode": "source",
-                "source": false
+                "file": "LLM/2-Source/7-Deep Learning/Deep Learning.canvas",
+                "viewState": {
+                  "x": -475.624907888383,
+                  "y": -3215.9861431248814,
+                  "zoom": -0.15707293208201845
+                }
               },
-              "icon": "lucide-file",
-              "title": "4-为什么是 Decoder-Only的 GPT赢了"
+              "icon": "lucide-layout-dashboard",
+              "title": "Deep Learning"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -215,19 +222,22 @@
       "bases:新建数据库": false
     }
   },
-  "active": "be023ac01acada4f",
+  "active": "0c42028da10691dc",
   "lastOpenFiles": [
-    "LLM/2-Source/8-Agent/Thinking.md",
+    "LLM/Data analysis/数据科学.md",
+    "LLM/2-Source/7-Deep Learning/Deep Learning.canvas",
+    "Full_Stack/Zero-to-FullStack.md",
+    "LLM/2-Source/8-Agent/大模型应用开发.md",
+    "LLM/2-Source/6-Machine Learning/Machine Learning.canvas",
+    "LLM/2-Source/7-Deep Learning/4-Transformer/4-为什么是 Decoder-Only的 GPT赢了.md",
     "LLM/2-Source/8-Agent/初识agent.md",
+    "LLM/2-Source/8-Agent/Thinking.md",
     "image/Pasted image 20261110200359.png",
     "image/Pasted image 20261110195906.png",
     "image/Pasted image 20261110195713.png",
     "image/Pasted image 20261110195213.png",
-    "LLM/2-Source/7-Deep Learning/4-Transformer/4-为什么是 Decoder-Only的 GPT赢了.md",
     "LLM/2-Source/8-Agent/Agent 开发第一课-50行代码实现极简Agent.md",
-    "LLM/2-Source/7-Deep Learning/Deep Learning.canvas",
     "LLM/2-Source/7-Deep Learning/OpenCV.canvas",
-    "LLM/2-Source/6-Machine Learning/Machine Learning.canvas",
     "LLM/2-Source/8-Agent/Agent.canvas",
     "LLM/2-Source/7-Deep Learning/深度学习总结.md",
     "image/Pasted image 20261110102718.png",
@@ -269,9 +279,6 @@
     "LLM/2-Source/7-Deep Learning/3-RNN/2-LSTM 与 GRU 改进 RNN 带来长期记忆.md",
     "LLM/2-Source/7-Deep Learning/3-RNN/1-RNN：模型开始理解自然语言序列.md",
     "LLM/2-Source/7-Deep Learning/3-RNN/0-Embedding 与word2vec：模型如何理解一个词.md",
-    "LLM/2-Source/8-Agent/大模型应用开发.md",
-    "LLM/2-Source/7-Deep Learning/深度学习第一课.md",
-    "LLM/2-Source/7-Deep Learning/0-深度学习基础/6-梯度下降：神经网络是怎么找到一组好参数的.md",
-    "LLM/2-Source/7-Deep Learning/0-深度学习基础/3-深度学习架构：MLP到神经网络的升级，理解反向传播的基础.md"
+    "LLM/2-Source/7-Deep Learning/深度学习第一课.md"
   ]
 }
