@@ -3,26 +3,7 @@
 		{"id":"2b70e8b62df7c921","type":"text","text":"AI Agent 应用开发学习路线\nby 程序员鱼皮","x":0,"y":196,"width":250,"height":68,"color":"1"},
 		{"id":"320d3c5618788779","type":"text","text":"Agent 应用场景","x":1780,"y":575,"width":250,"height":60},
 		{"id":"bc478366c039795e","type":"text","text":"阶段 2：Agent 基础概念","x":640,"y":931,"width":250,"height":60,"color":"2"},
-		{"id":"93fd8e86aba296e0","type":"text","text":"大模型基础概念","x":1210,"y":-1173,"width":250,"height":60},
-		{"id":"d48e50524532da04","type":"text","text":"阶段 1：AI 大模型基础","x":640,"y":-713,"width":250,"height":60,"color":"1"},
-		{"id":"3394db8dc53feadb","type":"text","text":"Prompt Engineering","x":1210,"y":-713,"width":250,"height":60},
-		{"id":"bc1fd727e724d6f9","type":"text","text":"API 调用","x":1210,"y":-253,"width":250,"height":60},
 		{"id":"a6caaf1e5462406a","type":"text","text":"Agent 核心概念","x":1210,"y":368,"width":250,"height":60},
-		{"id":"957e2accee00d035","type":"text","text":"大语言模型 LLM","x":1780,"y":-1357,"width":250,"height":60},
-		{"id":"a4cd8f2857e26463","type":"text","text":"Transformer 架构","x":1780,"y":-1265,"width":250,"height":60},
-		{"id":"cc6e52157b540149","type":"text","text":"主流大模型","x":1780,"y":-1173,"width":250,"height":60},
-		{"id":"a33acda6236596a8","type":"text","text":"Token 和上下文窗口","x":1780,"y":-1081,"width":250,"height":60},
-		{"id":"7d0388a118469d72","type":"text","text":"模型能力和局限性","x":1780,"y":-989,"width":250,"height":60},
-		{"id":"f6d6c892917966ee","type":"text","text":"Prompt 基础","x":1780,"y":-897,"width":250,"height":60},
-		{"id":"c6b9b8f36718eca5","type":"text","text":"Few-shot Learning","x":1780,"y":-805,"width":250,"height":60},
-		{"id":"c5321d73d7f29e9d","type":"text","text":"Chain of Thought","x":1780,"y":-713,"width":250,"height":60},
-		{"id":"602f81ec4d229b9b","type":"text","text":"角色扮演","x":1780,"y":-621,"width":250,"height":60},
-		{"id":"964e767ad2358fc6","type":"text","text":"Prompt 优化技巧","x":1780,"y":-529,"width":250,"height":60},
-		{"id":"96d793287d0b3282","type":"text","text":"OpenAI API","x":1780,"y":-437,"width":250,"height":60},
-		{"id":"1efc70021744f674","type":"text","text":"国产大模型 API","x":1780,"y":-345,"width":250,"height":60},
-		{"id":"afebe23fc26c5c59","type":"text","text":"API 参数","x":1780,"y":-253,"width":250,"height":60},
-		{"id":"6fdef6b9746dd387","type":"text","text":"流式输出","x":1780,"y":-161,"width":250,"height":60},
-		{"id":"48b0cd93fd5d0481","type":"text","text":"错误处理","x":1780,"y":-69,"width":250,"height":60},
 		{"id":"0e9e24c8895d617e","type":"text","text":"Agent 定义","x":1780,"y":161,"width":250,"height":60},
 		{"id":"f177a65409bd9208","type":"text","text":"Agent 核心能力","x":1780,"y":391,"width":250,"height":60},
 		{"id":"09baa025145f0d8b","type":"text","text":"Agent 和 LLM 的区别","x":1780,"y":483,"width":250,"height":60},
@@ -97,36 +78,6 @@
 			"height":138
 		},
 		{
-			"id":"743cf91dbf562f48",
-			"type":"text",
-			"text":"LLM",
-			"styleAttributes":{},
-			"x":2320,
-			"y":-345,
-			"width":260,
-			"height":60
-		},
-		{
-			"id":"7ecf919d011bac15",
-			"type":"text",
-			"text":"多模态",
-			"styleAttributes":{},
-			"x":2320,
-			"y":-265,
-			"width":260,
-			"height":60
-		},
-		{
-			"id":"16145ec655fb27f7",
-			"type":"text",
-			"text":"世界模型",
-			"styleAttributes":{},
-			"x":2320,
-			"y":-191,
-			"width":260,
-			"height":60
-		},
-		{
 			"id":"7e2e5a9e002c6de7",
 			"type":"text",
 			"text":"Hello-Agents\nhttps://hello-agents.datawhale.cc/#/./README",
@@ -157,27 +108,6 @@
 			"width":260,
 			"height":87
 		},
-		{
-			"id":"2113e12e6c6b1f7c",
-			"type":"text",
-			"text":"传统智能体",
-			"styleAttributes":{},
-			"x":2310,
-			"y":-575,
-			"width":260,
-			"height":60
-		},
-		{
-			"id":"4d3da1886b7a1d1a",
-			"type":"text",
-			"text":"LLM驱动下的智能体",
-			"styleAttributes":{},
-			"x":2310,
-			"y":-475,
-			"width":260,
-			"height":60
-		},
-		{"id":"66ee03eadf573f45","type":"file","file":"image/Pasted image 20261110093933.png","x":2650,"y":-545,"width":390,"height":90},
 		{
 			"id":"ed993defeacfde8e",
 			"type":"text",
@@ -312,16 +242,6 @@
 			"height":60
 		},
 		{
-			"id":"1b60a70e6851c6f6",
-			"type":"text",
-			"text":"Thought-Action-Observation",
-			"styleAttributes":{},
-			"x":1220,
-			"y":580,
-			"width":260,
-			"height":60
-		},
-		{
 			"id":"43b3d7c2419dab99",
 			"type":"text",
 			"text":"workflow和agent的区别",
@@ -402,110 +322,6 @@
 			"width":280,
 			"height":100
 		},
-		{
-			"id":"7b867f9c23dfec8e",
-			"type":"text",
-			"text":"作为开发者工具的智能体",
-			"styleAttributes":{},
-			"x":3760,
-			"y":220,
-			"width":260,
-			"height":60
-		},
-		{
-			"id":"478b2495775f6c5f",
-			"type":"text",
-			"text":"DSH (万物皆插件)",
-			"styleAttributes":{},
-			"x":4120,
-			"y":100,
-			"width":260,
-			"height":60
-		},
-		{
-			"id":"cd96b0b12abf5a06",
-			"type":"text",
-			"text":"Claude Code (编码专精)",
-			"styleAttributes":{},
-			"x":4120,
-			"y":170,
-			"width":260,
-			"height":60
-		},
-		{
-			"id":"c691f54d1400489f",
-			"type":"text",
-			"text":"codex (综合)",
-			"styleAttributes":{},
-			"x":4120,
-			"y":240,
-			"width":260,
-			"height":60
-		},
-		{
-			"id":"0116408830e4a983",
-			"type":"text",
-			"text":"作为自主协作者的智能体",
-			"styleAttributes":{},
-			"x":3760,
-			"y":360,
-			"width":260,
-			"height":60
-		},
-		{
-			"id":"7132bfe8a822c210",
-			"type":"text",
-			"text":"单智能体自主循环",
-			"styleAttributes":{},
-			"x":4080,
-			"y":320,
-			"width":260,
-			"height":60
-		},
-		{
-			"id":"9d16a87658516f39",
-			"type":"text",
-			"text":"多智能体协作",
-			"styleAttributes":{},
-			"x":4080,
-			"y":410,
-			"width":260,
-			"height":60
-		},
-		{
-			"id":"1262fe0c4d85ee19",
-			"type":"text",
-			"text":"高级控制流架构",
-			"styleAttributes":{},
-			"x":4080,
-			"y":490,
-			"width":260,
-			"height":60
-		},
-		{
-			"id":"8ff3dfcfa10f85f3",
-			"type":"text",
-			"text":"角色扮演式对话\n组织化工作流",
-			"styleAttributes":{},
-			"x":4380,
-			"y":410,
-			"width":260,
-			"height":60
-		},
-		{
-			"id":"5b60060987b3479b",
-			"type":"text",
-			"text":"LangGraph",
-			"styleAttributes":{},
-			"x":4380,
-			"y":490,
-			"width":260,
-			"height":60
-		},
-		{"id":"2a30e79442ede1e8","type":"text","text":"短期记忆","x":1790,"y":2200,"width":250,"height":60},
-		{"id":"4751310371080e1b","type":"text","text":"记忆系统 Memory","x":1220,"y":2292,"width":250,"height":60},
-		{"id":"c897a33bbbae1482","type":"text","text":"长期记忆","x":1790,"y":2292,"width":250,"height":60},
-		{"id":"bccf7bde0d37bcec","type":"text","text":"记忆检索和更新","x":1790,"y":2384,"width":250,"height":60},
 		{"id":"d8b19b288400a0be","type":"text","text":"工具调用 Tool Calling","x":1220,"y":1812,"width":250,"height":60},
 		{
 			"id":"ae063a653847cbd6",
@@ -546,7 +362,468 @@
 			"width":350,
 			"height":96
 		},
-		{"id":"80c33bfb5ca98cd2","type":"file","file":"image/Pasted image 20261110102718.png","x":640,"y":446,"width":400,"height":189}
+		{"id":"80c33bfb5ca98cd2","type":"file","file":"image/Pasted image 20261110102718.png","x":640,"y":446,"width":400,"height":189},
+		{
+			"id":"dd8d93949c78efa3",
+			"type":"text",
+			"text":"机器能力演进:\n执行程序->理解语言->自主决策->围绕目标完成任务",
+			"styleAttributes":{},
+			"x":0,
+			"y":40,
+			"width":260,
+			"height":120
+		},
+		{"id":"f604ab5dafa469df","type":"file","file":"image/Pasted image 20261113095829.png","x":1460,"y":740,"width":444,"height":250},
+		{
+			"id":"1b60a70e6851c6f6",
+			"type":"text",
+			"text":"Thought-Action-Observation",
+			"styleAttributes":{},
+			"x":1205,
+			"y":680,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"e07e5668d7e8a2ce",
+			"type":"text",
+			"text":"Agent = LLM + Harness\nLLM            Harness\n理解任务 +     Tool Context AgentLoop   Runtime\n自主决策     工具调用 上下文管理 执行循环 记忆 运行环境\n\n在此之上扩展 Memory RAG Skill 历史经验 外部知识 专业能力\n另一种概括: Agent = LLM + Tools + Memory + Planning\n把理解与决策转化为实际行动, 完成用户交给它的任务",
+			"styleAttributes":{
+				"shape":null
+			},
+			"x":1200,
+			"y":451,
+			"width":500,
+			"height":229
+		},
+		{
+			"id":"4c524204fa6f6d5e",
+			"type":"text",
+			"text":"**理解目标 → 决策行动 → 执行工具 → 观察结果 → 调整决策 → 完成任务**",
+			"styleAttributes":{},
+			"x":1900,
+			"y":960,
+			"width":650,
+			"height":60
+		},
+		{"id":"651c31d1db4947fd","type":"file","file":"image/Pasted image 20261113100556.png","x":2260,"y":695,"width":490,"height":245},
+		{
+			"id":"e88d192ec78c6469",
+			"type":"text",
+			"text":"|维度|Sandbox（沙箱）|虚拟机 VM|Docker 容器|\n|---|---|---|---|\n|**本质**|一种**安全/隔离理念**，不是单一技术|用 Hypervisor 虚拟出完整硬件，运行独立 OS|用 Linux namespace/cgroups 等隔离进程，共享宿主内核|\n|**隔离级别**|可高可低，取决于实现|**硬件级/强隔离**|**进程级/OS 级隔离**，较弱|\n|**包含什么**|可能是进程沙箱、浏览器沙箱、VM、容器、seccomp 等|完整 Guest OS + 应用|应用 + 依赖库，不含完整 OS 内核|\n|**启动速度**|看实现|慢，通常数十秒到分钟|快，通常毫秒到秒级|\n|**资源开销**|看实现|大，每个 VM 有独立 OS 开销|小，共享内核，镜像分层|\n|**安全边界**|目标是限制不可信代码行为|强边界，适合多租户/不可信负载|**默认不是强安全边界**，需加固|\n|**典型工具**|seccomp、gVisor、Firecracker、浏览器沙箱、WASM 沙箱|VMware、KVM、VirtualBox、Hyper-V|Docker、containerd、Podman|\n|**常见场景**|运行不可信代码、插件、AI 代码执行、浏览器标签页|多租户云、强隔离、异构 OS、遗留系统|微服务、CI/CD、应用打包、快速部署|",
+			"styleAttributes":{},
+			"x":680,
+			"y":1440,
+			"width":500,
+			"height":320
+		},
+		{
+			"id":"2a5fdfd9abf08247",
+			"type":"text",
+			"text":"Sandbox",
+			"styleAttributes":{},
+			"x":1400,
+			"y":1700,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"ac7faed6d00400a9",
+			"type":"text",
+			"text":"虚拟机VM: 有完整的应用程序和操作系统内核\n",
+			"styleAttributes":{},
+			"x":1400,
+			"y":1392,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"8bd401928cf9a63a",
+			"type":"text",
+			"text":"Docker容器: 在虚拟操作系统上给定 (依赖库和配置) 形成独立的环境 (容器化)\n只适合风险相对可控的方案, 一旦出现容器逃逸,会影响操作系统",
+			"styleAttributes":{},
+			"x":1400,
+			"y":1482,
+			"width":260,
+			"height":190
+		},
+		{"id":"4751310371080e1b","type":"text","text":"记忆系统 Memory","x":1220,"y":2532,"width":250,"height":60},
+		{"id":"c897a33bbbae1482","type":"text","text":"长期记忆","x":1790,"y":2532,"width":250,"height":60},
+		{"id":"2a30e79442ede1e8","type":"text","text":"短期记忆","x":1790,"y":2440,"width":250,"height":60},
+		{"id":"bccf7bde0d37bcec","type":"text","text":"记忆检索和更新","x":1790,"y":2624,"width":250,"height":60},
+		{"id":"6fff04a55b69b69a","type":"file","file":"image/Pasted image 20261113171057.png","x":3040,"y":733,"width":585,"height":247},
+		{
+			"id":"6cda12d6a922a28e",
+			"type":"text",
+			"text":"LLM驱动的Agent",
+			"styleAttributes":{"textAlign":"center"},
+			"x":3210,
+			"y":980,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"9d16a87658516f39",
+			"type":"text",
+			"text":"多智能体协作",
+			"styleAttributes":{},
+			"x":4660,
+			"y":380,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"1262fe0c4d85ee19",
+			"type":"text",
+			"text":"高级控制流架构",
+			"styleAttributes":{},
+			"x":4660,
+			"y":460,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"8ff3dfcfa10f85f3",
+			"type":"text",
+			"text":"角色扮演式对话\n组织化工作流",
+			"styleAttributes":{},
+			"x":4960,
+			"y":380,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"5b60060987b3479b",
+			"type":"text",
+			"text":"LangGraph",
+			"styleAttributes":{},
+			"x":4960,
+			"y":460,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"7b867f9c23dfec8e",
+			"type":"text",
+			"text":"作为开发者工具的智能体",
+			"styleAttributes":{},
+			"x":4340,
+			"y":190,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"0116408830e4a983",
+			"type":"text",
+			"text":"作为自主协作者的智能体",
+			"styleAttributes":{},
+			"x":4340,
+			"y":330,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"7132bfe8a822c210",
+			"type":"text",
+			"text":"单智能体自主循环",
+			"styleAttributes":{},
+			"x":4660,
+			"y":290,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"478b2495775f6c5f",
+			"type":"text",
+			"text":"DSH (万物皆插件)",
+			"styleAttributes":{},
+			"x":4700,
+			"y":70,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"cd96b0b12abf5a06",
+			"type":"text",
+			"text":"Claude Code (编码专精)",
+			"styleAttributes":{},
+			"x":4700,
+			"y":140,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"c691f54d1400489f",
+			"type":"text",
+			"text":"codex (综合)",
+			"styleAttributes":{},
+			"x":4700,
+			"y":210,
+			"width":260,
+			"height":60
+		},
+		{"id":"020b097094e603da","type":"file","file":"image/Pasted image 20261113114927.png","x":3800,"y":-445,"width":586,"height":330},
+		{"id":"03682d54930408c3","type":"file","file":"image/Pasted image 20261113171434.png","x":3700,"y":40,"width":599,"height":420},
+		{
+			"id":"3043fe8c2613ba3a",
+			"type":"text",
+			"text":"必要性论断",
+			"styleAttributes":{},
+			"x":4400,
+			"y":-120,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"422189e313180497",
+			"type":"text",
+			"text":"充分性论断",
+			"styleAttributes":{},
+			"x":4400,
+			"y":-20,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"10df5e33df5f8f41",
+			"type":"text",
+			"text":"物理符号主义",
+			"styleAttributes":{},
+			"x":4020,
+			"y":-60,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"4e1eeceed2bffb4a",
+			"type":"text",
+			"text":"**任何展现出一般智能的系统，经分析后都将被证明是一个物理符号系统**。",
+			"styleAttributes":{},
+			"x":4720,
+			"y":-145,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"f0eb04a210447503",
+			"type":"text",
+			"text":"**任何足够大的物理符号系统，经过适当组织，都能够展现出一般智能行为**。",
+			"styleAttributes":{},
+			"x":4720,
+			"y":-20,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"743cf91dbf562f48",
+			"type":"text",
+			"text":"LLM",
+			"styleAttributes":{},
+			"x":4110,
+			"y":-1253,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"7ecf919d011bac15",
+			"type":"text",
+			"text":"多模态",
+			"styleAttributes":{},
+			"x":4110,
+			"y":-1173,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"16145ec655fb27f7",
+			"type":"text",
+			"text":"世界模型",
+			"styleAttributes":{},
+			"x":4110,
+			"y":-1099,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"2113e12e6c6b1f7c",
+			"type":"text",
+			"text":"传统智能体",
+			"styleAttributes":{},
+			"x":4100,
+			"y":-1483,
+			"width":260,
+			"height":60
+		},
+		{"id":"66ee03eadf573f45","type":"file","file":"image/Pasted image 20261110093933.png","x":4440,"y":-1453,"width":390,"height":90},
+		{
+			"id":"4d3da1886b7a1d1a",
+			"type":"text",
+			"text":"LLM驱动下的智能体",
+			"styleAttributes":{},
+			"x":4100,
+			"y":-1383,
+			"width":260,
+			"height":60
+		},
+		{"id":"d48e50524532da04","type":"text","text":"阶段 1：AI 大模型基础","x":355,"y":-730,"width":250,"height":60,"color":"1"},
+		{"id":"93fd8e86aba296e0","type":"text","text":"大模型基础概念","x":755,"y":-1190,"width":250,"height":60},
+		{"id":"3394db8dc53feadb","type":"text","text":"Prompt Engineering","x":755,"y":-730,"width":250,"height":60},
+		{"id":"bc1fd727e724d6f9","type":"text","text":"API 调用","x":755,"y":-270,"width":250,"height":60},
+		{"id":"957e2accee00d035","type":"text","text":"大语言模型 LLM","x":1200,"y":-1374,"width":250,"height":60},
+		{"id":"a4cd8f2857e26463","type":"text","text":"Transformer 架构","x":1200,"y":-1282,"width":250,"height":60},
+		{"id":"cc6e52157b540149","type":"text","text":"主流大模型","x":1200,"y":-1190,"width":250,"height":60},
+		{"id":"a33acda6236596a8","type":"text","text":"Token 和上下文窗口","x":1200,"y":-1098,"width":250,"height":60},
+		{"id":"7d0388a118469d72","type":"text","text":"模型能力和局限性","x":1200,"y":-1006,"width":250,"height":60},
+		{"id":"f6d6c892917966ee","type":"text","text":"Prompt 基础","x":1200,"y":-914,"width":250,"height":60},
+		{"id":"c6b9b8f36718eca5","type":"text","text":"Few-shot Learning","x":1200,"y":-822,"width":250,"height":60},
+		{"id":"c5321d73d7f29e9d","type":"text","text":"Chain of Thought","x":1200,"y":-730,"width":250,"height":60},
+		{"id":"602f81ec4d229b9b","type":"text","text":"角色扮演","x":1200,"y":-638,"width":250,"height":60},
+		{"id":"afebe23fc26c5c59","type":"text","text":"API 参数","x":1200,"y":-270,"width":250,"height":60},
+		{"id":"6fdef6b9746dd387","type":"text","text":"流式输出","x":1200,"y":-178,"width":250,"height":60},
+		{"id":"48b0cd93fd5d0481","type":"text","text":"错误处理","x":1200,"y":-86,"width":250,"height":60},
+		{"id":"1efc70021744f674","type":"text","text":"国产大模型 API","x":1200,"y":-362,"width":250,"height":60},
+		{"id":"964e767ad2358fc6","type":"text","text":"Prompt 优化技巧","x":1200,"y":-546,"width":250,"height":60},
+		{"id":"96d793287d0b3282","type":"text","text":"OpenAI API","x":1200,"y":-454,"width":250,"height":60},
+		{
+			"id":"3f0617a800ba9a73",
+			"type":"text",
+			"text":"Messages(Anthropic)",
+			"styleAttributes":{},
+			"x":1905,
+			"y":-429,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"7e4156396f7b49c6",
+			"type":"text",
+			"text":"Chat Completions(OpenAI)",
+			"styleAttributes":{},
+			"x":1905,
+			"y":-349,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"fb2a9926df256e8a",
+			"type":"text",
+			"text":"调用大模型 API，通常需要配置两个关键参数：`api_key` 和 `base_url`。\n\n- **API Key**：用于身份认证，证明当前请求有权访问对应的模型服务；\n- **Base URL**：指定 API 请求发送到哪个服务端地址，SDK 会在此基础上拼接具体的 API 路径，完成 HTTP 请求。",
+			"styleAttributes":{},
+			"x":1935,
+			"y":-169,
+			"width":330,
+			"height":140
+		},
+		{
+			"id":"d1c405bc8cdb5fe4",
+			"type":"text",
+			"text":"messages / content[]",
+			"styleAttributes":{},
+			"x":2205,
+			"y":-429,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"2082a0d03de00324",
+			"type":"text",
+			"text":"messages / choices",
+			"styleAttributes":{},
+			"x":2205,
+			"y":-349,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"eb441a58067803ad",
+			"type":"text",
+			"text":"input / optput Items",
+			"styleAttributes":{},
+			"x":2205,
+			"y":-269,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"62aede6422ae3f19",
+			"type":"text",
+			"text":"三种常见API\nOpenAI和Anthropic的先发优势",
+			"styleAttributes":{},
+			"x":1485,
+			"y":-364,
+			"width":260,
+			"height":91
+		},
+		{
+			"id":"40c0a6b426f343e2",
+			"type":"text",
+			"text":"用内容块表达文本和工具调用",
+			"styleAttributes":{},
+			"x":2545,
+			"y":-429,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"b237e79ad0470b92",
+			"type":"text",
+			"text":"以对话消息组织一次生成",
+			"styleAttributes":{},
+			"x":2545,
+			"y":-349,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"ef53d1e453b113cb",
+			"type":"text",
+			"text":"统一输出类型, 支持上下文续接",
+			"styleAttributes":{},
+			"x":2545,
+			"y":-269,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"68a80a0a7d6b393f",
+			"type":"text",
+			"text":"通过项目配置文件 (.env)",
+			"styleAttributes":{},
+			"x":2415,
+			"y":-169,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"0eab1d0c11fbccb7",
+			"type":"text",
+			"text":"通过全局环境变量",
+			"styleAttributes":{},
+			"x":2415,
+			"y":-89,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"8390d4c5f732e470",
+			"type":"text",
+			"text":"Responses(OpenAI)",
+			"styleAttributes":{},
+			"x":1905,
+			"y":-269,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"6be47600059a17b4",
+			"type":"text",
+			"text":"兼容接口让应用能用相近的代码接入不同模型服务, 降低迁移成本.",
+			"styleAttributes":{},
+			"x":1645,
+			"y":-209,
+			"width":260,
+			"height":79
+		}
 	],
 	"edges":[
 		{"id":"74c28ce675ae2ec9","fromNode":"2b70e8b62df7c921","fromSide":"right","toNode":"d48e50524532da04","toSide":"left","color":"1"},
@@ -557,13 +834,12 @@
 		{"id":"92a5698b562c680c","fromNode":"93fd8e86aba296e0","fromSide":"right","toNode":"a33acda6236596a8","toSide":"left","color":"1"},
 		{"id":"4c674941a5bb71e9","fromNode":"93fd8e86aba296e0","fromSide":"right","toNode":"7d0388a118469d72","toSide":"left","color":"1"},
 		{"id":"37da58e1ea2e2293","fromNode":"d48e50524532da04","fromSide":"right","toNode":"3394db8dc53feadb","toSide":"left","color":"1"},
-		{"id":"e72822a84ccc196a","fromNode":"3394db8dc53feadb","fromSide":"right","toNode":"f6d6c892917966ee","toSide":"left","color":"1"},
+		{"id":"e72822a84ccc196a","toFloating":false,"fromNode":"3394db8dc53feadb","fromSide":"right","toNode":"f6d6c892917966ee","toSide":"left","color":"1"},
 		{"id":"e9d17493f9cd137f","fromNode":"3394db8dc53feadb","fromSide":"right","toNode":"c6b9b8f36718eca5","toSide":"left","color":"1"},
 		{"id":"e5cb7456b006d998","fromNode":"3394db8dc53feadb","fromSide":"right","toNode":"c5321d73d7f29e9d","toSide":"left","color":"1"},
 		{"id":"34f83c8c3424f2c2","fromNode":"3394db8dc53feadb","fromSide":"right","toNode":"602f81ec4d229b9b","toSide":"left","color":"1"},
 		{"id":"33f2317cc3ab2141","fromNode":"3394db8dc53feadb","fromSide":"right","toNode":"964e767ad2358fc6","toSide":"left","color":"1"},
 		{"id":"4b1235c9a7011549","fromNode":"d48e50524532da04","fromSide":"right","toNode":"bc1fd727e724d6f9","toSide":"left","color":"1"},
-		{"id":"9bc4a1e8cdb599b3","fromNode":"bc1fd727e724d6f9","fromSide":"right","toNode":"96d793287d0b3282","toSide":"left","color":"1"},
 		{"id":"106bee3e687eaf6e","fromNode":"bc1fd727e724d6f9","fromSide":"right","toNode":"1efc70021744f674","toSide":"left","color":"1"},
 		{"id":"686d4b34580ccde6","fromNode":"bc1fd727e724d6f9","fromSide":"right","toNode":"afebe23fc26c5c59","toSide":"left","color":"1"},
 		{"id":"ca9608d73f3486f0","fromNode":"bc1fd727e724d6f9","fromSide":"right","toNode":"6fdef6b9746dd387","toSide":"left","color":"1"},
@@ -1349,7 +1625,162 @@
 			"fromSide":"right",
 			"toNode":"5b60060987b3479b",
 			"toSide":"left"
-		}
+		},
+		{
+			"id":"d6cc7af3b1c77e4c",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"f604ab5dafa469df",
+			"fromSide":"right",
+			"toNode":"651c31d1db4947fd",
+			"toSide":"left",
+			"label":"Coding Agent 如何修复一个 Bug?"
+		},
+		{
+			"id":"8a46336905de5b3e",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"62aede6422ae3f19",
+			"fromSide":"right",
+			"toNode":"3f0617a800ba9a73",
+			"toSide":"left"
+		},
+		{
+			"id":"ed9acadfc86f438a",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"62aede6422ae3f19",
+			"fromSide":"right",
+			"toNode":"7e4156396f7b49c6",
+			"toSide":"left"
+		},
+		{
+			"id":"7165c29765346298",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"62aede6422ae3f19",
+			"fromSide":"right",
+			"toNode":"8390d4c5f732e470",
+			"toSide":"left"
+		},
+		{
+			"id":"32a685aaa4180e3d",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"3f0617a800ba9a73",
+			"fromSide":"right",
+			"toNode":"d1c405bc8cdb5fe4",
+			"toSide":"left"
+		},
+		{
+			"id":"83f9c87d92c53533",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"7e4156396f7b49c6",
+			"fromSide":"right",
+			"toNode":"2082a0d03de00324",
+			"toSide":"left"
+		},
+		{
+			"id":"4fe9ab05e5448c4c",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"8390d4c5f732e470",
+			"fromSide":"right",
+			"toNode":"eb441a58067803ad",
+			"toSide":"left"
+		},
+		{
+			"id":"a6f661c88b269aa0",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"d1c405bc8cdb5fe4",
+			"fromSide":"right",
+			"toNode":"40c0a6b426f343e2",
+			"toSide":"left"
+		},
+		{
+			"id":"b72b871af11dd65b",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"2082a0d03de00324",
+			"fromSide":"right",
+			"toNode":"b237e79ad0470b92",
+			"toSide":"left"
+		},
+		{
+			"id":"27b27977b8669622",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"eb441a58067803ad",
+			"fromSide":"right",
+			"toNode":"ef53d1e453b113cb",
+			"toSide":"left"
+		},
+		{
+			"id":"d3a509c3482c5d80",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"fb2a9926df256e8a",
+			"fromSide":"right",
+			"toNode":"68a80a0a7d6b393f",
+			"toSide":"left"
+		},
+		{
+			"id":"7f9ee39a2af0cd16",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"fb2a9926df256e8a",
+			"fromSide":"right",
+			"toNode":"0eab1d0c11fbccb7",
+			"toSide":"left"
+		},
+		{
+			"id":"26c5e36840b1009a",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"10df5e33df5f8f41",
+			"fromSide":"right",
+			"toNode":"3043fe8c2613ba3a",
+			"toSide":"left"
+		},
+		{
+			"id":"320d802278f82b98",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"10df5e33df5f8f41",
+			"fromSide":"right",
+			"toNode":"422189e313180497",
+			"toSide":"left"
+		},
+		{
+			"id":"fdbc70260e7ab9de",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"422189e313180497",
+			"fromSide":"right",
+			"toNode":"f0eb04a210447503",
+			"toSide":"left"
+		},
+		{
+			"id":"880c966f31e542fc",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"3043fe8c2613ba3a",
+			"fromSide":"right",
+			"toNode":"4e1eeceed2bffb4a",
+			"toSide":"left"
+		},
+		{
+			"id":"e0a25d33ef161b2e",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"6886dc3aaad87635",
+			"fromSide":"right",
+			"toNode":"10df5e33df5f8f41",
+			"toSide":"left"
+		},
+		{"id":"9bc4a1e8cdb599b3","fromNode":"bc1fd727e724d6f9","fromSide":"right","toNode":"96d793287d0b3282","toSide":"left","color":"1"}
 	],
 	"metadata":{
 		"version":"1.0-1.0",

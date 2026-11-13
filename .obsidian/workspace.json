@@ -13,15 +13,15 @@
             "state": {
               "type": "canvas",
               "state": {
-                "file": "LLM/2-Source/6-Machine Learning/Machine Learning.canvas",
+                "file": "LLM/2-Source/8-Agent/Agent.canvas",
                 "viewState": {
-                  "x": 1223.4729924075118,
-                  "y": -1691.20233551716,
-                  "zoom": -0.2004973694063747
+                  "x": 2933.438161061877,
+                  "y": -305.75195398218136,
+                  "zoom": -1.3448872787415493
                 }
               },
               "icon": "lucide-layout-dashboard",
-              "title": "Machine Learning"
+              "title": "Agent"
             }
           },
           {
@@ -32,17 +32,33 @@
               "state": {
                 "file": "LLM/2-Source/7-Deep Learning/Deep Learning.canvas",
                 "viewState": {
-                  "x": -475.624907888383,
-                  "y": -3215.9861431248814,
-                  "zoom": -0.15707293208201845
+                  "x": -88.35772159694164,
+                  "y": 427.58950439608833,
+                  "zoom": -1.166311138937356
                 }
               },
               "icon": "lucide-layout-dashboard",
               "title": "Deep Learning"
             }
+          },
+          {
+            "id": "9f4746fc5df68c14",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "LLM/2-Source/8-Agent/Agent.canvas",
+                "viewState": {
+                  "x": 2524.978144921783,
+                  "y": 120.81254580782334,
+                  "zoom": -2.333333333333333
+                }
+              },
+              "icon": "lucide-layout-dashboard",
+              "title": "Agent"
+            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -104,7 +120,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 336.16668701171875
+    "width": 336.16668701171875,
+    "collapsed": true
   },
   "right": {
     "id": "cffc2ac093d9b5b0",
@@ -222,29 +239,33 @@
       "bases:新建数据库": false
     }
   },
-  "active": "0c42028da10691dc",
+  "active": "be023ac01acada4f",
   "lastOpenFiles": [
-    "LLM/Data analysis/数据科学.md",
+    "Full_Stack/Full_Stack.canvas",
     "LLM/2-Source/7-Deep Learning/Deep Learning.canvas",
     "Full_Stack/Zero-to-FullStack.md",
-    "LLM/2-Source/8-Agent/大模型应用开发.md",
-    "LLM/2-Source/6-Machine Learning/Machine Learning.canvas",
-    "LLM/2-Source/7-Deep Learning/4-Transformer/4-为什么是 Decoder-Only的 GPT赢了.md",
-    "LLM/2-Source/8-Agent/初识agent.md",
-    "LLM/2-Source/8-Agent/Thinking.md",
-    "image/Pasted image 20261110200359.png",
-    "image/Pasted image 20261110195906.png",
-    "image/Pasted image 20261110195713.png",
-    "image/Pasted image 20261110195213.png",
-    "LLM/2-Source/8-Agent/Agent 开发第一课-50行代码实现极简Agent.md",
-    "LLM/2-Source/7-Deep Learning/OpenCV.canvas",
+    "LLM/2-Source/8-Agent/1-Agent = LLM + Harness.md",
     "LLM/2-Source/8-Agent/Agent.canvas",
+    "image/Pasted image 20261113171434.png",
+    "image/Pasted image 20261113171057.png",
+    "image/Pasted image 20261113114927.png",
+    "image/Pasted image 20261113103519.png",
+    "image/Pasted image 20261113100556.png",
+    "image/Pasted image 20261113095829.png",
+    "image/Pasted image 20261113093716.png",
+    "image/Pasted image 20261113093451.png",
+    "image/Pasted image 20261113093435.png",
+    "image/Pasted image 20261113093422.png",
+    "LLM/2-Source/8-Agent/0-初识agent.md",
+    "LLM/2-Source/6-Machine Learning/Machine Learning.canvas",
+    "LLM/2-Source/8-Agent/Thinking.md",
+    "LLM/2-Source/8-Agent/Agent 开发第一课-50行代码实现极简Agent.md",
+    "LLM/2-Source/8-Agent/WorkFlow.canvas",
+    "LLM/Data analysis/数据科学.md",
+    "LLM/2-Source/8-Agent/大模型应用开发.md",
+    "LLM/2-Source/7-Deep Learning/4-Transformer/4-为什么是 Decoder-Only的 GPT赢了.md",
+    "LLM/2-Source/7-Deep Learning/OpenCV.canvas",
     "LLM/2-Source/7-Deep Learning/深度学习总结.md",
-    "image/Pasted image 20261110102718.png",
-    "image/Pasted image 20261110100434.png",
-    "image/Pasted image 20261110095200.png",
-    "image/Pasted image 20261110095138.png",
-    "image/Pasted image 20261110093933.png",
     "LLM/2-Source/7-Deep Learning/Deep Learning-思维导图.md",
     "LLM/5-Guide/transformers-auto-text-classification.canvas",
     "LLM/5-Guide/transformers-docs-zh.pdf",
@@ -254,7 +275,6 @@
     "LLM/Contextual Design Mechanism.md",
     "LLM/从零开始的AI学习之路.canvas",
     "LLM/AI Concept.md",
-    "image/Pasted image 20261109201650.png",
     "LLM/2-Source/7-Deep Learning/4-Transformer/5-手搓 Mini-GPT.md",
     "LLM/2-Source/7-Deep Learning/Deep Learning.canvas.transforms.new",
     "LLM/2-Source/7-Deep Learning/4-Transformer/2-手搓 Mini Transformer前需要了解的编码器和解码器.md",
@@ -273,12 +293,8 @@
     "LLM/2-Source/7-Deep Learning/1-Pytorch/0-张量的基础操作.md",
     "LLM/2-Source/7-Deep Learning/3-RNN/4-注意力机制：大模型前夜的最后一块拼图.md",
     "LLM/2-Source/7-Deep Learning/知识导图示例/示例2-Transformer专题.canvas",
-    "LLM/2-Source/7-Deep Learning/知识导图示例/示例3-Transformer实战与大模型微调.canvas",
-    "LLM/2-Source/7-Deep Learning/知识导图示例/示例1-深度学习基础总览.canvas",
     "LLM/2-Source/7-Deep Learning/3-RNN/3-编码器-解码器 与 seq2seq.md",
     "LLM/2-Source/7-Deep Learning/3-RNN/2-LSTM 与 GRU 改进 RNN 带来长期记忆.md",
-    "LLM/2-Source/7-Deep Learning/3-RNN/1-RNN：模型开始理解自然语言序列.md",
-    "LLM/2-Source/7-Deep Learning/3-RNN/0-Embedding 与word2vec：模型如何理解一个词.md",
-    "LLM/2-Source/7-Deep Learning/深度学习第一课.md"
+    "LLM/2-Source/7-Deep Learning/3-RNN/1-RNN：模型开始理解自然语言序列.md"
   ]
 }

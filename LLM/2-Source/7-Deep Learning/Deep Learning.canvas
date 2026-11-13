@@ -6,9 +6,6 @@
 		{"id":"e4ec6666234be4c7","type":"text","text":"Tanh","x":704,"y":-335,"width":250,"height":60,"color":"2"},
 		{"id":"bba9e14a2830c6cc","type":"text","text":"激活函数","x":357,"y":-331,"width":250,"height":60,"color":"2"},
 		{"id":"96ddf0e7fcadf041","type":"text","text":"Sigmoid","x":704,"y":-410,"width":250,"height":60,"color":"2"},
-		{"id":"6bd34efdbc8e8ff1","type":"text","text":"前向传播","x":704,"y":-1294,"width":250,"height":60,"color":"2"},
-		{"id":"a6da18d39d32c03a","type":"text","text":"链式法则","x":704,"y":-1033,"width":250,"height":60,"color":"2"},
-		{"id":"d95cc98d14f7f842","type":"text","text":"反向传播算法","x":704,"y":-1120,"width":250,"height":60,"color":"2"},
 		{"id":"b256180110ac1065","type":"text","text":"神经网络基础","x":19,"y":-738,"width":195,"height":60,"color":"2"},
 		{"id":"206309e6f153ebad","type":"file","file":"image/Pasted image 20261020104530.png","x":-180,"y":-1238,"width":400,"height":148},
 		{
@@ -24,7 +21,6 @@
 		{"id":"d35dde49b6afb998","type":"file","file":"image/Pasted image 20261020104819.png","x":-180,"y":-1033,"width":399,"height":251},
 		{"id":"329e6c9ead3e7542","type":"text","text":"多层感知机MLP","x":357,"y":-1801,"width":250,"height":50,"color":"2"},
 		{"id":"4d201a7747d69a0d","type":"text","text":"神经元和层","x":704,"y":-1920,"width":250,"height":60,"color":"2"},
-		{"id":"a05fa78ad4b03e98","type":"file","file":"LLM/2-Source/7-Deep Learning/0-深度学习基础/3-深度学习架构：MLP到神经网络的升级，理解反向传播的基础.md","x":1081,"y":-1290,"width":999,"height":610},
 		{"id":"2bc1b9325cee9407","type":"text","text":"均方误差MSE","x":704,"y":280,"width":250,"height":60,"color":"2"},
 		{"id":"b61d95c9bd1d6c26","type":"text","text":"损失函数","x":357,"y":340,"width":250,"height":60,"color":"2"},
 		{"id":"8dc1171ad06d6bfd","type":"text","text":"交叉熵损失(Cross Entropy)","x":704,"y":370,"width":250,"height":60,"color":"2"},
@@ -1525,6 +1521,30 @@
 			"y":-3340,
 			"width":260,
 			"height":60
+		},
+		{
+			"id":"1f6422bc00d839fc",
+			"type":"text",
+			"text":"完整感知机包含了整个深度学习神经网络训练的框架",
+			"styleAttributes":{},
+			"x":1020,
+			"y":-2440,
+			"width":260,
+			"height":60
+		},
+		{"id":"6bd34efdbc8e8ff1","type":"text","text":"前向传播","x":704,"y":-1730,"width":250,"height":60,"color":"2"},
+		{"id":"d95cc98d14f7f842","type":"text","text":"反向传播算法","x":704,"y":-1556,"width":250,"height":60,"color":"2"},
+		{"id":"a6da18d39d32c03a","type":"text","text":"链式法则","x":704,"y":-1469,"width":250,"height":60,"color":"2"},
+		{"id":"a05fa78ad4b03e98","type":"file","file":"LLM/2-Source/7-Deep Learning/0-深度学习基础/3-深度学习架构：MLP到神经网络的升级，理解反向传播的基础.md","x":1020,"y":-1975,"width":999,"height":610},
+		{
+			"id":"a3f77e2fe6e9baca",
+			"type":"text",
+			"text":"XOR异或问题",
+			"styleAttributes":{},
+			"x":1040,
+			"y":-2320,
+			"width":260,
+			"height":60
 		}
 	],
 	"edges":[
@@ -1539,7 +1559,7 @@
 		{"id":"9ddc0f12498ee688","fromNode":"e6262301f99b0347","fromSide":"right","toNode":"5a7ab507bca16f03","toSide":"left"},
 		{"id":"8ae489c8d2c97390","fromNode":"e6262301f99b0347","fromSide":"right","toNode":"4148a4722fcd8249","toSide":"left"},
 		{"id":"4a80c4e15e0fe514","fromNode":"e6262301f99b0347","fromSide":"right","toNode":"5e0589bc874f8a58","toSide":"left"},
-		{"id":"cab59535a68b95a7","fromNode":"329e6c9ead3e7542","fromSide":"right","toNode":"4d201a7747d69a0d","toSide":"left"},
+		{"id":"cab59535a68b95a7","toFloating":false,"fromNode":"329e6c9ead3e7542","fromSide":"right","toNode":"4d201a7747d69a0d","toSide":"left"},
 		{"id":"4a21c3baef54b006","fromNode":"329e6c9ead3e7542","fromSide":"right","toNode":"6bd34efdbc8e8ff1","toSide":"left"},
 		{"id":"17880d34995754a5","fromNode":"329e6c9ead3e7542","fromSide":"right","toNode":"d95cc98d14f7f842","toSide":"left"},
 		{"id":"7df8ec1e44ec813b","fromNode":"bba9e14a2830c6cc","fromSide":"right","toNode":"96ddf0e7fcadf041","toSide":"left"},
@@ -1558,7 +1578,6 @@
 		{"id":"92f1c0fd93b4c8a9","fromNode":"85d1469b75a29765","fromSide":"right","toNode":"ebe2be2b104bcf8c","toSide":"left"},
 		{"id":"4aaeaac080ca3201","fromNode":"240e81f4b790a91c","fromSide":"right","toNode":"3317562796b4c74a","toSide":"left"},
 		{"id":"1b341b5680d41f1c","fromNode":"240e81f4b790a91c","fromSide":"right","toNode":"1dfa63df52877a9d","toSide":"left"},
-		{"id":"89c88e9bfd26119f","fromNode":"5cec2ff2042d0541","fromSide":"right","toNode":"b256180110ac1065","toSide":"left"},
 		{"id":"046ef85b7747a8ed","fromNode":"5cec2ff2042d0541","fromSide":"right","toNode":"240e81f4b790a91c","toSide":"left"},
 		{"id":"6ae717e99bf61b4c","fromNode":"5cec2ff2042d0541","fromSide":"left","toNode":"a523b23222def33d","toSide":"right"},
 		{"id":"ce746bfd6f000be1","fromNode":"5cec2ff2042d0541","fromSide":"left","toNode":"9d6f36dd7a7c884e","toSide":"right"},
@@ -2668,6 +2687,24 @@
 			"fromSide":"left",
 			"toNode":"060dd5d8360196f7",
 			"toSide":"right"
+		},
+		{
+			"id":"59e0baba10ac4a06",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"5a7ab507bca16f03",
+			"fromSide":"right",
+			"toNode":"1f6422bc00d839fc",
+			"toSide":"left"
+		},
+		{
+			"id":"8911315683780c7c",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"dc6c56eb09fb8f37",
+			"fromSide":"right",
+			"toNode":"b256180110ac1065",
+			"toSide":"left"
 		}
 	],
 	"metadata":{
