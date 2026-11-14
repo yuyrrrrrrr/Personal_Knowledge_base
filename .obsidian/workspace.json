@@ -13,12 +13,29 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "LLM/2-Source/8-Agent/Plan and Reflection.md",
+                "file": "LLM/2-Source/8-Agent/Agent_learn/ReAct 智能体编码实现.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Plan and Reflection"
+              "title": "ReAct 智能体编码实现"
+            }
+          },
+          {
+            "id": "0fc375cd0bd1d2b6",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "LLM/2-Source/8-Agent/Agent.canvas",
+                "viewState": {
+                  "x": 816.5503409509722,
+                  "y": 1351.1485733820691,
+                  "zoom": -1.011553945408216
+                }
+              },
+              "icon": "lucide-layout-dashboard",
+              "title": "Agent"
             }
           },
           {
@@ -29,16 +46,17 @@
               "state": {
                 "file": "LLM/2-Source/7-Deep Learning/Deep Learning.canvas",
                 "viewState": {
-                  "x": 112.13937016424475,
-                  "y": 1091.9233030216506,
-                  "zoom": -1.166311138937356
+                  "x": -1291.3389675141675,
+                  "y": -2489.381474261407,
+                  "zoom": -0.16631113893735605
                 }
               },
               "icon": "lucide-layout-dashboard",
               "title": "Deep Learning"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -100,8 +118,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 336.16668701171875,
-    "collapsed": true
+    "width": 336.16668701171875
   },
   "right": {
     "id": "cffc2ac093d9b5b0",
@@ -219,33 +236,33 @@
       "bases:新建数据库": false
     }
   },
-  "active": "be023ac01acada4f",
+  "active": "0c42028da10691dc",
   "lastOpenFiles": [
+    "LLM/2-Source/8-Agent/Agent.canvas",
+    "LLM/2-Source/8-Agent/Agent_learn/ReAct 智能体编码实现.md",
+    "LLM/2-Source/8-Agent/Agent_learn/0-初识agent.md",
+    "LLM/2-Source/7-Deep Learning/Deep Learning.canvas",
+    "LLM/2-Source/8-Agent/WorkFlow.canvas",
+    "LLM/2-Source/8-Agent/Agent_learn",
+    "LLM/2-Source/8-Agent/Thinking.md",
+    "LLM/2-Source/8-Agent/Agent_learn/Plan and Reflection.md",
+    "LLM/2-Source/8-Agent/Agent_learn/1-Agent = LLM + Harness.md",
+    "LLM/2-Source/8-Agent/大模型应用开发.md",
+    "image/Pasted image 20261114091710.png",
     "image/Pasted image 20261114091057.png",
     "image/Pasted image 20261114090423.png",
-    "LLM/2-Source/8-Agent/ReAct 智能体编码实现.md",
-    "LLM/2-Source/8-Agent/Plan and Reflection.md",
-    "LLM/2-Source/8-Agent/Agent.canvas",
-    "LLM/2-Source/7-Deep Learning/Deep Learning.canvas",
     "image/Pasted image 20261113205839.png",
     "image/Pasted image 20261113201522.png",
     "Full_Stack/Full_Stack.canvas",
     "Full_Stack/Zero-to-FullStack.md",
-    "LLM/2-Source/8-Agent/1-Agent = LLM + Harness.md",
     "image/Pasted image 20261113171434.png",
     "image/Pasted image 20261113171057.png",
     "image/Pasted image 20261113114927.png",
     "image/Pasted image 20261113103519.png",
     "image/Pasted image 20261113100556.png",
-    "image/Pasted image 20261113095829.png",
-    "image/Pasted image 20261113093716.png",
-    "LLM/2-Source/8-Agent/0-初识agent.md",
     "LLM/2-Source/6-Machine Learning/Machine Learning.canvas",
-    "LLM/2-Source/8-Agent/Thinking.md",
     "LLM/2-Source/8-Agent/Agent 开发第一课-50行代码实现极简Agent.md",
-    "LLM/2-Source/8-Agent/WorkFlow.canvas",
     "LLM/Data analysis/数据科学.md",
-    "LLM/2-Source/8-Agent/大模型应用开发.md",
     "LLM/2-Source/7-Deep Learning/4-Transformer/4-为什么是 Decoder-Only的 GPT赢了.md",
     "LLM/2-Source/7-Deep Learning/OpenCV.canvas",
     "LLM/2-Source/7-Deep Learning/深度学习总结.md",
@@ -271,7 +288,6 @@
     "LLM/6-interview/AI应用工程与治理",
     "LLM/6-interview/Agent原理与系统",
     "LLM/6-interview/RAG与知识系统",
-    "LLM/6-interview/模型基础与推理",
     "LLM/2-Source/7-Deep Learning/4-Transformer/0-Transformer 前置概念回顾.md",
     "LLM/2-Source/7-Deep Learning/1-Pytorch/0-张量的基础操作.md",
     "LLM/2-Source/7-Deep Learning/3-RNN/4-注意力机制：大模型前夜的最后一块拼图.md",
