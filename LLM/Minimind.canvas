@@ -1,0 +1,39 @@
+{
+	"nodes":[
+		{
+			"id":"876fba506090a6ff",
+			"type":"text",
+			"text":"Minimind",
+			"styleAttributes":{},
+			"x":-260,
+			"y":-60,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"e671e524e4dd09f6",
+			"type":"text",
+			"text":"项目目录结构",
+			"styleAttributes":{},
+			"x":100,
+			"y":-200,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"550636953346bcc8",
+			"type":"text",
+			"text":"```\nminimind/\n├── model/                        # 🧠 模型结构代码\n│   ├── model_minimind.py         # ⭐ 核心：模型定义（MiniMindConfig、Attention、FFN、Block、CausalLM）\n│   ├── model_lora.py             # LoRA 微调相关的模型定义\n│   ├── tokenizer.json            # 分词器的词表和规则\n│   └── tokenizer_config.json     # 分词器配置\n│\n├── trainer/                      # 🏋️ 训练脚本\n│   ├── train_pretrain.py         # ⭐ 预训练脚本（从零训练语言模型）\n│   ├── train_full_sft.py         # 全参数 SFT（有监督微调）\n│   ├── train_lora.py             # LoRA 微调\n│   ├── train_dpo.py              # DPO 偏好对齐训练\n│   ├── train_distillation.py     # 知识蒸馏\n│   ├── train_ppo.py              # PPO 强化学习训练\n│   ├── train_grpo.py             # GRPO 训练\n│   ├── train_agent.py            # Agent 训练（工具调用）\n│   ├── train_tokenizer.py        # 训练自定义分词器\n│   ├── trainer_utils.py          # 训练公共工具函数\n│   └── rollout_engine.py         # PPO/GRPO 的 rollout 引擎\n│\n├── dataset/                      # 📊 数据集相关\n│   ├── lm_dataset.py             # ⭐ 数据集定义（预训练、SFT 等数据加载逻辑）\n│   ├── dataset.md                # 数据集说明文档\n│   └── __init__.py\n│\n├── scripts/                      # 🛠️ 工具脚本\n│   ├── web_demo.py               # Streamlit Web 对话界面\n│   ├── chat_api.py               # 简单的 API 服务\n│   ├── serve_openai_api.py       # OpenAI 兼容 API 服务\n│   ├── convert_model.py          # 模型格式转换（支持 GGUF 等）\n│   └── eval_toolcall.py          # 工具调用评估\n│\n├── eval_llm.py                   # 🎯 推理评估脚本（命令行对话）\n├── requirements.txt              # 📦 Python 依赖列表\n├── README.md                     # 📖 项目说明（中文）\n├── README_en.md                  # 📖 项目说明（英文）\n├── LICENSE                       # 📄 MIT 开源许可\n└── images/                       # 🖼️ README 中使用的图片\n```",
+			"styleAttributes":{},
+			"x":180,
+			"y":-1280,
+			"width":660,
+			"height":1040
+		}
+	],
+	"edges":[],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{}
+	}
+}
