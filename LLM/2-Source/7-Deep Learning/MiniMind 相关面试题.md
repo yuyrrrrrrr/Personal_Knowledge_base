@@ -124,3 +124,30 @@ MiniMind (64M)：64M × 16B ≈ 1GB（加上激活值等约 2-4GB，消费级 GP
 **参考答案**：PPL（Perplexity）依赖于 Tokenizer，不同词表的模型 PPL 不可直接比较。BPB（Bits Per Byte）是按原始文本字节计算的指标，与 Tokenizer 无关，适合跨模型对比。同一个模型的不同版本用 PPL 即可；不同词表的模型对比必须用 BPB。
 ### Q6：为什么说 BPE 不会出现 OOV 问题？
 **参考答案**：因为 BPE 的词表一定包含所有基础字符（至少是所有字节值）。即使遇到从未见过的词，BPE 也能将其退化为字符级别的编码。虽然编码效率低，但不会出现无法编码的情况。
+# Embedding
+### Q1：`nn.Embedding` 的本质是什么？
+**参考答案**：`nn.Embedding` 本质上是一个查表（lookup table）操作。它维护一个 (vocab_size, embedding_dim) 的权重矩阵，给定 token id 就返回该行的向量。在数学上等价于 One-Hot 向量与嵌入矩阵的乘法，但实现上用的是索引查找，效率远高于矩阵乘法。
+### Q2：MiniMind 的 Embedding 参数量是多少？占总参数量的比例？
+**参考答案**：Embedding 参数量 = 6400 × 768 = 4,915,200 ≈ 5M。如果不做权重共享，Embedding + lm_head = 10M，占 64M 总参数的约 15.6%。做了权重共享后只有 5M，占约 7.7%。
+### Q3：什么是权重共享（Weight Tying）？为什么要这么做？
+**参考答案**：权重共享是指 Embedding 层和 LM Head 层使用同一个参数矩阵。好处有三：（1）节省参数量，对小模型尤其重要；（2）保持输入输出语义空间的一致性；（3）有轻微的正则化效果。这是因为 Embedding（id→向量）和 LM Head（向量→概率）是互逆操作，使用同一组参数在语义上是合理的。
+### Q4：为什么 One-Hot 编码在大规模 NLP 中不可行？
+**参考答案**：One-Hot 有三个致命缺陷：（1）维度等于词表大小，大词表下维度爆炸；（2）任意两个向量都正交，无法表达语义相似性；（3）极度稀疏，浪费存储和计算。Dense Embedding 用低维稠密向量解决了这些问题。
+### Q5：嵌入维度 d_model 的选择有什么讲究？
+**参考答案**：d_model 决定了模型的"宽度"和表达能力。选择时需要考虑：（1）必须能被注意力头数整除（MiniMind：768/8=96）；（2）要与模型总参数量匹配——太大浪费参数，太小表达力不足；（3）通常是 2 的幂或其倍数，便于 GPU 并行计算。
+### Q6：Word2Vec 和 Transformer 中的 Embedding 有什么区别？
+**参考答案**：Word2Vec 的 Embedding 是静态的，同一个词无论在什么上下文中向量都一样；Transformer 的 Embedding 只是第一层，经过多层 Self-Attention 后，同一个词在不同上下文中会有不同的表示（上下文相关）。此外，Word2Vec 是独立训练的，而 Transformer 的 Embedding 是与整个模型端到端联合训练的。
+
+# RMSNorm
+### Q1：RMSNorm 和 LayerNorm 有什么区别？
+**参考答案**：RMSNorm 是 LayerNorm 的简化版本，去掉了"减均值"（re-centering）操作，只保留了"除以 RMS"（re-scaling）操作。同时也去掉了偏置参数 β，只保留了缩放参数 γ。这样做减少了约 10-15% 的计算量，但效果几乎不变。RMSNorm 的公式是 ($$x \cdot \text{rsqrt}(\text{mean}(x^2) + \epsilon) \cdot \gamma$$)。
+### Q2：Pre-Norm 和 Post-Norm 有什么区别？为什么现代 LLM 都用 Pre-Norm？
+**参考答案**：Post-Norm 是先过子层再归一化（原始 Transformer），Pre-Norm 是先归一化再过子层（GPT-2 以后的主流）。Pre-Norm 的优势在于训练更稳定：因为归一化后的值是有界的，结合残差连接，梯度能更顺畅地流过深层网络。Post-Norm 理论上最终性能可能略好，但需要精心调整学习率和 warmup 策略。对于大规模 LLM，训练稳定性更重要，所以 Pre-Norm 成为主流。
+### Q3：为什么深度网络需要归一化？
+**参考答案**：深度网络的每一层都会改变数据的分布。如果不做归一化，随着层数加深，数值可能指数级增大（梯度爆炸）或衰减（梯度消失），导致训练不稳定或无法收敛。归一化层将数据拉回到稳定的分布，保证每层的输入都在合理范围内。
+### Q4：RMSNorm 中的 eps 参数是什么作用？
+**参考答案**：eps（通常取 1e-5 或 1e-6）是一个加在分母上的小常数，目的是防止除以零。当输入向量的所有元素都接近零时，RMS 值也接近零，直接除以它会导致数值溢出。eps 保证了分母始终大于零。
+### Q5：为什么 RMSNorm 去掉减均值操作还能有效？
+**参考答案**：归一化的核心目标是控制数值的尺度（magnitude），防止梯度爆炸/消失。RMS（均方根）已经充分捕捉了数值尺度信息。实验表明，减均值（re-centering）带来的额外增益非常有限，去掉后性能几乎不受影响，但计算效率更高。
+### Q6：MiniMind 中一共有多少个 RMSNorm 层？
+**参考答案**：每个 Transformer Block 有 2 个 RMSNorm（attention_norm 和 ffn_norm），MiniMind 有 8 层，再加上最终输出前的 1 个 RMSNorm，总共是 **2 × 8 + 1 = 17 个** RMSNorm 层。

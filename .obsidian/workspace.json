@@ -46,27 +46,13 @@
               "state": {
                 "file": "LLM/2-Source/7-Deep Learning/Minimind.canvas",
                 "viewState": {
-                  "x": 2109.72204261577,
-                  "y": 2308.864347786174,
-                  "zoom": -3.466404610768008
+                  "x": 637.8921228938422,
+                  "y": 3173.9694900972604,
+                  "zoom": -3.3333333333333335
                 }
               },
               "icon": "lucide-layout-dashboard",
               "title": "Minimind"
-            }
-          },
-          {
-            "id": "50f61e5471360ad0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "LLM/2-Source/8-Agent/Agent_learn/2-流式输出与渲染.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "2-流式输出与渲染"
             }
           }
         ],
@@ -253,15 +239,15 @@
   },
   "active": "0c42028da10691dc",
   "lastOpenFiles": [
+    "LLM/2-Source/7-Deep Learning/MiniMind 相关面试题.md",
+    "LLM/2-Source/7-Deep Learning/Minimind.canvas",
     "LLM/2-Source/8-Agent/Agent_learn/3-Tool Use.md",
     "LLM/2-Source/8-Agent/Agent.canvas",
     "image/Pasted image 20261116101033.png",
     "image/Pasted image 20261116100609.png",
     "image/Pasted image 20261116100532.png",
     "image/Pasted image 20261116100505.png",
-    "LLM/2-Source/7-Deep Learning/Minimind.canvas",
     "Full_Stack/Full_Stack.canvas",
-    "LLM/2-Source/7-Deep Learning/MiniMind 相关面试题.md",
     "LLM/2-Source/8-Agent/Agent_learn/2-流式输出与渲染.md",
     "image/Pasted image 20261116092758.png",
     "image/Pasted image 20261116092719.png",

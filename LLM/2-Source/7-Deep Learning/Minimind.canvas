@@ -165,17 +165,6 @@
 			"height":60
 		},
 		{
-			"id":"5a48526874df24ba",
-			"type":"text",
-			"text":"核心配置参数表",
-			"styleAttributes":{},
-			"x":1760,
-			"y":-320,
-			"width":260,
-			"height":60,
-			"color":"1"
-		},
-		{
 			"id":"88608c21c709ecaf",
 			"type":"text",
 			"text":"以下是 minimind-3 的默认配置（`MiniMindConfig` 类）：\n\n| 参数名                       | 值     | 含义                   | 类比                 |\n| ------------------------- | ----- | -------------------- | ------------------ |\n| `hidden_size`             | 768   | 隐藏层维度（d_model）       | 每个词的\"内部表示\"有多丰富     |\n| `num_hidden_layers`       | 8     | Transformer 层数       | 模型有多\"深\"，信息被处理多少遍   |\n| `num_attention_heads`     | 8     | Query 注意力头数          | 从多少个角度理解句子         |\n| `num_key_value_heads`     | 4     | Key/Value 注意力头数（GQA） | KV Cache 的共享程度     |\n| `head_dim`                | 96    | 每个头的维度 (768/8)       | 每个\"角度\"看到多少信息       |\n| `vocab_size`              | 6400  | 词表大小                 | 模型认识多少个不同的 token   |\n| `intermediate_size`       | ~2048 | FFN 中间层维度            | FFN 的\"思考空间\"大小      |\n| `max_position_embeddings` | 32768 | 最大序列长度               | 一次最多处理多少 token     |\n| `dropout`                 | 0.0   | Dropout 概率           | 训练时随机关闭神经元的比例      |\n| `use_moe`                 | False | 是否使用 MoE             | minimind-3 为 False |\n",
@@ -184,17 +173,6 @@
 			"y":-320,
 			"width":700,
 			"height":500,
-			"color":"1"
-		},
-		{
-			"id":"7ae5907c24993a90",
-			"type":"text",
-			"text":"参数量怎么算?",
-			"styleAttributes":{},
-			"x":2900,
-			"y":-340,
-			"width":260,
-			"height":60,
 			"color":"1"
 		},
 		{
@@ -411,17 +389,6 @@
 			"color":"5"
 		},
 		{
-			"id":"9b49d679293842b7",
-			"type":"text",
-			"text":"MiniMind 的 Tokenizer",
-			"styleAttributes":{},
-			"x":340,
-			"y":2100,
-			"width":240,
-			"height":60,
-			"color":"5"
-		},
-		{
 			"id":"4379cedb52aaae8b",
 			"type":"text",
 			"text":"### minimind_tokenizer：小而精的词表\nMiniMind 使用自训练的 `minimind_tokenizer`，词表大小仅 **6400**。\n来看看主流模型的词表大小对比：\n\n|模型|词表大小|说明|\n|---|---|---|\n|GPT-2|50,257|经典 BPE|\n|LLaMA 2|32,000|SentencePiece|\n|LLaMA 3|128,000|大幅扩大，支持多语言|\n|Qwen2|151,643|目前主流模型中最大之一|\n|**MiniMind**|**6,400**|**极简设计，专为教学和轻量部署**|",
@@ -510,39 +477,6 @@
 			"color":"5"
 		},
 		{
-			"id":"458911b933e84a6e",
-			"type":"text",
-			"text":"### PPL（Perplexity，困惑度）\nPPL 是评估语言模型最常用的指标：\n$$\n\\text{PPL} = \\exp\\left(-\\frac{1}{N}\\sum_{i=1}^{N}\\log P(x_i | x_{<i})\\right)\n$$\n直觉理解：PPL 表示模型在预测下一个 token 时的\"困惑程度\"。PPL=10 意味着模型平均在 10 个选项中犹豫。\n\n**PPL 的问题**：它依赖于 Tokenizer！同一句话，词表不同，token 数不同，PPL 不可直接比较。\n",
-			"styleAttributes":{},
-			"x":580,
-			"y":3400,
-			"width":560,
-			"height":260,
-			"color":"5"
-		},
-		{
-			"id":"12c103319117cd05",
-			"type":"text",
-			"text":"### BPB（Bits Per Byte）\nBPB 是一种与 Tokenizer 无关的评估指标：\n\n$$\n\\text{BPB} = \\frac{\\text{总 loss（以 bit 计）}}{\\text{原始文本的字节数}}\n$$\n\n> **💡 BPB 的优点**：不受词表大小影响，可以跨模型公平比较。",
-			"styleAttributes":{},
-			"x":580,
-			"y":3720,
-			"width":540,
-			"height":220,
-			"color":"5"
-		},
-		{
-			"id":"476c12d2ce2d28a2",
-			"type":"text",
-			"text":"### 为什么要关心这些？\n\n|场景|适合用哪个|\n|---|---|\n|同一个模型不同版本对比|PPL 就够了|\n|不同词表的模型对比|必须用 BPB|\n|论文中报告结果|两个都报是最佳实践|",
-			"styleAttributes":{},
-			"x":580,
-			"y":4020,
-			"width":420,
-			"height":220,
-			"color":"5"
-		},
-		{
 			"id":"876fba506090a6ff",
 			"type":"text",
 			"text":"Minimind",
@@ -616,7 +550,8 @@
 			"x":-180,
 			"y":4440,
 			"width":260,
-			"height":60
+			"height":60,
+			"color":"6"
 		},
 		{
 			"id":"b1ba54a9a9b95225",
@@ -637,7 +572,8 @@
 			"x":-180,
 			"y":4380,
 			"width":260,
-			"height":60
+			"height":60,
+			"color":"6"
 		},
 		{
 			"id":"3bc627e175d5d590",
@@ -647,7 +583,8 @@
 			"x":500,
 			"y":4340,
 			"width":400,
-			"height":70
+			"height":70,
+			"color":"6"
 		},
 		{
 			"id":"0175efee7e819895",
@@ -657,7 +594,8 @@
 			"x":500,
 			"y":4410,
 			"width":720,
-			"height":250
+			"height":250,
+			"color":"6"
 		},
 		{
 			"id":"cac3cefc086e37a3",
@@ -667,7 +605,8 @@
 			"x":140,
 			"y":4500,
 			"width":260,
-			"height":60
+			"height":60,
+			"color":"6"
 		},
 		{
 			"id":"26d0e66bcca5881d",
@@ -677,7 +616,8 @@
 			"x":500,
 			"y":4740,
 			"width":360,
-			"height":60
+			"height":60,
+			"color":"6"
 		},
 		{
 			"id":"47fb8ec7d93918e0",
@@ -687,7 +627,8 @@
 			"x":1010,
 			"y":4660,
 			"width":420,
-			"height":180
+			"height":180,
+			"color":"6"
 		},
 		{
 			"id":"e9aff8e219afa638",
@@ -697,7 +638,8 @@
 			"x":1000,
 			"y":4870,
 			"width":440,
-			"height":140
+			"height":140,
+			"color":"6"
 		},
 		{
 			"id":"d5815673590ce254",
@@ -707,57 +649,327 @@
 			"x":990,
 			"y":5030,
 			"width":450,
-			"height":160
+			"height":160,
+			"color":"6"
 		},
 		{
-			"id":"5e97bacec24790cd",
+			"id":"12c103319117cd05",
 			"type":"text",
-			"text":"### API 说明\n```python\nnn.Embedding(num_embeddings, embedding_dim)\n```\n- `num_embeddings`：词表大小（有多少行，即多少个 token）\n- `embedding_dim`：嵌入维度（每行有多少列）",
+			"text":"### BPB（Bits Per Byte）\nBPB 是一种与 Tokenizer 无关的评估指标：\n\n$$\n\\text{BPB} = \\frac{\\text{总 loss（以 bit 计）}}{\\text{原始文本的字节数}}\n$$\n\n> **💡 BPB 的优点**：不受词表大小影响，可以跨模型公平比较。",
 			"styleAttributes":{},
-			"x":1990,
-			"y":4210,
-			"width":400,
-			"height":180
+			"x":1250,
+			"y":3440,
+			"width":540,
+			"height":220,
+			"color":"5"
+		},
+		{
+			"id":"476c12d2ce2d28a2",
+			"type":"text",
+			"text":"### 为什么要关心这些？\n\n|场景|适合用哪个|\n|---|---|\n|同一个模型不同版本对比|PPL 就够了|\n|不同词表的模型对比|必须用 BPB|\n|论文中报告结果|两个都报是最佳实践|",
+			"styleAttributes":{},
+			"x":1250,
+			"y":3740,
+			"width":420,
+			"height":220,
+			"color":"5"
+		},
+		{
+			"id":"458911b933e84a6e",
+			"type":"text",
+			"text":"### PPL（Perplexity，困惑度）\nPPL 是评估语言模型最常用的指标：\n$$\n\\text{PPL} = \\exp\\left(-\\frac{1}{N}\\sum_{i=1}^{N}\\log P(x_i | x_{<i})\\right)\n$$\n直觉理解：PPL 表示模型在预测下一个 token 时的\"困惑程度\"。PPL=10 意味着模型平均在 10 个选项中犹豫。\n\n**PPL 的问题**：它依赖于 Tokenizer！同一句话，词表不同，token 数不同，PPL 不可直接比较。\n",
+			"styleAttributes":{},
+			"x":1250,
+			"y":3120,
+			"width":560,
+			"height":260,
+			"color":"5"
 		},
 		{
 			"id":"8e1b6fd7984c8dd1",
 			"type":"text",
 			"text":"## nn.Embedding 详解",
 			"styleAttributes":{},
-			"x":1630,
-			"y":4240,
+			"x":1300,
+			"y":4295,
 			"width":260,
-			"height":60
+			"height":60,
+			"color":"6"
+		},
+		{
+			"id":"5e97bacec24790cd",
+			"type":"text",
+			"text":"### API 说明\n```python\nnn.Embedding(num_embeddings, embedding_dim)\n```\n- `num_embeddings`：词表大小（有多少行，即多少个 token）\n- `embedding_dim`：嵌入维度（每行有多少列）",
+			"styleAttributes":{},
+			"x":1710,
+			"y":3940,
+			"width":400,
+			"height":180,
+			"color":"6"
 		},
 		{
 			"id":"257d8b1648778ee3",
 			"type":"text",
 			"text":"### 嵌入矩阵的形状\n对于 MiniMind：\n```python\nnn.Embedding(6400, 768)\n\n嵌入矩阵 W_E 的形状: (6400, 768)\n  → 6400 行：每个 token 一行\n  → 768 列：每个 token 用 768 维向量表示\n```\n\n可以这样理解：这个矩阵是一本\"字典\"，有 6400 个词条，每个词条用 768 个数字描述。",
 			"styleAttributes":{},
-			"x":1990,
-			"y":4440,
+			"x":1710,
+			"y":4170,
 			"width":420,
-			"height":140
+			"height":140,
+			"color":"6"
 		},
 		{
 			"id":"9d937e540a5a50d0",
 			"type":"text",
 			"text":"### 输入输出示意\n```python\n# 输入：一批 token id\ninput_ids = torch.tensor([[356, 1892, 478, 23]])  # shape: (1, 4)\n\n# 通过 Embedding 层\nembed = nn.Embedding(6400, 768)\noutput = embed(input_ids)  # shape: (1, 4, 768)\n\n# 每个 token id 变成了一个 768 维向量\n```\n\n```\n输入 shape:  (batch_size, seq_len)           = (1, 4)\n输出 shape:  (batch_size, seq_len, d_model)  = (1, 4, 768)\n```",
 			"styleAttributes":{},
-			"x":1990,
-			"y":4640,
+			"x":1710,
+			"y":4370,
 			"width":460,
-			"height":220
+			"height":220,
+			"color":"6"
 		},
 		{
 			"id":"219a649842959661",
 			"type":"text",
 			"text":"### 参数量计算\n$$\n\\text{Embedding 参数量} = \\text{vocab\\_size} \\times \\text{d\\_model} = 6400 \\times 768 = 4{,}915{,}200 \\approx 5\\text{M}\n$$\n对于 MiniMind 的 64M 总参数来说，Embedding 占了约 **7.7%**。如果用 Qwen2 的词表（151,643），参数量将是：\n$$151,643×768=116,461,824≈116M$$\n这已经**超过 MiniMind 的总参数量**了！这就是为什么小模型必须用小词表。",
 			"styleAttributes":{},
-			"x":1990,
-			"y":4900,
+			"x":1710,
+			"y":4630,
 			"width":620,
-			"height":140
+			"height":140,
+			"color":"6"
+		},
+		{
+			"id":"e41f75fbff54b768",
+			"type":"text",
+			"text":"## 嵌入维度 d_model 的含义\n### d_model=768 代表什么？\nd_model 是模型的\"宽度\"，贯穿整个 Transformer 的每一层。它决定了模型能表达多少信息。\n一个直觉性的理解：\n- d_model=2：只能区分\"正面/负面\"这种粗粒度语义\n- d_model=768：能捕捉非常细粒度的语义差异\n- d_model=4096（如 LLaMA）：语义空间更大，表达能力更强\n### 为什么是 768？\n768 = 12 × 64 = 8 × 96。选择这个数字是因为：\n1. 能被多头注意力的头数整除（MiniMind 用 8 个头，768/8=96）\n2. 对于 64M 参数的模型来说是一个合理的宽度\n3. 与 BERT-base（也是 768）相同，是一个经过充分验证的值\n### 常见模型的 d_model\n\n|模型|d_model|参数量|\n|---|---|---|\n|BERT-base|768|110M|\n|GPT-2|768|117M|\n|**MiniMind**|**768**|**64M**|\n|LLaMA-7B|4,096|7B|\n|Qwen2-72B|8,192|72B|\n",
+			"styleAttributes":{},
+			"x":2450,
+			"y":4480,
+			"width":680,
+			"height":440,
+			"color":"6"
+		},
+		{
+			"id":"90ce4fde0a9609fe",
+			"type":"text",
+			"text":"## 权重共享（Weight Tying）\n### 什么是权重共享？\n在 Transformer 语言模型中，有两个地方用到了词表维度的矩阵：\n1. **输入端 Embedding 层**（`embed_tokens`）：token id → 向量\n    - 形状：(vocab_size, d_model) = (6400, 768)\n2. **输出端 LM Head 层**（`lm_head`）：向量 → token 概率\n    - 形状：(d_model, vocab_size) = (768, 6400)\n\n**权重共享就是让这两个矩阵共用同一组参数。**\n### 为什么可以共享？\n从语义上理解：\n- Embedding 层：给定一个 token id，找到它的\"语义表示\"\n- LM Head 层：给定一个\"语义表示\"，找到最匹配的 token\n\n这两个操作是**互逆的**！Embedding 是\"查表\"（id → 向量），LM Head 是\"反查\"（向量 → id 的概率）。用同一张表做正查和反查，完全合理。\n### 权重共享的好处\n1. **减少参数量**：省掉了一半的词嵌入参数\n    - 不共享：5M + 5M = 10M 参数\n    - 共享后：仅 5M 参数\n    - 对 MiniMind（64M）来说节省了约 **7.7%** 的参数\n2. **语义一致性**：输入和输出使用同一个语义空间，训练更稳定\n3. **正则化效果**：减少了自由参数，有轻微的正则化作用，防止过拟合\n### MiniMind 中的实现\n\n在 `model/model_minimind.py` 中：\n```python\nclass MiniMindModel(nn.Module):\n    def __init__(self, config):\n        super().__init__()\n        self.embed_tokens = nn.Embedding(config.vocab_size, config.dim)\n        # ... 其他层 ...\n        self.lm_head = nn.Linear(config.dim, config.vocab_size, bias=False)\n\n        # 权重共享！\n        self.lm_head.weight = self.embed_tokens.weight\n```\n\n最后一行是关键：`lm_head.weight` 直接指向 `embed_tokens.weight`，两者在内存中是同一个张量。训练时梯度会同时从两条路径回传到这个共享参数。",
+			"styleAttributes":{},
+			"x":1710,
+			"y":4855,
+			"width":620,
+			"height":420,
+			"color":"6"
+		},
+		{
+			"id":"9b49d679293842b7",
+			"type":"text",
+			"text":"MiniMind 的 Tokenizer",
+			"styleAttributes":{},
+			"x":280,
+			"y":2360,
+			"width":240,
+			"height":60,
+			"color":"5"
+		},
+		{
+			"id":"60c6e98739282c0b",
+			"type":"text",
+			"text":"## MiniMind 源码解读\n### 模型配置中的关键参数\n\n在 `model/model_minimind.py` 的 `LMConfig` 类中：\n\n```python\nclass LMConfig:\n    dim: int = 768           # d_model，嵌入维度\n    vocab_size: int = 6400   # 词表大小\n```\n### Embedding 层的定义\n\n```python\nclass MiniMindModel(nn.Module):\n    def __init__(self, config):\n        super().__init__()\n        self.embed_tokens = nn.Embedding(config.vocab_size, config.dim)\n```\n这一行创建了一个 (6400, 768) 的嵌入矩阵。\n### Forward 中的 Embedding\n\n```python\ndef forward(self, input_ids, ...):\n    h = self.embed_tokens(input_ids)  # (batch, seq_len) → (batch, seq_len, 768)\n    # h 就是每个 token 的嵌入向量，接下来送入 Transformer 层\n```\n### 权重共享的实现\n\n```python\nclass MiniMindModel(nn.Module):\n    def __init__(self, config):\n        # ...\n        self.lm_head = nn.Linear(config.dim, config.vocab_size, bias=False)\n        self.lm_head.weight = self.embed_tokens.weight  # 权重共享\n```\n### 数据流小结\n\n```\ntoken ids    Embedding     Transformer      LM Head         概率\n[356,1892] → [768d,768d] → [768d,768d] → [6400d,6400d] → softmax → 预测\n           查表            核心处理        用共享权重投影\n```",
+			"styleAttributes":{},
+			"x":560,
+			"y":5240,
+			"width":450,
+			"height":380,
+			"color":"6"
+		},
+		{
+			"id":"7ae5907c24993a90",
+			"type":"text",
+			"text":"参数量怎么算?",
+			"styleAttributes":{},
+			"x":2960,
+			"y":-160,
+			"width":260,
+			"height":60,
+			"color":"1"
+		},
+		{
+			"id":"5a48526874df24ba",
+			"type":"text",
+			"text":"核心配置参数表",
+			"styleAttributes":{},
+			"x":1720,
+			"y":-100,
+			"width":260,
+			"height":60,
+			"color":"1"
+		},
+		{
+			"id":"7b389c62359a7659",
+			"type":"text",
+			"text":"## 一个直觉的例子\n假设你在训练一个 8 层的 Transformer（MiniMind 就是 8 层）。每一层都对数据做一些变换。如果某层的输出值偏大，下一层的输入就更大，输出就更更大……经过 8 层之后，数值可能变成天文数字——这就是**梯度爆炸**。\n反过来，如果每层输出值偏小，层层衰减后就趋近于零——这就是**梯度消失**。\n用类比来说：你在传话游戏中传了 8 轮，如果每轮都稍微夸大一点（×1.5），最后就会面目全非。我们需要一个“校准员”，每轮传话后把音量拉回正常范围。\n**归一化层就是这个“校准员”。**\n## 数学直觉\n假设每层的变换可以简化为乘以一个系数 $\\alpha$：\n经过 $n$ 层后，输出 = $\\alpha^n \\cdot x$\n* 如果 $\\alpha = 1.1$，8 层后：$1.1^8 \\approx 2.14$（增大 2 倍）\n* 如果 $\\alpha = 0.9$，8 层后：$0.9^8 \\approx 0.43$（缩小一半）\n* 如果层数更多（比如 GPT-3 的 96 层），情况会极其严重。\n**归一化的核心思想**：在每层之后，把数据的分布“拉回”到一个稳定的范围。",
+			"styleAttributes":{},
+			"x":-2310,
+			"y":1170,
+			"width":500,
+			"height":380,
+			"color":"3"
+		},
+		{
+			"id":"dd53a6b19f7393e9",
+			"type":"text",
+			"text":"### **为什么深度网络需要归一化**",
+			"styleAttributes":{},
+			"x":-1650,
+			"y":1490,
+			"width":260,
+			"height":60,
+			"color":"3"
+		},
+		{
+			"id":"ab006be16258999a",
+			"type":"text",
+			"text":"### BatchNorm（2015）\nBatch Normalization 是最早被广泛使用的归一化方法。\n**公式**\n$$\n\\text{BN}(x) = \\gamma \\cdot \\frac{x - \\mu_B}{\\sqrt{\\sigma_B^2 + \\epsilon}} + \\beta\n$$\n其中 $\\mu_B$ 和 $\\sigma_B^2$ 是同一个 batch 内所有样本在同一特征维度上的均值和方差。\n\n**归一化维度**\n```text\n输入形状: (Batch, SeqLen, Dim)\n         ↓ 沿 Batch 维度统计\nBN: 对每个特征维度，跨所有样本计算均值和方差\n```\n**问题**\n- 依赖 batch size：batch 太小统计量不稳定\n- 不适合变长序列：NLP 中每个句子长度不同，同一位置跨 batch 的统计没有意义\n- 推理时需要维护 running mean/var：额外复杂度\n**结论**：BatchNorm 在 CV 中很成功，但不适合 NLP/Transformer。\n### LayerNorm（2016）\nLayer Normalization 专门为 RNN/Transformer 设计。\n**公式**\n$$\n\\text{LN}(x) = \\gamma \\cdot \\frac{x - \\mu}{\\sqrt{\\sigma^2 + \\epsilon}} + \\beta\n$$\n其中 $\\mu$ 和 $\\sigma^2$ 是单个样本的单个位置在所有特征维度上的均值和方差。\n**归一化维度**\n\n```text\n输入形状: (Batch, SeqLen, Dim)\n                          ↓ 沿 Dim 维度统计\nLN: 对每个 token，跨所有特征维度计算均值和方差\n```\n**关键参数**\n* $\\gamma$（scale）：可学习的缩放参数，形状 $(\\text{Dim},)$\n* $\\beta$（shift）：可学习的偏移参数，形状 $(\\text{Dim},)$\n* $\\epsilon$：一个极小值（如 1e-5），防止除以零\n**优点**\n* 不依赖 batch size\n* 适合变长序列\n* 原始 Transformer（2017）就使用 LayerNorm\n### RMSNorm（2019）\nRoot Mean Square Layer Normalization 是对 LayerNorm 的简化。\n\n论文 \"Root Mean Square Layer Normalization\"（Zhang & Sennrich, 2019）发现：LayerNorm 中减均值（re-centering）这一步其实不必要，去掉后效果几乎不变，但计算更快。\n**公式**\n$$\n\\text{RMSNorm}(x) = \\gamma \\cdot \\frac{x}{\\text{RMS}(x) + \\epsilon}\n$$\n其中：\n$$\n\\text{RMS}(x) = \\sqrt{\\frac{1}{d} \\sum_{i=1}^{d} x_i^2}\n$$\n**等价写法（MiniMind 代码中的形式）：**\n$$\n\\text{RMSNorm}(x) = x \\cdot \\text{rsqrt}(\\text{mean}(x^2) + \\epsilon) \\cdot \\gamma\n$$\n**RMSNorm vs LayerNorm 对比**\n\n| 特性    | LayerNorm                              | RMSNorm              |\n| :---- | :------------------------------------- | :------------------- |\n| 减均值   | ✅ 有                                    | ❌ 去掉了                |\n| 除方差   | ✅ 有（标准差）                               | ✅ 有（RMS）             |\n| 可学习参数 | \\(\\gamma\\) (scale) + \\(\\beta\\) (shift) | 仅 \\(\\gamma\\) (scale) |\n| 计算量   | 需要算均值+方差                               | 只需算均方根               |\n| 效果    | 好                                      | 几乎一样好                |\n| 速度    | 基准                                     | 快 ~10-15%            |\n**为什么去掉均值还能 work？**\n直觉上，归一化的核心任务是控制数值的尺度（magnitude），而不是位置（center）。RMS 已经捕捉了数值尺度的信息，减均值带来的额外增益非常有限。",
+			"styleAttributes":{},
+			"x":-2450,
+			"y":1650,
+			"width":480,
+			"height":280,
+			"color":"3"
+		},
+		{
+			"id":"e91d8e4447c94509",
+			"type":"text",
+			"text":"归一化方法的演进",
+			"styleAttributes":{},
+			"x":-1870,
+			"y":1690,
+			"width":260,
+			"height":60,
+			"color":"3"
+		},
+		{
+			"id":"428de6f700a402c8",
+			"type":"text",
+			"text":"### 两种放置方式\n\n归一化层放在哪里，对训练影响很大。\n**Post-Norm**（原始 Transformer，2017）：\n```\nx → Attention → Add(x) → Norm → FFN → Add → Norm → 输出\n     子层          残差连接   归一化\n```\n```python\n# Post-Norm 伪代码\nx = x + Attention(LayerNorm_not_here(x))  # 先算子层\nx = LayerNorm(x)                          # 后归一化\nx = x + FFN(x)\nx = LayerNorm(x)\n```\n**Pre-Norm**（GPT-2 以后的主流选择）：\n```\nx → Norm → Attention → Add(x) → Norm → FFN → Add(x) → 输出\n     归一化   子层        残差连接\n```\n```python\n# Pre-Norm 伪代码\nx = x + Attention(RMSNorm(x))  # 先归一化，再算子层\nx = x + FFN(RMSNorm(x))\n```\n### Pre-Norm vs Post-Norm 对比\n|特性|Post-Norm|Pre-Norm|\n|---|---|---|\n|训练稳定性|❌ 较差，深层时容易不稳定|✅ 好，梯度流更顺畅|\n|最终性能|✅ 理论上略好（有争议）|⭕ 略逊或持平|\n|学习率敏感度|❌ 对学习率很敏感|✅ 对学习率不太敏感|\n|是否需要 warmup|❌ 通常需要|✅ 可以不需要|\n|现代 LLM 的选择|❌ 很少用|✅ 主流选择|\n### 为什么 Pre-Norm 训练更稳定？\n\n关键在于残差连接。Pre-Norm 的梯度路径是：\n\n$$\n\\frac{\\partial L}{\\partial x_l} = \\frac{\\partial L}{\\partial x_L} \\cdot \\prod_{i=l}^{L-1} \\left( 1 + \\frac{\\partial F_i(\\text{Norm}(x_i))}{\\partial x_i} \\right)\n$$\n\n其中 $+1$ 来自残差连接。因为归一化后的值是有界的，所以 $\\frac{\\partial F_i}{\\partial x_i}$ 不会太大，保证了梯度的稳定传播。",
+			"styleAttributes":{},
+			"x":-2310,
+			"y":1990,
+			"width":580,
+			"height":180,
+			"color":"3"
+		},
+		{
+			"id":"a1d8e396fcb89639",
+			"type":"text",
+			"text":"### RMSNorm 类的完整实现\n\n在 `model/model_minimind.py` 中，RMSNorm 的实现非常简洁：\n```python\nclass RMSNorm(nn.Module):\n    def __init__(self, dim, eps=1e-6):\n        super().__init__()\n        self.eps = eps\n        self.weight = nn.Parameter(torch.ones(dim))\n\n    def forward(self, x):\n        return x * torch.rsqrt(x.pow(2).mean(-1, keepdim=True) + self.eps) * self.weight\n```\n### 逐行解析\n**`__init__` 方法**：\n```python\ndef __init__(self, dim, eps=1e-6):\n    self.eps = eps                                # 防除零的小常数\n    self.weight = nn.Parameter(torch.ones(dim))   # 可学习的缩放参数 γ，初始化为全1\n```\n- `dim`：特征维度，MiniMind 中是 768\n- `weight`：可学习参数 $\\gamma$，形状 (768,)，初始值全为 1（意味着训练开始时 RMSNorm 几乎是恒等变换）\n**`forward` 方法**：\n```python\ndef forward(self, x):\n    # x 的形状: (batch_size, seq_len, dim)\n    return x * torch.rsqrt(x.pow(2).mean(-1, keepdim=True) + self.eps) * self.weight\n```\n拆解这一行：\n\n1. `x.pow(2)` → 每个元素平方，形状不变 (batch, seq, dim)\n2. `.mean(-1, keepdim=True)` → 沿最后一个维度求均值 → (batch, seq, 1)\n3. `+ self.eps` → 加上 epsilon → (batch, seq, 1)\n4. `torch.rsqrt(...)` → 取倒数再开方，即 ($1/\\sqrt{...}$) → (batch, seq, 1)\n5. `x * ...` → 元素乘法，广播 → (batch, seq, dim)\n6. `* self.weight` → 乘以可学习参数 $\\gamma$ → (batch, seq, dim)\n### RMSNorm 在模型中的使用位置\n```python\nclass MiniMindBlock(nn.Module):\n    def __init__(self, config):\n        super().__init__()\n        self.attention_norm = RMSNorm(config.dim, eps=config.norm_eps)  # Attention 前\n        self.ffn_norm = RMSNorm(config.dim, eps=config.norm_eps)        # FFN 前\n        self.attention = Attention(config)\n        self.feed_forward = FeedForward(config)\n\n    def forward(self, x, ...):\n        # Pre-Norm：先归一化，再过子层\n        h = x + self.attention(self.attention_norm(x), ...)  # Attention\n        out = h + self.feed_forward(self.ffn_norm(h))        # FFN\n        return out\n```\n每个 MiniMindBlock 中有**两个 RMSNorm**：\n\n1. `attention_norm`：在 Attention 层之前\n2. `ffn_norm`：在 FFN 层之前\n\nMiniMind 有 8 层，所以总共有 **16 个 RMSNorm** 实例。\n### 最终的输出归一化\n在所有 Transformer 层之后，还有一个最终的 RMSNorm：\n```python\nclass MiniMindModel(nn.Module):\n    def __init__(self, config):\n        # ...\n        self.norm = RMSNorm(config.dim, eps=config.norm_eps)  # 最终归一化\n\n    def forward(self, ...):\n        for layer in self.layers:\n            h = layer(h, ...)\n        h = self.norm(h)      # 最后再做一次归一化\n        logits = self.lm_head(h)\n```",
+			"styleAttributes":{},
+			"x":-2210,
+			"y":2430,
+			"width":660,
+			"height":280,
+			"color":"3"
+		},
+		{
+			"id":"9d3298a5423c760d",
+			"type":"text",
+			"text":"### **防止除以零**\nRMSNorm 的公式中有一个除法：除以 $\\text{RMS}(x)$。如果 $x$ 的所有元素恰好都是 0（虽然极少发生），RMS 就是 0，除以 0 会导致数值溢出。\n\n$\\epsilon$（epsilon）是一个极小的正数（MiniMind 中默认 1e-6），加在分母上确保不会除以零：\n$$\n\\text{RMSNorm}(x) = x \\cdot \\frac{1}{\\sqrt{\\text{mean}(x^2) + \\epsilon}} \\cdot \\gamma\n$$\n### **不同模型的 eps 值**\n|模型|eps 值|\n|---|---|\n|BERT (LayerNorm)|1e-12|\n|LLaMA (RMSNorm)|1e-5|\n|**MiniMind (RMSNorm)**|**1e-6**|\neps 太大会影响归一化精度，太小可能在低精度（如 FP16）下仍然出问题。1e-5 到 1e-6 是常见的选择。\n",
+			"styleAttributes":{},
+			"x":-2210,
+			"y":2210,
+			"width":560,
+			"height":200,
+			"color":"3"
+		},
+		{
+			"id":"6ea7dce8ecb61aec",
+			"type":"text",
+			"text":"RMSNorm 归一化",
+			"styleAttributes":{},
+			"x":-1290,
+			"y":1580,
+			"width":260,
+			"height":60,
+			"color":"3"
+		},
+		{
+			"id":"691ffc31631fea0f",
+			"type":"text",
+			"text":"### 手动实现 RMSNorm\n```python\nimport torch\n\ndef my_rmsnorm(x, weight, eps=1e-6):\n    rms = torch.sqrt(x.pow(2).mean(-1, keepdim=True) + eps)\n    return x / rms * weight\n\n# 测试\nx = torch.randn(2, 4, 768)\nweight = torch.ones(768)\noutput = my_rmsnorm(x, weight)\nprint(output.shape)  # (2, 4, 768)\nprint(output.pow(2).mean(-1))  # 每个位置的 RMS 约为 1\n```\n### 对比 LayerNorm 和 RMSNorm\n```python\nimport torch.nn as nn\n\nx = torch.randn(2, 4, 768)\nln = nn.LayerNorm(768)\n# RMSNorm 需要自定义（上面的类）\n\nln_out = ln(x)\nrms_out = my_rmsnorm(x, torch.ones(768))\n\n# 两者输出会不同，但统计特性类似\nprint(f\"LayerNorm 均值: {ln_out.mean(-1).mean():.4f}\")   # ≈ 0\nprint(f\"RMSNorm 均值: {rms_out.mean(-1).mean():.4f}\")     # ≠ 0（没有减均值）\n```",
+			"styleAttributes":{},
+			"x":-2160,
+			"y":2760,
+			"width":650,
+			"height":200,
+			"color":"3"
+		},
+		{
+			"id":"476bf68cb5b95683",
+			"type":"text",
+			"text":"## 源码深度解析",
+			"styleAttributes":{},
+			"x":-1250,
+			"y":3050,
+			"width":260,
+			"height":60,
+			"color":"3"
+		},
+		{
+			"id":"201720c8dfc5a0dc",
+			"type":"text",
+			"text":"### **动手实验**",
+			"styleAttributes":{},
+			"x":-1330,
+			"y":2800,
+			"width":260,
+			"height":60,
+			"color":"3"
+		},
+		{
+			"id":"1f9b38e15f5a0f43",
+			"type":"text",
+			"text":"## MiniMind 源码解读",
+			"styleAttributes":{},
+			"x":-1460,
+			"y":2380,
+			"width":260,
+			"height":60,
+			"color":"3"
+		},
+		{
+			"id":"8ed76830a69bc3fc",
+			"type":"text",
+			"text":"## eps 参数的作用",
+			"styleAttributes":{},
+			"x":-1550,
+			"y":2070,
+			"width":260,
+			"height":60,
+			"color":"3"
+		},
+		{
+			"id":"0ca2ebab0c095e7a",
+			"type":"text",
+			"text":"## Pre-Norm vs Post-Norm",
+			"styleAttributes":{},
+			"x":-1610,
+			"y":1850,
+			"width":280,
+			"height":80,
+			"color":"3"
+		},
+		{
+			"id":"a908cd9a7be79a92",
+			"type":"text",
+			"text":"### MiniMind 对应文件\n- 文件路径：`model/model_minimind.py`\n- 关键代码位置：`RMSNorm` 类定义（约第 20-30 行），`MiniMindBlock.forward` 中的 Pre-Norm 调用\n### 核心代码逐行解读\n```python\nclass RMSNorm(nn.Module):\n    \"\"\"Root Mean Square Layer Normalization\n\n    相比 LayerNorm 的简化：去掉了 re-centering（减均值）和偏置 β\n    只保留 re-scaling（除以 RMS）和可学习缩放 γ\n    \"\"\"\n    def __init__(self, dim, eps=1e-6):\n        super().__init__()\n        self.eps = eps\n        # γ 参数初始化为全 1 → 训练初期近似恒等变换\n        # 如果初始化为随机值，会破坏预训练权重的分布\n        self.weight = nn.Parameter(torch.ones(dim))\n\n    def forward(self, x):\n        # x: (batch_size, seq_len, dim)\n        #\n        # 数学公式: RMSNorm(x) = x / RMS(x) * γ\n        # 其中 RMS(x) = sqrt(mean(x²) + eps)\n        #\n        # 实现技巧：使用 rsqrt（倒数平方根）避免两步计算\n        # rsqrt(v) = 1/sqrt(v)，GPU 有专用硬件单元加速\n        norm_factor = torch.rsqrt(\n            x.pow(2).mean(-1, keepdim=True) + self.eps\n        )\n        return x * norm_factor * self.weight\n\n\n# Pre-Norm 在 MiniMindBlock 中的使用\nclass MiniMindBlock(nn.Module):\n    def forward(self, x, freqs_cis, mask=None):\n        # Pre-Norm: 先归一化再过子层，残差路径上的梯度不会被归一化\"截断\"\n        h = x + self.attention(self.attention_norm(x), freqs_cis, mask)\n        out = h + self.feed_forward(self.ffn_norm(h))\n        return out\n```\n### 设计决策解析\n1. **rsqrt 而非 sqrt + 除法**：`torch.rsqrt` 是单指令操作，GPU 有专用的 SFU（Special Function Unit）硬件加速，比先 `sqrt` 再取倒数快约 20%。\n    \n2. **全 1 初始化 γ**：让 RMSNorm 在训练初期接近恒等映射（identity），不干扰从预训练继承的权重分布。随着训练推进，γ 会逐渐学习每个维度的最佳缩放因子。\n    \n3. **eps = 1e-6 的选择**：LLaMA 使用 1e-5，MiniMind 使用 1e-6。更小的 eps 提供更高的归一化精度，但在 FP16 下有下溢风险。MiniMind 默认使用 BF16 训练，其动态范围足以支撑 1e-6。",
+			"styleAttributes":{},
+			"x":-2050,
+			"y":3010,
+			"width":720,
+			"height":230,
+			"color":"3"
 		}
 	],
 	"edges":[
@@ -1344,6 +1556,186 @@
 			"fromSide":"right",
 			"toNode":"8e1b6fd7984c8dd1",
 			"toSide":"left"
+		},
+		{
+			"id":"66ec5d1a73dd69b3",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"8e1b6fd7984c8dd1",
+			"fromSide":"right",
+			"toNode":"9d937e540a5a50d0",
+			"toSide":"left"
+		},
+		{
+			"id":"bd6fc0781a956acd",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"8e1b6fd7984c8dd1",
+			"fromSide":"right",
+			"toNode":"219a649842959661",
+			"toSide":"left"
+		},
+		{
+			"id":"6cbe5376005d06a7",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"219a649842959661",
+			"fromSide":"right",
+			"toNode":"e41f75fbff54b768",
+			"toSide":"left"
+		},
+		{
+			"id":"d873a8848e33faa2",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"8e1b6fd7984c8dd1",
+			"fromSide":"right",
+			"toNode":"90ce4fde0a9609fe",
+			"toSide":"left"
+		},
+		{
+			"id":"956c70681db83755",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"cac3cefc086e37a3",
+			"fromSide":"right",
+			"toNode":"60c6e98739282c0b",
+			"toSide":"left"
+		},
+		{
+			"id":"9de353214bdb040d",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"876fba506090a6ff",
+			"fromSide":"left",
+			"toNode":"6ea7dce8ecb61aec",
+			"toSide":"right"
+		},
+		{
+			"id":"1264f95404599a22",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"6ea7dce8ecb61aec",
+			"fromSide":"left",
+			"toNode":"dd53a6b19f7393e9",
+			"toSide":"right"
+		},
+		{
+			"id":"d81e31fdc3dfdc91",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"dd53a6b19f7393e9",
+			"fromSide":"left",
+			"toNode":"7b389c62359a7659",
+			"toSide":"right"
+		},
+		{
+			"id":"5e0e1a8c16668725",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"dd53a6b19f7393e9",
+			"fromSide":"left",
+			"toNode":"e91d8e4447c94509",
+			"toSide":"right"
+		},
+		{
+			"id":"047d4a0c20285ea4",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"e91d8e4447c94509",
+			"fromSide":"left",
+			"toNode":"ab006be16258999a",
+			"toSide":"right"
+		},
+		{
+			"id":"bb18d9580777784a",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"6ea7dce8ecb61aec",
+			"fromSide":"left",
+			"toNode":"0ca2ebab0c095e7a",
+			"toSide":"right"
+		},
+		{
+			"id":"6a8dd65b1d7a168c",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"0ca2ebab0c095e7a",
+			"fromSide":"left",
+			"toNode":"428de6f700a402c8",
+			"toSide":"right"
+		},
+		{
+			"id":"895f4a7040284ca6",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"6ea7dce8ecb61aec",
+			"fromSide":"left",
+			"toNode":"8ed76830a69bc3fc",
+			"toSide":"right"
+		},
+		{
+			"id":"9b70b775a0014f3f",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"8ed76830a69bc3fc",
+			"fromSide":"left",
+			"toNode":"9d3298a5423c760d",
+			"toSide":"right"
+		},
+		{
+			"id":"1fa952604f9e88f2",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"6ea7dce8ecb61aec",
+			"fromSide":"left",
+			"toNode":"1f9b38e15f5a0f43",
+			"toSide":"right"
+		},
+		{
+			"id":"583bd3e1d3b7ae02",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"1f9b38e15f5a0f43",
+			"fromSide":"left",
+			"toNode":"a1d8e396fcb89639",
+			"toSide":"right"
+		},
+		{
+			"id":"d407daac2ff818a3",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"6ea7dce8ecb61aec",
+			"fromSide":"left",
+			"toNode":"201720c8dfc5a0dc",
+			"toSide":"right"
+		},
+		{
+			"id":"451a62c3081de423",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"201720c8dfc5a0dc",
+			"fromSide":"left",
+			"toNode":"691ffc31631fea0f",
+			"toSide":"right"
+		},
+		{
+			"id":"ef0454640150a880",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"476bf68cb5b95683",
+			"fromSide":"left",
+			"toNode":"a908cd9a7be79a92",
+			"toSide":"right"
+		},
+		{
+			"id":"aed95dea9f9f089f",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"6ea7dce8ecb61aec",
+			"fromSide":"left",
+			"toNode":"476bf68cb5b95683",
+			"toSide":"right"
 		}
 	],
 	"metadata":{
