@@ -619,14 +619,145 @@
 			"height":60
 		},
 		{
+			"id":"b1ba54a9a9b95225",
+			"type":"text",
+			"text":"词表大→Embedding 参数多→对小模型来说会\"挤占\"核心层参数。要根据模型总参数量权衡。",
+			"styleAttributes":{},
+			"x":1180,
+			"y":2380,
+			"width":280,
+			"height":120,
+			"color":"5"
+		},
+		{
 			"id":"374a881e648777b9",
 			"type":"text",
 			"text":"[0-Embedding 与word2vec：模型如何理解一个词](0-Embedding%20与word2vec：模型如何理解一个词.md)",
 			"styleAttributes":{},
-			"x":160,
-			"y":4440,
+			"x":-180,
+			"y":4380,
 			"width":260,
 			"height":60
+		},
+		{
+			"id":"3bc627e175d5d590",
+			"type":"text",
+			"text":"One-Hot:用一个长度为 vocab_size 的向量来表示每个 token，对应位置为 1，其余全为 0。",
+			"styleAttributes":{},
+			"x":500,
+			"y":4340,
+			"width":400,
+			"height":70
+		},
+		{
+			"id":"0175efee7e819895",
+			"type":"text",
+			"text":"致命缺陷:\n1.维度灾难: MiniMind 的 vocab_size=6400，每个 token 就是一个 6400 维的向量。Qwen2 的 vocab_size=151,643 就更夸张了。\n2.无法表达语义: 任意两个 One-Hot 向量的内积都是 0（正交），\"猫\"和\"狗\"的距离与\"猫\"和\"数学\"的距离完全一样。\n$$\n\\text{cos\\_sim}(\\text{“猫”}, \\text{“狗”}) = \\text{cos\\_sim}(\\text{“猫”}, \\text{“数学”}) = 0\n$$\n3.极度稀疏 : 6400 维的向量里只有 1 个位置非零，99.98% 的数据是 0，浪费计算和存储。",
+			"styleAttributes":{},
+			"x":500,
+			"y":4410,
+			"width":720,
+			"height":250
+		},
+		{
+			"id":"cac3cefc086e37a3",
+			"type":"text",
+			"text":"从文字到向量",
+			"styleAttributes":{},
+			"x":140,
+			"y":4500,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"26d0e66bcca5881d",
+			"type":"text",
+			"text":"Dense Embedding: 稠密向量的魔法",
+			"styleAttributes":{},
+			"x":500,
+			"y":4740,
+			"width":360,
+			"height":60
+		},
+		{
+			"id":"47fb8ec7d93918e0",
+			"type":"text",
+			"text":"### 核心思想\n与其用稀疏的 One-Hot，不如用一个**较短但稠密**的向量来表示每个 token：\n\n```\n词表大小: 6400\n嵌入维度: 768\n\n\"猫\" → [0.23, -0.45, 0.12, ..., 0.67]  (768维)\n\"狗\" → [0.21, -0.41, 0.15, ..., 0.63]  (768维)  ← 和\"猫\"很接近！\n\"数学\"→ [-0.55, 0.32, 0.89, ..., -0.11] (768维) ← 和\"猫\"很远\n```",
+			"styleAttributes":{},
+			"x":1010,
+			"y":4660,
+			"width":420,
+			"height":180
+		},
+		{
+			"id":"e9aff8e219afa638",
+			"type":"text",
+			"text":"### 数学描述\n本质上，Embedding 就是一个矩阵乘法：\n$$\n\\mathbf{e} = \\text{one\\_hot}(x) \\cdot \\mathbf{W}_E\n$$\n其中：\n- $x$ 是 token id（整数）\n- $\\text{one\\_hot}(x)$ 是 $1 \\times V$ 的 One-Hot 向量（$V = \\text{vocab\\_size}$）\n- $\\mathbf{W}_E$ 是 $V \\times d$ 的嵌入矩阵（$d = \\text{d\\_model}$）\n- $\\mathbf{e}$ 是 $1 \\times d$ 的嵌入向量\n但因为 One-Hot 向量只有一个位置是 1，所以这个矩阵乘法等价于从矩阵中取出第 $x$ 行——这就是“查表”操作。",
+			"styleAttributes":{},
+			"x":1000,
+			"y":4870,
+			"width":440,
+			"height":140
+		},
+		{
+			"id":"d5815673590ce254",
+			"type":"text",
+			"text":"### 查表 vs 矩阵乘法\n```python\nimport torch\nimport torch.nn as nn\n\nV, d = 6400, 768\nW = nn.Embedding(V, d)\n\n# 方法1：查表（实际实现）\ntoken_id = 356\nembedding = W(torch.tensor(token_id))  # 直接取第356行\n\n# 方法2：矩阵乘法（数学等价，但更慢）\none_hot = torch.zeros(V)\none_hot[356] = 1.0\nembedding_v2 = one_hot @ W.weight  # 矩阵乘法\n\n# embedding ≈ embedding_v2（结果相同）\n```\n**实际实现中，`nn.Embedding` 用的是查表，不是矩阵乘法——因为查表快得多！**",
+			"styleAttributes":{},
+			"x":990,
+			"y":5030,
+			"width":450,
+			"height":160
+		},
+		{
+			"id":"5e97bacec24790cd",
+			"type":"text",
+			"text":"### API 说明\n```python\nnn.Embedding(num_embeddings, embedding_dim)\n```\n- `num_embeddings`：词表大小（有多少行，即多少个 token）\n- `embedding_dim`：嵌入维度（每行有多少列）",
+			"styleAttributes":{},
+			"x":1990,
+			"y":4210,
+			"width":400,
+			"height":180
+		},
+		{
+			"id":"8e1b6fd7984c8dd1",
+			"type":"text",
+			"text":"## nn.Embedding 详解",
+			"styleAttributes":{},
+			"x":1630,
+			"y":4240,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"257d8b1648778ee3",
+			"type":"text",
+			"text":"### 嵌入矩阵的形状\n对于 MiniMind：\n```python\nnn.Embedding(6400, 768)\n\n嵌入矩阵 W_E 的形状: (6400, 768)\n  → 6400 行：每个 token 一行\n  → 768 列：每个 token 用 768 维向量表示\n```\n\n可以这样理解：这个矩阵是一本\"字典\"，有 6400 个词条，每个词条用 768 个数字描述。",
+			"styleAttributes":{},
+			"x":1990,
+			"y":4440,
+			"width":420,
+			"height":140
+		},
+		{
+			"id":"9d937e540a5a50d0",
+			"type":"text",
+			"text":"### 输入输出示意\n```python\n# 输入：一批 token id\ninput_ids = torch.tensor([[356, 1892, 478, 23]])  # shape: (1, 4)\n\n# 通过 Embedding 层\nembed = nn.Embedding(6400, 768)\noutput = embed(input_ids)  # shape: (1, 4, 768)\n\n# 每个 token id 变成了一个 768 维向量\n```\n\n```\n输入 shape:  (batch_size, seq_len)           = (1, 4)\n输出 shape:  (batch_size, seq_len, d_model)  = (1, 4, 768)\n```",
+			"styleAttributes":{},
+			"x":1990,
+			"y":4640,
+			"width":460,
+			"height":220
+		},
+		{
+			"id":"219a649842959661",
+			"type":"text",
+			"text":"### 参数量计算\n$$\n\\text{Embedding 参数量} = \\text{vocab\\_size} \\times \\text{d\\_model} = 6400 \\times 768 = 4{,}915{,}200 \\approx 5\\text{M}\n$$\n对于 MiniMind 的 64M 总参数来说，Embedding 占了约 **7.7%**。如果用 Qwen2 的词表（151,643），参数量将是：\n$$151,643×768=116,461,824≈116M$$\n这已经**超过 MiniMind 的总参数量**了！这就是为什么小模型必须用小词表。",
+			"styleAttributes":{},
+			"x":1990,
+			"y":4900,
+			"width":620,
+			"height":140
 		}
 	],
 	"edges":[
@@ -1116,12 +1247,102 @@
 			"toSide":"left"
 		},
 		{
-			"id":"c15ebe70611cc12f",
+			"id":"7c9ad216320b007a",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"1a457e99b95731ad",
+			"fromSide":"right",
+			"toNode":"b1ba54a9a9b95225",
+			"toSide":"left"
+		},
+		{
+			"id":"f418acedd4b8aa36",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"876fba506090a6ff",
+			"fromSide":"right",
+			"toNode":"24d6777622d3ba0f",
+			"toSide":"left"
+		},
+		{
+			"id":"f5c1c4239d8eea3f",
 			"styleAttributes":{},
 			"toFloating":false,
 			"fromNode":"24d6777622d3ba0f",
 			"fromSide":"right",
-			"toNode":"374a881e648777b9",
+			"toNode":"cac3cefc086e37a3",
+			"toSide":"left"
+		},
+		{
+			"id":"e9d0e843788f7ad7",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"cac3cefc086e37a3",
+			"fromSide":"right",
+			"toNode":"3bc627e175d5d590",
+			"toSide":"left"
+		},
+		{
+			"id":"9f1f1d5a9beae253",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"cac3cefc086e37a3",
+			"fromSide":"right",
+			"toNode":"26d0e66bcca5881d",
+			"toSide":"left"
+		},
+		{
+			"id":"66f06744c75f8a53",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"26d0e66bcca5881d",
+			"fromSide":"right",
+			"toNode":"47fb8ec7d93918e0",
+			"toSide":"left"
+		},
+		{
+			"id":"b3b08819626a8a3a",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"26d0e66bcca5881d",
+			"fromSide":"right",
+			"toNode":"e9aff8e219afa638",
+			"toSide":"left"
+		},
+		{
+			"id":"9af880c7ee97744a",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"26d0e66bcca5881d",
+			"fromSide":"right",
+			"toNode":"d5815673590ce254",
+			"toSide":"left"
+		},
+		{
+			"id":"e644c026100f6e12",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"8e1b6fd7984c8dd1",
+			"fromSide":"right",
+			"toNode":"5e97bacec24790cd",
+			"toSide":"left"
+		},
+		{
+			"id":"7e5ee6bc00aec591",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"8e1b6fd7984c8dd1",
+			"fromSide":"right",
+			"toNode":"257d8b1648778ee3",
+			"toSide":"left"
+		},
+		{
+			"id":"fe5ae0e9eba0972b",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"cac3cefc086e37a3",
+			"fromSide":"right",
+			"toNode":"8e1b6fd7984c8dd1",
 			"toSide":"left"
 		}
 	],

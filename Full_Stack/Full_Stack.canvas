@@ -11,16 +11,6 @@
 			"height":60
 		},
 		{
-			"id":"dedd76cc8b475c22",
-			"type":"text",
-			"text":"Design",
-			"styleAttributes":{},
-			"x":70,
-			"y":-480,
-			"width":260,
-			"height":60
-		},
-		{
 			"id":"597bd83b70ef4f2f",
 			"type":"text",
 			"text":"Frontend",
@@ -31,82 +21,12 @@
 			"height":60
 		},
 		{
-			"id":"0c429b8fde10b75e",
-			"type":"text",
-			"text":"Backend",
-			"styleAttributes":{},
-			"x":70,
-			"y":-60,
-			"width":260,
-			"height":60
-		},
-		{
 			"id":"5099774dc1196a97",
 			"type":"text",
 			"text":"Deployment",
 			"styleAttributes":{},
 			"x":-780,
 			"y":-60,
-			"width":260,
-			"height":60
-		},
-		{
-			"id":"60314c3736118bf1",
-			"type":"text",
-			"text":"BaaS",
-			"styleAttributes":{},
-			"x":60,
-			"y":480,
-			"width":260,
-			"height":60
-		},
-		{
-			"id":"fa7ccc1ac13dbc83",
-			"type":"text",
-			"text":"SaaS",
-			"styleAttributes":{},
-			"x":60,
-			"y":380,
-			"width":260,
-			"height":60
-		},
-		{
-			"id":"77ebdc8a88afc352",
-			"type":"text",
-			"text":"软件即服务",
-			"styleAttributes":{},
-			"x":400,
-			"y":380,
-			"width":260,
-			"height":60
-		},
-		{
-			"id":"4d712d81782010f7",
-			"type":"text",
-			"text":"后端即服务",
-			"styleAttributes":{},
-			"x":400,
-			"y":480,
-			"width":260,
-			"height":60
-		},
-		{
-			"id":"ec0e4dc1a9a49bec",
-			"type":"text",
-			"text":"MaaS",
-			"styleAttributes":{},
-			"x":60,
-			"y":580,
-			"width":260,
-			"height":60
-		},
-		{
-			"id":"19c2a6140c69c809",
-			"type":"text",
-			"text":"模型即服务",
-			"styleAttributes":{},
-			"x":400,
-			"y":580,
 			"width":260,
 			"height":60
 		},
@@ -147,6 +67,117 @@
 			"styleAttributes":{},
 			"x":-1100,
 			"y":-440,
+			"width":260,
+			"height":60
+		},
+		{"id":"7097597cd487a3d1","type":"file","file":"image/Pasted image 20261116090424.png","x":530,"y":-100,"width":400,"height":339},
+		{
+			"id":"6e07a0a97cd09542",
+			"type":"text",
+			"text":"CSS",
+			"styleAttributes":{},
+			"x":470,
+			"y":-360,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"00ceed02775f1ad3",
+			"type":"text",
+			"text":"Script",
+			"styleAttributes":{},
+			"x":470,
+			"y":-280,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"a56a268f0c314a27",
+			"type":"text",
+			"text":"HTML",
+			"styleAttributes":{},
+			"x":470,
+			"y":-450,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"dedd76cc8b475c22",
+			"type":"text",
+			"text":"Design",
+			"styleAttributes":{},
+			"x":70,
+			"y":-640,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"0c429b8fde10b75e",
+			"type":"text",
+			"text":"Backend",
+			"styleAttributes":{},
+			"x":70,
+			"y":70,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"fa7ccc1ac13dbc83",
+			"type":"text",
+			"text":"SaaS",
+			"styleAttributes":{},
+			"x":70,
+			"y":480,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"77ebdc8a88afc352",
+			"type":"text",
+			"text":"软件即服务",
+			"styleAttributes":{},
+			"x":410,
+			"y":480,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"60314c3736118bf1",
+			"type":"text",
+			"text":"BaaS",
+			"styleAttributes":{},
+			"x":70,
+			"y":580,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"4d712d81782010f7",
+			"type":"text",
+			"text":"后端即服务",
+			"styleAttributes":{},
+			"x":410,
+			"y":580,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"ec0e4dc1a9a49bec",
+			"type":"text",
+			"text":"MaaS",
+			"styleAttributes":{},
+			"x":70,
+			"y":680,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"19c2a6140c69c809",
+			"type":"text",
+			"text":"模型即服务",
+			"styleAttributes":{},
+			"x":410,
+			"y":680,
 			"width":260,
 			"height":60
 		}
@@ -232,6 +263,60 @@
 			"fromSide":"left",
 			"toNode":"5099774dc1196a97",
 			"toSide":"right"
+		},
+		{
+			"id":"657f627c288a640b",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"597bd83b70ef4f2f",
+			"fromSide":"right",
+			"toNode":"a56a268f0c314a27",
+			"toSide":"left"
+		},
+		{
+			"id":"423c9f3545ca6a20",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"597bd83b70ef4f2f",
+			"fromSide":"right",
+			"toNode":"6e07a0a97cd09542",
+			"toSide":"left"
+		},
+		{
+			"id":"967969b617dd3ee8",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"597bd83b70ef4f2f",
+			"fromSide":"right",
+			"toNode":"00ceed02775f1ad3",
+			"toSide":"left"
+		},
+		{
+			"id":"016b26bb0454e12f",
+			"styleAttributes":{"pathfindingMethod":"a-star"},
+			"toFloating":false,
+			"fromNode":"97f76a79601b30a3",
+			"fromSide":"right",
+			"toNode":"fa7ccc1ac13dbc83",
+			"toSide":"left"
+		},
+		{
+			"id":"0de1388751f6dcf4",
+			"styleAttributes":{"pathfindingMethod":"square"},
+			"toFloating":false,
+			"fromNode":"97f76a79601b30a3",
+			"fromSide":"right",
+			"toNode":"60314c3736118bf1",
+			"toSide":"left"
+		},
+		{
+			"id":"e71bc83b78e670c9",
+			"styleAttributes":{"pathfindingMethod":"square"},
+			"toFloating":false,
+			"fromNode":"97f76a79601b30a3",
+			"fromSide":"right",
+			"toNode":"ec0e4dc1a9a49bec",
+			"toSide":"left"
 		}
 	],
 	"metadata":{
