@@ -180,7 +180,10 @@
 			"y":680,
 			"width":260,
 			"height":60
-		}
+		},
+		{"id":"fd36903be4c60534","type":"file","file":"image/Pasted image 20261118085228.png","x":-520,"y":70,"width":400,"height":279},
+		{"id":"ead6ec70d1b19eb4","type":"file","file":"image/Pasted image 20261118085240.png","x":-580,"y":407,"width":400,"height":233},
+		{"id":"3abf1b6631ca11ce","type":"file","file":"image/3e5e417ee9dee973cbc06e30a9c13a80.png","x":-1180,"y":680,"width":400,"height":192}
 	],
 	"edges":[
 		{

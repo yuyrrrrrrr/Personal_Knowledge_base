@@ -25,30 +25,27 @@
             "id": "0fc375cd0bd1d2b6",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "LLM/2-Source/8-Agent/Agent.canvas",
-                "viewState": {
-                  "x": 1964.307461527214,
-                  "y": 250.41177016907045,
-                  "zoom": -2.9590193548882135
-                }
+                "file": "LLM/2-Source/7-Deep Learning/0-深度学习基础/3-深度学习架构：MLP到神经网络的升级，理解反向传播的基础.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "Agent"
+              "icon": "lucide-file",
+              "title": "3-深度学习架构：MLP到神经网络的升级，理解反向传播的基础"
             }
           },
           {
-            "id": "0c42028da10691dc",
+            "id": "ee8092a36bd3a91d",
             "type": "leaf",
             "state": {
               "type": "canvas",
               "state": {
                 "file": "LLM/2-Source/7-Deep Learning/Minimind.canvas",
                 "viewState": {
-                  "x": 637.8921228938422,
-                  "y": 3173.9694900972604,
-                  "zoom": -3.3333333333333335
+                  "x": 2068.0622549472573,
+                  "y": 236.68891109674377,
+                  "zoom": -0.3333333333333334
                 }
               },
               "icon": "lucide-layout-dashboard",
@@ -90,7 +87,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Fetch",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -118,8 +115,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 255.5,
-    "collapsed": true
+    "width": 255.5
   },
   "right": {
     "id": "cffc2ac093d9b5b0",
@@ -237,25 +233,32 @@
       "bases:新建数据库": false
     }
   },
-  "active": "0c42028da10691dc",
+  "active": "ee8092a36bd3a91d",
   "lastOpenFiles": [
-    "LLM/2-Source/7-Deep Learning/MiniMind 相关面试题.md",
+    "LLM/2-Source/7-Deep Learning/0-深度学习基础/3-深度学习架构：MLP到神经网络的升级，理解反向传播的基础.md",
+    "LLM/2-Source/7-Deep Learning/0-深度学习基础/4-反向传播：海量参数的神经网络如何训练.md",
+    "LLM/2-Source/7-Deep Learning/Deep Learning.canvas",
     "LLM/2-Source/7-Deep Learning/Minimind.canvas",
-    "LLM/2-Source/8-Agent/Agent_learn/3-Tool Use.md",
+    "LLM/2-Source/6-Machine Learning/Machine Learning.canvas",
     "LLM/2-Source/8-Agent/Agent.canvas",
+    "LLM/2-Source/7-Deep Learning/MiniMind 相关面试题.md",
+    "Article/AI时代，代码Review还有必要吗？.md",
+    "Full_Stack/Full_Stack.canvas",
+    "image/3e5e417ee9dee973cbc06e30a9c13a80.png",
+    "image/Pasted image 20261118085240.png",
+    "image/Pasted image 20261118085228.png",
+    "推理优化.md",
+    "LLM/1-Plan and Outline/AI大模型开发7.5课程大纲.pdf",
+    "LLM/1-Plan and Outline/AI 大模型应用开发学习路线 _ 25 年最新零基础到精通一条龙（万人收藏⭐️）.pdf",
+    "LLM/2-Source/8-Agent/Agent_learn/3-Tool Use.md",
     "image/Pasted image 20261116101033.png",
     "image/Pasted image 20261116100609.png",
     "image/Pasted image 20261116100532.png",
     "image/Pasted image 20261116100505.png",
-    "Full_Stack/Full_Stack.canvas",
     "LLM/2-Source/8-Agent/Agent_learn/2-流式输出与渲染.md",
     "image/Pasted image 20261116092758.png",
     "image/Pasted image 20261116092719.png",
     "image/Pasted image 20261116092611.png",
-    "image/Pasted image 20261116090424.png",
-    "image/Pasted image 20261115204719.png",
-    "image/Pasted image 20261115204712.png",
-    "LLM/2-Source/7-Deep Learning/Deep Learning.canvas",
     "LLM/2-Source/7-Deep Learning/4-Transformer/2-手搓 Mini Transformer前需要了解的编码器和解码器.md",
     "LLM/2-Source/8-Agent/Agent_learn/ReAct 智能体编码实现.md",
     "LLM/2-Source/7-Deep Learning/3-RNN/1-RNN：模型开始理解自然语言序列.md",
@@ -267,7 +270,6 @@
     "LLM/2-Source/8-Agent/Agent_learn/1-Agent = LLM + Harness.md",
     "LLM/2-Source/8-Agent/大模型应用开发.md",
     "Full_Stack/Zero-to-FullStack.md",
-    "LLM/2-Source/6-Machine Learning/Machine Learning.canvas",
     "LLM/2-Source/8-Agent/Agent 开发第一课-50行代码实现极简Agent.md",
     "LLM/Data analysis/数据科学.md",
     "LLM/2-Source/7-Deep Learning/4-Transformer/4-为什么是 Decoder-Only的 GPT赢了.md",
@@ -284,15 +286,10 @@
     "LLM/AI Concept.md",
     "LLM/2-Source/7-Deep Learning/4-Transformer/5-手搓 Mini-GPT.md",
     "LLM/2-Source/7-Deep Learning/Deep Learning.canvas.transforms.new",
-    "LLM/2-Source/7-Deep Learning/4-Transformer/1-Transformer.md",
-    "LLM/2-Source/7-Deep Learning/4-Transformer/从函数到 Transformer.md",
-    "LLM/2-Source/7-Deep Learning/4-Transformer/3-手搓 Mini-Transformer.md",
     "LLM/6-interview/项目与综合面试",
     "LLM/6-interview/算法与编程题",
     "LLM/6-interview/软件工程基础",
     "LLM/6-interview/模型训练与对齐",
-    "LLM/6-interview/AI应用工程与治理",
-    "LLM/6-interview/Agent原理与系统",
-    "LLM/6-interview/RAG与知识系统"
+    "LLM/6-interview/AI应用工程与治理"
   ]
 }
