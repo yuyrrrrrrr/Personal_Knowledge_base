@@ -1032,16 +1032,6 @@
 		{"id":"1218497e3bb36848","type":"text","text":"Transformer的变体","x":-1850,"y":2656,"width":250,"height":60,"color":"6"},
 		{"id":"924a7c298117b5eb","type":"text","text":"模型规模和效果的关系","x":-1850,"y":2736,"width":250,"height":60,"color":"6"},
 		{
-			"id":"a4ca7de51c37f410",
-			"type":"text",
-			"text":"",
-			"styleAttributes":{},
-			"x":-2184,
-			"y":2766,
-			"width":260,
-			"height":60
-		},
-		{
 			"id":"dd037349dab12387",
 			"type":"text",
 			"text":"Encoder-Only",
@@ -1415,8 +1405,8 @@
 			"styleAttributes":{},
 			"x":-1432,
 			"y":-2153,
-			"width":390,
-			"height":167
+			"width":641,
+			"height":261
 		},
 		{
 			"id":"38532430daacd645",
@@ -1747,7 +1737,8 @@
 			"y":4486,
 			"width":380,
 			"height":228
-		}
+		},
+		{"id":"c06cd4e02465251c","type":"file","file":"image/Pasted image 20261119165146.png","x":-400,"y":383,"width":400,"height":215}
 	],
 	"edges":[
 		{"id":"ce833c11b4634b2e","fromFloating":false,"toFloating":false,"fromNode":"b256180110ac1065","fromSide":"right","toNode":"e6262301f99b0347","toSide":"left"},
@@ -1840,7 +1831,7 @@
 		{"id":"b5257160a5003da8","fromNode":"e7d10f4869dcdbed","fromSide":"bottom","toNode":"0d1513d4cbd70d11","toSide":"right"},
 		{"id":"c1a9c31b0c6c2de8","fromNode":"e7d10f4869dcdbed","fromSide":"bottom","toNode":"e3538b4a32f933bc","toSide":"right"},
 		{"id":"0f94d1b3d7509b63","fromNode":"e7d10f4869dcdbed","fromSide":"bottom","toNode":"a7d9fdeeb95546b7","toSide":"right"},
-		{"id":"e15bdb08ec5b5b4c","fromFloating":false,"fromNode":"5cec2ff2042d0541","fromSide":"bottom","toNode":"e7d10f4869dcdbed","toSide":"top"},
+		{"id":"e15bdb08ec5b5b4c","fromFloating":false,"toFloating":false,"fromNode":"5cec2ff2042d0541","fromSide":"bottom","toNode":"e7d10f4869dcdbed","toSide":"top"},
 		{"id":"87b6d433dfae0e68","fromNode":"4cedeebc4d3e1051","fromSide":"left","toNode":"ee53628774e9d446","toSide":"right"},
 		{"id":"cdfe24854024db90","fromNode":"123b75bd39a41c8e","fromSide":"left","toNode":"7d75006f09371a65","toSide":"right"},
 		{"id":"0f1237bb9d4bfe92","fromNode":"c64f46e572a2cc35","fromSide":"left","toNode":"42c2615b8486595e","toSide":"right"},

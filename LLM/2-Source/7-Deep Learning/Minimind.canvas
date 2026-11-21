@@ -1736,9 +1736,9 @@
 			"type":"text",
 			"text":"SFT（Supervised Fine-Tuning，监督微调）是 LLM 训练的第二阶段。它的目标用一句话概括：\n\n> **让一个\"会写作文\"的模型学会\"对话\"。**\n\n预训练后的模型像一本百科全书——知识渊博但不善交际。你问它\"什么是量子力学？\"它可能会续写一篇论文。SFT 就是教它理解问题、组织答案、按格式回复。",
 			"styleAttributes":{},
-			"x":-2481,
+			"x":-2541,
 			"y":4415,
-			"width":412,
+			"width":472,
 			"height":150,
 			"color":"#ff0095"
 		},
@@ -1756,7 +1756,7 @@
 		{
 			"id":"d4076ec4bba40188",
 			"type":"text",
-			"text":"这是**面试必考题**，一定要理解透彻。\n### 数据格式不同\n\n|维度|预训练|SFT|\n|---|---|---|\n|数据格式|纯文本 `{\"text\": \"...\"}`|多轮对话 `{\"conversations\": [...]}`|\n|角色信息|无|system / user / assistant|\n|数据来源|网页、书籍、百科|人工标注或强模型生成|\n\n### Loss 计算不同\n\n|维度|预训练|SFT|\n|---|---|---|\n|Loss 范围|所有 token|仅 assistant 回复的 token|\n|Loss Mask|全 1（除 padding）|prompt 部分为 0，回复部分为 1|\n|训练信号|学习所有文本的分布|只学习\"如何回答\"|\n\n### 2.3 一图总结\n```\n预训练:\n  输入: [今天天气真好我们去公园玩]\n  Loss: [✓  ✓  ✓  ✓ ✓ ✓ ✓ ✓ ✓]  ← 全部计算\n\nSFT:\n  输入: [User:天气怎样？ Assistant:今天天气真好！]\n  Loss: [✗   ✗  ✗  ✗    ✓    ✓  ✓  ✓  ✓]  ← 只计算 Assistant 部分\n```",
+			"text":"这是**面试必考题**，一定要理解透彻。\n### 数据格式不同\n\n| 维度   | 预训练                   | SFT                             |\n| ---- | --------------------- | ------------------------------- |\n| 数据格式 | 纯文本 `{\"text\": \"...\"}` | 多轮对话 `{\"conversations\": [...]}` |\n| 角色信息 | 无                     | system / user / assistant       |\n| 数据来源 | 网页、书籍、百科              | 人工标注或强模型生成                      |\n\n### Loss 计算不同\n\n|维度|预训练|SFT|\n|---|---|---|\n|Loss 范围|所有 token|仅 assistant 回复的 token|\n|Loss Mask|全 1（除 padding）|prompt 部分为 0，回复部分为 1|\n|训练信号|学习所有文本的分布|只学习\"如何回答\"|\n\n### 2.3 一图总结\n```\n预训练:\n  输入: [今天天气真好我们去公园玩]\n  Loss: [✓  ✓  ✓  ✓ ✓ ✓ ✓ ✓ ✓]  ← 全部计算\n\nSFT:\n  输入: [User:天气怎样？ Assistant:今天天气真好！]\n  Loss: [✗   ✗  ✗  ✗    ✓    ✓  ✓  ✓  ✓]  ← 只计算 Assistant 部分\n```",
 			"styleAttributes":{},
 			"x":-2541,
 			"y":4619,
@@ -1802,9 +1802,9 @@
 			"type":"text",
 			"text":"### 完整示例\n假设有以下对话：\n\n```json\n{\n  \"conversations\": [\n    {\"role\": \"user\", \"content\": \"1+1等于几？\"},\n    {\"role\": \"assistant\", \"content\": \"等于2。\"}\n  ]\n}\n```\n经过 Chat Template 处理和 Tokenize 后：\n```\nToken:     [<|im_start|>, user, \\n, 1, +, 1, 等于, 几, ？, <|im_end|>, \\n, <|im_start|>, assistant, \\n, 等于, 2, 。, <|im_end|>]\nLoss Mask: [0,            0,    0,  0, 0, 0, 0,   0,  0,  0,          0,  0,            0,         0,  1,   1, 1, 1          ]\n```\n只有 \"等于2。`<|im_end|>`\" 这四个 token 参与 loss 计算。\n### 多轮对话的 Loss Mask\n```\n第1轮 User:    [0, 0, 0, 0, 0]\n第1轮 Assistant:[1, 1, 1, 1, 1]  ← 计算 loss\n第2轮 User:    [0, 0, 0, 0]\n第2轮 Assistant:[1, 1, 1, 1, 1, 1]  ← 计算 loss\n```\n每一轮 assistant 的回复都参与 loss 计算，但所有 user 和 system 的内容都被 mask 掉。\n### 为什么不计算 Prompt 的 Loss？\n这是面试核心考点，让我们从多个角度理解：\n\n**角度 1：训练目标** SFT 的目标是训练模型**生成好的回复**。Prompt 是输入条件，不是模型需要生成的内容。计算 prompt 的 loss 等于在教模型\"如何提问\"，偏离了训练目标。\n\n**角度 2：梯度信号** 如果计算 prompt 的 loss，大量梯度信号会被\"如何预测 prompt 中的 token\"占据，稀释了\"如何生成好回复\"的学习信号。\n\n**角度 3：数据分布** SFT 数据中的 prompt 可能来自特定模板或少数用户，分布偏斜。如果计算其 loss，模型可能过拟合到特定的提问方式。\n\n**角度 4：信息论** 从信息论角度看，prompt 不包含我们要教给模型的新信息（模型通过预训练已经学会了语言理解），assistant 回复才是 SFT 阶段的新监督信号。",
 			"styleAttributes":{},
-			"x":-2386,
+			"x":-2541,
 			"y":5000,
-			"width":526,
+			"width":681,
 			"height":145,
 			"color":"#ff0095"
 		},
@@ -2132,9 +2132,9 @@
 			"type":"text",
 			"text":"### 黑盒蒸馏\n**黑盒蒸馏**不需要接触教师模型的内部状态，只使用教师模型的**输出结果**。\n\n```\n教师模型（大模型）\n    │\n    ▼ 生成文本（硬标签）\n\"量子纠缠是一种量子力学现象，当两个粒子...\"\n    │\n    ▼ 作为训练数据\n学生模型（小模型）← 像正常 SFT 一样训练\n```\n\n本质上就是：**用大模型生成高质量数据，然后用这些数据训练小模型**。\n\nMiniMind 的黑盒蒸馏：SFT 数据中大量高质量回答来自 **Qwen3、DeepSeek R1** 等强模型。这些数据本身就是黑盒蒸馏的产物。\n### 白盒蒸馏\n**白盒蒸馏**需要访问教师模型的**内部状态**（logits 分布），不仅学习\"正确答案\"，还学习教师的\"思考方式\"。\n\n```\n教师模型（大模型）\n    │\n    ▼ 输出 logits 分布（软标签）\n[猫: 0.7, 狗: 0.15, 虎: 0.05, 兔: 0.03, ...]\n    │\n    ▼ KL 散度损失\n学生模型（小模型）← 学习匹配教师的分布\n```\n\n### 对比总结\n\n|维度|黑盒蒸馏|白盒蒸馏|\n|---|---|---|\n|需要教师模型内部状态|否|是（需要 logits）|\n|信息量|少（只有硬标签）|多（完整概率分布）|\n|实现难度|低（生成数据+SFT）|高（需要同时运行两个模型）|\n|适用场景|教师模型只能通过 API 访问|教师模型可以本地运行|\n|效果|好|通常更好|\n",
 			"styleAttributes":{},
-			"x":-5776,
+			"x":-5863,
 			"y":4631,
-			"width":502,
+			"width":589,
 			"height":234,
 			"color":"#612323"
 		},
@@ -2143,9 +2143,9 @@
 			"type":"text",
 			"text":"### 直觉理解\n想象一位经验丰富的教授（**教师模型**，Teacher）和一位刚入学的学生（**学生模型**，Student）。\n\n传统训练方式：学生只看教科书（标签数据）学习。 知识蒸馏：学生不仅看教科书，还听教授讲课（获取教授的思考过程）。\n\n教授的\"思考过程\"是什么？就是教师模型对每个 token 输出的**完整概率分布**——不仅告诉你答案是\"猫\"，还告诉你\"狗\"的概率是 0.1、\"虎\"的概率是 0.05......这些\"软信息\"包含了丰富的知识。\n### 为什么需要蒸馏？\n\n|问题|说明|\n|---|---|\n|大模型太大|GPT-4 级别的模型无法部署到手机或嵌入式设备|\n|推理成本高|大模型的 API 调用成本高|\n|小模型太弱|直接训练小模型效果不够好|\n|**蒸馏的价值**|让小模型获得接近大模型的效果|",
 			"styleAttributes":{},
-			"x":-5776,
+			"x":-5908,
 			"y":4397,
-			"width":452,
+			"width":584,
 			"height":204,
 			"color":"#612323"
 		},
@@ -2854,17 +2854,6 @@
 			"color":"3"
 		},
 		{
-			"id":"f65eb11083068aa4",
-			"type":"text",
-			"text":"## MoE 的核心原理",
-			"styleAttributes":{},
-			"x":420,
-			"y":5680,
-			"width":260,
-			"height":60,
-			"color":"3"
-		},
-		{
 			"id":"4f767fdc0ac7ca35",
 			"type":"text",
 			"text":"### Dense 模型\n传统 Transformer 是 **Dense（稠密）** 模型：每个输入 token 都要经过**所有**参数的计算。\n\n```\n输入 token → Attention (所有参数) → FFN (所有参数) → 输出\n```\n\n参数量 = 激活参数量。如果模型有 1B 参数，每个 token 都要用到全部 1B 参数。\n### Sparse 模型\nMoE 是一种 **Sparse（稀疏）** 模型：模型有很多参数，但每个 token 只激活其中一部分。\n\n```\n输入 token → Attention (所有参数) → Router → 选择部分 FFN 专家 → 输出\n```\n\n总参数量 >> 激活参数量。比如 MiniMind-3-MoE：\n\n- 总参数量：198M\n- 激活参数量：64M（每个 token 只用到 64M 参数）\n\n### 为什么要 Sparse？\n\n**核心动机**：我们希望模型有更大的\"知识容量\"（更多参数），但不想让推理速度变慢（更多计算量）。\n\n```\nDense 1B:  参数=1B,  每 token 计算量 ∝ 1B\nMoE 4B:   参数=4B,  每 token 计算量 ∝ 1B  ← 更大容量，同等速度\n```",
@@ -2898,47 +2887,14 @@
 			"color":"3"
 		},
 		{
-			"id":"b670dad2ebf1ee06",
-			"type":"text",
-			"text":"## MiniMind-3-MoE 详细配置",
-			"styleAttributes":{},
-			"x":440,
-			"y":6460,
-			"width":260,
-			"height":60,
-			"color":"3"
-		},
-		{
 			"id":"c1927798f91c38ee",
 			"type":"text",
-			"text":"### 模型参数\n\n|配置项|值|\n|---|---|\n|专家数量|4|\n|Top-K|1（每个 token 选 1 个专家）|\n|总参数量|198M|\n|激活参数量|64M（≈ MiniMind 基础版）|\n|隐藏维度|与基础版相同|\n|FFN 维度|与基础版相同|\n|层数|与基础版相同|\n\n### 参数量计算\n\n为什么总参数是 198M 而激活参数是 64M？\n\n```\n基础版 (Dense):\n  Embedding + Attention + FFN = 64M\n\nMoE 版:\n  Embedding + Attention = X  (不变)\n  FFN 部分: 每层 1 个 FFN → 每层 4 个 FFN\n  FFN 参数 = 4 × 原来的 FFN 参数\n  Router 参数 ≈ 很小（hidden_dim × num_experts per layer）\n\n  总参数 ≈ X + 4 × FFN_params ≈ 198M\n  激活参数 ≈ X + 1 × FFN_params ≈ 64M（Top-1 只激活 1 个专家）\n```\n\n### 与 Dense 版的效果对比\n\n根据 MiniMind 项目的实验：\n\n- **相同激活参数量（64M）**：MoE 版本通常比 Dense 版本效果更好，因为有更大的参数容量\n- **相同总参数量**：Dense 版本通常更好，因为每个 token 都用到了所有参数\n- **训练速度**：MoE 在原生 PyTorch 上训练比 Dense 慢（kernel 调度开销）",
+			"text":"### 模型参数\n\n| 配置项    | 值                   |\n| ------ | ------------------- |\n| 专家数量   | 4                   |\n| Top-K  | 1（每个 token 选 1 个专家） |\n| 总参数量   | 198M                |\n| 激活参数量  | 64M（≈ MiniMind 基础版） |\n| 隐藏维度   | 与基础版相同              |\n| FFN 维度 | 与基础版相同              |\n| 层数     | 与基础版相同              |\n\n### 参数量计算\n\n为什么总参数是 198M 而激活参数是 64M？\n\n```\n基础版 (Dense):\n  Embedding + Attention + FFN = 64M\n\nMoE 版:\n  Embedding + Attention = X  (不变)\n  FFN 部分: 每层 1 个 FFN → 每层 4 个 FFN\n  FFN 参数 = 4 × 原来的 FFN 参数\n  Router 参数 ≈ 很小（hidden_dim × num_experts per layer）\n\n  总参数 ≈ X + 4 × FFN_params ≈ 198M\n  激活参数 ≈ X + 1 × FFN_params ≈ 64M（Top-1 只激活 1 个专家）\n```\n\n### 与 Dense 版的效果对比\n\n根据 MiniMind 项目的实验：\n\n- **相同激活参数量（64M）**：MoE 版本通常比 Dense 版本效果更好，因为有更大的参数容量\n- **相同总参数量**：Dense 版本通常更好，因为每个 token 都用到了所有参数\n- **训练速度**：MoE 在原生 PyTorch 上训练比 Dense 慢（kernel 调度开销）",
 			"styleAttributes":{},
 			"x":900,
 			"y":6460,
 			"width":649,
 			"height":282,
-			"color":"3"
-		},
-		{
-			"id":"c2ef66890d123d3c",
-			"type":"text",
-			"text":"## 负载均衡 Loss",
-			"styleAttributes":{},
-			"x":482,
-			"y":6040,
-			"width":260,
-			"height":60,
-			"color":"3"
-		},
-		{
-			"id":"fa2c69211d2b339a",
-			"type":"text",
-			"text":"## MiniMind MoE 源码解读",
-			"styleAttributes":{},
-			"x":440,
-			"y":6760,
-			"width":260,
-			"height":60,
 			"color":"3"
 		},
 		{
@@ -2950,17 +2906,6 @@
 			"y":6760,
 			"width":689,
 			"height":352,
-			"color":"3"
-		},
-		{
-			"id":"9467634b4fa6121a",
-			"type":"text",
-			"text":"## MoE 的优势与挑战",
-			"styleAttributes":{},
-			"x":420,
-			"y":7060,
-			"width":260,
-			"height":60,
 			"color":"3"
 		},
 		{
@@ -3030,28 +2975,6 @@
 			"color":"4"
 		},
 		{
-			"id":"3c0693679c8367d3",
-			"type":"text",
-			"text":"## KV-Cache 详解",
-			"styleAttributes":{},
-			"x":2153,
-			"y":5877,
-			"width":260,
-			"height":60,
-			"color":"4"
-		},
-		{
-			"id":"14f2ca81fab80c34",
-			"type":"text",
-			"text":"## YaRN 长度外推",
-			"styleAttributes":{},
-			"x":2163,
-			"y":6062,
-			"width":260,
-			"height":60,
-			"color":"4"
-		},
-		{
 			"id":"fa91936a01b382dc",
 			"type":"text",
 			"text":"### 标准 Attention 的内存问题\n\n标准 Attention 需要先计算完整的 ( $QK^T$ ) 矩阵（大小 ( $T \\times T$ )），再做 Softmax，再乘 V。对于长序列，这个 ( $T \\times T$ ) 矩阵可能非常大。\n\n### FlashAttention 的核心思想\n\nFlashAttention 通过**分块计算（tiling）**来避免存储完整的 Attention 矩阵：\n\n1. 将 Q、K、V 切成小块\n2. 在 GPU 的高速 SRAM 中计算小块的 Attention\n3. 用在线 Softmax 算法逐块累积结果\n4. 不需要在 HBM 中存储完整的 ( $T \\times T$ ) 矩阵\n\n**效果**：\n\n- 内存从 ( $O(T^2)$ ) 降到 ( $O(T)$ )\n- 速度提升 2-4 倍（减少 HBM 读写）\n\n### 在 MiniMind 中使用\n\n```python\n# PyTorch 2.0+ 内置了 FlashAttention 支持\noutput = F.scaled_dot_product_attention(\n    q, k, v,\n    attn_mask=mask,\n    is_causal=True  # 自动使用因果 mask + FlashAttention\n)\n```",
@@ -3063,17 +2986,6 @@
 			"color":"4"
 		},
 		{
-			"id":"3967bc0319cab083",
-			"type":"text",
-			"text":"## 模型量化简介",
-			"styleAttributes":{},
-			"x":2223,
-			"y":7080,
-			"width":260,
-			"height":60,
-			"color":"4"
-		},
-		{
 			"id":"1f3565bd988f4cca",
 			"type":"text",
 			"text":"### 为什么需要量化\n\n模型参数通常用 FP32（4 bytes）或 FP16（2 bytes）存储。量化就是用更少的位数表示：\n\n```\nFP32: 4 bytes/param → 64M params = 256MB\nFP16: 2 bytes/param → 64M params = 128MB\nINT8: 1 byte/param  → 64M params = 64MB\nINT4: 0.5 byte/param → 64M params = 32MB\n```\n### 量化类型\n\n- **权重量化（Weight Quantization）**：只量化模型权重，推理时反量化回 FP16 计算\n- **激活量化（Activation Quantization）**：同时量化权重和中间激活\n- **KV-Cache 量化**：量化 KV-Cache 以节省显存\n\n### 常见量化方法\n\n- **GPTQ**：基于 Hessian 矩阵的逐层量化\n- **AWQ**：保护重要权重通道的量化\n- **GGUF**：llama.cpp 使用的量化格式，支持 Q4_K_M、Q5_K_M 等\n\n### 量化与 MiniMind\n\nMiniMind 支持转换为 GGUF 格式，使用 llama.cpp 推理时可以选择不同的量化级别。对于 64M 的小模型，量化的收益相对有限（模型本身就很小），但对于学习量化概念很有价值。",
@@ -3082,28 +2994,6 @@
 			"y":6988,
 			"width":765,
 			"height":245,
-			"color":"4"
-		},
-		{
-			"id":"89fb3ffd49370b8f",
-			"type":"text",
-			"text":"## FlashAttention 简介",
-			"styleAttributes":{},
-			"x":2223,
-			"y":6695,
-			"width":260,
-			"height":60,
-			"color":"4"
-		},
-		{
-			"id":"91ab03b027a0c47f",
-			"type":"text",
-			"text":"## 生成策略",
-			"styleAttributes":{},
-			"x":2163,
-			"y":6410,
-			"width":260,
-			"height":60,
 			"color":"4"
 		},
 		{
@@ -3124,17 +3014,6 @@
 			"styleAttributes":{},
 			"x":4070,
 			"y":5550,
-			"width":260,
-			"height":60,
-			"color":"1"
-		},
-		{
-			"id":"6de1801506459e23",
-			"type":"text",
-			"text":"## vLLM 部署",
-			"styleAttributes":{},
-			"x":4145,
-			"y":6299,
 			"width":260,
 			"height":60,
 			"color":"1"
@@ -3173,17 +3052,6 @@
 			"color":"1"
 		},
 		{
-			"id":"0483a0c42c10067e",
-			"type":"text",
-			"text":"## llama.cpp 部署",
-			"styleAttributes":{},
-			"x":4178,
-			"y":6523,
-			"width":260,
-			"height":60,
-			"color":"1"
-		},
-		{
 			"id":"70f0b6d053bd5c00",
 			"type":"text",
 			"text":"### web_demo.py\n\nMiniMind 提供了基于 Streamlit 的 Web 演示界面：\n\n```shell\nstreamlit run web_demo.py\n```\n\n打开浏览器访问 `http://localhost:8501`，可以进行对话。\n\n### 核心实现\n\n```python\nimport streamlit as st\n\nst.title(\"MiniMind Chat\")\n\n# 会话历史\nif \"messages\" not in st.session_state:\n    st.session_state.messages = []\n\n# 显示历史消息\nfor msg in st.session_state.messages:\n    with st.chat_message(msg[\"role\"]):\n        st.write(msg[\"content\"])\n\n# 用户输入\nif prompt := st.chat_input(\"请输入你的问题\"):\n    st.session_state.messages.append({\"role\": \"user\", \"content\": prompt})\n\n    with st.chat_message(\"user\"):\n        st.write(prompt)\n\n    # 模型生成\n    with st.chat_message(\"assistant\"):\n        response = model.generate(prompt)\n        st.write(response)\n\n    st.session_state.messages.append({\"role\": \"assistant\", \"content\": response})\n```",
@@ -3195,17 +3063,6 @@
 			"color":"1"
 		},
 		{
-			"id":"5b539e12c97b4725",
-			"type":"text",
-			"text":"## Streamlit WebUI",
-			"styleAttributes":{},
-			"x":4235,
-			"y":6994,
-			"width":260,
-			"height":60,
-			"color":"1"
-		},
-		{
 			"id":"a615e582ff7f389a",
 			"type":"text",
 			"text":"### 什么是 Tool Calling\n\nTool Calling（工具调用）让 LLM 不仅能生成文本，还能调用外部工具（如搜索引擎、计算器、API 等）。\n\n```\n用户: 今天北京天气怎么样？\n模型: [调用天气API] → 获取结果 → 北京今天晴，25度\n```\n\n### MiniMind 的 Tool Calling 实现\n\nMiniMind 使用特殊标签来标识工具调用：\n\n```\n用户消息: 帮我查一下北京的天气\n\n模型输出:\n<tool_call>\n{\"name\": \"get_weather\", \"arguments\": {\"city\": \"北京\"}}\n</tool_call>\n\n系统执行工具后返回:\n<tool_response>\n{\"temperature\": 25, \"weather\": \"晴\", \"humidity\": 40}\n</tool_response>\n\n模型继续生成:\n北京今天天气晴朗，气温25度，湿度40%，非常适合出门。\n```\n\n### 工具定义格式\n\n在系统消息中定义可用工具：\n\n```json\n{\n  \"tools\": [\n    {\n      \"type\": \"function\",\n      \"function\": {\n        \"name\": \"get_weather\",\n        \"description\": \"获取指定城市的天气信息\",\n        \"parameters\": {\n          \"type\": \"object\",\n          \"properties\": {\n            \"city\": {\n              \"type\": \"string\",\n              \"description\": \"城市名称\"\n            }\n          },\n          \"required\": [\"city\"]\n        }\n      }\n    }\n  ]\n}\n```\n\n### eval_toolcall.py 示例\n\nMiniMind 提供了 `eval_toolcall.py` 来演示和评估 Tool Calling 功能：\n\n```python\n# 定义工具\ntools = [\n    {\n        \"name\": \"calculator\",\n        \"description\": \"进行数学计算\",\n        \"parameters\": {\"expression\": \"string\"}\n    },\n    {\n        \"name\": \"search\",\n        \"description\": \"搜索信息\",\n        \"parameters\": {\"query\": \"string\"}\n    }\n]\n\n# 构建包含工具定义的 prompt\nsystem_prompt = f\"你可以使用以下工具：{json.dumps(tools, ensure_ascii=False)}\"\n\n# 模型生成\nresponse = model.generate(system_prompt + \"\\n\" + user_query)\n\n# 解析 <tool_call> 标签\nif \"<tool_call>\" in response:\n    tool_call = extract_tool_call(response)\n    # 执行工具\n    tool_result = execute_tool(tool_call)\n    # 将结果注入并继续生成\n    response += f\"\\n<tool_response>{json.dumps(tool_result)}</tool_response>\\n\"\n    final_response = model.generate(response)\n```",
@@ -3214,17 +3071,6 @@
 			"y":7319,
 			"width":940,
 			"height":267,
-			"color":"1"
-		},
-		{
-			"id":"a10465cff163b91a",
-			"type":"text",
-			"text":"## Tool Calling 功能",
-			"styleAttributes":{},
-			"x":4259,
-			"y":7279,
-			"width":260,
-			"height":60,
 			"color":"1"
 		},
 		{
@@ -3250,17 +3096,6 @@
 			"color":"1"
 		},
 		{
-			"id":"f25a69287843b84d",
-			"type":"text",
-			"text":"## ollama 部署",
-			"styleAttributes":{},
-			"x":4105,
-			"y":5953,
-			"width":260,
-			"height":60,
-			"color":"1"
-		},
-		{
 			"id":"31c10990eb3f60a5",
 			"type":"text",
 			"text":"评估指标 BPB vs PPL",
@@ -3270,50 +3105,6 @@
 			"width":260,
 			"height":60,
 			"color":"5"
-		},
-		{
-			"id":"a0a7b483b3afa1e3",
-			"type":"text",
-			"text":"## Adaptive Thinking（自适应思考）",
-			"styleAttributes":{},
-			"x":4259,
-			"y":7740,
-			"width":260,
-			"height":60,
-			"color":"1"
-		},
-		{
-			"id":"5b26fae7a6fbee98",
-			"type":"text",
-			"text":"## 接入第三方 UI",
-			"styleAttributes":{},
-			"x":4235,
-			"y":8029,
-			"width":260,
-			"height":60,
-			"color":"1"
-		},
-		{
-			"id":"8c8b1d648544bb76",
-			"type":"text",
-			"text":"### FastGPT\n\nFastGPT 是一个开源的知识库问答系统，支持通过 OpenAI API 接入自定义模型：\n\n```yaml\n# FastGPT 配置\nOPENAI_BASE_URL=http://localhost:8080/v1\nCHAT_API_KEY=none\n```\n\n### Open-WebUI\n\nOpen-WebUI（前 Ollama-WebUI）提供了美观的 ChatGPT 风格界面：\n\n```shell\n# 通过 Docker 启动\ndocker run -d --name open-webui \\\n    -p 3000:8080 \\\n    -e OLLAMA_BASE_URL=http://host.docker.internal:11434 \\\n    ghcr.io/open-webui/open-webui:main\n```\n\n配置好后，选择 MiniMind 模型即可进行对话。",
-			"styleAttributes":{},
-			"x":4674,
-			"y":7965,
-			"width":965,
-			"height":216,
-			"color":"1"
-		},
-		{
-			"id":"830152a6561a4827",
-			"type":"text",
-			"text":"## DDP 多卡训练简介",
-			"styleAttributes":{},
-			"x":4220,
-			"y":8220,
-			"width":260,
-			"height":60,
-			"color":"1"
 		},
 		{
 			"id":"5eea0aedebea6fed",
@@ -3589,6 +3380,225 @@
 			"width":260,
 			"height":60,
 			"color":"3"
+		},
+		{
+			"id":"0483a0c42c10067e",
+			"type":"text",
+			"text":"## llama.cpp 部署",
+			"styleAttributes":{},
+			"x":4191,
+			"y":6523,
+			"width":260,
+			"height":60,
+			"color":"1"
+		},
+		{
+			"id":"5b539e12c97b4725",
+			"type":"text",
+			"text":"## Streamlit WebUI",
+			"styleAttributes":{},
+			"x":4245,
+			"y":6988,
+			"width":260,
+			"height":60,
+			"color":"1"
+		},
+		{
+			"id":"6de1801506459e23",
+			"type":"text",
+			"text":"## vLLM 部署",
+			"styleAttributes":{},
+			"x":4157,
+			"y":6250,
+			"width":260,
+			"height":60,
+			"color":"1"
+		},
+		{
+			"id":"f25a69287843b84d",
+			"type":"text",
+			"text":"## ollama 部署",
+			"styleAttributes":{},
+			"x":4115,
+			"y":5983,
+			"width":260,
+			"height":60,
+			"color":"1"
+		},
+		{
+			"id":"5b26fae7a6fbee98",
+			"type":"text",
+			"text":"## 接入第三方 UI",
+			"styleAttributes":{},
+			"x":4350,
+			"y":8013,
+			"width":260,
+			"height":60,
+			"color":"1"
+		},
+		{
+			"id":"830152a6561a4827",
+			"type":"text",
+			"text":"## DDP 多卡训练简介",
+			"styleAttributes":{},
+			"x":4400,
+			"y":8310,
+			"width":260,
+			"height":60,
+			"color":"1"
+		},
+		{
+			"id":"8c8b1d648544bb76",
+			"type":"text",
+			"text":"### FastGPT\n\nFastGPT 是一个开源的知识库问答系统，支持通过 OpenAI API 接入自定义模型：\n\n```yaml\n# FastGPT 配置\nOPENAI_BASE_URL=http://localhost:8080/v1\nCHAT_API_KEY=none\n```\n\n### Open-WebUI\n\nOpen-WebUI（前 Ollama-WebUI）提供了美观的 ChatGPT 风格界面：\n\n```shell\n# 通过 Docker 启动\ndocker run -d --name open-webui \\\n    -p 3000:8080 \\\n    -e OLLAMA_BASE_URL=http://host.docker.internal:11434 \\\n    ghcr.io/open-webui/open-webui:main\n```\n\n配置好后，选择 MiniMind 模型即可进行对话。",
+			"styleAttributes":{},
+			"x":4719,
+			"y":7965,
+			"width":965,
+			"height":216,
+			"color":"1"
+		},
+		{
+			"id":"a0a7b483b3afa1e3",
+			"type":"text",
+			"text":"## Adaptive Thinking（自适应思考）",
+			"styleAttributes":{},
+			"x":4321,
+			"y":7763,
+			"width":260,
+			"height":60,
+			"color":"1"
+		},
+		{
+			"id":"a10465cff163b91a",
+			"type":"text",
+			"text":"## Tool Calling 功能",
+			"styleAttributes":{},
+			"x":4287,
+			"y":7423,
+			"width":260,
+			"height":60,
+			"color":"1"
+		},
+		{
+			"id":"3c0693679c8367d3",
+			"type":"text",
+			"text":"## KV-Cache 详解",
+			"styleAttributes":{},
+			"x":2163,
+			"y":5877,
+			"width":260,
+			"height":60,
+			"color":"4"
+		},
+		{
+			"id":"14f2ca81fab80c34",
+			"type":"text",
+			"text":"## YaRN 长度外推",
+			"styleAttributes":{},
+			"x":2163,
+			"y":6121,
+			"width":260,
+			"height":60,
+			"color":"4"
+		},
+		{
+			"id":"91ab03b027a0c47f",
+			"type":"text",
+			"text":"## 生成策略",
+			"styleAttributes":{},
+			"x":2163,
+			"y":6410,
+			"width":260,
+			"height":60,
+			"color":"4"
+		},
+		{
+			"id":"89fb3ffd49370b8f",
+			"type":"text",
+			"text":"## FlashAttention 简介",
+			"styleAttributes":{},
+			"x":2223,
+			"y":6770,
+			"width":260,
+			"height":60,
+			"color":"4"
+		},
+		{
+			"id":"3967bc0319cab083",
+			"type":"text",
+			"text":"## 模型量化简介",
+			"styleAttributes":{},
+			"x":2223,
+			"y":7081,
+			"width":260,
+			"height":60,
+			"color":"4"
+		},
+		{
+			"id":"f65eb11083068aa4",
+			"type":"text",
+			"text":"## MoE 的核心原理",
+			"styleAttributes":{},
+			"x":459,
+			"y":5768,
+			"width":260,
+			"height":60,
+			"color":"3"
+		},
+		{
+			"id":"c2ef66890d123d3c",
+			"type":"text",
+			"text":"## 负载均衡 Loss",
+			"styleAttributes":{},
+			"x":459,
+			"y":6109,
+			"width":260,
+			"height":60,
+			"color":"3"
+		},
+		{
+			"id":"b670dad2ebf1ee06",
+			"type":"text",
+			"text":"## MiniMind-3-MoE 详细配置",
+			"styleAttributes":{},
+			"x":440,
+			"y":6571,
+			"width":260,
+			"height":60,
+			"color":"3"
+		},
+		{
+			"id":"fa2c69211d2b339a",
+			"type":"text",
+			"text":"## MiniMind MoE 源码解读",
+			"styleAttributes":{},
+			"x":420,
+			"y":6906,
+			"width":260,
+			"height":60,
+			"color":"3"
+		},
+		{
+			"id":"9467634b4fa6121a",
+			"type":"text",
+			"text":"## MoE 的优势与挑战",
+			"styleAttributes":{},
+			"x":420,
+			"y":7112,
+			"width":260,
+			"height":60,
+			"color":"3"
+		},
+		{
+			"id":"e2ea092f8e78a91d",
+			"type":"text",
+			"text":"## 1. 先拆名字：FP 和 BF 分别是什么\n\n|缩写|全称|含义|\n|---|---|---|\n|**FP**|**Floating Point**|浮点数。IEEE 754 标准族，FP32/FP16/FP64 都是它的成员|\n|**BF**|**BFloat16**（Brain Floating Point）|Google Brain 提出的一种 16 位浮点变体，位分配与 FP16 不同|\n\n所以：\n\n- `FP32` = Floating Point, 32 bits → **单精度浮点**（single precision）\n    \n- `FP16` = Floating Point, 16 bits → **半精度浮点**（half precision）\n    \n- `FP64` = 64 bits → **双精度**（double precision）\n    \n- `BF16` = BFloat16 → 也是 16 位浮点，但**不是 IEEE 754 的 FP16**，是另一套位分配\n    \n\n“半精度/单精度/双精度”是历史叫法，指的是**相对 FP32 的位宽比例**，不是一种度量单位。BF16 虽然也是 16 位，但通常不叫“半精度”，而直接叫 BF16，因为它的位分配逻辑和 FP16 不同。\n\n---\n\n## 2. 浮点数到底怎么编码：三块拼图\n\n任何一个浮点数格式，都把位分成三段：\n\n(−1)s×(1.m)×2e−bias(−1)s×(1.m)×2e−bias\n\n|段|作用|决定什么|\n|---|---|---|\n|**符号位 ss**|正负|1 位，固定|\n|**指数位 ee**|2 的幂次|**动态范围**（能表示多大/多小）|\n|**尾数位 mm**|有效数字|**相对精度**（能分辨多细的间隔）|\n\n这就是理解 FP16/BF16/FP32 的关键：**总位宽相同，不代表能力相同；指数位和尾数位怎么分，才是本质区别。**\n\n---\n\n## 3. 三种格式的位分配对比\n\n|格式|总位|符号|指数|尾数|十进制有效数字（约）|动态范围（约）|\n|---|---|---|---|---|---|---|\n|**FP32**|32|1|8|23|~7 位|10−3810−38 ~ 10381038|\n|**FP16**|16|1|**5**|**10**|~3–4 位|6×10−86×10−8 ~ 6550465504|\n|**BF16**|16|1|**8**|**7**|~2–3 位|与 FP32 相同|\n\n读法：\n\n- **FP16**：尾数多（10 位），所以**相对更精细**；但指数只有 5 位，**范围窄**，小梯度容易下溢、大激活容易上溢。\n    \n- **BF16**：指数 8 位，**范围和 FP32 一模一样**；但尾数只有 7 位，**精度更粗**。\n    \n- **FP32**：两头都不缺，代价是位宽大、算得慢、占显存。\n    \n\n所以 BF16 的设计哲学是：**牺牲精度换范围**，让 16 位格式也能覆盖 FP32 的动态范围，从而免去梯度缩放。FP16 则是：**牺牲范围换精度**，在范围内更精细，但需要 GradScaler 补范围。\n\n---\n\n## 4. “精度”在这套体系里到底指什么\n\n这是你问题的核心。**“精度”不是一个统一单位，而是至少三个不同概念，必须分开看：**\n\n### ① 位宽（bit width）\n\nFP32 的“32”是**总位数**，不是“32 位精度”。说“FP32 精度是 32”是错的——32 是编码长度，不是精度值。\n\n### ② 相对精度（由尾数位决定）\n\n浮点数的特点：**绝对间隔随数值大小变化，相对精度大致固定**。\n\n尾数有 pp 位（含隐含的 1），相对分辨率约为 2−(p+1)2−(p+1)。所以：\n\n- FP32：尾数 23 位 → 约 2−24≈6×10−82−24≈6×10−8 → 约 **7 位十进制有效数字**\n    \n- FP16：尾数 10 位 → 约 2−11≈5×10−42−11≈5×10−4 → 约 **3–4 位有效数字**\n    \n- BF16：尾数 7 位 → 约 2−8≈4×10−32−8≈4×10−3 → 约 **2–3 位有效数字**\n    \n\n注意：这是**相对**精度。同样是 FP16，数值 1.0 附近的绝对间隔约 10−310−3，数值 1000 附近的绝对间隔约 1。**浮点没有固定的绝对精度**，这是它和定点数的根本区别。\n\n### ③ 动态范围（由指数位决定）\n\n指数位决定能表示的最大/最小非零数。FP16 的 5 位指数是它“窄”的根源；BF16 的 8 位指数让它和 FP32 同范围。\n\n**所以“精度”这个词在浮点语境下是分层的：范围看指数，精细度看尾数，位宽只是总和。** 把 FP16 叫“低精度”、BF16 叫“低精度”都不准确——BF16 是**低尾数精度、高范围**，FP16 是**较高尾数精度、低范围**。",
+			"styleAttributes":{},
+			"x":-6712,
+			"y":2970,
+			"width":560,
+			"height":379
 		}
 	],
 	"edges":[
@@ -6549,6 +6559,15 @@
 			"fromSide":"right",
 			"toNode":"830152a6561a4827",
 			"toSide":"left"
+		},
+		{
+			"id":"590da11b6d61306d",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"ad5920cd3064419c",
+			"fromSide":"left",
+			"toNode":"e2ea092f8e78a91d",
+			"toSide":"right"
 		}
 	],
 	"metadata":{
