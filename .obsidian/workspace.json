@@ -13,11 +13,28 @@
             "state": {
               "type": "canvas",
               "state": {
+                "file": "LLM/2-Source/8-Agent/RAG/RAG.canvas",
+                "viewState": {
+                  "x": 369.91708561907376,
+                  "y": 97.54466869177054,
+                  "zoom": -2.062024588783403
+                }
+              },
+              "icon": "lucide-layout-dashboard",
+              "title": "RAG"
+            }
+          },
+          {
+            "id": "b0022d0b1a4bc824",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
                 "file": "LLM/2-Source/8-Agent/Agent.canvas",
                 "viewState": {
-                  "x": 600.7395806576345,
-                  "y": -112.11800812724687,
-                  "zoom": 0
+                  "x": -1051.5,
+                  "y": 2570.5,
+                  "zoom": -3.8987887971115542
                 }
               },
               "icon": "lucide-layout-dashboard",
@@ -25,37 +42,20 @@
             }
           },
           {
-            "id": "ee8092a36bd3a91d",
+            "id": "9b3a3670026b864e",
             "type": "leaf",
             "state": {
               "type": "canvas",
               "state": {
-                "file": "LLM/2-Source/7-Deep Learning/Deep Learning.canvas",
+                "file": "LLM/2-Source/8-Agent/智能旅行助手.canvas",
                 "viewState": {
-                  "x": -1181.4954147047688,
-                  "y": -1998.1866706739952,
-                  "zoom": -1.9453951678080321
+                  "x": 153.83375043322644,
+                  "y": 155.36521348133522,
+                  "zoom": -0.3333333333333334
                 }
               },
               "icon": "lucide-layout-dashboard",
-              "title": "Deep Learning"
-            }
-          },
-          {
-            "id": "1be99829df32c3ba",
-            "type": "leaf",
-            "state": {
-              "type": "canvas",
-              "state": {
-                "file": "LLM/2-Source/7-Deep Learning/Minimind.canvas",
-                "viewState": {
-                  "x": -2100.9094502016446,
-                  "y": 4637.4586737874515,
-                  "zoom": -1.889661672676318
-                }
-              },
-              "icon": "lucide-layout-dashboard",
-              "title": "Minimind"
+              "title": "智能旅行助手"
             }
           }
         ],
@@ -121,8 +121,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 255.5,
-    "collapsed": true
+    "width": 255.5
   },
   "right": {
     "id": "cffc2ac093d9b5b0",
@@ -240,38 +239,46 @@
       "bases:新建数据库": false
     }
   },
-  "active": "1be99829df32c3ba",
+  "active": "9b3a3670026b864e",
   "lastOpenFiles": [
-    "LLM/2-Source/8-Agent/LangChain/LangChain.canvas",
+    "image/Pasted image 20261125091153.png",
+    "LLM/2-Source/8-Agent/Agent_learn/智能体评估基础.md",
+    "LLM/2-Source/8-Agent/智能旅行助手.canvas",
+    "LLM/2-Source/8-Agent/Agent.canvas",
+    "LLM/2-Source/8-Agent/RAG/RAG.canvas",
+    "LLM/2-Source/8-Agent/Agent_learn/Agentic-RL.md",
+    "LLM/2-Source/7-Deep Learning/Minimind.canvas",
+    "LLM/2-Source/8-Agent/Agent_learn/构建自定义MCP服务器.md",
+    "LLM/2-Source/8-Agent/Agent_learn/A2A协议实战.md",
+    "LLM/2-Source/8-Agent/Agent_learn/MCP协议实战.md",
+    "LLM/2-Source/8-Agent/Agent_learn/ANP协议实战.md",
+    "LLM/2-Source/6-Machine Learning/Machine Learning.canvas",
+    "image/Pasted image 20261122142801.png",
+    "image/Pasted image 20261122142511.png",
+    "image/Pasted image 20261122142044.png",
+    "image/Pasted image 20261122141929.png",
+    "image/Pasted image 20261122141554.png",
+    "image/Pasted image 20261122111003.png",
+    "LLM/2-Source/8-Agent/Agent_learn/ReAct 智能体编码实现.md",
     "LLM/2-Source/7-Deep Learning/Deep Learning.canvas",
+    "LLM/2-Source/8-Agent/LangChain/LangChain.canvas",
     "LLM/2-Source/7-Deep Learning/3-RNN/0-Embedding 与word2vec：模型如何理解一个词.md",
     "LLM/2-Source/8-Agent/Agent_learn/0-初识agent.md",
-    "LLM/2-Source/7-Deep Learning/Minimind.canvas",
-    "LLM/2-Source/8-Agent/RAG/RAG.canvas",
     "image/Pasted image 20261119181118.png",
-    "LLM/2-Source/8-Agent/Agent.canvas",
     "image/Pasted image 20261119180337.png",
     "image/Pasted image 20261119175624.png",
     "image/Pasted image 20261119171112.png",
-    "image/Pasted image 20261119170645.png",
-    "image/Pasted image 20261119170232.png",
-    "image/Pasted image 20261119165746.png",
-    "image/Pasted image 20261119165605.png",
-    "image/Pasted image 20261119165146.png",
     "LLM/2-Source/7-Deep Learning/MiniMind 相关面试题.md",
     "LLM/2-Source/7-Deep Learning/0-深度学习基础/3-深度学习架构：MLP到神经网络的升级，理解反向传播的基础.md",
     "LLM/2-Source/7-Deep Learning/0-深度学习基础/4-反向传播：海量参数的神经网络如何训练.md",
-    "LLM/2-Source/6-Machine Learning/Machine Learning.canvas",
     "Article/AI时代，代码Review还有必要吗？.md",
     "Full_Stack/Full_Stack.canvas",
-    "image/3e5e417ee9dee973cbc06e30a9c13a80.png",
     "推理优化.md",
     "LLM/1-Plan and Outline/AI大模型开发7.5课程大纲.pdf",
     "LLM/1-Plan and Outline/AI 大模型应用开发学习路线 _ 25 年最新零基础到精通一条龙（万人收藏⭐️）.pdf",
     "LLM/2-Source/8-Agent/Agent_learn/3-Tool Use.md",
     "LLM/2-Source/8-Agent/Agent_learn/2-流式输出与渲染.md",
     "LLM/2-Source/7-Deep Learning/4-Transformer/2-手搓 Mini Transformer前需要了解的编码器和解码器.md",
-    "LLM/2-Source/8-Agent/Agent_learn/ReAct 智能体编码实现.md",
     "LLM/2-Source/7-Deep Learning/3-RNN/1-RNN：模型开始理解自然语言序列.md",
     "LLM/2-Source/8-Agent/WorkFlow.canvas",
     "LLM/2-Source/8-Agent/Agent_learn",
@@ -282,15 +289,8 @@
     "Full_Stack/Zero-to-FullStack.md",
     "LLM/2-Source/8-Agent/Agent 开发第一课-50行代码实现极简Agent.md",
     "LLM/Data analysis/数据科学.md",
-    "LLM/2-Source/7-Deep Learning/4-Transformer/4-为什么是 Decoder-Only的 GPT赢了.md",
     "LLM/2-Source/7-Deep Learning/OpenCV.canvas",
-    "LLM/2-Source/7-Deep Learning/深度学习总结.md",
-    "LLM/2-Source/7-Deep Learning/Deep Learning-思维导图.md",
-    "LLM/5-Guide/transformers-auto-text-classification.canvas",
     "LLM/5-Guide/transformers-docs-zh.pdf",
-    "LLM/Official Document.md",
-    "LLM/Deep Dive into LLMs like ChatGPT.md",
-    "LLM/Contextual Design Mechanism.md",
     "LLM/2-Source/7-Deep Learning/Deep Learning.canvas.transforms.new",
     "LLM/6-interview/项目与综合面试",
     "LLM/6-interview/算法与编程题",

@@ -1,0 +1,69 @@
+{
+	"nodes":[
+		{
+			"id":"1953e1c3619fe4c3",
+			"type":"text",
+			"text":"智能旅行助手",
+			"styleAttributes":{},
+			"x":-400,
+			"y":60,
+			"width":260,
+			"height":60
+		},
+		{"id":"c6f87e647d7c1f33","type":"file","file":"image/Pasted image 20261125091153.png","x":-4,"y":-5,"width":400,"height":283},
+		{
+			"id":"eff233c563456a9f",
+			"type":"text",
+			"text":"**（1）智能行程规划**：用户输入目的地、日期、偏好等信息，系统自动生成包含景点、餐饮、酒店的完整行程计划。\n\n**（2）地图可视化**：在地图上标注景点位置、绘制游览路线，让行程一目了然。\n\n**（3）预算计算**：自动计算门票、酒店、餐饮、交通费用，显示预算明细。\n\n**（4）行程编辑**：支持添加、删除、调整景点，实时更新地图。\n\n**（5）导出功能**：支持导出为 PDF 或图片，方便保存和分享。",
+			"styleAttributes":{},
+			"x":-959,
+			"y":-331,
+			"width":427,
+			"height":368
+		},
+		{
+			"id":"7e8ffd2b19904e6b",
+			"type":"text",
+			"text":"**（1）前端层 (Vue3+TypeScript)**：负责用户交互和数据展示，包括表单输入、结果展示、地图可视化。\n\n**（2）后端层 (FastAPI)**：负责 API 路由、数据验证、业务逻辑。\n\n**（3）智能体层 (HelloAgents)**：负责任务分解、工具调用、结果整合。包含 4 个专门的 Agent。\n\n**（4）外部服务层**：提供数据和能力，包括高德地图 API、Unsplash API、LLM API。",
+			"styleAttributes":{},
+			"x":-4,
+			"y":-306,
+			"width":400,
+			"height":301
+		},
+		{
+			"id":"38ac90eb84e3de1c",
+			"type":"text",
+			"text":"```\nhelloagents-trip-planner/\n├── backend/                    # 后端代码\n│   ├── app/\n│   │   ├── agents/            # 智能体实现\n│   │   ├── api/               # API路由\n│   │   ├── models/            # 数据模型\n│   │   ├── services/          # 服务层\n│   │   └── config.py          # 配置文件\n│   └── requirements.txt       # Python依赖\n│\n└── frontend/                   # 前端代码\n    ├── src/\n    │   ├── views/             # 页面组件\n    │   ├── services/          # API服务\n    │   ├── types/             # 类型定义\n    │   └── router/            # 路由配置\n    └── package.json           # npm依赖\n```",
+			"styleAttributes":{},
+			"x":396,
+			"y":-190,
+			"width":449,
+			"height":468
+		}
+	],
+	"edges":[
+		{
+			"id":"2da3b92ce8632e54",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"1953e1c3619fe4c3",
+			"fromSide":"right",
+			"toNode":"c6f87e647d7c1f33",
+			"toSide":"left"
+		},
+		{
+			"id":"dc6a3e2465293bef",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"1953e1c3619fe4c3",
+			"fromSide":"left",
+			"toNode":"eff233c563456a9f",
+			"toSide":"right"
+		}
+	],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{}
+	}
+}
