@@ -1697,46 +1697,6 @@
 		},
 		{"id":"b56a6a30b85f46a6","type":"file","file":"image/Pasted image 20261119165605.png","x":250,"y":31,"width":376,"height":459},
 		{"id":"08edbd9407087394","type":"file","file":"image/Pasted image 20261119165746.png","x":-275,"y":370,"width":399,"height":341},
-		{
-			"id":"32e23dfbc1752a6b",
-			"type":"text",
-			"text":"LangChain (基础组件库)：扮演“积木”的角色。它提供了构建LLM应用所需的基础模块，如模型封装、工具调用、记忆管理等。它是许多上层框架（包括LangGraph）的基础。",
-			"styleAttributes":{},
-			"x":-2276,
-			"y":-1658,
-			"width":260,
-			"height":60
-		},
-		{
-			"id":"370a969e6a529723",
-			"type":"text",
-			"text":"- **LangGraph (LangChain生态的编排层)**：它同时出现在两组中，正说明了它的桥梁作用。当LangChain的线性“链 (Chain)”不足以表达复杂逻辑时，LangGraph用**图 (Graph)** 提供了更强大的编排能力，是LangChain生态的演进方向。",
-			"styleAttributes":{},
-			"x":-2280,
-			"y":-1380,
-			"width":260,
-			"height":60
-		},
-		{
-			"id":"5ab57cea04fde959",
-			"type":"text",
-			"text":"- **AutoGPT (自主Agent先驱)**：一个**概念验证原型**。它展示了AI可以**自主**拆解目标、调用工具（如搜索、读写文件）来完成任务，是“自主Agent”理念的早期代表。",
-			"styleAttributes":{},
-			"x":-2300,
-			"y":-1560,
-			"width":260,
-			"height":60
-		},
-		{
-			"id":"73f2682a10a1e2f5",
-			"type":"text",
-			"text":"- **BabyAGI (自主任务管理)**：另一个**自主Agent的早期实践**。它通过任务优先级队列等机制，实现了任务的自动分解和执行，探索了Agent自我管理的可能性。",
-			"styleAttributes":{},
-			"x":-2260,
-			"y":-1480,
-			"width":260,
-			"height":60
-		},
 		{"id":"70b49f305f283af5","type":"text","text":"工具优化","x":-1920,"y":191,"width":250,"height":60,"color":"4"},
 		{"id":"2f1d9c68f02c2afd","type":"text","text":"记忆优化","x":-1920,"y":283,"width":250,"height":60,"color":"4"},
 		{"id":"91940a71c880b86e","type":"text","text":"Agent 优化","x":-1120,"y":191,"width":250,"height":60,"color":"4"},
@@ -3377,7 +3337,47 @@
 		},
 		{"id":"81e0b39ec36bcc2a","type":"text","text":"API 服务","x":-1466,"y":803,"width":250,"height":60,"color":"4"},
 		{"id":"6050b9df736d9415","type":"text","text":"Web 应用集成","x":-1466,"y":895,"width":250,"height":60,"color":"4"},
-		{"id":"39eceeed866b87b6","type":"text","text":"监控和日志","x":-1466,"y":987,"width":250,"height":60,"color":"4"}
+		{"id":"39eceeed866b87b6","type":"text","text":"监控和日志","x":-1466,"y":987,"width":250,"height":60,"color":"4"},
+		{
+			"id":"32e23dfbc1752a6b",
+			"type":"text",
+			"text":"LangChain (基础组件库)：扮演“积木”的角色。它提供了构建LLM应用所需的基础模块，如模型封装、工具调用、记忆管理等。它是许多上层框架（包括LangGraph）的基础。",
+			"styleAttributes":{},
+			"x":-2438,
+			"y":-1965,
+			"width":310,
+			"height":152
+		},
+		{
+			"id":"5ab57cea04fde959",
+			"type":"text",
+			"text":"- **AutoGPT (自主Agent先驱)**：一个**概念验证原型**。它展示了AI可以**自主**拆解目标、调用工具（如搜索、读写文件）来完成任务，是“自主Agent”理念的早期代表。",
+			"styleAttributes":{},
+			"x":-2460,
+			"y":-1780,
+			"width":312,
+			"height":158
+		},
+		{
+			"id":"73f2682a10a1e2f5",
+			"type":"text",
+			"text":"- **BabyAGI (自主任务管理)**：另一个**自主Agent的早期实践**。它通过任务优先级队列等机制，实现了任务的自动分解和执行，探索了Agent自我管理的可能性。",
+			"styleAttributes":{},
+			"x":-2490,
+			"y":-1602,
+			"width":362,
+			"height":128
+		},
+		{
+			"id":"370a969e6a529723",
+			"type":"text",
+			"text":"- **LangGraph (LangChain生态的编排层)**：它同时出现在两组中，正说明了它的桥梁作用。当LangChain的线性“链 (Chain)”不足以表达复杂逻辑时，LangGraph用**图 (Graph)** 提供了更强大的编排能力，是LangChain生态的演进方向。",
+			"styleAttributes":{},
+			"x":-2490,
+			"y":-1444,
+			"width":412,
+			"height":154
+		}
 	],
 	"edges":[
 		{"id":"74c28ce675ae2ec9","toFloating":false,"fromNode":"2b70e8b62df7c921","fromSide":"right","toNode":"d48e50524532da04","toSide":"left","color":"1"},
