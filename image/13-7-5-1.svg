@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" role="img" aria-labelledby="title desc">
+  <title id="title">MessagesPlaceholder 将历史消息动态插入提示词模板</title>
+  <desc id="desc">ChatPromptTemplate 中预留历史消息占位，运行时把多轮历史插入，形成最终消息列表。</desc>
+  <rect width="1200" height="520" fill="#f8fafc"/>
+  <text x="600" y="54" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#0f172a">MessagesPlaceholder：模板先留位置，运行时再填历史</text>
+  <text x="600" y="90" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" fill="#475569">历史消息轮数不固定，所以不要把历史拼成一大段字符串</text>
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M2,2 L10,6 L2,10 Z" fill="#2563eb"/>
+    </marker>
+  </defs>
+
+  <rect x="55" y="135" width="320" height="310" rx="22" fill="#ffffff" stroke="#bfdbfe" stroke-width="2"/>
+  <text x="215" y="178" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#1d4ed8">提示词模板</text>
+  <rect x="95" y="215" width="240" height="46" rx="12" fill="#eff6ff" stroke="#bfdbfe"/>
+  <text x="215" y="244" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" fill="#0f172a">SystemMessage</text>
+  <rect x="95" y="285" width="240" height="46" rx="12" fill="#eef2ff" stroke="#c7d2fe"/>
+  <text x="215" y="314" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" fill="#3730a3">MessagesPlaceholder</text>
+  <rect x="95" y="355" width="240" height="46" rx="12" fill="#f0fdf4" stroke="#bbf7d0"/>
+  <text x="215" y="384" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" fill="#14532d">当前 HumanMessage</text>
+
+  <rect x="455" y="180" width="290" height="220" rx="22" fill="#ffffff" stroke="#ddd6fe" stroke-width="2"/>
+  <text x="600" y="224" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#6d28d9">运行时输入</text>
+  <text x="600" y="268" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#334155">memory = [</text>
+  <text x="600" y="300" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#334155">HumanMessage, AIMessage,</text>
+  <text x="600" y="332" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#334155">HumanMessage, AIMessage ...</text>
+  <text x="600" y="364" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#334155">]</text>
+
+  <rect x="835" y="135" width="310" height="310" rx="22" fill="#ffffff" stroke="#bbf7d0" stroke-width="2"/>
+  <text x="990" y="178" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#15803d">最终消息列表</text>
+  <text x="990" y="221" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" fill="#0f172a">1. system：规则与角色</text>
+  <text x="990" y="260" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" fill="#0f172a">2. human：历史问题</text>
+  <text x="990" y="299" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" fill="#0f172a">3. ai：历史回答</text>
+  <text x="990" y="338" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" fill="#0f172a">4. human：当前问题</text>
+  <text x="990" y="384" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#475569">保留角色、顺序和多轮结构</text>
+
+  <line x1="375" y1="290" x2="445" y2="290" stroke="#2563eb" stroke-width="4" marker-end="url(#arrow)"/>
+  <line x1="745" y1="290" x2="825" y2="290" stroke="#2563eb" stroke-width="4" marker-end="url(#arrow)"/>
+</svg>

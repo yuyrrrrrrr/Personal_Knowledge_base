@@ -1,25 +1,25 @@
 {
 	"nodes":[
-		{"id":"4a8231cf7e847d24","type":"text","text":"LangChain 开发学习路线\nby 程序员鱼皮","x":0,"y":116,"width":250,"height":68,"color":"1"},
+		{"id":"4a8231cf7e847d24","type":"text","text":"LangChain 开发学习路线","x":0,"y":116,"width":250,"height":68,"color":"1"},
 		{"id":"1744949607fa8c3e","type":"text","text":"阶段 1：AI 大模型基础","x":570,"y":-3043,"width":250,"height":60,"color":"1"},
-		{"id":"1df437b12b4b46c8","type":"text","text":"大模型基础","x":1140,"y":-3388,"width":250,"height":60},
-		{"id":"e38c0343792cde27","type":"text","text":"LLM 概念","x":1710,"y":-3526,"width":250,"height":60},
-		{"id":"26819bb1e688049e","type":"text","text":"主流模型","x":1710,"y":-3434,"width":250,"height":60},
-		{"id":"0b146158cbc6d063","type":"text","text":"Token 和上下文窗口","x":1710,"y":-3342,"width":250,"height":60},
-		{"id":"31b4ad539580476b","type":"text","text":"Prompt Engineering","x":1710,"y":-3250,"width":250,"height":60},
-		{"id":"10c30fc039e68532","type":"text","text":"API 调用","x":1140,"y":-3020,"width":250,"height":60},
-		{"id":"8fe7576634538154","type":"text","text":"OpenAI API","x":1710,"y":-3158,"width":250,"height":60},
-		{"id":"5085a5e354042bd8","type":"text","text":"国产模型 API","x":1710,"y":-3066,"width":250,"height":60},
-		{"id":"d989be1e22f97cb1","type":"text","text":"API 参数配置","x":1710,"y":-2974,"width":250,"height":60},
-		{"id":"d2a1039617b46ece","type":"text","text":"错误处理","x":1710,"y":-2882,"width":250,"height":60},
-		{"id":"f88e20a54506480f","type":"text","text":"Python 基础","x":1140,"y":-2698,"width":250,"height":60},
-		{"id":"010ac9c05e24cab9","type":"text","text":"Python 语法","x":1710,"y":-2790,"width":250,"height":60},
-		{"id":"b3867be6f28e4157","type":"text","text":"异步编程","x":1710,"y":-2698,"width":250,"height":60},
-		{"id":"abe1965643041339","type":"text","text":"常用库","x":1710,"y":-2606,"width":250,"height":60},
-		{"id":"9b0d94718026f2f6","type":"text","text":"LangChain 基础","x":1140,"y":-2422,"width":250,"height":60},
-		{"id":"f4a538e32a2a2d31","type":"text","text":"LangChain 架构","x":1710,"y":-2514,"width":250,"height":60},
-		{"id":"07b35c4d79f0c322","type":"text","text":"安装和配置","x":1710,"y":-2422,"width":250,"height":60},
-		{"id":"a17fdf5322ef9420","type":"text","text":"基本概念","x":1710,"y":-2330,"width":250,"height":60},
+		{"id":"1df437b12b4b46c8","type":"text","text":"大模型基础","x":1140,"y":-3388,"width":250,"height":60,"color":"1"},
+		{"id":"e38c0343792cde27","type":"text","text":"LLM 概念","x":1710,"y":-3526,"width":250,"height":60,"color":"1"},
+		{"id":"26819bb1e688049e","type":"text","text":"主流模型","x":1710,"y":-3434,"width":250,"height":60,"color":"1"},
+		{"id":"0b146158cbc6d063","type":"text","text":"Token 和上下文窗口","x":1710,"y":-3342,"width":250,"height":60,"color":"1"},
+		{"id":"31b4ad539580476b","type":"text","text":"Prompt Engineering","x":1710,"y":-3250,"width":250,"height":60,"color":"1"},
+		{"id":"10c30fc039e68532","type":"text","text":"API 调用","x":1140,"y":-3020,"width":250,"height":60,"color":"1"},
+		{"id":"8fe7576634538154","type":"text","text":"OpenAI API","x":1710,"y":-3158,"width":250,"height":60,"color":"1"},
+		{"id":"5085a5e354042bd8","type":"text","text":"国产模型 API","x":1710,"y":-3066,"width":250,"height":60,"color":"1"},
+		{"id":"d989be1e22f97cb1","type":"text","text":"API 参数配置","x":1710,"y":-2974,"width":250,"height":60,"color":"1"},
+		{"id":"d2a1039617b46ece","type":"text","text":"错误处理","x":1710,"y":-2882,"width":250,"height":60,"color":"1"},
+		{"id":"f88e20a54506480f","type":"text","text":"Python 基础","x":1140,"y":-2698,"width":250,"height":60,"color":"1"},
+		{"id":"010ac9c05e24cab9","type":"text","text":"Python 语法","x":1710,"y":-2790,"width":250,"height":60,"color":"1"},
+		{"id":"b3867be6f28e4157","type":"text","text":"异步编程","x":1710,"y":-2698,"width":250,"height":60,"color":"1"},
+		{"id":"abe1965643041339","type":"text","text":"常用库","x":1710,"y":-2606,"width":250,"height":60,"color":"1"},
+		{"id":"9b0d94718026f2f6","type":"text","text":"LangChain 基础","x":1140,"y":-2422,"width":250,"height":60,"color":"2"},
+		{"id":"f4a538e32a2a2d31","type":"text","text":"LangChain 架构","x":1710,"y":-2514,"width":250,"height":60,"color":"2"},
+		{"id":"07b35c4d79f0c322","type":"text","text":"安装和配置","x":1710,"y":-2422,"width":250,"height":60,"color":"2"},
+		{"id":"a17fdf5322ef9420","type":"text","text":"基本概念","x":1710,"y":-2330,"width":250,"height":60,"color":"2"},
 		{
 			"id":"2a7dc8b8ea44b66a",
 			"type":"text",
@@ -38,7 +38,8 @@
 			"x":2040,
 			"y":-3660,
 			"width":260,
-			"height":60
+			"height":60,
+			"color":"1"
 		},
 		{
 			"id":"0ca7eb07970c9b77",
@@ -48,7 +49,8 @@
 			"x":2480,
 			"y":-4080,
 			"width":360,
-			"height":280
+			"height":280,
+			"color":"1"
 		},
 		{
 			"id":"ca1b08d35d6b1065",
@@ -58,7 +60,8 @@
 			"x":2480,
 			"y":-3800,
 			"width":400,
-			"height":340
+			"height":340,
+			"color":"1"
 		},
 		{
 			"id":"9f85405c7190e069",
@@ -68,7 +71,8 @@
 			"x":2340,
 			"y":-3360,
 			"width":780,
-			"height":262
+			"height":262,
+			"color":"1"
 		},
 		{
 			"id":"1ae0a92d21fbc2d1",
@@ -78,9 +82,10 @@
 			"x":2538,
 			"y":-2867,
 			"width":720,
-			"height":338
+			"height":338,
+			"color":"2"
 		},
-		{"id":"7600c74a5e624a7d","type":"file","file":"image/Pasted image 20261125143102.png","x":1980,"y":-2867,"width":558,"height":338},
+		{"id":"7600c74a5e624a7d","type":"file","file":"image/Pasted image 20261125143102.png","x":1980,"y":-2867,"width":558,"height":338,"color":"2"},
 		{
 			"id":"90de5475e224a24b",
 			"type":"text",
@@ -89,7 +94,8 @@
 			"x":1980,
 			"y":-2529,
 			"width":1278,
-			"height":60
+			"height":60,
+			"color":"2"
 		},
 		{
 			"id":"69ce4edfe4d7a014",
@@ -99,7 +105,8 @@
 			"x":3258,
 			"y":-2867,
 			"width":260,
-			"height":60
+			"height":60,
+			"color":"2"
 		},
 		{
 			"id":"59abbdce0b1f69de",
@@ -109,7 +116,8 @@
 			"x":3258,
 			"y":-2807,
 			"width":560,
-			"height":299
+			"height":299,
+			"color":"2"
 		},
 		{
 			"id":"610a2a3dc1f26ca0",
@@ -119,95 +127,63 @@
 			"x":2268,
 			"y":-2469,
 			"width":990,
-			"height":428
+			"height":428,
+			"color":"2"
 		},
-		{"id":"3a8cb90c6069695a","type":"text","text":"OutputParser","x":1710,"y":320,"width":250,"height":60},
-		{"id":"83f2aec0724bcf7d","type":"text","text":"StructuredOutputParser","x":1710,"y":412,"width":250,"height":60},
-		{"id":"fa1a113ad20ed4d1","type":"text","text":"Pydantic 解析器","x":1710,"y":504,"width":250,"height":60},
-		{"id":"a4bcea786fdd5ccb","type":"text","text":"JSON 解析","x":1710,"y":596,"width":250,"height":60},
-		{"id":"b654fed9d0323721","type":"text","text":"输出解析","x":1140,"y":458,"width":250,"height":60},
-		{"id":"5552f739192ba107","type":"text","text":"LLMChain","x":1710,"y":1040,"width":250,"height":60},
-		{"id":"f029a90742c61971","type":"text","text":"SequentialChain","x":1710,"y":1132,"width":250,"height":60},
-		{"id":"bc3b00541135e37e","type":"text","text":"RouterChain","x":1710,"y":1224,"width":250,"height":60},
-		{"id":"ae1c029999843478","type":"text","text":"自定义 Chain","x":1710,"y":1316,"width":250,"height":60},
-		{"id":"dfc7072468141d34","type":"text","text":"链 Chains","x":1140,"y":1178,"width":250,"height":60},
-		{"id":"5a248b7c35c85049","type":"text","text":"多路检索","x":-1910,"y":-62,"width":250,"height":60},
-		{"id":"0c1c03a267ecc360","type":"text","text":"检索优化","x":-1910,"y":30,"width":250,"height":60},
-		{"id":"044eb049f3d99259","type":"text","text":"RetrievalQA","x":-1910,"y":122,"width":250,"height":60},
-		{"id":"9df86880a4c5ca42","type":"text","text":"ConversationalRetrievalChain","x":-1910,"y":214,"width":250,"height":60},
-		{"id":"2ca20cc8a9e390db","type":"text","text":"RAG 优化策略","x":-1910,"y":306,"width":250,"height":60},
-		{"id":"4a35cee136163855","type":"text","text":"Text Splitters","x":-1910,"y":-1350,"width":250,"height":60},
-		{"id":"5e7d3abeb3d48eda","type":"text","text":"按字符分割","x":-1910,"y":-1258,"width":250,"height":60},
-		{"id":"9bfbdab32570c1f0","type":"text","text":"按语义分割","x":-1910,"y":-1166,"width":250,"height":60},
-		{"id":"0a563aa9ae40250f","type":"text","text":"分割策略优化","x":-1910,"y":-1074,"width":250,"height":60},
-		{"id":"40e0441bf7048cbd","type":"text","text":"Embeddings","x":-1910,"y":-982,"width":250,"height":60},
-		{"id":"66d009e8d215539d","type":"text","text":"OpenAI Embeddings","x":-1910,"y":-890,"width":250,"height":60},
-		{"id":"869e0a8cee76a043","type":"text","text":"Pinecone","x":-1910,"y":-430,"width":250,"height":60},
-		{"id":"2b07f5f06fa668d7","type":"text","text":"相似度搜索","x":-1910,"y":-338,"width":250,"height":60},
-		{"id":"928d0c9be278d3a9","type":"text","text":"Retrievers","x":-1910,"y":-246,"width":250,"height":60},
-		{"id":"2cf452633261640b","type":"text","text":"VectorStoreRetriever","x":-1910,"y":-154,"width":250,"height":60},
-		{"id":"4ae4754746f8e0f6","type":"text","text":"本地 Embeddings","x":-1910,"y":-798,"width":250,"height":60},
-		{"id":"8e530b132df51eef","type":"text","text":"Vector Stores","x":-1910,"y":-706,"width":250,"height":60},
-		{"id":"2a93371e6eee67ef","type":"text","text":"Chroma","x":-1910,"y":-614,"width":250,"height":60},
-		{"id":"48af7a85a81f0f0a","type":"text","text":"FAISS","x":-1910,"y":-522,"width":250,"height":60},
-		{"id":"c86edf8a4fcf5051","type":"text","text":"Document Loaders","x":-1910,"y":-1718,"width":250,"height":60},
-		{"id":"90d6b51085c776d3","type":"text","text":"文本/PDF 加载","x":-1910,"y":-1626,"width":250,"height":60},
-		{"id":"775d187eabf947b9","type":"text","text":"网页抓取","x":-1910,"y":-1534,"width":250,"height":60},
-		{"id":"257fb60255d251fd","type":"text","text":"数据库加载","x":-1910,"y":-1442,"width":250,"height":60},
-		{"id":"10606b3d4a846c60","type":"text","text":"RAG 应用","x":-1270,"y":152,"width":250,"height":60},
-		{"id":"c469336e72fe9006","type":"text","text":"检索器","x":-1270,"y":-170,"width":250,"height":60},
-		{"id":"661916502cd81385","type":"text","text":"向量化","x":-1270,"y":-952,"width":250,"height":60},
-		{"id":"34a7f215547578e0","type":"text","text":"向量存储","x":-1270,"y":-584,"width":250,"height":60},
-		{"id":"8eab19c64c3f853e","type":"text","text":"文档加载","x":-1270,"y":-1642,"width":250,"height":60},
-		{"id":"5736a1d952a9f674","type":"text","text":"文档分割","x":-1270,"y":-1274,"width":250,"height":60},
+		{"id":"5a248b7c35c85049","type":"text","text":"多路检索","x":-1910,"y":-62,"width":250,"height":60,"color":"3"},
+		{"id":"0c1c03a267ecc360","type":"text","text":"检索优化","x":-1910,"y":30,"width":250,"height":60,"color":"3"},
+		{"id":"044eb049f3d99259","type":"text","text":"RetrievalQA","x":-1910,"y":122,"width":250,"height":60,"color":"3"},
+		{"id":"9df86880a4c5ca42","type":"text","text":"ConversationalRetrievalChain","x":-1910,"y":214,"width":250,"height":60,"color":"3"},
+		{"id":"2ca20cc8a9e390db","type":"text","text":"RAG 优化策略","x":-1910,"y":306,"width":250,"height":60,"color":"3"},
+		{"id":"4a35cee136163855","type":"text","text":"Text Splitters","x":-1910,"y":-1350,"width":250,"height":60,"color":"3"},
+		{"id":"5e7d3abeb3d48eda","type":"text","text":"按字符分割","x":-1910,"y":-1258,"width":250,"height":60,"color":"3"},
+		{"id":"9bfbdab32570c1f0","type":"text","text":"按语义分割","x":-1910,"y":-1166,"width":250,"height":60,"color":"3"},
+		{"id":"0a563aa9ae40250f","type":"text","text":"分割策略优化","x":-1910,"y":-1074,"width":250,"height":60,"color":"3"},
+		{"id":"40e0441bf7048cbd","type":"text","text":"Embeddings","x":-1910,"y":-982,"width":250,"height":60,"color":"3"},
+		{"id":"66d009e8d215539d","type":"text","text":"OpenAI Embeddings","x":-1910,"y":-890,"width":250,"height":60,"color":"3"},
+		{"id":"869e0a8cee76a043","type":"text","text":"Pinecone","x":-1910,"y":-430,"width":250,"height":60,"color":"3"},
+		{"id":"2b07f5f06fa668d7","type":"text","text":"相似度搜索","x":-1910,"y":-338,"width":250,"height":60,"color":"3"},
+		{"id":"928d0c9be278d3a9","type":"text","text":"Retrievers","x":-1910,"y":-246,"width":250,"height":60,"color":"3"},
+		{"id":"2cf452633261640b","type":"text","text":"VectorStoreRetriever","x":-1910,"y":-154,"width":250,"height":60,"color":"3"},
+		{"id":"4ae4754746f8e0f6","type":"text","text":"本地 Embeddings","x":-1910,"y":-798,"width":250,"height":60,"color":"3"},
+		{"id":"8e530b132df51eef","type":"text","text":"Vector Stores","x":-1910,"y":-706,"width":250,"height":60,"color":"3"},
+		{"id":"2a93371e6eee67ef","type":"text","text":"Chroma","x":-1910,"y":-614,"width":250,"height":60,"color":"3"},
+		{"id":"48af7a85a81f0f0a","type":"text","text":"FAISS","x":-1910,"y":-522,"width":250,"height":60,"color":"3"},
+		{"id":"c86edf8a4fcf5051","type":"text","text":"Document Loaders","x":-1910,"y":-1718,"width":250,"height":60,"color":"3"},
+		{"id":"90d6b51085c776d3","type":"text","text":"文本/PDF 加载","x":-1910,"y":-1626,"width":250,"height":60,"color":"3"},
+		{"id":"775d187eabf947b9","type":"text","text":"网页抓取","x":-1910,"y":-1534,"width":250,"height":60,"color":"3"},
+		{"id":"257fb60255d251fd","type":"text","text":"数据库加载","x":-1910,"y":-1442,"width":250,"height":60,"color":"3"},
+		{"id":"10606b3d4a846c60","type":"text","text":"RAG 应用","x":-1270,"y":152,"width":250,"height":60,"color":"3"},
+		{"id":"c469336e72fe9006","type":"text","text":"检索器","x":-1270,"y":-170,"width":250,"height":60,"color":"3"},
+		{"id":"661916502cd81385","type":"text","text":"向量化","x":-1270,"y":-952,"width":250,"height":60,"color":"3"},
+		{"id":"34a7f215547578e0","type":"text","text":"向量存储","x":-1270,"y":-584,"width":250,"height":60,"color":"3"},
+		{"id":"8eab19c64c3f853e","type":"text","text":"文档加载","x":-1270,"y":-1642,"width":250,"height":60,"color":"3"},
+		{"id":"5736a1d952a9f674","type":"text","text":"文档分割","x":-1270,"y":-1274,"width":250,"height":60,"color":"3"},
 		{"id":"46dfe6e02c2a8491","type":"text","text":"阶段 3：文档处理和 RAG","x":-480,"y":-766,"width":250,"height":60,"color":"3"},
-		{"id":"0b9f1029538ee629","type":"text","text":"Agent 类型","x":-1845,"y":532,"width":250,"height":60},
-		{"id":"d0202a32d260b49e","type":"text","text":"Agent 执行流程","x":-1845,"y":624,"width":250,"height":60},
-		{"id":"8d7ff30ac254d85e","type":"text","text":"Tools","x":-1845,"y":716,"width":250,"height":60},
-		{"id":"0ba426309086f053","type":"text","text":"自定义工具","x":-1845,"y":808,"width":250,"height":60},
-		{"id":"5bd1bc5e584a9539","type":"text","text":"工具组合","x":-1845,"y":900,"width":250,"height":60},
-		{"id":"33f61d11c237dd6a","type":"text","text":"ReAct 原理","x":-1845,"y":992,"width":250,"height":60},
-		{"id":"4ef5ff0f9e6a1de3","type":"text","text":"ReAct 实现","x":-1845,"y":1084,"width":250,"height":60},
-		{"id":"a3f1ed17ec3cc5a2","type":"text","text":"Plan-and-Execute","x":-1845,"y":1176,"width":250,"height":60},
-		{"id":"d76824126b4b3140","type":"text","text":"多 Agent 协作","x":-1845,"y":1268,"width":250,"height":60},
-		{"id":"3145a8386c08f0fa","type":"text","text":"Agent 概念","x":-1845,"y":440,"width":250,"height":60},
-		{"id":"c749b4b8cd220585","type":"text","text":"Agent 基础","x":-1465,"y":578,"width":250,"height":60},
-		{"id":"537008f888f02967","type":"text","text":"工具调用","x":-1465,"y":854,"width":250,"height":60},
-		{"id":"4319fc11b343fcaa","type":"text","text":"ReAct Agent","x":-1465,"y":1084,"width":250,"height":60},
-		{"id":"f206dfb62eb4f6d5","type":"text","text":"高级 Agent","x":-1465,"y":1268,"width":250,"height":60},
+		{"id":"0b9f1029538ee629","type":"text","text":"Agent 类型","x":-1845,"y":532,"width":250,"height":60,"color":"4"},
+		{"id":"d0202a32d260b49e","type":"text","text":"Agent 执行流程","x":-1845,"y":624,"width":250,"height":60,"color":"4"},
+		{"id":"8d7ff30ac254d85e","type":"text","text":"Tools","x":-1845,"y":716,"width":250,"height":60,"color":"4"},
+		{"id":"0ba426309086f053","type":"text","text":"自定义工具","x":-1845,"y":808,"width":250,"height":60,"color":"4"},
+		{"id":"5bd1bc5e584a9539","type":"text","text":"工具组合","x":-1845,"y":900,"width":250,"height":60,"color":"4"},
+		{"id":"33f61d11c237dd6a","type":"text","text":"ReAct 原理","x":-1845,"y":992,"width":250,"height":60,"color":"4"},
+		{"id":"4ef5ff0f9e6a1de3","type":"text","text":"ReAct 实现","x":-1845,"y":1084,"width":250,"height":60,"color":"4"},
+		{"id":"a3f1ed17ec3cc5a2","type":"text","text":"Plan-and-Execute","x":-1845,"y":1176,"width":250,"height":60,"color":"4"},
+		{"id":"d76824126b4b3140","type":"text","text":"多 Agent 协作","x":-1845,"y":1268,"width":250,"height":60,"color":"4"},
+		{"id":"3145a8386c08f0fa","type":"text","text":"Agent 概念","x":-1845,"y":440,"width":250,"height":60,"color":"4"},
+		{"id":"c749b4b8cd220585","type":"text","text":"Agent 基础","x":-1465,"y":578,"width":250,"height":60,"color":"4"},
+		{"id":"537008f888f02967","type":"text","text":"工具调用","x":-1465,"y":854,"width":250,"height":60,"color":"4"},
+		{"id":"4319fc11b343fcaa","type":"text","text":"ReAct Agent","x":-1465,"y":1084,"width":250,"height":60,"color":"4"},
+		{"id":"f206dfb62eb4f6d5","type":"text","text":"高级 Agent","x":-1465,"y":1268,"width":250,"height":60,"color":"4"},
 		{"id":"cdd7f368d776a2a9","type":"text","text":"阶段 4：Agent 和工具调用","x":-1000,"y":914,"width":250,"height":60,"color":"4"},
 		{"id":"8fb602e6e0ee437c","type":"text","text":"阶段 5：记忆管理","x":-1270,"y":1688,"width":250,"height":60,"color":"5"},
-		{"id":"0dd6eb5e54d08601","type":"text","text":"Memory 类型","x":-1680,"y":1472,"width":250,"height":60},
-		{"id":"c55a6fd9c946abb6","type":"text","text":"对话历史管理","x":-1680,"y":1656,"width":250,"height":60},
-		{"id":"f6ee12a071b98fb7","type":"text","text":"长期记忆","x":-1680,"y":1748,"width":250,"height":60},
-		{"id":"97b5223da79a86d9","type":"text","text":"ConversationBufferMemory","x":-2160,"y":1380,"width":250,"height":60},
-		{"id":"8ec3b25410594661","type":"text","text":"ConversationSummaryMemory","x":-2160,"y":1472,"width":250,"height":60},
-		{"id":"71f1979d3374c988","type":"text","text":"VectorStoreMemory","x":-2160,"y":1564,"width":250,"height":60},
-		{"id":"1a4cb84d57079481","type":"text","text":"阶段 6：项目实战","x":-1260,"y":2026,"width":170,"height":60,"color":"6"},
-		{"id":"f28b9e76056c5db4","type":"text","text":"文档问答","x":-1700,"y":1932,"width":250,"height":60},
-		{"id":"ee1fe200f5588921","type":"text","text":"Agent 应用","x":-1700,"y":2024,"width":250,"height":60},
-		{"id":"c6f6a977e7efa3ae","type":"text","text":"RAG 知识库","x":-1700,"y":2116,"width":250,"height":60},
-		{"id":"c5dc84f5f70b9299","type":"text","text":"问答系统","x":-1700,"y":1840,"width":250,"height":60},
-		{"id":"e569ec311306ead7","type":"text","text":"阶段 7：求职备战","x":-1260,"y":2536,"width":250,"height":60,"color":"1"},
-		{"id":"f59858ac6ccdefcf","type":"text","text":"简历准备","x":-1700,"y":2320,"width":250,"height":60},
-		{"id":"049b47b075d5558b","type":"text","text":"面试准备","x":-1700,"y":2504,"width":250,"height":60},
-		{"id":"f88d24dc7de773be","type":"text","text":"面试技巧","x":-1700,"y":2688,"width":250,"height":60},
-		{"id":"f2ffcaca5787bd40","type":"text","text":"LangChain 基础面试题","x":-2160,"y":2384,"width":250,"height":60},
-		{"id":"9f879ed12b9e9d57","type":"text","text":"RAG 面试题","x":-2160,"y":2476,"width":250,"height":60},
-		{"id":"79e68067a1976aeb","type":"text","text":"Agent 面试题","x":-2160,"y":2568,"width":250,"height":60},
+		{"id":"0dd6eb5e54d08601","type":"text","text":"Memory 类型","x":-1680,"y":1472,"width":250,"height":60,"color":"5"},
+		{"id":"c55a6fd9c946abb6","type":"text","text":"对话历史管理","x":-1680,"y":1656,"width":250,"height":60,"color":"5"},
+		{"id":"f6ee12a071b98fb7","type":"text","text":"长期记忆","x":-1680,"y":1748,"width":250,"height":60,"color":"5"},
+		{"id":"97b5223da79a86d9","type":"text","text":"ConversationBufferMemory","x":-2160,"y":1380,"width":250,"height":60,"color":"5"},
+		{"id":"8ec3b25410594661","type":"text","text":"ConversationSummaryMemory","x":-2160,"y":1472,"width":250,"height":60,"color":"5"},
+		{"id":"71f1979d3374c988","type":"text","text":"VectorStoreMemory","x":-2160,"y":1564,"width":250,"height":60,"color":"5"},
 		{"id":"2edd7c308e5d9e05","type":"text","text":"阶段 2：LangChain 核心概念","x":560,"y":-62,"width":250,"height":60,"color":"2"},
-		{"id":"2d37a4e36c6b4ba5","type":"file","file":"LLM/2-Source/8-Agent/RAG/RAG.canvas","x":-3040,"y":-1320,"width":1130,"height":1686},
-		{"id":"d04540fa0ef99297","type":"file","file":"LLM/2-Source/8-Agent/Agent.canvas","x":-3025,"y":480,"width":1180,"height":840},
-		{
-			"id":"dd4e3615a7b8b45c",
-			"type":"text",
-			"text":"[Agent](Agent.canvas)",
-			"styleAttributes":{},
-			"x":-2565,
-			"y":420,
-			"width":260,
-			"height":60
-		},
+		{"id":"2d37a4e36c6b4ba5","type":"file","file":"LLM/2-Source/8-Agent/RAG/RAG.canvas","x":-3040,"y":-1320,"width":1130,"height":1686,"color":"3"},
 		{
 			"id":"2d9a36a176cf0c35",
 			"type":"text",
@@ -216,7 +192,8 @@
 			"x":-2605,
 			"y":-1380,
 			"width":260,
-			"height":60
+			"height":60,
+			"color":"3"
 		},
 		{
 			"id":"bebc25c02c7ec2e1",
@@ -226,9 +203,10 @@
 			"x":1120,
 			"y":-2270,
 			"width":1148,
-			"height":540
+			"height":540,
+			"color":"2"
 		},
-		{"id":"cd16a6e7b3636b7c","type":"file","file":"image/Pasted image 20261125150503.png","x":2268,"y":-2041,"width":364,"height":400},
+		{"id":"cd16a6e7b3636b7c","type":"file","file":"image/Pasted image 20261125150503.png","x":2268,"y":-2041,"width":364,"height":400,"color":"2"},
 		{
 			"id":"795141f973107973",
 			"type":"text",
@@ -237,7 +215,8 @@
 			"x":2632,
 			"y":-2041,
 			"width":548,
-			"height":421
+			"height":421,
+			"color":"2"
 		},
 		{
 			"id":"b493db7c1371c961",
@@ -247,7 +226,8 @@
 			"x":3540,
 			"y":-2080,
 			"width":260,
-			"height":60
+			"height":60,
+			"color":"2"
 		},
 		{
 			"id":"7faa2858a47aeae2",
@@ -257,7 +237,8 @@
 			"x":3540,
 			"y":-1650,
 			"width":260,
-			"height":60
+			"height":60,
+			"color":"2"
 		},
 		{
 			"id":"65f0592c7b60db4b",
@@ -267,7 +248,8 @@
 			"x":3540,
 			"y":-1300,
 			"width":260,
-			"height":80
+			"height":80,
+			"color":"2"
 		},
 		{
 			"id":"7be9be6eec200623",
@@ -277,7 +259,8 @@
 			"x":3540,
 			"y":-1830,
 			"width":260,
-			"height":60
+			"height":60,
+			"color":"2"
 		},
 		{
 			"id":"9e84fa3a7cd10bce",
@@ -287,9 +270,10 @@
 			"x":3540,
 			"y":-2405,
 			"width":260,
-			"height":60
+			"height":60,
+			"color":"2"
 		},
-		{"id":"f59da36a0f09eff4","type":"file","file":"image/Pasted image 20261125162530.png","x":2800,"y":-1620,"width":633,"height":395},
+		{"id":"f59da36a0f09eff4","type":"file","file":"image/Pasted image 20261125162530.png","x":2800,"y":-1620,"width":633,"height":395,"color":"2"},
 		{
 			"id":"5cee2d74c906279d",
 			"type":"text",
@@ -298,15 +282,11 @@
 			"x":3180,
 			"y":-1780,
 			"width":253,
-			"height":160
+			"height":160,
+			"color":"2"
 		},
-		{"id":"284693d17434f343","type":"file","file":"image/Pasted image 20261125162605.png","x":2060,"y":-1620,"width":740,"height":578},
-		{"id":"6a7b1977d8f294fb","type":"text","text":"ChatPromptTemplate","x":1710,"y":-2,"width":250,"height":60},
-		{"id":"d8b28f2a5702d3aa","type":"text","text":"Few-shot Prompts","x":1710,"y":90,"width":250,"height":60},
-		{"id":"46951ebad9e8fa40","type":"text","text":"Prompt 组合","x":1710,"y":182,"width":250,"height":60},
-		{"id":"f5e8e478ae0b0068","type":"text","text":"Prompt 模板","x":1140,"y":44,"width":250,"height":60},
-		{"id":"510e9bb7e15d1f05","type":"text","text":"PromptTemplate","x":1710,"y":-94,"width":250,"height":60},
-		{"id":"78e9b4615425a149","type":"text","text":"模型封装","x":1140,"y":-844,"width":250,"height":60},
+		{"id":"284693d17434f343","type":"file","file":"image/Pasted image 20261125162605.png","x":2060,"y":-1620,"width":740,"height":578,"color":"2"},
+		{"id":"78e9b4615425a149","type":"text","text":"模型封装","x":1140,"y":-844,"width":250,"height":60,"color":"2"},
 		{
 			"id":"7c5fbf7e13613a37",
 			"type":"text",
@@ -315,7 +295,8 @@
 			"x":960,
 			"y":-1730,
 			"width":1100,
-			"height":748
+			"height":748,
+			"color":"2"
 		},
 		{
 			"id":"b4a474cd8ab90b21",
@@ -325,7 +306,8 @@
 			"x":915,
 			"y":-784,
 			"width":700,
-			"height":120
+			"height":120,
+			"color":"2"
 		},
 		{
 			"id":"5edb09c415efb96f",
@@ -335,7 +317,8 @@
 			"x":1600,
 			"y":-646,
 			"width":600,
-			"height":160
+			"height":160,
+			"color":"2"
 		},
 		{
 			"id":"98b668f1a397102d",
@@ -345,12 +328,13 @@
 			"x":2200,
 			"y":-1042,
 			"width":700,
-			"height":746
+			"height":746,
+			"color":"2"
 		},
-		{"id":"a413003f66c93ad7","type":"text","text":"LLM 接口","x":1615,"y":-982,"width":250,"height":60},
-		{"id":"2cb1b62cb4512b7e","type":"text","text":"模型参数配置","x":1615,"y":-798,"width":250,"height":60},
-		{"id":"d6a3e58b192dfea4","type":"text","text":"流式输出","x":1615,"y":-706,"width":250,"height":60},
-		{"id":"63f350086902fb55","type":"text","text":"Chat Models","x":1615,"y":-890,"width":250,"height":60},
+		{"id":"a413003f66c93ad7","type":"text","text":"LLM 接口","x":1615,"y":-982,"width":250,"height":60,"color":"2"},
+		{"id":"2cb1b62cb4512b7e","type":"text","text":"模型参数配置","x":1615,"y":-798,"width":250,"height":60,"color":"2"},
+		{"id":"d6a3e58b192dfea4","type":"text","text":"流式输出","x":1615,"y":-706,"width":250,"height":60,"color":"2"},
+		{"id":"63f350086902fb55","type":"text","text":"Chat Models","x":1615,"y":-890,"width":250,"height":60,"color":"2"},
 		{
 			"id":"a3b4b5f9e128498b",
 			"type":"text",
@@ -359,7 +343,8 @@
 			"x":1865,
 			"y":-946,
 			"width":335,
-			"height":300
+			"height":300,
+			"color":"2"
 		},
 		{
 			"id":"5ad0c35240aadbf2",
@@ -369,7 +354,8 @@
 			"x":2900,
 			"y":-1042,
 			"width":440,
-			"height":746
+			"height":746,
+			"color":"2"
 		},
 		{
 			"id":"5ce13ad013bebad4",
@@ -379,7 +365,8 @@
 			"x":4040,
 			"y":-2820,
 			"width":600,
-			"height":330
+			"height":330,
+			"color":"2"
 		},
 		{
 			"id":"5749c0d5fe1b84f8",
@@ -389,7 +376,8 @@
 			"x":4040,
 			"y":-2460,
 			"width":600,
-			"height":250
+			"height":250,
+			"color":"2"
 		},
 		{
 			"id":"d2adb6def40bd96d",
@@ -399,7 +387,8 @@
 			"x":4040,
 			"y":-2190,
 			"width":600,
-			"height":220
+			"height":220,
+			"color":"2"
 		},
 		{
 			"id":"bd47f52022f48c57",
@@ -409,7 +398,8 @@
 			"x":4040,
 			"y":-1940,
 			"width":600,
-			"height":300
+			"height":300,
+			"color":"2"
 		},
 		{
 			"id":"88af71a90cd281ce",
@@ -419,7 +409,8 @@
 			"x":4040,
 			"y":-1620,
 			"width":600,
-			"height":380
+			"height":380,
+			"color":"2"
 		},
 		{
 			"id":"8f8b6cdc3333b666",
@@ -429,7 +420,8 @@
 			"x":4040,
 			"y":-1180,
 			"width":600,
-			"height":400
+			"height":400,
+			"color":"2"
 		},
 		{
 			"id":"111e063a6b039d9d",
@@ -439,7 +431,8 @@
 			"x":3540,
 			"y":-1180,
 			"width":260,
-			"height":60
+			"height":60,
+			"color":"2"
 		},
 		{
 			"id":"0b885736bcc0b663",
@@ -449,7 +442,8 @@
 			"x":3340,
 			"y":-1042,
 			"width":500,
-			"height":746
+			"height":746,
+			"color":"2"
 		},
 		{
 			"id":"0fe10e5506914843",
@@ -459,7 +453,8 @@
 			"x":1600,
 			"y":-486,
 			"width":340,
-			"height":186
+			"height":186,
+			"color":"2"
 		},
 		{
 			"id":"af5af5ef55302f8d",
@@ -469,7 +464,8 @@
 			"x":1600,
 			"y":-300,
 			"width":340,
-			"height":200
+			"height":200,
+			"color":"2"
 		},
 		{
 			"id":"df97863347c911e6",
@@ -479,7 +475,8 @@
 			"x":1260,
 			"y":-230,
 			"width":260,
-			"height":60
+			"height":60,
+			"color":"2"
 		},
 		{
 			"id":"30529461066e414e",
@@ -489,17 +486,1205 @@
 			"x":1260,
 			"y":-423,
 			"width":260,
-			"height":60
+			"height":60,
+			"color":"2"
 		},
 		{
-			"id":"9243191a4bd8d3ce",
+			"id":"89ba6785834ba073",
 			"type":"text",
-			"text":"Model I/O 与模型接入",
+			"text":"# Model I/O 与模型接入\n- **Format（输入格式化）**：把原始业务输入整理成模型更容易理解的形式，例如 Prompt 模板、多角色消息、变量填充等。\n- **Predict（模型调用）**：通过 LangChain 的统一接口调用不同模型提供商，例如 OpenAI、DeepSeek、阿里百炼、Ollama 等。\n- **Parse（输出解析）**：把模型返回的自然语言结果转成更稳定、程序更好处理的形式，例如字符串、JSON、结构化对象等。",
 			"styleAttributes":{},
-			"x":880,
-			"y":-230,
+			"x":560,
+			"y":-2,
+			"width":370,
+			"height":338,
+			"color":"2"
+		},
+		{
+			"id":"8081f7d59d607437",
+			"type":"text",
+			"text":"|模型类型|输入形式|输出形式|主要特点|典型场景|\n|---|---|---|---|---|\n|**LLM**|纯文本字符串|文本字符串|更偏传统“文本补全”接口，无天然多角色结构|单轮生成、摘要、改写、补全|\n|**Chat Model**|字符串或消息列表|`AIMessage`|更贴近对话，支持多角色消息与更丰富元数据|智能助手、客服、多轮对话、Agent|\n|**Embeddings**|文本或文本列表|向量|把文本转成语义向量，不负责生成文本|RAG、检索、相似度计算、聚类|",
+			"styleAttributes":{},
+			"x":2140,
+			"y":-264,
+			"width":660,
+			"height":230,
+			"color":"2"
+		},
+		{
+			"id":"e8994078e2370287",
+			"type":"text",
+			"text":"下面是最常见、也最值得先掌握的一组参数：\n\n|参数名|作用|可以怎么理解|\n|---|---|---|\n|`model`|模型名称或标识符|你要调哪个模型，例如 `qwen-plus`、`deepseek-v4-flash`|\n|`model_provider`|提供商 / 协议来源|按哪种 provider 或协议创建底层客户端，例如 `\"openai\"`、`\"deepseek\"`|\n|`api_key`|接口鉴权凭证|没它通常就无法调用|\n|`base_url`|接口根地址|请求发到哪里，兼容接口时尤其常见|\n|`temperature`|随机性 / 创造性控制|越低越稳定，越高越发散|\n|`max_tokens`|最大生成长度|回答最多生成多少 token，也影响费用|\n|`timeout`|超时时间|请求最长等多久|\n|`max_retries`|失败重试次数|临时异常时自动重试几次|\n|`stop`|停止词|生成到某些位置时强制停止|\n\n下面这张图很适合入门建立直觉：\n\n![模型常用参数示意：Temperature 控制随机性/发散度，Max Tokens 控制单次生成长度与费用上限](https://didilili.github.io/ai-agents-from-zero/images/11/11-2-5-1.jpeg)\n\n- **`temperature`** 管“风格和发散度”\n- **`max_tokens`** 管“长度和成本”\n\n在真实项目里，这两个参数经常是最先调的。",
+			"styleAttributes":{},
+			"x":3840,
+			"y":-720,
+			"width":1060,
+			"height":1040,
+			"color":"2"
+		},
+		{
+			"id":"102e5d1b879b041a",
+			"type":"text",
+			"text":"参数不是越多越好，也不是每次都要调满。更实用的做法是根据业务场景选：\n\n- **客服问答 / 规则回答 / 翻译**：`temperature` 往往设低一些，例如 `0`～`0.3`\n- **知识问答 / 通用助手**：可设在 `0.2`～`0.7`\n- **文案、创意写作、头脑风暴**：可适当更高，例如 `0.8`～`1.2`\n\n`max_tokens` 的使用也一样：\n\n- 如果只是简短问答，可以限制小一点，避免无意义长回答\n- 如果是总结、分析、长文输出，可以适当放大\n**参数只是调味料，底层模型能力、Prompt 设计、上下文质量，通常比单纯调 `temperature` 更重要。**",
+			"styleAttributes":{},
+			"x":4900,
+			"y":-720,
+			"width":480,
+			"height":420,
+			"color":"2"
+		},
+		{
+			"id":"0f2a9d9daeb7f2fb",
+			"type":"text",
+			"text":"# AIMessage 上常见字段\n\n在入门阶段，下面几个字段最值得先掌握：\n\n| 字段 / 属性             | 作用                   | 你通常怎么用                           |\n| ------------------- | -------------------- | -------------------------------- |\n| `content`           | 模型回复正文               | 最常用，绝大多数业务先读它                    |\n| `response_metadata` | 厂商返回的原始元数据           | 看模型名、finish_reason、token_usage 等 |\n| `usage_metadata`    | LangChain 统一整理后的用量信息 | 看 input/output/total tokens      |\n| `tool_calls`        | 工具调用信息               | 做 Tools / Agent 时很关键             |\n| `additional_kwargs` | 厂商扩展字段               | 按需使用                             |\n\n一个典型的 `AIMessage`，可以先看成：\n\n```json\nAIMessage(\n  content='《鹧鸪天·春》\\n一篙绿涨江南岸，…',   # 用户可见回复\n  response_metadata={\n    'token_usage': {\n      'prompt_tokens': 14,\n      'completion_tokens': 109,\n      'total_tokens': 123,\n      ...\n    },\n    'model_name': 'deepseek-v4-flash',\n    'finish_reason': 'stop',\n    ...\n  },\n  usage_metadata={\n    'input_tokens': 14,\n    'output_tokens': 109,\n    'total_tokens': 123,\n    ...\n  },\n  tool_calls=[],\n  ...\n)\n```\n\n所以平时最常见的操作有两个：\n\n- 要看正文：`response.content`\n- 要看 token、模型名、结束原因：`response.response_metadata` 或 `response.usage_metadata`\n\n> **提示**：不同 LangChain 版本与厂商集成下，字段是否齐全会有差异；若 `usage_metadata` 为空，可优先查看 `response_metadata` 中的 `token_usage` 等原始结构。",
+			"styleAttributes":{},
+			"x":5380,
+			"y":-720,
+			"width":820,
+			"height":1040,
+			"color":"2"
+		},
+		{
+			"id":"f7981939b7ace37e",
+			"type":"text",
+			"text":"> **Chat Model 的输入输出，本质上都是“消息（Message）”。**\n\n最常见的消息类型包括：`SystemMessage`、`HumanMessage`、`AIMessage`、`ToolMessage`。\n\n所以，从 Model I/O 角度看，**Prompt 只是输入的一种组织方式，Message 才是 Chat Model 更底层的统一表达。**",
+			"styleAttributes":{},
+			"x":2960,
+			"y":-232,
+			"width":720,
+			"height":166,
+			"color":"2"
+		},
+		{"id":"d8b28f2a5702d3aa","type":"text","text":"Few-shot Prompts","x":1710,"y":320,"width":250,"height":60,"color":"2"},
+		{"id":"46951ebad9e8fa40","type":"text","text":"Prompt 组合","x":1710,"y":412,"width":250,"height":60,"color":"2"},
+		{"id":"510e9bb7e15d1f05","type":"text","text":"PromptTemplate","x":1710,"y":136,"width":250,"height":60,"color":"2"},
+		{"id":"6a7b1977d8f294fb","type":"text","text":"ChatPromptTemplate","x":1710,"y":228,"width":250,"height":60,"color":"2"},
+		{"id":"f5e8e478ae0b0068","type":"text","text":"Prompt 模板","x":1140,"y":274,"width":250,"height":60,"color":"2"},
+		{
+			"id":"262e2677f1de3e1e",
+			"type":"text",
+			"text":"入门阶段可先把握一个基本判断：**Prompt 不只是把一句话写漂亮，而是把模型输入组织清楚。**\n\n在真实项目中，Prompt 通常承担几件事：\n\n- 告诉模型它是谁，要扮演什么角色。\n- 告诉模型当前任务是什么，回答边界是什么。\n- 告诉模型输出格式应该长什么样。\n- 把用户问题、历史对话、检索结果、工具结果组合成一次完整输入。\n\n这也是为什么随着项目复杂度提高，Prompt 会从“一个字符串”逐步演化成“多角色消息 + 模板 + 占位符 + 外部配置文件”。",
+			"styleAttributes":{},
+			"x":1980,
+			"y":-4,
+			"width":720,
+			"height":280,
+			"color":"2"
+		},
+		{"id":"e0889e80d76c84f2","type":"file","file":"image/Pasted image 20261125172349.png","x":2700,"y":-34,"width":520,"height":315,"color":"2"},
+		{"id":"3762f83a09df4ce3","type":"file","file":"image/Pasted image 20261125172858.png","x":2060,"y":301,"width":400,"height":223,"color":"2"},
+		{
+			"id":"b4d663fa46a20eb1",
+			"type":"text",
+			"text":"|入参形态|调用时大致长什么样|适合场景|\n|---|---|---|\n|`str`|`model.invoke(\"请解释什么是 LangChain\")`|单轮、轻量、快速试接口|\n|`PromptTemplate.format(...)` 后的字符串|`model.invoke(prompt_str)`|固定句式 + 少量变量替换|\n|消息对象列表|`model.invoke([SystemMessage(...), HumanMessage(...)])`|推荐写法，适合系统提示、多轮对话|\n|`(role, content)` 元组列表|`[(\"system\", \"...\"), (\"user\", \"...\")]`|简洁、贴近 ChatPromptTemplate 风格|\n|`{\"role\": \"...\", \"content\": \"...\"}` 字典列表|`[{\"role\":\"system\",\"content\":\"...\"}, ...]`|贴近 OpenAI 风格 JSON 数据|",
+			"styleAttributes":{},
+			"x":2460,
+			"y":281,
+			"width":920,
+			"height":300,
+			"color":"2"
+		},
+		{
+			"id":"16c7a749c4771b64",
+			"type":"text",
+			"text":"模板 + 占位符: \"用不超过 50 字介绍：{topic} 是什么？\"",
+			"styleAttributes":{},
+			"x":3520,
+			"y":420,
 			"width":260,
-			"height":60
+			"height":100,
+			"color":"2"
+		},
+		{
+			"id":"866da718239e5caa",
+			"type":"text",
+			"text":"纯字符串: \"用一句话解释什么是 LangChain\"",
+			"styleAttributes":{},
+			"x":3520,
+			"y":290,
+			"width":260,
+			"height":60,
+			"color":"2"
+		},
+		{
+			"id":"3e70c69e9bbf499f",
+			"type":"text",
+			"text":"多角色消息列表:\n```python\nmessages = [ \n\tSystemMessage(content=\"你是只回答技术问题的助手，回答要简短。\"), \n\tHumanMessage(content=\"什么是 LangChain？\"), # 多轮示例： # \n\tAIMessage(content=\"LangChain 是用于编排 LLM 应用的框架……\"), # \n\tHumanMessage(content=\"它和直接调 API 有什么区别？\"), \n]\n```\n在实际项目里，这种写法特别常见：\n\n- **系统提示词**放在 `SystemMessage`\n- **用户问题**放在 `HumanMessage`\n- **历史回复**可放回 `AIMessage`\n- **工具执行结果**后续可用 `ToolMessage`",
+			"styleAttributes":{},
+			"x":3520,
+			"y":581,
+			"width":660,
+			"height":399,
+			"color":"2"
+		},
+		{
+			"id":"c54851b5dd10263a",
+			"type":"text",
+			"text":"元组列表与字典列表:\n```python\nmessages_as_tuples = [ (\"system\", \"你是一个专业的数学助手\"), (\"user\", \"你好，你是谁\"), ] messages_as_dicts = [ {\"role\": \"system\", \"content\": \"你是一个专业的数学助手\"}, {\"role\": \"user\", \"content\": \"你好，你是谁\"}, ]\n```\n关于选择策略，可按下面的思路理解：\n\n- **想学得最清楚**：优先用 `Message` 类\n- **想写得最简洁**：可以用元组列表\n- **想和 OpenAI 风格请求体对齐**：可以用字典列表\n\n无论哪种方式，同步 `invoke` 的返回值通常仍是 `AIMessage`。",
+			"styleAttributes":{},
+			"x":3520,
+			"y":1020,
+			"width":660,
+			"height":360,
+			"color":"2"
+		},
+		{
+			"id":"06a005e8b3741a97",
+			"type":"text",
+			"text":"# 拓展:Java 生态中的多角色\n“System / User / Assistant / Tool” 这套思路并不是 LangChain Python 独有的，Java 生态中的 **LangChain4J**、**Spring AI** 也有类似设计。理解这一点很有价值，因为它说明：\n\n**多角色消息并不是某个框架的语法技巧，而是现代聊天模型交互的一种通用抽象。**\n\n**LangChain4J：**\n\n```\npackage dev.langchain4j.data.message;\n\npublic enum ChatMessageType {\n    SYSTEM(SystemMessage.class),\n    USER(UserMessage.class),\n    AI(AiMessage.class),\n    TOOL_EXECUTION_RESULT(ToolExecutionResultMessage.class),\n    CUSTOM(CustomMessage.class);\n\n    private final Class<? extends ChatMessage> messageClass;\n\n    ChatMessageType(Class<? extends ChatMessage> messageClass) {\n        this.messageClass = messageClass;\n    }\n\n    public Class<? extends ChatMessage> messageClass() {\n        return messageClass;\n    }\n}\n```\n\n**Spring AI：**\n\n```\npackage org.springframework.ai.chat.messages;\n\npublic enum MessageType {\n    USER(\"user\"),\n    ASSISTANT(\"assistant\"),\n    SYSTEM(\"system\"),\n    TOOL(\"tool\");\n\n    private final String value;\n\n    MessageType(String value) {\n        this.value = value;\n    }\n\n    public static MessageType fromValue(String value) { ... }\n\n    public String getValue() {\n        return this.value;\n    }\n}\n```",
+			"styleAttributes":{},
+			"x":4220,
+			"y":351,
+			"width":680,
+			"height":460,
+			"color":"2"
+		},
+		{
+			"id":"7d6ad77fbe47f8ef",
+			"type":"text",
+			"text":"### 普通调用\n- `invoke`：同步调用，最常用，适合单轮问答与脚本演示。\n- `ainvoke`：异步调用，适合异步 Web 服务、并发任务和高吞吐场景。\n\n- **命令行脚本、教学示例、简单后台任务**：优先 `invoke`\n- **FastAPI、异步服务、并发请求**：优先 `ainvoke`",
+			"styleAttributes":{},
+			"x":3060,
+			"y":600,
+			"width":410,
+			"height":246,
+			"color":"2"
+		},
+		{
+			"id":"9568e1daf2b6ed34",
+			"type":"text",
+			"text":"### 流式调用\n- **stream**：同步流式输出\n- **astream**：异步流式输出\n- 真实项目里，`stream` / `astream` 很常用于：\n\n- 聊天界面的“打字机效果”\n- 长回答提前回显\n- 减少用户等待焦虑",
+			"styleAttributes":{},
+			"x":3060,
+			"y":866,
+			"width":410,
+			"height":234,
+			"color":"2"
+		},
+		{
+			"id":"4d86ca1166bd2cd2",
+			"type":"text",
+			"text":"### 批处理\n- **batch**：一次提交多条输入，统一获得多条结果\n- **abatch**：异步批处理\n\n它特别适合离线任务，而不是交互式聊天。例如：\n\n- 批量摘要一批文档\n- 批量清洗问答数据\n- 批量评估 Prompt 效果\n- 批量为商品、评论、工单做标签分类",
+			"styleAttributes":{},
+			"x":3060,
+			"y":1136,
+			"width":410,
+			"height":244,
+			"color":"2"
+		},
+		{
+			"id":"9d21a6f4dabaea63",
+			"type":"text",
+			"text":"| 类型                        | 说明                     |\n| ------------------------- | ---------------------- |\n| **PromptTemplate**        | 面向纯文本模板，填值后通常得到一条字符串   |\n| **ChatPromptTemplate**    | 面向聊天模型的多角色模板，填值后得到多条消息 |\n| **FewShotPromptTemplate** | 把若干“示例输入-输出”嵌入提示词      |\n| **PipelinePrompt**        | 把多个子提示按顺序组合            |\n",
+			"styleAttributes":{},
+			"x":2080,
+			"y":580,
+			"width":600,
+			"height":200,
+			"color":"2"
+		},
+		{
+			"id":"f234eb5ee8489f07",
+			"type":"text",
+			"text":"### 常用参数\n|参数|说明|\n|---|---|\n|`template`|模板字符串，内部可包含 `{变量名}` 占位符|\n|`input_variables`|调用时需要传入的变量名列表|\n|`partial_variables`|在模板创建阶段就预先固定的一部分变量|\n\n其中，`partial_variables` 尤其值得理解。它的作用很直接：\n\n**把那些“经常不变”的变量先固定住，后续每次只传真正会变化的部分。**\n\n典型例子：\n\n- 系统角色长期固定为“Python 工程师”\n- 但用户问题每次都不同\n\n这样一来，你就不用每次都重复传 `role=\"Python 工程师\"`。\n\n### 常用方法\n|方法|返回值|适合场景|案例源码|\n|---|---|---|---|\n|`format(...)`|`str`|最常用，拿到字符串后直接给模型或自己继续拼接|`PromptTemplate_FormatMethod.py`|\n|`invoke({...})`|`PromptValue`|需要接入 LangChain 链时更自然|`PromptTemplate_InvokeMethod.py`|\n|`partial(...)`|新的 `PromptTemplate`|先固定部分变量，再多次复用|`PromptTemplate_PartialMethod.py`|\n\n",
+			"styleAttributes":{},
+			"x":2380,
+			"y":764,
+			"width":580,
+			"height":256,
+			"color":"2"
+		},
+		{
+			"id":"2b94298b290c50c1",
+			"type":"text",
+			"text":"### 常用参数\n`ChatPromptTemplate` 的核心不是单个 `template` 字符串，而是一组“消息模板”。每一项都可以是下面这些形式：\n\n|类型|说明|案例源码|\n|---|---|---|\n|元组|`(\"system\", \"你是{name}\")`|`ChatPromptTemplate_TupleParam.py`|\n|字典|`{\"role\": \"system\", \"content\": \"你是{name}\"}`|`ChatPromptTemplate_DictParam.py`|\n|Message 模板类|`SystemMessagePromptTemplate.from_template(\"你是{name}\")`|`ChatPromptTemplate_MessageParam.py`|\n|`MessagesPlaceholder`|在模板中预留一段“消息列表占位”|见 7.5 节|\n\n三种常规写法里，没有绝对的谁对谁错，可以按下面的经验来选：\n\n- **元组**：最简洁，教学和业务代码里都很常见\n- **字典**：更贴近 OpenAI 风格 JSON，方便和网关数据结构对齐\n- **Message 模板类**：角色类型最明确，并且支持在运行时填充变量\n\n> 注意：`SystemMessage`、`HumanMessage` 是已经生成的固定消息。直接放入 `ChatPromptTemplate` 时，其中的 `{name}` 等内容不会被当作占位符替换；需要动态填值时，应使用对应的 Message 模板类。\n\n### 常用方法\n\n|方法|返回值|使用建议|\n|---|---|---|\n|`format_messages(...)`|`List[BaseMessage]`|最直观，得到消息列表后交给模型|\n|`invoke({...})`|`ChatPromptValue`|适合与 LangChain 链条衔接，也可直接交给模型|\n|`format(...)`|`str`|适合查看最终拼接效果，不推荐作为聊天主写法|\n\n这三个方法最容易混淆，建议这样理解：\n\n- `format_messages`：我要的是“消息列表”\n- `invoke`：我要的是“PromptValue 对象”\n- `format`：我要的是“纯字符串”",
+			"styleAttributes":{},
+			"x":1040,
+			"y":566,
+			"width":1020,
+			"height":394,
+			"color":"2"
+		},
+		{"id":"3a8cb90c6069695a","type":"text","text":"OutputParser","x":1645,"y":2136,"width":250,"height":60,"color":"2"},
+		{"id":"83f2aec0724bcf7d","type":"text","text":"StructuredOutputParser","x":1645,"y":2228,"width":250,"height":60,"color":"2"},
+		{"id":"b654fed9d0323721","type":"text","text":"输出解析","x":1075,"y":2274,"width":250,"height":60,"color":"2"},
+		{"id":"c395dfe814bc591b","type":"file","file":"image/13-7-5-1.svg","x":2019,"y":1084,"width":722,"height":313,"color":"2"},
+		{
+			"id":"ce78f5a222bdc4c3",
+			"type":"text",
+			"text":"**`MessagesPlaceholder` (消息占位符)的作用，就是在模板里先留出一段“消息列表的位置”，等真正调用时再把历史对话整块塞进去。**",
+			"styleAttributes":{},
+			"x":1500,
+			"y":1084,
+			"width":480,
+			"height":80,
+			"color":"2"
+		},
+		{
+			"id":"f1bb3b9147d89d71",
+			"type":"text",
+			"text":"MessagesPlaceholder",
+			"styleAttributes":{},
+			"x":1200,
+			"y":1094,
+			"width":260,
+			"height":60,
+			"color":"2"
+		},
+		{
+			"id":"c8f1f7eb0117e7e0",
+			"type":"text",
+			"text":"为什么它重要？因为真实项目里的“历史对话”往往不是固定写死的：\n\n- 有时只有 2 轮\n- 有时有 10 轮\n- 有时还要先裁剪、总结、过滤\n\n如果没有占位符，你就只能在代码里手动拼接 `HumanMessage`、`AIMessage`，又乱又难维护。\n\n它常见有两种写法：\n\n- **显式写法**：`MessagesPlaceholder(\"memory\")`\n- **隐式写法**：`(\"placeholder\", \"{memory}\")`\n\n二者的核心思想完全一样，只是语法风格不同。\n\n典型结构通常是：\n\n- 系统设定\n- 历史消息占位\n- 当前用户问题",
+			"styleAttributes":{},
+			"x":1420,
+			"y":1164,
+			"width":580,
+			"height":296,
+			"color":"2"
+		},
+		{
+			"id":"27a4b2f2efb5b9ad",
+			"type":"text",
+			"text":"从文件加载提示词",
+			"styleAttributes":{},
+			"x":1200,
+			"y":1660,
+			"width":260,
+			"height":60,
+			"color":"2"
+		},
+		{
+			"id":"d8f351ef007a7cb2",
+			"type":"text",
+			"text":"### 从JSON加载",
+			"styleAttributes":{},
+			"x":1610,
+			"y":1600,
+			"width":260,
+			"height":60,
+			"color":"2"
+		},
+		{
+			"id":"4bde74e5d8c8ab46",
+			"type":"text",
+			"text":"### 从 YAML 加载",
+			"styleAttributes":{},
+			"x":1610,
+			"y":1720,
+			"width":260,
+			"height":60,
+			"color":"2"
+		},
+		{
+			"id":"5b39eba09409cf4f",
+			"type":"text",
+			"text":"```\n{\n  \"_type\": \"prompt\",\n  \"input_variables\": [\"name\", \"what\"],\n  \"template\": \"请{name}讲一个{what}的故事\"\n}\n```",
+			"styleAttributes":{},
+			"x":1980,
+			"y":1510,
+			"width":420,
+			"height":180,
+			"color":"2"
+		},
+		{
+			"id":"8ee08ae3bc3ff017",
+			"type":"text",
+			"text":"```\nfrom pathlib import Path\n\nfrom langchain_core.prompts import load_prompt\n\nprompt_path = Path(__file__).resolve().with_name(\"prompt.json\")\ntemplate = load_prompt(prompt_path, encoding=\"utf-8\")\nprint(template.format(name=\"张三\", what=\"搞笑\"))\n```",
+			"styleAttributes":{},
+			"x":2540,
+			"y":1470,
+			"width":625,
+			"height":220,
+			"color":"2"
+		},
+		{
+			"id":"ca31df3c84d3dc99",
+			"type":"text",
+			"text":"YAML 与 JSON 的核心思路完全相同，只是文件格式更适合人工阅读，也更方便写注释。对团队协作来说，很多场景会更喜欢 YAML。",
+			"styleAttributes":{},
+			"x":1510,
+			"y":1780,
+			"width":360,
+			"height":100,
+			"color":"2"
+		},
+		{
+			"id":"3c97428e87f96639",
+			"type":"text",
+			"text":"- **消息类型** 解决“输入按什么角色组织”\n- **调用方式** 解决“输入如何发给模型”\n- **PromptTemplate / ChatPromptTemplate** 解决“输入如何复用”\n- **MessagesPlaceholder** 解决“历史对话如何动态插入”\n- **JSON / YAML 外置文件** 解决“模板如何协作与版本管理”",
+			"styleAttributes":{},
+			"x":1080,
+			"y":78,
+			"width":520,
+			"height":198,
+			"color":"2"
+		},
+		{
+			"id":"d5e6149700468a8c",
+			"type":"text",
+			"text":"```\n\"\"\"\n【案例】从 JSON 文件加载提示词模板\n\n对应教程章节：第 13 章 - 提示词与消息模板 → 8、从文件加载提示词（JSON / YAML）\n\n知识点速览：\n- 把 Prompt 放到 JSON / YAML 里，有助于版本管理、多人协作和 A/B 测试，也能避免长提示词把业务代码挤得很乱。\n- `load_prompt(...)` 会根据文件内容加载出模板对象；对于本案例的 `_type: \"prompt\"`，它会得到一个 `PromptTemplate` 风格的对象。\n- 通过 `Path(__file__)` 从脚本所在目录定位 `prompt.json`，不依赖运行命令时的工作目录。\n\"\"\"\n\nfrom pathlib import Path\n\n# 从 langchain_core 引入 load_prompt，用于从 JSON/YAML 加载模板\nfrom langchain_core.prompts import load_prompt\n\n# 从脚本所在目录加载 prompt.json，得到与 PromptTemplate 用法相同的模板对象\n# encoding=\"utf-8\" 保证中文等字符正常显示\nprompt_path = Path(__file__).resolve().with_name(\"prompt.json\")\ntemplate = load_prompt(prompt_path, encoding=\"utf-8\")\n\n# 用 .format() 填入占位符变量，得到最终字符串（与第 6 节 PromptTemplate.format 的使用方式一致）\nprint(template.format(name=\"张三\", what=\"搞笑的\"))\n\n\"\"\"\n【输出示例】\n请张三讲一个搞笑的的故事\n\"\"\"\n```",
+			"styleAttributes":{},
+			"x":3265,
+			"y":1434,
+			"width":640,
+			"height":396,
+			"color":"2"
+		},
+		{
+			"id":"6789e33b86843553",
+			"type":"text",
+			"text":"```\n\"\"\"\n【案例】从 YAML 文件加载提示词模板\n\n对应教程章节：第 13 章 - 提示词与消息模板 → 8、从文件加载提示词（JSON / YAML）\n\n知识点速览：\n- YAML 版本与 JSON 版本的使用方式完全一致，差别主要在于文件格式是否更适合人读和写注释。\n- 本案例的 `prompt.yaml` 同样描述的是一个文本模板，因此加载后的使用方式仍然是 `.format(...)`。\n- 通过 `Path(__file__)` 从脚本所在目录定位 `prompt.yaml`，不依赖运行命令时的工作目录。\n\"\"\"\n\nimport warnings\nfrom pathlib import Path\n\nwarnings.filterwarnings(\n    \"ignore\", message=\"Core Pydantic V1 functionality isn't compatible with Python 3.14\"\n)\n\n# 从 YAML 加载提示词模板，API 与 load_prompt(\"prompt.json\") 一致\nfrom langchain_core.prompts import load_prompt\n\nprompt_path = Path(__file__).resolve().with_name(\"prompt.yaml\")\ntemplate = load_prompt(prompt_path, encoding=\"utf-8\")\nprint(template.format(name=\"年轻人\", what=\"滑稽\"))\n#\n\n\"\"\"\n【输出示例】\n请年轻人讲一个滑稽的故事\n\"\"\"\n```",
+			"styleAttributes":{},
+			"x":2019,
+			"y":1720,
+			"width":505,
+			"height":396,
+			"color":"2"
+		},
+		{
+			"id":"875faf7c818f17f0",
+			"type":"text",
+			"text":"把模型的**文本输出**转成程序易用的**结构化数据**（如字符串、JSON、强类型对象）。",
+			"styleAttributes":{},
+			"x":1075,
+			"y":2214,
+			"width":380,
+			"height":60,
+			"color":"2"
+		},
+		{
+			"id":"ce1add691c9e241c",
+			"type":"text",
+			"text":"放到实际使用中，根据解析器类型不同，输出解析器通常会承担下面几类工作：\n\n- **格式转换**：把模型回答转成 `str`、`dict`、Pydantic 对象等。\n- **结构约束**：引导模型尽量按指定字段输出。\n- **结果校验**：检查字段类型、范围、必填项是否符合预期。\n- **工程衔接**：让模型输出能被数据库、接口、前端、工作流直接消费。",
+			"styleAttributes":{},
+			"x":2200,
+			"y":2120,
+			"width":620,
+			"height":180,
+			"color":"2"
+		},
+		{
+			"id":"65c67732d7f1cc48",
+			"type":"text",
+			"text":"**schema** 可以看成“**数据结构说明书**”或“**输出格式规范**”。 它描述的是：一份数据应该包含哪些字段、每个字段是什么类型、哪些字段必填，以及有时还会补充字段长度、取值范围、枚举值等约束。",
+			"styleAttributes":{},
+			"x":1075,
+			"y":2460,
+			"width":520,
+			"height":112,
+			"color":"2"
+		},
+		{
+			"id":"0ed105100292a754",
+			"type":"text",
+			"text":"|解析器|最终结果|适用场景|说明|\n|---|---|---|---|\n|`StrOutputParser`|字符串 `str`|只需要展示文本，不需要拆字段|最简单，通常就是取出模型输出正文内容|\n|`JsonOutputParser`|Python `dict` / `list`|希望模型返回 JSON，再交给程序继续处理|适合字段抽取、接口返回、工作流参数传递|\n|`PydanticOutputParser`|Pydantic 对象|需要强类型和运行时校验|适合对字段类型、长度、范围有明确要求的业务场景|",
+			"styleAttributes":{},
+			"x":2920,
+			"y":2010,
+			"width":880,
+			"height":220,
+			"color":"2"
+		},
+		{
+			"id":"65f3ca88ef4209bd",
+			"type":"text",
+			"text":"**结构化输出的本质，就是先定义 schema，再让模型按这个 schema 输出结果。**\n\n官方常见的结构化输出方案有三种：\n\n|方案|定义方式|最终结果|是否支持运行时校验|适用场景|\n|---|---|---|---|---|\n|`TypedDict`|Python 标准库 `typing.TypedDict`|`dict`|否|只需要固定字段结构，不需要严格校验|\n|`Pydantic`|`BaseModel` + `Field(...)`|Pydantic 对象|是|需要强类型、范围、长度、必填项校验|\n|`JSON Schema`|标准 JSON Schema 字典|通常为 `dict`|视具体实现而定|需要跨语言、跨系统共享结构协议|",
+			"styleAttributes":{},
+			"x":2200,
+			"y":2320,
+			"width":740,
+			"height":340,
+			"color":"2"
+		},
+		{
+			"id":"24d71aec0006e1b7",
+			"type":"text",
+			"text":"在 LangChain 中，这些结构通常会和下面这种方式配合使用：\n\n```\nmodel.with_structured_output(...)\n```\n\n也就是说：\n\n- `TypedDict` / `Pydantic` / `JSON Schema` 是“定义输出结构”的方式；\n- `with_structured_output(...)` 是“让模型按这个结构输出并自动解析”的入口。",
+			"styleAttributes":{},
+			"x":3080,
+			"y":2370,
+			"width":680,
+			"height":240,
+			"color":"2"
+		},
+		{
+			"id":"7a0fbd61e9ffd7a9",
+			"type":"text",
+			"text":"输出解析器与结构化输出的关系",
+			"styleAttributes":{},
+			"x":3920,
+			"y":2260,
+			"width":260,
+			"height":60,
+			"color":"2"
+		},
+		{
+			"id":"8b3c6b844b6e30c3",
+			"type":"text",
+			"text":"- **输出解析器**：更强调“模型已经输出了，我怎么把它转成程序可用的数据”；\n- **结构化输出**：更强调“在模型输出之前，我先规定好它应该长什么样”。",
+			"styleAttributes":{},
+			"x":3980,
+			"y":2120,
+			"width":380,
+			"height":120,
+			"color":"2"
+		},
+		{
+			"id":"aeec10b15a341336",
+			"type":"text",
+			"text":"二: 只用结构化输出",
+			"styleAttributes":{},
+			"x":4440,
+			"y":2240,
+			"width":260,
+			"height":60,
+			"color":"2"
+		},
+		{
+			"id":"d3aa3a7612372fd7",
+			"type":"text",
+			"text":"三: 结构化输出 + 额外校验/ 处理",
+			"styleAttributes":{},
+			"x":4440,
+			"y":2400,
+			"width":260,
+			"height":60,
+			"color":"2"
+		},
+		{
+			"id":"cf3583fc511f4dff",
+			"type":"text",
+			"text":"一: 只用输出解析器",
+			"styleAttributes":{},
+			"x":4440,
+			"y":2090,
+			"width":260,
+			"height":60,
+			"color":"2"
+		},
+		{
+			"id":"cee8a0d249f66d6b",
+			"type":"text",
+			"text":"适合模型本身支持 `with_structured_output(...)`，LangChain 直接约束模型输出结构并自动解析。\n\n```python\nfrom typing import TypedDict\n\n\nclass Person(TypedDict):\n    name: str\n    age: int\n\n\nstructured_model = model.with_structured_output(Person)\nresult = structured_model.invoke(\"请返回一个人物信息\")\nprint(result)\n```\n\n这种方式不再需要单独手写 parser，而是由 `with_structured_output(...)` 统一完成“约束输出 + 自动解析”，更适合现代模型已经支持原生结构化输出的场景。",
+			"styleAttributes":{},
+			"x":4800,
+			"y":2150,
+			"width":560,
+			"height":170,
+			"color":"2"
+		},
+		{
+			"id":"d79e851287390f51",
+			"type":"text",
+			"text":"适合模型先正常输出，再由程序把结果转成字符串、JSON 或对象。\n\n```python\nfrom langchain_core.output_parsers import JsonOutputParser\n\nparser = JsonOutputParser()\n\nresult = model.invoke(\"请用 JSON 返回：name、age\")\ndata = parser.invoke(result)\nprint(data)\n```\n\n这种方式的特点很直接：先让模型生成结果，再由 parser 负责解析，所以它特别适合传统的 `prompt | model | parser` 链式调用。",
+			"styleAttributes":{},
+			"x":4800,
+			"y":1910,
+			"width":560,
+			"height":180,
+			"color":"2"
+		},
+		{
+			"id":"8b25910f8ce4ce44",
+			"type":"text",
+			"text":"在更严格的工程场景中，也可以做结构化输出，再补额外处理逻辑。\n\n```python\nstructured_model = model.with_structured_output(Person)\nresult = structured_model.invoke(\"请返回一个人物信息\")\n\n# 这里可以继续做业务校验、入库前清洗、字段转换等处理\nprint(result)\n```\n\n这一类场景不一定非要再接一个 Output Parser，但常常会继续补：业务规则校验；字段清洗；入库前转换；接口返回前二次封装。\n\n所以这里的关键结论是：\n\n- **输出解析器**和**结构化输出**可以独立使用；\n- 也可以组合使用；\n- 是否同时使用，取决于模型能力和业务要求。\n\n它们的目标是一致的：**让模型输出稳定地进入程序系统，而不是只停留在自然语言层面。**",
+			"styleAttributes":{},
+			"x":4800,
+			"y":2360,
+			"width":560,
+			"height":320,
+			"color":"2"
+		},
+		{
+			"id":"37370cad7429b60c",
+			"type":"text",
+			"text":"|场景|如果不做解析，常见问题|更合适的做法|\n|---|---|---|\n|聊天问答、文案润色、摘要展示|只需要显示文本，结构要求低|`StrOutputParser`|\n|从文本里抽取字段，如“问题/答案”“时间/人物/事件”|文本不稳定，后续逻辑难写|`JsonOutputParser`|\n|给前端卡片、表单、列表页返回固定字段|字段缺失或字段名漂移会影响渲染|`with_structured_output(TypedDict)`|\n|给数据库、审批流、订单系统写入严格数据|需要校验类型、范围、长度|`PydanticOutputParser` 或 `with_structured_output(Pydantic)`|\n|与外部系统按统一协议对接|需要语言无关、协议明确|`JSON Schema`|",
+			"styleAttributes":{},
+			"x":5460,
+			"y":2020,
+			"width":780,
+			"height":380,
+			"color":"2"
+		},
+		{
+			"id":"96db8bd002db03eb",
+			"type":"text",
+			"text":"| 方式              | 返回结果常见形态    | 是否自带运行时校验 | 适合什么场景               |\n| --------------- | ----------- | --------- | -------------------- |\n| **TypedDict**   | `dict`      | 否         | 结构清晰、字段固定，但校验要求不高    |\n| **Pydantic**    | Pydantic 对象 | 是         | 需要强类型、范围校验、长度校验、字段验证 |\n| **JSON Schema** | `dict`      | 取决于具体使用方式 | 需要与外部协议对齐、跨语言协作      |\n这里还经常会配合一个写法：**Annotated**，它不是第四种 schema，而是给字段补充说明信息的一种方式。",
+			"styleAttributes":{},
+			"x":1075,
+			"y":2572,
+			"width":520,
+			"height":368,
+			"color":"2"
+		},
+		{"id":"fa1a113ad20ed4d1","type":"text","text":"Pydantic 解析器","x":1645,"y":2788,"width":245,"height":60,"color":"2"},
+		{"id":"a4bcea786fdd5ccb","type":"text","text":"JSON 解析","x":1645,"y":2880,"width":245,"height":60,"color":"2"},
+		{
+			"id":"5166af7458ec3930",
+			"type":"text",
+			"text":"TypedDict 与 Annotated",
+			"styleAttributes":{},
+			"x":1645,
+			"y":2670,
+			"width":245,
+			"height":60,
+			"color":"2"
+		},
+		{
+			"id":"9cd1842a7bf38914",
+			"type":"text",
+			"text":"### TypedDict：描述“这个字典长什么样”\n\n`TypedDict` 来自 Python 标准库 `typing`，它的作用是：描述一个字典应该有哪些键、每个键是什么类型。它更像是一张**结构说明书**。\n\n对 LangChain 来说，这张说明书很有用，因为它可以据此引导模型输出固定结构，再解析成 Python 字典。\n\n但要特别注意：**TypedDict 不负责真正的运行时校验。**也就是说，它更偏“说明结构”，不是“强制验证”。\n\n### Annotated：给字段加解释说明\n\n`Annotated` 也是 Python 标准库 `typing` 里的能力。它的作用不是“换一种类型”，而是：在原有类型上附加一段元数据或说明。\n\n例如：\n\n```\nAnnotated[str, \"动物名称\"]\n```\n\n它本质上还是 `str`，只是附带了一段“这是动物名称”的说明。LangChain 可以利用这些说明生成更清晰的 schema 描述，让模型更容易理解每个字段该填什么。\n\n### 案例：TypedDict 版结构化输出\n\n【案例源码】`案例与源码-2-LangChain框架/05_parser/StructuredOutput_TypedDict.py`\n\n```python\n\"\"\"\n【案例】用 TypedDict + Annotated 做结构化输出\n\n对应教程章节：第 14 章 - 输出解析器 → 3、结构化输出（TypedDict / Pydantic / Annotated）\n\n知识点速览：\n一、什么是「结构化输出」？\n  - 希望模型返回的不是随便一段话，而是固定结构的数据（如指定字段的 dict），方便程序后续处理。\n  - LangChain 支持用 TypedDict（Python 标准库）或 Pydantic 定义结构，再由模型按该结构生成并解析。\n\n二、with_structured_output 做什么？\n  - 在模型上调用 llm.with_structured_output(某个类型)，会返回一个「带了结构化输出能力」的可调用对象。\n  - 调用 .invoke(messages) 时，模型会被引导输出符合该结构的 JSON，并自动解析成 Python 的 dict（或对应类型），无需再手写 Parser。\n\n三、本案例：用 typing.TypedDict 定义 Animal（动物名 + emoji）、AnimalList（动物列表）；用 Annotated 给字段加描述，便于模型理解各字段含义；最后用 llm.with_structured_output(AnimalList) 一次得到结构化结果。\n\"\"\"\n\nimport os\nfrom typing import TypedDict, Annotated\nfrom dotenv import load_dotenv\nfrom langchain.chat_models import init_chat_model\n\nload_dotenv(encoding=\"utf-8\")\n\nllm = init_chat_model(\n    model=\"qwen-plus\",\n    model_provider=\"openai\",\n    api_key=os.getenv(\"aliQwen-api\"),\n    base_url=\"https://dashscope.aliyuncs.com/compatible-mode/v1\",\n)\n\n\n# 用 TypedDict 定义「一个动物」的结构；Annotated 里的字符串是给模型看的描述，便于生成合适内容\nclass Animal(TypedDict):\n    animal: Annotated[str, \"动物\"]\n    emoji: Annotated[str, \"表情\"]\n\n\n# 定义「动物列表」：一个字段 animals，类型是 Animal 的列表\nclass AnimalList(TypedDict):\n    animals: Annotated[list[Animal], \"动物与表情列表\"]\n\n\n# 普通对话消息\nmessages = [{\"role\": \"user\", \"content\": \"任意生成三种动物，以及他们的 emoji 表情\"}]\n\n# 给模型绑定「结构化输出」：按 AnimalList 的结构返回并解析\nllm_with_structured_output = llm.with_structured_output(AnimalList)\nresp = llm_with_structured_output.invoke(messages)\nprint(\n    resp\n)  # 得到符合 AnimalList 的 dict，如 {\"animals\": [{\"animal\": \"猫\", \"emoji\": \"🐱\"}, ...]}\n\n\"\"\"\n【输出示例】\n{'animals': [{'animal': '狗', 'emoji': '🐶'}, {'animal': '猫', 'emoji': '🐱'}, {'animal': '鸟', 'emoji': '🐦'}]}\n\"\"\"\n\n```\n\n这个案例可以作为“现代 LangChain 结构化输出”的第一课：\n\n1. 用 `TypedDict` 定义 `Animal` 与 `AnimalList`；\n2. 用 `Annotated` 给字段添加说明；\n3. 用 `llm.with_structured_output(AnimalList)` 直接告诉模型输出目标结构；\n4. 调用 `.invoke(...)` 后直接得到解析好的 `dict`。\n\n这比“先要求 JSON，再手动解析”更像真实项目中的推荐写法。\n\n### [5.4 案例：Annotated 只是描述，不是校验](https://didilili.github.io/ai-agents-from-zero/#/14-%E8%BE%93%E5%87%BA%E8%A7%A3%E6%9E%90%E5%99%A8?id=_54-%e6%a1%88%e4%be%8b%ef%bc%9aannotated-%e5%8f%aa%e6%98%af%e6%8f%8f%e8%bf%b0%ef%bc%8c%e4%b8%8d%e6%98%af%e6%a0%a1%e9%aa%8c)\n\n【案例源码】`案例与源码-2-LangChain框架/05_parser/AnnotatedTypedDict.py`\n\n```\n\"\"\"\n【案例】Python 入门：Annotated 与 TypedDict（仅类型提示、无运行时校验）\n\n对应教程章节：第 14 章 - 输出解析器 → 3、结构化输出（TypedDict / Pydantic / Annotated）\n\n知识点速览：\n- Annotated[类型, \"描述\"] 中的描述只是元数据，供文档、类型检查或 LangChain 生成提示用；Python 运行时不会按描述做校验，故 age2=188 不会报错。\n- 类型提示在运行时总体是「装饰性」的；若需运行时范围校验，要用 Pydantic 的 Field（见 AnnotatedPydantic.py）。\n\"\"\"\n\nfrom typing import Annotated, TypedDict\n\n# Annotated[int, \"年龄，范围0-150\"]：类型仍是 int，后面的字符串只是元数据，运行时不会做 0–150 的校验\nAge = Annotated[int, \"年龄，范围0-150\"]\n\n\nclass Person(TypedDict):\n    name: str\n    age: int\n    age2: Age  # 本质还是 int，元数据 \"年龄，范围0-150\" 不参与运行时校验\n\n\n# TypedDict 实例化时不会校验 age2 是否在 0–150，只要类型是 int 即可\np = Person(name=\"z3\", age=111, age2=188)\nprint(p)\n\n# p = Person(name=\"z3\", age=\"1111\")  # 若用字符串赋给 age，部分环境可能报错，取决于具体运行时\n\n\"\"\"\n【输出示例】\n{'name': 'z3', 'age': 111, 'age2': 188}\n\"\"\"\n\n```\n\n这个案例解决的是一个容易混淆的问题：\n\n```\nAge = Annotated[int, \"年龄，范围0-150\"]\n```\n\n这句话并不意味着 Python 会自动帮你检查“年龄必须在 0 到 150 之间”。它只是说：这个字段的类型是 `int`；附带一段说明“年龄，范围 0-150”。如果没有额外的校验框架，这段说明不会自动变成校验规则。\n\n所以在 TypedDict 场景下：`Annotated` 更像**提示词增强器**；它不是**运行时验证器**。\n\n### [5.5 使用场景](https://didilili.github.io/ai-agents-from-zero/#/14-%E8%BE%93%E5%87%BA%E8%A7%A3%E6%9E%90%E5%99%A8?id=_55-%e4%bd%bf%e7%94%a8%e5%9c%ba%e6%99%af)\n\nTypedDict 适合这些情况：\n\n- 前端页面需要固定字段，但字段值不用做复杂校验；\n- 工作流节点之间传递结构化数据；\n- 想要结构清晰，但不想引入太重的校验逻辑；\n- 模型本身支持较好的结构化输出能力。\n\n一句话总结：**TypedDict 适合“我要稳定结构”，但暂时不要求“严格数据合法性校验”。**",
+			"styleAttributes":{},
+			"x":2080,
+			"y":2660,
+			"width":600,
+			"height":420,
+			"color":"2"
+		},
+		{"id":"5552f739192ba107","type":"text","text":"LLMChain","x":1655,"y":3320,"width":250,"height":60,"color":"2"},
+		{"id":"f029a90742c61971","type":"text","text":"SequentialChain","x":1655,"y":3412,"width":250,"height":60,"color":"2"},
+		{"id":"dfc7072468141d34","type":"text","text":"链 Chains","x":1085,"y":3458,"width":250,"height":60,"color":"2"},
+		{"id":"bc3b00541135e37e","type":"text","text":"RouterChain","x":1655,"y":3504,"width":250,"height":60,"color":"2"},
+		{"id":"ae1c029999843478","type":"text","text":"自定义 Chain","x":1655,"y":3596,"width":250,"height":60,"color":"2"},
+		{
+			"id":"985c8ca4a208ebfb",
+			"type":"text",
+			"text":"### Pydantic 定义\n\n如果说 `TypedDict` 主要解决的是“这个字典应该长什么样”，那么 **Pydantic** 解决的是：“这个数据不仅要长得像，而且必须真的合法。”\n\nPydantic 是 Python 生态里很常用的数据校验库。它可以在创建对象时对字段做：类型检查；范围检查；长度检查；自定义校验。真实业务里只要涉及结构化数据，就经常会用到它。\n\n### 案例：Annotated + Pydantic 触发校验\n【案例源码】`案例与源码-2-LangChain框架/05_parser/AnnotatedPydantic.py`\n\n```python\n\"\"\"\n【案例】Python 入门：Pydantic + Annotated 实现带范围的运行时校验\n\n对应教程章节：第 14 章 - 输出解析器 → 3、结构化输出（TypedDict / Pydantic / Annotated）\n\n知识点速览：\n一、和 AnnotatedTypedDict 的区别？\n  - AnnotatedTypedDict.py：用 typing.Annotated 只加了「描述」元数据，**运行时不会**按「0–150」校验。\n  - 本文件：用 **Pydantic** 的 Field(ge=0, le=150) 放在 Annotated 里，即 Annotated[int, Field(ge=0, le=150, ...)]，Pydantic 会在**运行时**校验数值是否在 0–150，超出则抛 ValidationError。\n\n二、适用场景：需要「强类型 + 取值范围校验」时，用 Pydantic 模型 + Field 约束；LangChain 的结构化输出也可用这类模型做解析与校验。\n\"\"\"\n\nfrom typing import Annotated\nfrom pydantic import BaseModel, Field, ValidationError\n\n# 用 Annotated 结合 Pydantic 的 Field：ge=0, le=150 会在运行时校验，不在范围内会触发 ValidationError\nAge = Annotated[int, Field(ge=0, le=150, description=\"年龄，范围0-150\")]\n\n\nclass Person(BaseModel):\n    name: str\n    age: int\n    age2: Age  # 这里 age2 会被 Pydantic 按 Field(ge=0, le=150) 校验\n\n\ntry:\n    p = Person(name=\"z3\", age=11, age2=188)  # age2=188 超出 0–150，会抛 ValidationError\n    print(p)\nexcept ValidationError as e:\n    print(\"数据校验失败：\")\n    print(e)\n\n\"\"\"\n【输出示例】\n数据校验失败：\n1 validation error for Person\nage2\n  Input should be less than or equal to 150 [type=less_than_equal, input_value=188, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal\n\"\"\"\n\n```\n\n这个案例和上一个 `AnnotatedTypedDict.py` 正好形成对照：\n\n- 在 TypedDict 里，`Annotated[int, \"年龄范围0-150\"]` 只是描述；\n- 在 Pydantic 里，`Annotated[int, Field(ge=0, le=150)]` 会真正变成运行时校验。\n\n记住一句话就够了：**Annotated 本身不校验；真正发生校验的是 Pydantic 的 `Field(...)` 规则。**\n\n### 案例：PydanticOutputParser 的完整流程\n\n【案例源码】`案例与源码-2-LangChain框架/05_parser/StructuredOutput_Pydantic.py`\n\n```python\n\"\"\"\n【案例】PydanticOutputParser：用 Pydantic 模型定义输出结构并校验\n\n对应教程章节：第 14 章 - 输出解析器 → 3、结构化输出（TypedDict / Pydantic / Annotated）\n\n知识点速览：\n一、PydanticOutputParser 和 JsonOutputParser 的区别？\n  - JsonOutputParser：把模型文本解析成「任意」JSON（dict/list），或可绑一个 Pydantic 模型约束形状。\n  - PydanticOutputParser：**专门**配合 Pydantic 模型，解析结果会转成** Pydantic 实例**，并可利用 Pydantic 的校验（如字段类型、validator），不合格会抛错。\n\n二、本案例流程：用 Pydantic 定义 Product（name、category、description），其中 description 用 field_validator 校验长度 ≥ 10 → 用 PydanticOutputParser(pydantic_object=Product) 创建解析器 → 用 get_format_instructions() 得到格式说明并拼进 Prompt → 模型返回后 parser.invoke(result) 得到 Product 对象。\n  - 适合：需要强类型、需要在校验失败时明确报错的场景。\n\"\"\"\n\nimport os\nfrom dotenv import load_dotenv\nfrom langchain.chat_models import init_chat_model\nfrom langchain_core.output_parsers import PydanticOutputParser\nfrom langchain_core.prompts import ChatPromptTemplate\nfrom loguru import logger\nfrom pydantic import BaseModel, Field, field_validator\n\nload_dotenv(encoding=\"utf-8\")\n\n\nclass Product(BaseModel):\n    \"\"\"产品信息：名称、类别、简介。简介长度需 ≥ 10，由下方 validator 校验。\"\"\"\n\n    name: str = Field(description=\"产品名称\")\n    category: str = Field(description=\"产品类别\")\n    description: str = Field(description=\"产品简介\")\n\n    @field_validator(\"description\")\n    def validate_description(cls, value):\n        \"\"\"Pydantic 校验器：description 长度必须 ≥ 10，否则抛 ValueError。\"\"\"\n        if len(value) < 10:\n            raise ValueError(\"产品简介长度必须大于等于10\")\n        return value\n\n\n# 创建 Pydantic 输出解析器：解析结果会转成 Product 实例并做校验\nparser = PydanticOutputParser(pydantic_object=Product)\n\n# 生成「格式说明」字符串，拼进 Prompt，引导模型按 Product 的字段输出 JSON\nformat_instructions = parser.get_format_instructions()\n\n# 在 system 里放入 {format_instructions}，human 里放 {topic}\nprompt_template = ChatPromptTemplate.from_messages(\n    [\n        (\"system\", \"你是一个AI助手，你只能输出结构化的json数据\\n{format_instructions}\"),\n        (\"human\", \"请你输出标题为：{topic}的新闻内容\"),\n    ]\n)\n\nprompt = prompt_template.format_messages(\n    topic=\"华为Mate X7\", format_instructions=format_instructions\n)\nlogger.info(prompt)\n\nmodel = init_chat_model(\n    model=\"qwen-plus\",\n    model_provider=\"openai\",\n    api_key=os.getenv(\"aliQwen-api\"),\n    base_url=\"https://dashscope.aliyuncs.com/compatible-mode/v1\",\n)\n\nresult = model.invoke(prompt)\nlogger.info(f\"模型原始输出:\\n{result.content}\")\n\n# 解析：把 result 转成 Product 实例，若格式或校验不通过会抛错\nresponse = parser.invoke(result)\nlogger.info(f\"解析后的结构化结果:\\n{response}\")\nlogger.info(f\"结果类型: {type(response)}\")  # <class 'Product'>\n\n\"\"\"\n【输出示例】\n2026-02-27 15:02:47.018 | INFO     | __main__:<module>:53 - [SystemMessage(content='你是一个AI助手，你只能输出结构化的json数据\\nThe output should be formatted as a JSON instance that conforms to the JSON schema below.\\n\\nAs an example, for the schema {\"properties\": {\"foo\": {\"title\": \"Foo\", \"description\": \"a list of strings\", \"type\": \"array\", \"items\": {\"type\": \"string\"}}}, \"required\": [\"foo\"]}\\nthe object {\"foo\": [\"bar\", \"baz\"]} is a well-formatted instance of the schema. The object {\"properties\": {\"foo\": [\"bar\", \"baz\"]}} is not well-formatted.\\n\\nHere is the output schema:\\n```\\n{\"description\": \"产品信息：名称、类别、简介。简介长度需 ≥ 10，由下方 validator 校验。\", \"properties\": {\"name\": {\"description\": \"产品名称\", \"title\": \"Name\", \"type\": \"string\"}, \"category\": {\"description\": \"产品类别\", \"title\": \"Category\", \"type\": \"string\"}, \"description\": {\"description\": \"产品简介\", \"title\": \"Description\", \"type\": \"string\"}}, \"required\": [\"name\", \"category\", \"description\"]}\\n```', additional_kwargs={}, response_metadata={}), HumanMessage(content='请你输出标题为：华为Mate X7的新闻内容', additional_kwargs={}, response_metadata={})]\n2026-02-27 15:02:51.175 | INFO     | __main__:<module>:63 - 模型原始输出:\n{\"name\": \"华为Mate X7\", \"category\": \"智能手机\", \"description\": \"华为Mate X7是一款全新折叠屏旗舰手机，搭载麒麟9010芯片与HarmonyOS 4.2系统，配备8英寸内屏与6.5英寸外屏，支持5G网络与超高速充电技术。\"}\n2026-02-27 15:02:51.175 | INFO     | __main__:<module>:67 - 解析后的结构化结果:\nname='华为Mate X7' category='智能手机' description='华为Mate X7是一款全新折叠屏旗舰手机，搭载麒麟9010芯片与HarmonyOS 4.2系统，配备8英寸内屏与6.5英寸外屏，支持5G网络与超高速充电技术。'\n2026-02-27 15:02:51.175 | INFO     | __main__:<module>:68 - 结果类型: <class '__main__.Product'>\n\"\"\"\n\n```\n\n这个案例体现了 Pydantic 路线最完整、最经典的工作流：\n\n1. 定义一个 `Product` Pydantic 模型；\n2. 用 `Field(...)` 给字段加说明；\n3. 用 `field_validator(...)` 写更细的校验逻辑；\n4. 创建 `PydanticOutputParser(pydantic_object=Product)`；\n5. 用 `get_format_instructions()` 生成格式说明；\n6. 把说明拼入 Prompt；\n7. 模型输出后，解析成 **Pydantic 实例**。\n\n这个流程比单纯的 `JsonOutputParser` 更强，因为它不只是“转成字典”，而是“转成一个经过校验的对象”。\n\n### 使用场景\n\n当你遇到下面这些需求时，通常就该优先考虑 Pydantic：\n\n- 要把结果写进数据库，不能容忍字段类型乱掉；\n- 要把模型输出接到订单、审批、风控、报表等业务系统；\n- 某些字段必须满足范围、枚举、长度等限制；\n- 希望一旦数据不合法，就立刻抛错，而不是悄悄放过。\n\n一句话总结：\n\n**Pydantic 适合“我要的不只是结构化，而是可验证、可托底、可工程化的数据”。**",
+			"styleAttributes":{},
+			"x":2760,
+			"y":2660,
+			"width":660,
+			"height":420,
+			"color":"2"
+		},
+		{
+			"id":"706db8de8221be4c",
+			"type":"text",
+			"text":"### 定义\n\n`JSON Schema` 是一种专门用来描述 JSON 结构和约束规则的标准。\n\n它最大的特点是语言无关，前后端都能理解，也因此很适合跨团队、跨系统、跨语言协作。\n\nLangChain 官方也把它列为结构化输出的三种主流方式之一。\n\n### 使用场景\n\n如果你的场景是：\n\n- 后端和前端已经约定了一份 JSON 协议；\n- 你的 Python 服务要和 Java、Go、Node 等系统对接；\n- 想把数据结构标准化、文档化；\n- 不想强依赖 Pydantic 或 Python 类型系统；\n\n那么 JSON Schema 就会比 TypedDict 更通用。\n\n### 和 TypedDict、Pydantic 的区别\n可以简单这样记：\n\n- **TypedDict**：最像 Python 内部的“结构说明书”。\n- **Pydantic**：最像 Python 内部的“结构 + 校验模型”。\n- **JSON Schema**：最像系统之间共享的“协议文档”。",
+			"styleAttributes":{},
+			"x":3520,
+			"y":2660,
+			"width":560,
+			"height":420,
+			"color":"2"
+		},
+		{
+			"id":"d1354f34032e5f5d",
+			"type":"text",
+			"text":"### 从简单到严格的选择路径\n\n你可以按下面这条路径做选择：\n\n1. **只需要文本展示** 用 `StrOutputParser`\n2. **需要简单 JSON 字段** 用 `JsonOutputParser`\n3. **需要固定结构，且模型支持结构化输出** 优先 `with_structured_output(TypedDict)`\n4. **需要严格校验** 用 `Pydantic` + `PydanticOutputParser`，或 `with_structured_output(Pydantic模型)`\n5. **需要跨语言 / 外部协议对齐** 用 `JSON Schema`\n\n落到工程选型上，可以记住这句话：**普通文本用 Parser，固定结构优先 `with_structured_output`，强校验上 Pydantic，Agent 最终结果再看 `response_format`。**",
+			"styleAttributes":{},
+			"x":1320,
+			"y":2940,
+			"width":760,
+			"height":340,
+			"color":"2"
+		},
+		{
+			"id":"46f058310a2cef75",
+			"type":"text",
+			"text":"## 常见误区与排错建议\n\n### 误区一：能解析成 JSON，就说明数据没问题\n\n不对。JSON 只说明“格式像样”，不说明“业务正确”。  \n比如用户年龄输出成了 `999`，它依然是合法 JSON，但显然不合理。\n\n### 误区二：Annotated 自带校验\n\n不对。`Annotated` 只是附加元数据。  \n真正让“范围、长度、约束”生效的是 Pydantic 的 `Field(...)`、validator 等机制。\n\n### 误区三：输出解析器能完全代替 Prompt 设计\n\n不对。如果 Prompt 没说清楚字段含义、输出边界、不要加额外说明，解析器很可能仍然失败。\n\n### 误区四：所有项目都应该直接上 Pydantic\n\n也不一定。如果你只是做文本展示，或者只是一个简单 JSON 演示，直接上 Pydantic 可能过重。  \n工程化不是“越复杂越好”，而是“够用且稳定”。\n\n### 误区五：学了 Parser 就和结构化输出是两套体系\n\n不是。它们本质上解决的是同一个问题：**让模型输出可被程序稳定消费**。  \n区别只是在于：\n\n- 有的方式偏“后处理解析”；\n- 有的方式偏“原生结构约束 + 自动解析”；\n- 有的方式还能进一步做严格校验。",
+			"styleAttributes":{},
+			"x":4205,
+			"y":2680,
+			"width":730,
+			"height":540,
+			"color":"2"
+		},
+		{
+			"id":"0a84232e1f03cbfb",
+			"type":"text",
+			"text":"如果没有统一接口，Prompt、模型、解析器、工具、检索器往往会各自一套入口（例如 `format`、`generate`、`parse`、`run`、`stream` 等混用）。结果是：**组件难拼接、方法名难记、替换实现时调用处到处要改**，也很难把整条流程写成清晰的“从左到右”数据流。\n\nLangChain 的解决思路就是：**把这些“能接收输入并产生输出”的对象，尽量抽象成统一接口。**这个统一接口，就是 **Runnable**。",
+			"styleAttributes":{},
+			"x":2140,
+			"y":3300,
+			"width":560,
+			"height":120,
+			"color":"2"
+		},
+		{
+			"id":"19e925027d74bf50",
+			"type":"text",
+			"text":"**Runnable** 是 LangChain 中最核心的抽象之一，本质上就是一个“可执行的数据处理节点”接口。\n\n这里要特别区分一个很容易混淆的点：\n\n- **Runnable 是什么**：它表示“这一类对象是可执行组件”，是一种统一抽象标准。\n- **统一调用方式是什么**：它是 Runnable 带来的结果，也就是这些组件都可以尽量用同一套方式去调用，比如 `invoke`、`batch`、`stream`。\n\n所以更准确的结论是，**Runnable 不是“统一调用方式”的翻译，而是“统一调用方式”背后的抽象基础。**\n\n只要某个对象实现了 Runnable 接口，它通常就能用统一方式来调用，比如： `invoke`、`batch`、`stream`、`ainvoke`、`abatch`、`astream`。\n\n在 LangChain 里，很多你已经学过的对象，本质上都属于 Runnable：\n\n- Prompt 模板、聊天模型、输出解析器\n- 后面会学到的检索器、工具、甚至整条链\n- 更进一步，编译后的 LangGraph 图本身也可以作为 Runnable 被调用\n\n也就是说，后面之所以能把这些组件顺畅地串成一条链，并不是因为“管道符很神奇”，而是：**这些组件本身都被设计成了可组合的 Runnable。**",
+			"styleAttributes":{},
+			"x":2840,
+			"y":3260,
+			"width":740,
+			"height":280,
+			"color":"2"
+		},
+		{
+			"id":"3a6234a6199e454b",
+			"type":"text",
+			"text":"### 前置知识点：抽象基类（ABC）\n\n如果你第一次接触 **抽象基类**，不用把它想得太复杂。对这一章来说，你只需要先建立一个足够实用的理解：\n\n**抽象基类，就是先规定“这一类对象应该具备哪些共同能力”，但不急着规定“每个对象内部具体怎么做”。**\n\n这里说的就是一种“统一规则”或“公共协议”。\n\n比如框架设计者先约定：\n\n- 只要你属于“可执行组件”\n- 你就应该支持某些统一方法\n- 例如单次调用、批量调用、流式调用、异步调用\n\n这样后面无论这个对象到底是 Prompt、Model、Parser，还是整条 Chain，使用者都可以按同一种方式去理解和调用它。这就是抽象基类最有价值的地方：**先把共同规则定下来，再让不同对象去实现自己的具体行为。**\n\n放到 LangChain 里，你可以把 **Runnable** 理解成这样一种核心抽象接口。它背后的思想就是：\n\n- Prompt 是一种可执行组件\n- Model 是一种可执行组件\n- Parser 是一种可执行组件\n- Chain 也是一种可执行组件\n\n既然它们都属于“可执行组件”这一大类，那么就应该尽量遵守同一套调用协议。所以这一节你不用死记 `ABC`、`abstractmethod` 这些 Python 细节，只要先抓住一句话：**抽象基类解决的是“先把共同规则定下来”，而 Runnable 正是 LangChain 用来统一这些规则的关键抽象。**\n\n![`langchain_core.runnables.base` 中 Runnable 的类定义与职责说明：可 invoke、batch、stream 并支持组合](https://didilili.github.io/ai-agents-from-zero/images/15/15-1-1-1.jpeg)\n\n> **图意说明**：上图截自 LangChain 参考文档。`Runnable` 声明为 `class Runnable(ABC, Generic[Input, Output])`，描述的是“可被调用、批量处理、流式输出、变换与组合”的工作单元；`invoke`/`ainvoke`、`batch`/`abatch`、`stream`/`astream` 等成对出现，`astream_log` 还可流式透出部分中间结果。各方法均可传入 `config`（如标签、元数据）便于追踪与排障；输入/输出/config 的结构信息可通过 `input_schema`、`output_schema`、`config_schema` 等暴露给工具链与 IDE。",
+			"styleAttributes":{},
+			"x":900,
+			"y":3680,
+			"width":605,
+			"height":340,
+			"color":"2"
+		},
+		{
+			"id":"e90aa0442028a625",
+			"type":"text",
+			"text":"LCEL",
+			"styleAttributes":{},
+			"x":1640,
+			"y":3940,
+			"width":260,
+			"height":60,
+			"color":"2"
+		},
+		{
+			"id":"224ffa2ec81c0c32",
+			"type":"text",
+			"text":"|维度|传统 Chain 类 (LLMChain / SequentialChain / RouterChain)|LCEL (LangChain Expression Language)|\n|---|---|---|\n|**核心抽象**[](https://juejin.cn/post/7626930429347954722#1)|各司其职的**具体类**，如 `LLMChain` 专用于单步，`SequentialChain` 专用于串联|统一的 **`Runnable` 协议**，任何组件（提示、模型、函数）只要符合该协议即可组合|\n|**编程范式**[](https://cloud.tencent.cn/developer/article/2764612#5)|**命令式**，需要显式实例化特定类并配置输入/输出键|**声明式**，用 `\\|` 描述数据流向，代码即逻辑|\n|**状态**|**已弃用（Deprecated）**，旧版教程常见，新项目不应再使用|**当前官方推荐标准**，所有新功能和优化都围绕它构建|",
+			"styleAttributes":{},
+			"x":2070,
+			"y":3442,
+			"width":700,
+			"height":260,
+			"color":"2"
+		},
+		{
+			"id":"6f9b3bda4ca2a5ab",
+			"type":"text",
+			"text":"### LCEL 定义\n\n**LCEL** 是 **LangChain Expression Language** 的缩写，中文通常叫 **LangChain 表达式语言**。它的作用很直接：**用一种声明式、可组合的方式，把多个 Runnable 连接起来。**\n\n最经典的 LCEL 写法就是：\n\n```\nchain = prompt | model | parser\nresult = chain.invoke({\"question\": \"什么是 LangChain？\"})\n```\n\n所以你先把 LCEL 理解成：**“用 `|（管道符）` 或其他组合方式，把多个 Runnable 连接起来的一套表达方法。”**\n\n但 LCEL 不只是“把对象连起来”，它还在帮我们做两件事：\n\n- 把前一步输出自动传给后一步\n- 尽量减少不同节点之间手写适配的样板代码\n\n### LCEL 不只是语法糖\n\n很多人第一次看到 `prompt | model | parser`，会觉得它只是“写起来更短”。但 LCEL 的价值远不止省代码。\n\n它真正带来的好处有三层：\n\n**1. 表达更清晰**\n\n传统写法：\n\n```\nprompt_value = prompt.invoke({\"question\": \"什么是 LangChain？\"})\nai_message = model.invoke(prompt_value)\nresult = parser.invoke(ai_message)\n```\n\nLCEL 写法：\n\n```\nchain = prompt | model | parser\nresult = chain.invoke({\"question\": \"什么是 LangChain？\"})\n```\n\n第二种写法更像在表达“流程本身”，而不是只是在堆代码。\n\n**2. 更容易组合**\n\n- 用 LCEL 连接出来的结果，本身还可以继续参与组合：\n    \n- 一条顺序链可以放进分支链\n    \n- 一条顺序链可以放进并行链\n    \n- 并行链的输出还可以继续交给下一步处理\n    \n\n而且在很多常见场景里，LCEL 还会帮我们自动处理“前一步结果如何传给下一步”这类重复性工作。只有当前后节点的输入输出结构不匹配时，我们才需要自己插入 `lambda` 或 `RunnableLambda` 做一次映射。\n\n**3. 统一支持同步、异步、批量、流式**\n\n根据 LangChain 官方参考，`RunnableSequence` 和 `RunnableParallel` 这类组合结构，会自动继承 Runnable 的同步、异步、批量、流式能力。这意味着你不只是得到了一条“可读的链”，还得到了一条“可统一执行的链”。\n\n### LCEL 的核心组合思想\n\n在入门阶段，本章最重要的不是死记类名，而是理解 LCEL 背后的几种核心组合思想：\n\n- **顺序组合**：前一步输出作为下一步输入\n- **条件路由**：根据输入选择不同链\n- **并行组合**：同一输入同时喂给多条链\n\n这里再补充一层组合视角：\n\n- **RunnableSequence** 和 **RunnableParallel** 是两种最核心的组合原语\n- 很多其他 Runnable 结构，本质上都可以看作在这两种基础组合能力上的扩展或变体\n\n而 `RunnableLambda` 则相当于在组合过程中插入一段你自己的 Python 逻辑，让你可以做：\n\n- 中间结果调试\n- 输入结构映射\n- 输出结果整理\n- 简单业务判断\n\n也就是说，LCEL 的本质并不是“多了几个类”，而是：**LangChain 开始让你用“数据流编排”的方式思考 LLM 应用。**\n\n### LCEL 和 Chain 的关系\n\n这一点特别容易混淆，所以单独强调一下：\n\n- **LCEL 是什么**：它是构建流程的一种表达方式，重点在“怎么写”。\n- **Chain 是什么**：它是通过 LCEL 或其他组合方式构建出来的可执行流程，重点在“最后得到了什么”。\n\n所以可以先用一句最容易记的话来理解：**LCEL 是构建链的方法，Chain 是构建出来的流程。**",
+			"styleAttributes":{},
+			"x":2100,
+			"y":3820,
+			"width":900,
+			"height":240,
+			"color":"2"
+		},
+		{
+			"id":"6f2d9dbaeb21217b",
+			"type":"text",
+			"text":"## Chain 结构\n\n### 定义\n\n在 LangChain 语境里，**Chain（链）** 可以简单理解成：**把多个 Runnable 按某种规则组合起来后，形成的一段可执行流程。**\n\n这段流程可以很简单，也可以很复杂：\n\n- 简单时，就是 `prompt | model`\n- 常见时，是 `prompt | model | parser`\n- 复杂时，可能是分支 + 并行 + 自定义函数节点混合组成的流程\n\n最关键的一点是：**链本身也是 Runnable。**\n\n这意味着链不会成为“终点对象”，它依然可以继续被组合。比如：\n\n- 一条顺序链可以作为 `RunnableBranch` 的分支\n- 一条顺序链可以放进 `RunnableParallel`\n- 并行结果还可以继续交给后面的节点处理\n\n### 典型结构\n\n这一节开始，我们不再重点讨论“怎么写链”，而是看“链通常长什么样”。这一章和前面三章的关系非常紧密。\n\n你会发现最典型的一条链就是：\n\n1. **Prompt**：组织输入\n2. **Model**：调用模型生成结果\n3. **Parser**：把结果解析成业务更容易使用的形式\n\n也就是：\n\n```\nchain = prompt | model | parser\n```\n\n这条链不是偶然写法，而是 LangChain 里最经典、最基础的组合方式。",
+			"styleAttributes":{},
+			"x":2100,
+			"y":4120,
+			"width":740,
+			"height":420,
+			"color":"2"
+		},
+		{
+			"id":"ce0c193b6578f812",
+			"type":"text",
+			"text":"## 链式调用基础用法与案例\n\n### 几种链的选择与对比\n\n|类型|典型写法 / 类名|执行方式|输入 → 输出|典型场景|\n|---|---|---|---|---|\n|**顺序链**|`prompt -> model -> parser` / `RunnableSequence`|一步接一步执行|单输入 → 单输出|最基础的问答、抽取、摘要|\n|**分支链**|`RunnableBranch(...)`|按条件只走其中一条子链|单输入 → 单输出|意图路由、多语言路由|\n|**多步串行链**|多条子链继续串联|前一步结果给后一步|单输入 → 单输出|先总结再翻译、先整理再生成|\n|**并行链**|`RunnableParallel({...})`|多条子链同时执行|单输入 → 多输出|中英文同时生成、多模型并跑|\n|**函数链**|`RunnableLambda(func)`|在链中插入 Python 函数|取决于函数|字段映射、调试、轻量业务逻辑|\n\n如果你现在只想快速建立直觉，可以这样选：\n\n- **只有一条直线流程**：先用顺序链\n- **要按条件切换不同流程**：用分支链\n- **要把多个模型调用前后串起来**：用多步串行链\n- **要同一输入同时跑多条链**：用并行链\n- **要插入自定义 Python 逻辑**：用函数链",
+			"styleAttributes":{},
+			"x":2100,
+			"y":4620,
+			"width":860,
+			"height":660,
+			"color":"2"
+		},
+		{
+			"id":"704ef0e557057b02",
+			"type":"text",
+			"text":"### RunnableBranch (分支链)",
+			"styleAttributes":{},
+			"x":3340,
+			"y":4700,
+			"width":260,
+			"height":60,
+			"color":"2"
+		},
+		{
+			"id":"4ae738f0dfad32ee",
+			"type":"text",
+			"text":"### RunnableSequence (顺序链)",
+			"styleAttributes":{},
+			"x":3340,
+			"y":4540,
+			"width":260,
+			"height":60,
+			"color":"2"
+		},
+		{
+			"id":"54a678505f1f6760",
+			"type":"text",
+			"text":"### Multi-Step Chain (多步串行链)",
+			"styleAttributes":{},
+			"x":3340,
+			"y":4820,
+			"width":260,
+			"height":60,
+			"color":"2"
+		},
+		{
+			"id":"d3a33fa07f8c8427",
+			"type":"text",
+			"text":"### RunnableParallel (并行链)",
+			"styleAttributes":{},
+			"x":3340,
+			"y":4950,
+			"width":260,
+			"height":60,
+			"color":"2"
+		},
+		{
+			"id":"06959d2724447d46",
+			"type":"text",
+			"text":"### RunnableLambda (函数链)",
+			"styleAttributes":{},
+			"x":3340,
+			"y":5050,
+			"width":260,
+			"height":60,
+			"color":"2"
+		},
+		{
+			"id":"49dcc908cb5e1989",
+			"type":"text",
+			"text":"### 补充: 其他常见Runnable结构",
+			"styleAttributes":{},
+			"x":3340,
+			"y":5140,
+			"width":260,
+			"height":60,
+			"color":"2"
+		},
+		{
+			"id":"763ecf55e28c1852",
+			"type":"text",
+			"text":"### 重试与兜底",
+			"styleAttributes":{},
+			"x":3340,
+			"y":5240,
+			"width":260,
+			"height":60,
+			"color":"2"
+		},
+		{
+			"id":"8101d690ff4d9692",
+			"type":"text",
+			"text":"`RunnableSequence` 是最常见、也最重要的链类型之一。LangChain 官方参考里明确说明，它几乎出现在所有基础链式流程中。\n\n它的核心规则很简单：**前一个 Runnable 的输出，直接作为后一个 Runnable 的输入。**\n\n所以：\n\n```\nchain = prompt | model | parser\n```\n\n本质上就是一个 `RunnableSequence`。\n\n你也可以显式写成：\n\n```\nfrom langchain_core.runnables import RunnableSequence\n\nchain = RunnableSequence(first=prompt, middle=[model], last=parser)\n```\n\n但在实际开发中，更常见、更推荐的仍然是管道符写法，因为可读性更好。\n\n这类链最典型的场景，就是把前面几章的核心内容一次性串起来：\n\n- Prompt 组织输入\n- Model 调用模型\n- Parser 把输出转成字符串或结构化结果\n\n【案例源码】`案例与源码-2-LangChain框架/06-lcel/LCEL_RunnableSequenceDemo.py`\n\n```python\n\"\"\"\n【案例】顺序链：Prompt → Model → Parser 一条线执行\n\n对应教程章节：第 15 章 - LCEL 与链式调用 → 4.1 RunnableSequence（顺序链）\n\n知识点速览：\n- 这是最经典的 LCEL 入门案例：`prompt | model | parser`。\n- 这里要区分两个概念：LCEL 是“把多个 Runnable 连起来的写法”，而真正得到的可执行对象是 Chain；这个 Chain 的具体类型通常就是 `RunnableSequence`。\n- prompt、model、parser 都实现了 Runnable 接口，所以既可以分步 `invoke()`，也可以先用 `|` 组合后再整体 `invoke()`。\n\"\"\"\n\nimport os\n\nfrom dotenv import load_dotenv\n\nload_dotenv(encoding=\"utf-8\")\n\nfrom langchain.chat_models import init_chat_model\nfrom langchain_core.output_parsers import StrOutputParser\nfrom langchain_core.prompts import ChatPromptTemplate\nfrom loguru import logger\n\n# 创建聊天提示模板（Runnable 子类）：包含系统角色与用户问题占位符\nchat_prompt = ChatPromptTemplate.from_messages(\n    [\n        (\"system\", \"你是一个{role}，请简短回答我提出的问题\"),\n        (\"human\", \"请回答:{question}\"),\n    ]\n)\n\n# 使用 invoke 渲染提示词，返回 PromptValue，可直接交给模型（统一接口）\nprompt = chat_prompt.invoke(\n    {\"role\": \"AI助手\", \"question\": \"什么是LangChain，简洁回答100字以内\"}\n)\nlogger.info(prompt)\n\n# 初始化聊天模型（同样实现 Runnable，支持 invoke/stream/batch）\nmodel = init_chat_model(\n    model=\"qwen-plus\",\n    model_provider=\"openai\",\n    api_key=os.getenv(\"aliQwen-api\"),\n    base_url=\"https://dashscope.aliyuncs.com/compatible-mode/v1\",\n)\n\n# 模型接收上一步的 PromptValue，返回 AIMessage\nresult = model.invoke(prompt)\nlogger.info(f\"********>模型原始输出:\\n{result}\")\n\n# 字符串输出解析器（Runnable）：从 AIMessage 中取出文本，得到更适合业务继续处理的文本结果\nparser = StrOutputParser()\n\n# 解析器接收 AIMessage，这里得到的是文本结果\nresponse = parser.invoke(result)\nlogger.info(f\"解析后的结构化结果:\\n{response}\")\nlogger.info(f\"结果类型: {type(response)}\")\n\nprint()\nprint(\"*\" * 60)\nprint()\n\n# 用管道符 | 构建顺序链；LCEL 是写法，组合后的 chain 才是最终得到的 RunnableSequence 对象\nchain = chat_prompt | model | parser\n\n# 链整体也是 Runnable：一次 invoke 完成「渲染 → 模型 → 解析」，入参为提示词变量\nresult_chain = chain.invoke(\n    {\"role\": \"AI助手\", \"question\": \"什么是LangChain，简洁回答100字以内\"}\n)\nlogger.info(f\"Chain执行结果:\\n{result_chain}\")\nlogger.info(f\"Chain执行结果类型: {type(result_chain)}\")\n\nprint()\nprint(type(chain))\n\n\"\"\"\n【输出示例】\n2026-03-06 10:09:39.882 | INFO     | __main__:<module>:30 - messages=[SystemMessage(content='你是一个AI助手，请简短回答我提出的问题', additional_kwargs={}, response_metadata={}), HumanMessage(content='请回答:什么是LangChain，简洁回答100字以内', additional_kwargs={}, response_metadata={})]\n2026-03-06 10:09:42.059 | INFO     | __main__:<module>:42 - ********>模型原始输出:\ncontent='LangChain 是一个开源框架，用于构建基于大语言模型（LLM）的应用程序。它提供模块化组件（如链、代理、记忆、工具等），支持提示工程、外部数据接入、多步推理与状态管理，简化 LLM 应用的开发与集成。' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 62, 'prompt_tokens': 38, 'total_tokens': 100, 'completion_tokens_details': None, 'prompt_tokens_details': {'audio_tokens': None, 'cached_tokens': 0}}, 'model_provider': 'openai', 'model_name': 'qwen-plus', 'system_fingerprint': None, 'id': 'chatcmpl-45f313fd-c388-9498-baa4-c9036e7644a1', 'finish_reason': 'stop', 'logprobs': None} id='lc_run--019cc0e8-5f78-7ef3-a751-d1a4bcfba176-0' tool_calls=[] invalid_tool_calls=[] usage_metadata={'input_tokens': 38, 'output_tokens': 62, 'total_tokens': 100, 'input_token_details': {'cache_read': 0}, 'output_token_details': {}}\n2026-03-06 10:09:42.059 | INFO     | __main__:<module>:49 - 解析后的结构化结果:\nLangChain 是一个开源框架，用于构建基于大语言模型（LLM）的应用程序。它提供模块化组件（如链、代理、记忆、工具等），支持提示工程、外部数据接入、多步推理与状态管理，简化 LLM 应用的开发与集成。\n2026-03-06 10:09:42.059 | INFO     | __main__:<module>:50 - 结果类型: <class 'langchain_core.messages.base.TextAccessor'>\n# ************************************************************\n\n# 2026-03-06 10:09:44.073 | INFO     | __main__:<module>:61 - Chain执行结果:\n# LangChain是一个开源框架，用于构建基于大语言模型（LLM）的应用程序。它提供模块化组件（如链、代理、记忆、工具等），支持提示工程、数据检索增强（RAG）、多步推理和外部工具调用，简化LLM应用的开发与集成。\n# 2026-03-06 10:09:44.073 | INFO     | __main__:<module>:62 - Chain执行结果类型: <class 'langchain_core.messages.base.TextAccessor'>\n\n# <class 'langchain_core.runnables.base.RunnableSequence'>\n\n\"\"\"\n```\n\n这个案例建议重点看一下，因为它不仅演示了“分步执行”，也演示了“直接把三步写成一条链再一次 invoke”。这正是 LCEL 的核心体验。",
+			"styleAttributes":{},
+			"x":4020,
+			"y":3650,
+			"width":780,
+			"height":450,
+			"color":"2"
+		},
+		{
+			"id":"539182dad2a339e5",
+			"type":"text",
+			"text":"如果顺序链解决的是“按顺序做”，那么 `RunnableBranch` 解决的就是：**根据输入内容，决定走哪条链。**\n\n它很像编程里的 `if / elif / else`，只是现在被放进了 Runnable 体系中。典型结构是：\n\n```\nRunnableBranch(\n    (条件1, 链1),\n    (条件2, 链2),\n    默认链,\n)\n```\n\n执行时会依次判断条件：\n\n- 第一个命中的条件对应的链会被执行\n- 如果都不命中，就走默认链\n\n这在项目里非常常见，比如：\n\n- 根据语言选择不同翻译链\n- 根据用户意图选择不同客服流程\n- 根据问题类型选择不同 Prompt 或模型\n\n本章配套案例就是一个非常典型的“语言路由”例子：\n\n- 输入里有“日语”关键词，走日语翻译链\n- 输入里有“韩语”关键词，走韩语翻译链\n- 否则默认走英语翻译链\n\n【案例源码】`案例与源码-2-LangChain框架/06-lcel/LCEL_RunnableBranchDemo.py`\n\n```\n\"\"\"\n【案例】分支链：根据输入条件选择不同子链执行\n\n对应教程章节：第 15 章 - LCEL 与链式调用 → 4.2 RunnableBranch（分支链）\n\n知识点速览：\n- `RunnableBranch` 解决的是“同一个输入，不一定走同一条链”的问题，本质上是 LCEL 里的路由层。\n- 传入若干 `(条件, Runnable)` 对和一个默认分支后，执行时会按顺序判断条件，命中的第一条分支会被执行；最后一个未成对的 Runnable 通常就是默认分支。\n- 每个分支内部仍然可以是 `prompt | model | parser` 这样的顺序链，所以分支链可以理解为“外层路由 + 内层子链”。\n\"\"\"\n\nimport os\n\nfrom langchain.chat_models import init_chat_model\nfrom langchain_core.output_parsers import StrOutputParser\nfrom langchain_core.prompts import ChatPromptTemplate\nfrom langchain_core.runnables import RunnableBranch\nfrom loguru import logger\n\n\nfrom dotenv import load_dotenv\n\nload_dotenv(encoding=\"utf-8\")\n\n# 英语分支：提示词模板 + 占位符 query\nenglish_prompt = ChatPromptTemplate.from_messages(\n    [(\"system\", \"你是一个英语翻译专家，你叫小英\"), (\"human\", \"{query}\")]\n)\n\njapanese_prompt = ChatPromptTemplate.from_messages(\n    [(\"system\", \"你是一个日语翻译专家，你叫小日\"), (\"human\", \"{query}\")]\n)\n\nkorean_prompt = ChatPromptTemplate.from_messages(\n    [(\"system\", \"你是一个韩语翻译专家，你叫小韩\"), (\"human\", \"{query}\")]\n)\n\n\ndef determine_language(inputs):\n    \"\"\"根据 query 中的关键词判断语言类型，供分支条件使用。\"\"\"\n    query = inputs[\"query\"]\n    if \"日语\" in query:\n        return \"japanese\"\n    elif \"韩语\" in query:\n        return \"korean\"\n    else:\n        return \"english\"\n\n\nmodel = init_chat_model(\n    model=\"qwen-plus\",\n    model_provider=\"openai\",\n    api_key=os.getenv(\"aliQwen-api\"),\n    base_url=\"https://dashscope.aliyuncs.com/compatible-mode/v1\",\n)\n\nparser = StrOutputParser()\n\n# RunnableBranch( (条件1, 子链1), (条件2, 子链2), ..., 默认子链 )\n# 条件为可调用对象，接收输入 dict，返回 bool；第一个命中的分支会执行，最后一个参数是默认分支\nchain = RunnableBranch(\n    (lambda x: determine_language(x) == \"japanese\", japanese_prompt | model | parser),\n    (lambda x: determine_language(x) == \"korean\", korean_prompt | model | parser),\n    (english_prompt | model | parser),  # 默认分支：英语\n)\n\ntest_queries = [\n    {\"query\": '请你用韩语翻译这句话:\"见到你很高兴\"'},\n    {\"query\": '请你用日语翻译这句话:\"见到你很高兴\"'},\n    {\"query\": '请你用英语翻译这句话:\"见到你很高兴\"'},\n]\n\nfor query_input in test_queries:\n    lang = determine_language(query_input)\n    logger.info(f\"检测到语言类型: {lang}\")\n\n    if lang == \"japanese\":\n        chatPromptTemplate = japanese_prompt\n    elif lang == \"korean\":\n        chatPromptTemplate = korean_prompt\n    else:\n        chatPromptTemplate = english_prompt\n\n    # 仅作演示：格式化后的提示词内容（实际执行时由 chain.invoke 内部完成）\n    formatted_messages = chatPromptTemplate.format_messages(**query_input)\n    logger.info(\"格式化后的提示词:\")\n    for msg in formatted_messages:\n        logger.info(f\"[{msg.type}]: {msg.content}\")\n\n    # 一次 invoke：Branch 会根据 query 自动选分支并执行对应子链\n    result = chain.invoke(query_input)\n    logger.info(f\"输出结果: {result}\\n\")\n\n\"\"\"\n【输出示例】\n2026-03-06 10:15:54.493 | INFO     | __main__:<module>:77 - 检测到语言类型: korean\n2026-03-06 10:15:54.493 | INFO     | __main__:<module>:88 - 格式化后的提示词:\n2026-03-06 10:15:54.493 | INFO     | __main__:<module>:90 - [system]: 你是一个韩语翻译专家，你叫小韩\n2026-03-06 10:15:54.493 | INFO     | __main__:<module>:90 - [human]: 请你用韩语翻译这句话:\"见到你很高兴\"\n2026-03-06 10:15:55.733 | INFO     | __main__:<module>:94 - 输出结果: 만나서 반갑습니다.\n\n# 2026-03-06 10:15:55.733 | INFO     | __main__:<module>:77 - 检测到语言类型: japanese\n# 2026-03-06 10:15:55.733 | INFO     | __main__:<module>:88 - 格式化后的提示词:\n# 2026-03-06 10:15:55.733 | INFO     | __main__:<module>:90 - [system]: 你是一个日语翻译专家，你叫小日\n# 2026-03-06 10:15:55.733 | INFO     | __main__:<module>:90 - [human]: 请你用日语翻译这句话:\"见到你很高兴\"\n# 2026-03-06 10:15:56.552 | INFO     | __main__:<module>:94 - 输出结果: お会いできて嬉しいです。\n\n# 2026-03-06 10:15:56.552 | INFO     | __main__:<module>:77 - 检测到语言类型: english\n# 2026-03-06 10:15:56.552 | INFO     | __main__:<module>:88 - 格式化后的提示词:\n# 2026-03-06 10:15:56.552 | INFO     | __main__:<module>:90 - [system]: 你是一个英语翻译专家，你叫小英\n# 2026-03-06 10:15:56.552 | INFO     | __main__:<module>:90 - [human]: 请你用英语翻译这句话:\"见到你很高兴\"\n# 2026-03-06 10:15:57.031 | INFO     | __main__:<module>:94 - 输出结果: Nice to meet you.\n\n\"\"\"\n```\n\n这个案例和实际项目非常贴近，因为很多真实业务并不是“所有请求走同一条链”，而是“先判断，再分流”。",
+			"styleAttributes":{},
+			"x":4020,
+			"y":4130,
+			"width":780,
+			"height":310,
+			"color":"2"
+		},
+		{
+			"id":"5405a99ba6b24bb8",
+			"type":"text",
+			"text":"`RunnableParallel` 解决的是另一个常见问题：**同一份输入，我想同时交给多条链处理。**\n\n它的核心特点是：多条子链共享同一输入、同时执行，最后再把结果按键汇总成一个 `dict`。\n\n![RunnableParallel 并行链：同一输入进入多条 Runnable，并将结果汇总成 dict 后交给下游链](https://didilili.github.io/ai-agents-from-zero/images/15/15-4-5-1.svg)\n\n从执行机制上理解也很有帮助：\n\n- 同步执行时，LangChain 通常会并发调度这些子 Runnable\n- 异步执行时，思路上就是把多个异步任务一起等待后再汇总结果\n\n你不一定需要一开始就记住底层细节，但要知道：**并行链不是“写在一起”，而是真的在“同一输入下多路执行”。**\n\n例如：\n\n```\nparallel_chain = RunnableParallel({\n    \"chinese\": chain1,\n    \"english\": chain2,\n})\n```\n\n除了显式使用 `RunnableParallel(...)`，LCEL 里还有一个非常实用的写法：**直接用字典表达并行结构**。例如：\n\n```\nparallel_then_summary = {\n    \"paragraph_1\": chain1,\n    \"paragraph_2\": chain2,\n} | summary_chain\n```\n\n这段写法的含义是：\n\n1. 先并行运行 `chain1` 和 `chain2`\n2. 把结果汇总成一个字典\n3. 再把这个字典交给后面的 `summary_chain`\n\n这类写法在实际项目里很常见，因为很多业务并不是“并行完就结束”，而是“并行生成多个结果后，再统一分析或总结”。\n\n调用后返回结果可能像这样：\n\n```\n{\n    \"chinese\": \"...\",\n    \"english\": \"...\"\n}\n```\n\n根据 LangChain 官方参考，`RunnableParallel` 是与 `RunnableSequence` 并列的另一个核心组合原语。\n\n这种链在实际项目里也非常常见：\n\n- 同一问题同时生成中英文答案\n- 同一问题同时走多个模型做对比\n- 同一份输入同时做多个维度分析\n\n下面这个案例就是一个很清晰的例子：\n\n- 一条子链用中文介绍 `LangChain`\n- 另一条子链用英文介绍 `LangChain`\n- 然后一次性返回两个结果\n\n【案例源码】`案例与源码-2-LangChain框架/06-lcel/LCEL_RunnableParallelDemo.py`\n\n```\n\"\"\"\n【案例】并行链：同时运行多条子链，汇总结果\n\n对应教程章节：第 15 章 - LCEL 与链式调用 → 4.4 RunnableParallel（并行链）\n\n知识点速览：\n- `RunnableParallel` 解决的是“同一输入，要同时跑多条子链”的问题。\n- 结果会以 `dict` 形式汇总返回，键名对应并行结构里的键，值对应每条子链的输出。\n- 除了显式写 `RunnableParallel({...})`，LCEL 里也常直接用字典表达并行结构；并行完成后，还可以继续把这个字典交给后续链做总结或比较。\n\"\"\"\n\nimport os\n\nfrom langchain.chat_models import init_chat_model\nfrom langchain_core.output_parsers import StrOutputParser\nfrom langchain_core.prompts import ChatPromptTemplate\nfrom langchain_core.runnables import RunnableParallel\nfrom loguru import logger\n\nfrom dotenv import load_dotenv\n\nload_dotenv(encoding=\"utf-8\")\n\nmodel = init_chat_model(\n    model=\"qwen-plus\",\n    model_provider=\"openai\",\n    api_key=os.getenv(\"aliQwen-api\"),\n    base_url=\"https://dashscope.aliyuncs.com/compatible-mode/v1\",\n)\n\n# 子链 1：中文简短介绍\nprompt1 = ChatPromptTemplate.from_messages(\n    [\n        (\"system\", \"你是一个知识渊博的计算机专家，请用中文简短回答\"),\n        (\"human\", \"请简短介绍什么是{topic}\"),\n    ]\n)\nparser1 = StrOutputParser()\nchain1 = prompt1 | model | parser1\n\n# 子链 2：英文简短介绍（与 chain1 同结构，仅提示词语言不同）\nprompt2 = ChatPromptTemplate.from_messages(\n    [\n        (\"system\", \"你是一个知识渊博的计算机专家，请用英文简短回答\"),\n        (\"human\", \"请简短介绍什么是{topic}\"),\n    ]\n)\nparser2 = StrOutputParser()\nchain2 = prompt2 | model | parser2\n\n# RunnableParallel：同一输入会同时喂给多个子链，结果按键汇总为 dict\nparallel_chain = RunnableParallel({\"chinese\": chain1, \"english\": chain2})\n\n# 一次 invoke，返回 {\"chinese\": \"...\", \"english\": \"...\"}\nresult = parallel_chain.invoke({\"topic\": \"langchain\"})\nlogger.info(result)\n\n# 可选：打印并行链的 ASCII 图结构，便于理解“并行节点 + 汇总输出”的数据流\nparallel_chain.get_graph().print_ascii()\n\n\"\"\"\n【输出示例】\n2026-03-06 10:28:37.853 | INFO     | __main__:<module>:54 - {'chinese': 'LangChain 是一个开源框架，用于构建基于大语言模型（LLM）的应用程序。它提供模块化组件（如链（Chains）、提示模板、记忆（Memory）、工具（Tools）和数据连接器），帮助开发者轻松实现提示工程、外部数据检索（RAG）、多步推理、对话状态管理等功能，提升 LLM 应用的可控性、可扩展性和实用性。', 'english': 'LangChain is a framework for developing applications powered by large language models (LLMs), enabling chaining of prompts, LLM calls, and external tools (e.g., APIs, databases) to build complex, stateful, and context-aware workflows.'}\n            +--------------------------------+\n            | Parallel<chinese,english>Input |\n            +--------------------------------+\n                   ***               ***\n                ***                     ***\n              **                           **\n+--------------------+              +--------------------+\n| ChatPromptTemplate |              | ChatPromptTemplate |\n+--------------------+              +--------------------+\n           *                                   *\n           *                                   *\n           *                                   *\n    +------------+                      +------------+\n    | ChatOpenAI |                      | ChatOpenAI |\n    +------------+                      +------------+\n           *                                   *\n           *                                   *\n           *                                   *\n  +-----------------+                 +-----------------+\n  | StrOutputParser |                 | StrOutputParser |\n  +-----------------+                 +-----------------+\n                   ***               ***\n                      ***         ***\n                         **     **\n            +---------------------------------+\n            | Parallel<chinese,english>Output |\n            +---------------------------------+\n\"\"\"\n```\n\n这个案例还有一个很有价值的补充点：它调用了 `get_graph().print_ascii()`。这有助于你从“代码链”过渡到“图结构”的理解，为后续学习 LangGraph 做铺垫。",
+			"styleAttributes":{},
+			"x":4020,
+			"y":4905,
+			"width":780,
+			"height":350,
+			"color":"2"
+		},
+		{
+			"id":"0e817fc5ece1d91b",
+			"type":"text",
+			"text":"`RunnableLambda` 的价值在于：**把普通 Python 函数也变成 Runnable。**\n\n这听起来像个小功能，但在实际开发里非常实用，因为链式流程经常会遇到这种情况：\n\n- 上一步输出结构不符合下一步输入要求\n- 想打印中间结果做调试\n- 想做一次字段重命名\n- 想插入一点简单业务逻辑\n\n如果没有函数节点，你就得把链拆开，在外面手写很多中间处理代码；有了 `RunnableLambda`，这些逻辑就能被放回链内部。\n\n例如：\n\n```\nfrom langchain_core.runnables import RunnableLambda\n\ndef debug_print(x):\n    print(x)\n    return {\"input\": x}\n\nchain = chain1 | RunnableLambda(debug_print) | chain2\n```\n\nLangChain 还支持一种更省事的写法：直接把函数放在 `|` 中间，框架会自动包装成 Runnable。\n\n本章配套案例也同时演示了两种写法：\n\n- `chain1 | debug_print | chain2`\n- `chain1 | RunnableLambda(debug_print) | chain2`\n\n【案例源码】`案例与源码-2-LangChain框架/06-lcel/LCEL_RunnableLambdaDemo.py`\n\n```\n\"\"\"\n【案例】函数链：用 RunnableLambda 将普通 Python 函数接入 LCEL 链\n\n对应教程章节：第 15 章 - LCEL 与链式调用 → 4.5 RunnableLambda（函数链）\n\n知识点速览：\n- `RunnableLambda` 的作用，是把普通 Python 函数变成 Runnable 节点，方便插入到 LCEL 链中。\n- 它特别适合做轻量逻辑，例如打印中间结果、字段映射、输入输出结构适配；如果逻辑已经很重，就不建议继续塞在函数链里。\n- 除了显式写 `RunnableLambda(函数)`，也可以直接把函数放在 `|` 之间，LangChain 会自动完成包装。\n\"\"\"\n\nimport os\n\nfrom langchain.chat_models import init_chat_model\nfrom langchain_core.output_parsers import StrOutputParser\nfrom langchain_core.prompts import ChatPromptTemplate\nfrom langchain_core.runnables import RunnableLambda\nfrom loguru import logger\n\nfrom dotenv import load_dotenv\n\nload_dotenv(encoding=\"utf-8\")\n\nmodel = init_chat_model(\n    model=\"qwen-plus\",\n    model_provider=\"openai\",\n    api_key=os.getenv(\"aliQwen-api\"),\n    temperature=0.0,\n    base_url=\"https://dashscope.aliyuncs.com/compatible-mode/v1\",\n)\n\n\ndef debug_print(x):\n    \"\"\"打印中间结果，并把文本包装成 chain2 所需的 {\"input\": 文本} 结构。\"\"\"\n    logger.info(f\"中间结果:{x}\")\n    return {\"input\": x}\n\n\n# 子链 1：中文介绍某主题，输出 str\nprompt1 = ChatPromptTemplate.from_messages(\n    [\n        (\"system\", \"你是一个知识渊博的计算机专家，请用中文简短回答\"),\n        (\"human\", \"请简短介绍什么是{topic}\"),\n    ]\n)\nparser1 = StrOutputParser()\nchain1 = prompt1 | model | parser1\n\n# 子链 2：将 input 翻译成英文\nprompt2 = ChatPromptTemplate.from_messages(\n    [(\"system\", \"你是一个翻译助手，将用户输入内容翻译成英文\"), (\"human\", \"{input}\")]\n)\nparser2 = StrOutputParser()\nchain2 = prompt2 | model | parser2\n\n# 方式一：直接把函数放在 | 之间，LCEL 会自动包装成 Runnable\nfull_chain = chain1 | debug_print | chain2\nresult1 = full_chain.invoke({\"topic\": \"langchain\"})\nlogger.info(f\"最终结果111:{result1}\")\n\n# 方式二：显式使用 RunnableLambda(函数)，效果相同\ndebug_node = RunnableLambda(debug_print)\nfull_chain = chain1 | debug_node | chain2\nresult2 = full_chain.invoke({\"topic\": \"langchain\"})\nlogger.info(f\"最终结果222:{result2}\")\n\n\"\"\"\n【输出示例】\n2026-03-06 10:30:31.657 | INFO     | __main__:debug_print:34 - 中间结果:LangChain 是一个开源框架，用于构建基于大语言模型（LLM）的应用程序。它提供模块化组件（如链、代理、记忆、工具集成等），帮助开发者轻松连接 LLM 与外部数据源（如数据库、API）、实现对话状态管理、支持多步推理与工具调用，从而快速开发智能应用（如问答系统、聊天机器人、自动化工作流）。核心理念是“编排”——将 LLM 作为通用接口，协同其他能力完成复杂任务。\n2026-03-06 10:30:34.964 | INFO     | __main__:<module>:57 - 最终结果111:LangChain is an open-source framework for building applications powered by large language models (LLMs). It provides modular components—such as chains, agents, memory, and tool integrations—that enable developers to easily connect LLMs with external data sources (e.g., databases, APIs), manage conversational state, support multi-step reasoning and tool invocation, and rapidly develop intelligent applications—including question-answering systems, chatbots, and automated workflows. Its core philosophy centers on “orchestration”: treating the LLM as a universal interface that coordinates with other capabilities to accomplish complex tasks.\n2026-03-06 10:30:38.152 | INFO     | __main__:debug_print:34 - 中间结果:LangChain 是一个开源框架，用于构建基于大语言模型（LLM）的应用程序。它提供模块化组件（如链、代理、记忆、工具集成等），帮助开发者轻松连接 LLM 与外部数据源（如数据库、API）、实现对话状态管理、支持多步推理与工具调用，从而快速开发智能应用（如问答系统、聊天机器人、自动化工作流）。核心理念是“编排”——将 LLM 作为通用接口，协同其他能力完成复杂任务。\n2026-03-06 10:30:41.184 | INFO     | __main__:<module>:63 - 最终结果222:LangChain is an open-source framework for building applications powered by large language models (LLMs). It provides modular components—such as chains, agents, memory, and tool integrations—that enable developers to easily connect LLMs with external data sources (e.g., databases, APIs), manage conversational state, support multi-step reasoning and tool invocation, and rapidly develop intelligent applications—including question-answering systems, chatbots, and automated workflows. Its core philosophy centers on “orchestration”: treating the LLM as a universal interface that coordinates with other capabilities to accomplish complex tasks.\n\"\"\"\n```\n\n从项目角度看，RunnableLambda 很像“链里的胶水层”：\n\n- 不负责模型能力\n- 负责把前后节点粘起来\n\n如果前面的“多步串行链”让你感受到“为什么需要中间映射”，这一节就是在回答“中间映射应该怎么优雅地写进链里”。",
+			"styleAttributes":{},
+			"x":4020,
+			"y":5315,
+			"width":780,
+			"height":320,
+			"color":"2"
+		},
+		{
+			"id":"ab56f195c88ad9a2",
+			"type":"text",
+			"text":"除了本章重点展开的几种结构，LangChain 里还有一些在实际项目里很常见、但初学阶段不必深入的 Runnable 组件。\n\n|名称|作用|什么时候会用到|\n|---|---|---|\n|`RunnablePassthrough`|接收输入后原样透传，也可顺手往输出中补充字段|想保留原始输入、给结果加键、做轻量上下文拼装|\n|`RunnableWithFallbacks`|为某个 Runnable 配置兜底逻辑，失败后回退到备用 Runnable|模型调用失败、主链失败后自动切备用方案|\n|`RunnableBinding`|为 Runnable 预绑定 `config`、默认参数等|同一链在不同环境复用、可配置温度与模型等|\n\n你现在不需要立刻掌握它们，但可以先建立印象：**Runnable 世界不只有“顺序、分支、并行、lambda”这几种，LangChain 提供了一整套可执行节点家族。**",
+			"styleAttributes":{},
+			"x":4020,
+			"y":5695,
+			"width":780,
+			"height":360,
+			"color":"2"
+		},
+		{
+			"id":"4e925ee27a542874",
+			"type":"text",
+			"text":"真实项目里，链路不是每次都能顺利跑完：模型接口会超时，结构化输出可能偶尔不合规，外部服务也可能短暂失败。LCEL 的好处之一，是可以把这类稳定性处理挂在 Runnable 上，而不是散落在业务代码各处。\n\n最常见的两个动作是：\n\n|写法|作用|适合场景|\n|---|---|---|\n|`with_retry(...)`|当前 Runnable 失败后自动重试|临时网络抖动、模型偶发格式错误|\n|`with_fallbacks([...])`|主 Runnable 失败后切到备用 Runnable|主模型不可用、主链策略失败|\n\n简化示例：\n\n```\nsafe_chain = chain.with_retry(stop_after_attempt=3)\n\nfallback_chain = primary_chain.with_fallbacks([backup_chain])\n```\n\n这类写法不改变链的主流程，却能让项目更接近生产环境。入门阶段不需要把参数都背下来，先记住：**LCEL 不只负责“怎么串”，也能帮助你把重试、兜底、配置这些工程能力放到链上。**",
+			"styleAttributes":{},
+			"x":4020,
+			"y":6115,
+			"width":780,
+			"height":300,
+			"color":"2"
+		},
+		{
+			"id":"903cd9823cf9860c",
+			"type":"text",
+			"text":"这一节要学的重点是：**如何把多条子链首尾串起来，形成多步串行流程。**\n\n比如这个案例做的事是：\n\n1. 先让模型用中文介绍某个主题\n2. 再把第一步结果转换成第二步所需的输入结构\n3. 最后再交给另一条链翻译成英文\n\n也就是一种非常典型的“多步加工”：\n\n- 第一步不是最终结果\n- 第二步依赖第一步结果\n- 中间还可能需要做一次结构映射\n\n这类串行链在项目里特别常见，比如：\n\n- 先摘要，再翻译\n- 先提取要点，再生成报告\n- 先检索，再重写，再结构化\n\n【案例源码】`案例与源码-2-LangChain框架/06-lcel/LCEL_MultiStepChainDemo.py`\n\n```\n\"\"\"\n【案例】串行链：多步串联，前一步输出作为后一步输入\n\n对应教程章节：第 15 章 - LCEL 与链式调用 → 4.3 多步串行链（Multi-Step Chain）\n\n知识点速览：\n- 这个案例真正要学的是“多步串行链”：前一步不是最终答案，而是后一步的原材料。\n- 当多条子链首尾相接时，前一步输出会直接流向后一步；如果前后输入输出结构不匹配，就需要插入一次映射。\n- 这里用 `lambda` 把第一条子链输出的文本包装成 `{\"input\": 文本}`，本质上是在做“节点之间的数据适配”。\n\"\"\"\n\nimport os\n\nfrom langchain.chat_models import init_chat_model\nfrom langchain_core.output_parsers import StrOutputParser\nfrom langchain_core.prompts import ChatPromptTemplate\nfrom loguru import logger\n\nfrom dotenv import load_dotenv\n\nload_dotenv(encoding=\"utf-8\")\n\nmodel = init_chat_model(\n    model=\"qwen-plus\",\n    model_provider=\"openai\",\n    api_key=os.getenv(\"aliQwen-api\"),\n    base_url=\"https://dashscope.aliyuncs.com/compatible-mode/v1\",\n)\n\n# 子链 1：用中文介绍某主题，输出为 str\nprompt1 = ChatPromptTemplate.from_messages(\n    [\n        (\"system\", \"你是一个知识渊博的计算机专家，请用中文简短回答\"),\n        (\"human\", \"请简短介绍什么是{topic}\"),\n    ]\n)\nparser1 = StrOutputParser()\nchain1 = prompt1 | model | parser1\n\nresult1 = chain1.invoke({\"topic\": \"langchain\"})\nlogger.info(result1)\n\n# 子链 2：将用户输入翻译成英文，期望入参为 {\"input\": 文本}\nprompt2 = ChatPromptTemplate.from_messages(\n    [(\"system\", \"你是一个翻译助手，将用户输入内容翻译成英文\"), (\"human\", \"{input}\")]\n)\nparser2 = StrOutputParser()\nchain2 = prompt2 | model | parser2\n\n# 串行组合：chain1 输出文本，用 lambda 转为 {\"input\": content}，以匹配 chain2 需要的输入结构\nfull_chain = chain1 | (lambda content: {\"input\": content}) | chain2\n\n# 一次 invoke：先执行 chain1，再把结果作为 chain2 的 input\nresult = full_chain.invoke({\"topic\": \"langchain\"})\nlogger.info(result)\n\n\"\"\"\n【输出示例】\n2026-03-06 10:24:22.765 | INFO     | __main__:<module>:38 - LangChain 是一个开源框架，用于构建基于大语言模型（LLM）的应用程序。它提供模块化组件（如链、代理、记忆、工具集成等），帮助开发者轻松连接 LLM 与外部数据源（如数据库、API）、实现对话状态管理、支持多步推理与工具调用，从而快速开发智能应用（如问答系统、AI 助手、自动化工作流）。核心理念是“编排”——将 LLM 作为通用接口，协同其他软件能力。\n2026-03-06 10:24:27.723 | INFO     | __main__:<module>:53 - LangChain is an open-source framework for building applications powered by large language models (LLMs). It provides modular components—such as chains, agents, memory, and tool integrations—that help developers easily implement prompt engineering, external data integration (e.g., Retrieval-Augmented Generation, or RAG), multi-step reasoning, conversation state management, and more—thereby enhancing the controllability and practicality of LLM-powered applications.\n\"\"\"\n```\n\n这个案例里最值得你注意的点，不是文件名，而是中间这个映射动作：\n\n```\n(lambda content: {\"input\": content})\n```\n\n它说明一个很常见的现实问题：**前后两步的输入输出结构，不一定天然匹配。**这也是为什么函数节点和 RunnableLambda 在 LCEL 中很实用。",
+			"styleAttributes":{},
+			"x":4020,
+			"y":4500,
+			"width":780,
+			"height":365,
+			"color":"2"
+		},
+		{
+			"id":"7ee909d9019fbe71",
+			"type":"text",
+			"text":"- **上下文连续性**：让模型知道上一轮说过什么。\n- **会话个性化**：让模型记住用户在当前会话里提供的信息，如名字、偏好、任务背景。\n- **多步任务承接**：让模型把前一步结果作为后一步输入，而不是每轮都重新从零开始。\n\n用一句最直白的话说：**没有记忆，聊天系统就只是“连续发了很多次单轮请求”；有了记忆，它才真正开始像“对话”。**",
+			"styleAttributes":{},
+			"x":-1270,
+			"y":1452,
+			"width":480,
+			"height":236,
+			"color":"5"
+		},
+		{"id":"f59858ac6ccdefcf","type":"text","text":"简历准备","x":-1760,"y":3300,"width":250,"height":60},
+		{"id":"f2ffcaca5787bd40","type":"text","text":"LangChain 基础面试题","x":-2220,"y":3364,"width":250,"height":60},
+		{"id":"049b47b075d5558b","type":"text","text":"面试准备","x":-1760,"y":3484,"width":250,"height":60},
+		{"id":"e569ec311306ead7","type":"text","text":"阶段 7：求职备战","x":-1320,"y":3516,"width":250,"height":60,"color":"1"},
+		{"id":"f88d24dc7de773be","type":"text","text":"面试技巧","x":-1760,"y":3668,"width":250,"height":60},
+		{"id":"9f879ed12b9e9d57","type":"text","text":"RAG 面试题","x":-2220,"y":3456,"width":250,"height":60},
+		{"id":"79e68067a1976aeb","type":"text","text":"Agent 面试题","x":-2220,"y":3548,"width":250,"height":60},
+		{"id":"c5dc84f5f70b9299","type":"text","text":"问答系统","x":-1760,"y":2820,"width":250,"height":60},
+		{"id":"f28b9e76056c5db4","type":"text","text":"文档问答","x":-1760,"y":2912,"width":250,"height":60},
+		{"id":"ee1fe200f5588921","type":"text","text":"Agent 应用","x":-1760,"y":3004,"width":250,"height":60},
+		{"id":"1a4cb84d57079481","type":"text","text":"阶段 6：项目实战","x":-1320,"y":3006,"width":170,"height":60,"color":"6"},
+		{"id":"c6f6a977e7efa3ae","type":"text","text":"RAG 知识库","x":-1760,"y":3096,"width":250,"height":60},
+		{
+			"id":"c51b1076a3762c9e",
+			"type":"text",
+			"text":"|功能维度|原生 Redis|Redis Stack 增强功能|\n|:--|:--|:--|\n|数据结构|字符串、列表、集合、哈希等|增加 JSON、图、时间序列、概率结构等高级类型|\n|查询能力|仅限键值查询|支持全文搜索、向量搜索、图查询、JSON 查询|\n|使用场景|缓存、消息队列、计数器等|实时推荐、时序分析、知识图谱、文档数据库、AI 向量检索|\n|开发体验|命令行操作，需手动拼装逻辑|提供 RedisInsight 和对象映射库，开发效率更高|",
+			"styleAttributes":{},
+			"x":-1380,
+			"y":1880,
+			"width":500,
+			"height":282,
+			"color":"5"
+		},
+		{
+			"id":"e14da980e62fb086",
+			"type":"text",
+			"text":"# 使用 @tool装饰器\n在 LangChain 里，最简单的工具定义方式就是使用 **`@tool`** 装饰器。\n\n如果你第一次接触装饰器，不必把它理解得过于复杂。对本章而言，可先把握：**装饰器的作用，是在不改函数核心逻辑的前提下，给函数额外加上一层“框架可识别的能力”。**\n\n放到这里，`@tool` 做的事情就是：\n\n- 把一个普通 Python 函数包装成 LangChain Tool\n- 让它具备 `name`、`description`、`args` 等元信息\n- 让它能够被模型或 Agent 识别并调用\n\nLangChain 官方文档也明确强调：**最简单的创建工具方式，就是使用 `@tool` 装饰器；默认情况下，函数 docstring 会成为工具描述。**\n\n![LangChain 文档摘录：使用 @tool 装饰器创建工具，默认以函数 docstring 作为工具描述（Basic tool definition）](https://didilili.github.io/ai-agents-from-zero/images/17/17-3-1-1.jpeg)\n\n所以先记住一句最重要的话：**`@tool` 的意义，不是把函数“变复杂”，而是把函数“变成模型看得懂的工具”。**",
+			"styleAttributes":{},
+			"x":-4000,
+			"y":480,
+			"width":880,
+			"height":1000,
+			"color":"4"
+		},
+		{"id":"d04540fa0ef99297","type":"file","file":"LLM/2-Source/8-Agent/Agent.canvas","x":-3040,"y":488,"width":1180,"height":840,"color":"4"},
+		{
+			"id":"dd4e3615a7b8b45c",
+			"type":"text",
+			"text":"[Agent](Agent.canvas)",
+			"styleAttributes":{},
+			"x":-2580,
+			"y":428,
+			"width":260,
+			"height":60,
+			"color":"4"
+		},
+		{
+			"id":"1f6ad4aa6984120a",
+			"type":"text",
+			"text":"这三个对象是最容易混淆、但又最关键的一组概念。\n\n|对象|它出现在哪一轮|作用|\n|:--|:--|:--|\n|`AIMessage.tool_calls`|模型决定要调用工具时|表示“模型想调用哪个工具、参数是什么”|\n|工具执行结果|程序执行工具后|表示“真实运行后的结果”|\n|`ToolMessage`|把工具结果送回模型时|表示“这是某个工具执行后的返回消息”|\n\n先建立一个非常实用的理解：\n\n- **`AIMessage.tool_calls` 是模型的请求**\n- **`ToolMessage` 是程序的回执**\n\n这和现实世界里“发起请求 → 执行操作 → 返回结果”很像。\n\n如果一次回复里有多个工具调用，`ToolMessage` 还需要通过 `tool_call_id` 对应回前面的某一个 `tool_call`，这样模型和运行时才知道“这条工具结果是回答哪一次工具请求的”。\n\n在 LangChain 官方更通用的讲法里，经常会直接展示：\n\n1. 模型返回 `AIMessage(tool_calls=[...])`\n2. 程序执行工具\n3. 程序构造 `ToolMessage`\n4. 再把这些消息一起送回模型\n\n而本课程当前案例为了更适合初学者理解，也保留了一种更直观的教学路径：**通过输出解析器把工具参数取出来，然后手动执行工具，再把结果交给下一条LCEL链去整理自然语言。**\n\n这两种写法不矛盾，只是教学层次不同：一个适合看清过程，一个更贴近通用消息流。",
+			"styleAttributes":{},
+			"x":-4000,
+			"y":-124,
+			"width":800,
+			"height":564,
+			"color":"4"
+		},
+		{
+			"id":"8296e0affbd2f096",
+			"type":"text",
+			"text":"### Tool 常用属性\n\n你在实际开发中，经常会看到下面几个属性：\n\n|属性|作用|初学阶段怎么理解|\n|:--|:--|:--|\n|`name`|工具名|模型要调用谁，首先看这个名字|\n|`description`|工具说明|模型判断“什么时候该用这个工具”的最重要依据|\n|`args`|参数结构|模型知道“应该传什么参数、参数是什么类型”|\n|`return_direct`|是否直接把结果返回给用户|主要在 Agent 场景更常见|\n\n入门阶段最值得优先关注的是：\n\n- **`description` 决定模型是否容易选中这个工具**\n- **`args` 决定模型是否容易传对参数**\n\n所以从工程实践上说，定义 Tool 时最怕的不是“函数实现难”，而是：名字取得太随意，描述写得太模糊，参数定义不清楚。\n\n![@tool 与函数名、类型注解、docstring 在工具定义中的角色示意（装饰器注册、函数名为工具 ID、类型帮助生成参数、文档字符串为「使用说明」）](https://didilili.github.io/ai-agents-from-zero/images/17/17-3-3-1.jpeg)\n\n### 工具描述的作用\n\n很多人定义工具时，只写一句非常短的 docstring，比如“查天气”或“获取信息”。这样虽然勉强能跑，但在真实项目里通常不够好。更好的工具描述应该尽量让模型看懂三件事：\n\n1. **这个工具是干什么的**\n2. **什么时候应该调用**\n3. **关键参数应该怎么填**\n\n例如同样是天气工具：\n\n- “查天气”\n- “查询指定城市的当前天气，参数 loc 传城市英文名，如 Beijing、Shanghai”\n\n显然后者更容易让模型在正确场景下调用，也更容易传对参数。\n\n这也是为什么在项目里定义 Tool 时，通常不建议把 docstring 写得过于省略。**Tool 描述不是给人随便看看，它本身就是模型决策的重要输入。**\n\n### 真实项目里的工具层\n\n在真实项目里，Tool 一般不会只做“玩具函数”，而往往是下面这些能力的轻量封装：\n\n- 调第三方 API\n- 调内部服务\n- 查数据库\n- 跑检索\n- 执行某个稳定的业务动作\n\n所以 Tool 层的工程价值非常高。它相当于把“模型”和“业务系统”之间，插入了一层可控的能力边界。\n\n从架构上说，比较常见的组织方式是：\n\n- **Tool 层**：暴露给模型的工具定义\n- **Service 层**：真正的业务实现或 API 调用封装\n- **Model / Chain / Agent 层**：负责决定何时调用工具\n\n这样做的好处是：**模型能力和业务实现解耦**，后期替换模型、替换 API、替换调用策略都会更容易。",
+			"styleAttributes":{},
+			"x":-4660,
+			"y":480,
+			"width":560,
+			"height":640,
+			"color":"4"
+		},
+		{
+			"id":"75f475ba49fdf6e6",
+			"type":"text",
+			"text":"# 参数schema: 为什么要配合Pydantic",
+			"styleAttributes":{},
+			"x":-4000,
+			"y":1532,
+			"width":260,
+			"height":100,
+			"color":"4"
+		},
+		{
+			"id":"fcb76eebd99ed9df",
+			"type":"text",
+			"text":"### 为什么只写函数参数还不够",
+			"styleAttributes":{},
+			"x":-4540,
+			"y":1460,
+			"width":260,
+			"height":60,
+			"color":"4"
+		},
+		{
+			"id":"841813c38afed084",
+			"type":"text",
+			"text":"### Pydantic 定义",
+			"styleAttributes":{},
+			"x":-4540,
+			"y":1760,
+			"width":260,
+			"height":60,
+			"color":"4"
+		},
+		{
+			"id":"ab396e9668c47b4d",
+			"type":"text",
+			"text":"### 入门案例",
+			"styleAttributes":{},
+			"x":-4540,
+			"y":1920,
+			"width":260,
+			"height":60,
+			"color":"4"
+		},
+		{
+			"id":"40608d7edb2d730e",
+			"type":"text",
+			"text":"### 加法工具的 Pydantic 版",
+			"styleAttributes":{},
+			"x":-4540,
+			"y":2100,
+			"width":260,
+			"height":60,
+			"color":"4"
+		},
+		{
+			"id":"90f7eb0b0ab2380c",
+			"type":"text",
+			"text":"### args_schema 的实践价值",
+			"styleAttributes":{},
+			"x":-4540,
+			"y":2280,
+			"width":260,
+			"height":60,
+			"color":"4"
+		},
+		{
+			"id":"be0e88b2f27399f6",
+			"type":"text",
+			"text":"只靠 Python 函数签名，当然也能定义工具，但一旦进入真实项目，你很快就会遇到两个问题：参数类型和格式不够清晰；参数校验不够严格。\n\n例如你只写：\n\n```\ndef add_number(a: int, b: int) -> int:\n    ...\n```\n\n这当然可以告诉模型“有两个整数参数”，但很多时候还不够。你还会希望表达：\n\n- 这个参数具体是什么意思\n- 有没有取值范围\n- 是否允许为空\n- 参数传错时怎样更清晰地报错\n\n这就是 `args_schema` 和 Pydantic 出场的原因。",
+			"styleAttributes":{},
+			"x":-5040,
+			"y":1290,
+			"width":380,
+			"height":340,
+			"color":"4"
+		},
+		{
+			"id":"3012e583df69a886",
+			"type":"text",
+			"text":"**Pydantic** 是 Python 里非常常用的数据校验库，本质是把“参数结构、参数类型、字段说明、校验规则”统一收敛到一个模型类里。\n\n在本章语境下，Pydantic 最重要的价值有两个：**给程序看**：做运行时校验和转换；**给模型看**：把参数 schema 描述得更清楚。\n\n因此它适合用在 Tool 参数定义里。入门阶段可先把握一点：\n\n**Pydantic = 类型声明 + 自动校验 + 更清晰的参数说明。**",
+			"styleAttributes":{},
+			"x":-5040,
+			"y":1640,
+			"width":380,
+			"height":240,
+			"color":"4"
+		},
+		{
+			"id":"981a6291aea54d40",
+			"type":"text",
+			"text":"在把 Pydantic 放进 Tool 之前，先单独理解它本身会更容易。\n\n【案例源码】`案例与源码-2-LangChain框架/08-tools/PydanticDemo.py`\n\n```python\n\"\"\"\n【案例】Pydantic 入门：类型校验、自动转换与 ValidationError\n\n对应教程章节：第 17 章 - Tools 工具调用 → 4、参数 schema：为什么要配合 Pydantic → 4.2 Pydantic 定义 / 4.3 入门案例\n\n知识点速览：\n- 本例先单独演示 Pydantic，本身不直接定义 Tool；它的作用是帮助你理解后面为什么 `args_schema` 能提升工具参数的清晰度与安全性。\n- Pydantic 基于类型注解在「实例化时」做校验与转换：合法则自动转，不合法则抛 `ValidationError`。\n- `StrictInt` 这类严格类型会拒绝自动转换，仅接受真实 `int`，适合在工具参数需要更严格约束时使用。\n\"\"\"\nfrom pydantic import BaseModel, ValidationError, StrictInt\n\n\n# 继承 BaseModel：实例化时按类型注解校验，不合规则抛出 ValidationError\nclass User(BaseModel):\n    # id: int  # 普通 int 时，传入 \"41\" 会被自动转成 41\n    id: StrictInt  # 严格整数：不接受字符串等，必须已是 int，否则报错\n    name: str\n    age: int = 0  # 可选字段，默认 0；传入值会被校验并转换\n\n\ntry:\n    # 合法：id=42 为 int，实例化成功\n    u = User(id=42, name=\"z3\")\nexcept ValidationError as e:\n    print(e)\nprint(u.id, type(u.id))  # 42 <class 'int'>\n\nprint()\nprint()\n\n# 非法：id=\"abc\" 不是 int，StrictInt 不做模糊转换，直接抛出 ValidationError\ntry:\n    User(id=\"abc\", name=\"Bob\")\nexcept ValidationError as e:\n    print(e)\n# 输出示例：\n# 1 validation error for User\n# id\n#   value is not a valid integer (type=type_error.integer)\n```\n\n这个案例最值得注意的是：\n\n- Pydantic 会在实例化时做校验\n- 合法输入可以自动转换\n- 非法输入会明确报错\n- 严格类型（如 `StrictInt`）可以避免“模糊转换”\n\n这套能力放到 Tool 参数上会很有用，因为工具调用最怕“参数看起来像对，其实不对”。",
+			"styleAttributes":{},
+			"x":-5500,
+			"y":1760,
+			"width":440,
+			"height":1310,
+			"color":"4"
+		},
+		{
+			"id":"eed12752b2405241",
+			"type":"text",
+			"text":"理解了 Pydantic 之后，再看工具版就很顺了。\n\n【案例源码】`案例与源码-2-LangChain框架/08-tools/Tool_AddNumberToolPro.py`\n\n```python\n\"\"\"\n【案例】加法工具（Pydantic 版）：用 args_schema 绑定参数模型，让模型看到规范参数说明\n\n对应教程章节：第 17 章 - Tools 工具调用 → 4、参数 schema：为什么要配合 Pydantic → 4.4 加法工具的 Pydantic 版\n\n知识点速览：\n- `args_schema` 的价值，不只是“参数能校验”，更重要的是把工具参数的语义说明显式暴露给模型，提升参数生成正确率。\n- `tool.args` 主要反映参数 schema；而工具的整体用途说明，仍然应该优先写在函数 docstring 中，不建议完全依赖参数模型的类注释。\n- `return_direct` 等参数更偏 Agent 场景；本例的重点放在“如何让工具定义更像一份清晰的小接口文档”。\n\"\"\"\nfrom langchain_core.tools import tool\nfrom loguru import logger\nfrom pydantic import BaseModel, Field\n\n\n# Pydantic 模型：定义“工具参数接口”，字段 description 会进入工具参数 schema\nclass FieldInfo(BaseModel):\n    \"\"\"定义加法运算所需的参数结构\"\"\"\n\n    a: int = Field(description=\"第1个参数\")\n    b: int = Field(description=\"第2个参数\")\n\n\n# args_schema=FieldInfo：把参数模型绑定到工具，模型会更清楚看到 a、b 的类型与说明\n@tool(args_schema=FieldInfo)\ndef add_number(a: int, b: int) -> int:\n    \"\"\"计算两个整数之和\"\"\"\n    return a + b\n\n\n# 打印工具属性：带 args_schema 时，args 中会包含 Field 的 description\nlogger.info(f\"name = {add_number.name}\")\nlogger.info(f\"args = {add_number.args}\")\nlogger.info(f\"description = {add_number.description}\")\nlogger.info(f\"return_direct = {add_number.return_direct}\")\n\n# 调用工具：传入字典，Pydantic 会做类型校验与转换\nres = add_number.invoke({\"a\": 1, \"b\": 2})\nlogger.info(res)\n\n\"\"\"\n【输出示例】\nname = add_number\nargs = {'a': {'description': '第1个参数', 'title': 'A', 'type': 'integer'}, 'b': {'description': '第2个参数', 'title': 'B', 'type': 'integer'}}\ndescription = 计算两个整数之和\nreturn_direct = False\n3\n\"\"\"\n```\n\n这个案例比基础版多出来的关键点，是：\n\n- 用 `BaseModel` 定义参数结构\n- 用 `Field(description=...)` 给参数写说明\n- 用 `@tool(args_schema=...)` 把参数模型绑定给工具\n\n这样之后，模型看到的工具就不再只是“有两个整数参数”，而是会看到：\n\n- 参数名是什么\n- 参数类型是什么\n- 参数用途是什么\n\n这会显著提升模型生成正确参数的概率。",
+			"styleAttributes":{},
+			"x":-6040,
+			"y":1760,
+			"width":480,
+			"height":1310,
+			"color":"4"
+		},
+		{
+			"id":"c00a32fabb6f9770",
+			"type":"text",
+			"text":"如果用更接近程序的方式来描述，一次带记忆的调用通常是这样发生的：\n\n**第一步：根据会话标识找到对应历史。**  \n比如通过 `session_id=\"user-001\"` 找到这位用户当前会话的消息列表。\n\n**第二步：把历史消息插入 Prompt。**  \n这一步通常会和 `MessagesPlaceholder(\"history\")` 配合使用。\n\n**第三步：把“历史 + 当前问题”一起交给模型。**  \n这样模型看到的就不再只是当前一句话，而是完整上下文。\n\n**第四步：把本轮消息写回历史存储。**  \n也就是把：用户这一轮输入、模型这一轮回复，都追加进去，供下一轮再读取。",
+			"styleAttributes":{},
+			"x":-2320,
+			"y":1718,
+			"width":620,
+			"height":314,
+			"color":"5"
+		},
+		{
+			"id":"7dd794242e257598",
+			"type":"text",
+			"text":"**你怎么知道哪份历史属于哪位用户、哪次会话？**\n`session_id`，它就是“当前会话的编号”。",
+			"styleAttributes":{},
+			"x":-2320,
+			"y":2058,
+			"width":620,
+			"height":66,
+			"color":"5"
+		},
+		{
+			"id":"330877176cde39f3",
+			"type":"text",
+			"text":"在 LangChain / LangGraph 当前官方主线里，**短期记忆**越来越倾向于放在 **LangGraph persistence / checkpointer / thread** 这条体系里来讲。  \n也就是说，官方现在更强调：\n\n- 线程（thread）\n- 持久化（persistence）\n- 检查点（checkpointer）\n- 图执行状态\n\n但这并不意味着 `RunnableWithMessageHistory` 没价值了。对 LCEL 链来说，它更直观，也更容易看清“历史消息如何注入到当前调用里”。\n\n所以本章采用这条学习顺序：\n\n- 先用 `RunnableWithMessageHistory + BaseChatMessageHistory` 看清链级对话历史\n- 再知道复杂 Agent 的状态持久化会继续走向 LangGraph persistence\n\n> **版本说明：** 本章继续使用 `RunnableWithMessageHistory`，是为了把 LCEL 链里的“历史消息如何读写和注入”讲清楚。生产级 Agent 或复杂多轮状态管理，建议再对照 LangGraph 的 checkpointer、thread 和 persistence 机制来设计。\n\n这样后面你切到更复杂的 Agent / LangGraph，就不会断层。\n\n**补充：** 历史消息会占用模型上下文窗口；轮数过多时需要做截断、摘要或只保留最近 (k) 轮，否则可能触达 token 上限或带来额外成本。本章先把“注入历史”这件事讲清楚，具体压缩策略后面按产品需求再选。",
+			"styleAttributes":{},
+			"x":-2320,
+			"y":2162,
+			"width":640,
+			"height":240,
+			"color":"5"
+		},
+		{
+			"id":"71aafb998380930d",
+			"type":"text",
+			"text":"### ConversationChain（早期写法）\n\nLangChain 早期有一个比较有代表性的类，叫 `ConversationChain`。\n\n它内置了对话模板和记忆机制，所以很适合快速做简单演示；但它的灵活性有限，也不太贴合 LCEL / Runnable 体系，面对复杂对话流程时扩展性会比较差。\n\n所以在今天的学习路径里，它不再适合作为本章的主线写法。\n\n### RunnableWithMessageHistory（更合适的写法）\n\n`RunnableWithMessageHistory` 的作用很直接：**给一条已有的 Runnable / Chain 包上一层历史管理能力。**\n\n它并不替代你的 Prompt、Model、Parser，而是站在它们外面，统一负责历史的读取、注入和写回。\n\n这和第 15 章讲的 LCEL 很契合，因为它不是另起一套风格，而是在 Runnable 体系之上继续工作。所以从教学角度说，它特别适合这一章，因为它能把“记忆是在链外单独管理的一层会话能力”讲清楚。\n\n### BaseChatMessageHistory（历史存储接口）\n\n如果 `RunnableWithMessageHistory` 解决的是“历史读写时机”，那么 `BaseChatMessageHistory` 解决的就是：\n\n**历史到底存在哪里、怎么存。**它可以看作“聊天消息历史的统一抽象接口”。\n\n不必先纠结源码细节，只要抓住这层分工：\n\n- **RunnableWithMessageHistory**：控制历史何时读、何时写\n- **BaseChatMessageHistory 及其实现类**：控制历史存到哪里\n\n这就是为什么本章会同时讲它们两个，而不是只讲其中一个。\n\n### 常见实现类\n\nLangChain 提供了多种聊天历史实现（如内存、文件、Redis、Elasticsearch、DynamoDB 等），核心差别主要在于**是否持久化、是否适合多实例共享**。\n\n常见实现的区别主要看存储位置：\n\n|组件名称|存储方式|适合什么场景|\n|---|---|---|\n|`InMemoryChatMessageHistory`|进程内内存|本地学习、单进程演示、临时会话|\n|`FileChatMessageHistory`|本地文件|轻量持久化、小型脚本|\n|`RedisChatMessageHistory`|Redis|持久化、跨进程、多实例共享|\n|其他后端实现|ES、数据库等|和现有技术栈集成|\n\n对这一章来说，最重要的是前两个核心结论：\n\n- **先学 InMemory**，因为它最直观\n- **再学 Redis**，因为它最贴近真实项目",
+			"styleAttributes":{},
+			"x":-3040,
+			"y":1328,
+			"width":720,
+			"height":1082,
+			"color":"5"
+		},
+		{
+			"id":"0a1f417cc398555d",
+			"type":"text",
+			"text":"对于玩具案例，直接写函数参数就够了；但只要进入真实项目，`args_schema` 往往是非常值得养成的习惯。\n\n原因主要有三个：\n\n- **更稳定**：参数结构更清晰，模型不容易乱传\n- **更安全**：运行时可以做更严格校验\n- **更可维护**：工具定义本身就像一份小型接口文档\n\n这和后端开发里写 DTO、写请求参数对象，其实是同一种工程思想。  \n你不是为了“显得规范”才写 schema，而是为了让：\n\n- 模型更容易调用对\n- 代码更容易排错\n- 团队更容易协作\n\n所以这一点意味着：**Pydantic 让 Tool 从“能跑”走向“更像真正的接口定义”。**",
+			"styleAttributes":{},
+			"x":-5040,
+			"y":2075,
+			"width":460,
+			"height":470,
+			"color":"4"
+		},
+		{
+			"id":"30a4479800ccc2a6",
+			"type":"text",
+			"text":"# 模型绑定工具后, 到底会发生什么\n定义好 Tool 后，还需要把它交给模型，这通常通过 `bind_tools(...)` 完成。\n\nLangChain 官方文档对这一点讲得很清楚：**只有先把工具绑定给模型，后续模型调用时才有机会返回 `tool_calls`。**\n\n也就是说，`bind_tools([get_weather])` 的含义不是“现在就执行工具”，而是：\n\n**把 `get_weather` 这项能力声明给模型，告诉它：你之后如果判断有必要，可以调用这个工具。**\n\n![Function calling 技术思路：普通对话（用户 ↔ 大模型）与「查询天气」场景下，大模型发出函数调用请求 → 外部函数 get_weather → 请求 OpenWeather API → 响应回到模型再生成用户可见回复](https://didilili.github.io/ai-agents-from-zero/images/17/17-5-3-1.jpeg)\n\n模型收到用户问题后，可能出现两种情况：**不需要工具**：直接返回自然语言答案；**需要工具**：返回 `tool_calls`。\n\n一旦返回 `tool_calls`，就意味着模型在说：\n\n> 我建议调用这个工具，参数如下，请你们应用程序去真正执行。",
+			"styleAttributes":{},
+			"x":-4120,
+			"y":1660,
+			"width":380,
+			"height":980,
+			"color":"4"
+		},
+		{
+			"id":"e98dd1af0b300834",
+			"type":"text",
+			"text":"第一，**模型不会替你发 HTTP 请求**。真正的请求逻辑仍然是你写的 `httpx.get(...)`。  \n第二，**Tool 的意义不是替代业务实现，而是把业务实现包装成“模型可调用的接口”。**\n\n所以从这一步开始，你已经在做一件很像真实项目开发的事：\n\n- 把业务能力封装成一个可复用函数\n- 用 Tool 的方式暴露给模型\n- 让模型只决定“何时调、怎么调”",
+			"styleAttributes":{},
+			"x":-3740,
+			"y":1510,
+			"width":480,
+			"height":280,
+			"color":"4"
+		},
+		{
+			"id":"10319fe70a36c93a",
+			"type":"text",
+			"text":"这一点很重要，建议单独说明清楚。本课程当前天气案例里，使用了：\n\n- `bind_tools([get_weather])`\n- `JsonOutputKeyToolsParser`\n- 手动执行工具\n- 再走一条输出链生成自然语言\n\n而在 LangChain 官方主线和 OpenAI 官方 Function Calling 文档里，更常见的讲法通常是：\n\n1. 模型返回 `AIMessage.tool_calls`\n2. 程序执行工具\n3. 把结果包装成 `ToolMessage`\n4. 再把这组消息送回模型\n\n两种写法的共同本质完全一样：\n\n- **模型先发起工具调用意图**\n- **程序执行工具**\n- **结果再回到模型上下文里**\n\n课程案例之所以保留解析器写法，是因为它更直观：你能非常清楚地看到“模型产出参数 → 工具被调用 → 结果再被整理成人话”的每一个中间步骤。\n\n所以建议你这样理解：\n\n- **课程案例写法**：更适合入门，看清链路\n- **官方推荐写法**：更贴近通用消息流和 Agent 扩展\n\n这不是谁替代谁，而是**同一条原理在不同教学层次上的两种展开方式。**",
+			"styleAttributes":{},
+			"x":-3600,
+			"y":1820,
+			"width":440,
+			"height":800,
+			"color":"4"
+		},
+		{
+			"id":"b1d6d0d776400e26",
+			"type":"text",
+			"text":"如果你只写脚本，Tool 可以直接和业务逻辑写在一起；但如果是正式项目，更推荐把 Tool 看成“暴露给模型的接口层”。\n\n一种比较常见、也比较适合团队协作的组织方式是：\n\n- tool.py / tools/：定义给模型看的工具入口\n- service.py / services/：写真实业务逻辑\n- client.py / adapters/：封装第三方 API 或内部接口访问\n- prompt / chain / agent 层：决定什么时候调用工具\n\n这样做的好处是，后面无论你替换模型、替换 API 平台、替换 Agent 框架，都不会把整个工具层揉成一团。",
+			"styleAttributes":{},
+			"x":-5000,
+			"y":2570,
+			"width":590,
+			"height":310,
+			"color":"4"
+		},
+		{
+			"id":"4b8af87b59cceeb8",
+			"type":"text",
+			"text":"### Tool 在项目里通常怎么落位",
+			"styleAttributes":{},
+			"x":-4250,
+			"y":2730,
+			"width":260,
+			"height":60,
+			"color":"4"
+		},
+		{
+			"id":"c8839c22f43be53f",
+			"type":"text",
+			"text":"### 设计 Tool 时, 最值得重视的工程原则",
+			"styleAttributes":{},
+			"x":-4250,
+			"y":3050,
+			"width":260,
+			"height":60,
+			"color":"4"
+		},
+		{
+			"id":"3a39997cf001d72d",
+			"type":"text",
+			"text":"### ToolCall与记忆, Agent, MCP的关系",
+			"styleAttributes":{},
+			"x":-4250,
+			"y":3210,
+			"width":260,
+			"height":60,
+			"color":"4"
+		},
+		{
+			"id":"5c450e5d7d823639",
+			"type":"text",
+			"text":"对真实项目来说，Tool 定义得好不好，往往比“模型提示词写得漂不漂亮”更影响稳定性。\n\n比较重要的原则包括：\n\n- **职责单一**：一个 Tool 最好只做一件清晰的事\n- **输入明确**：参数含义、类型、是否必填要说清楚\n- **输出稳定**：返回结构尽量稳定，不要时而返回字符串、时而返回复杂嵌套对象\n- **异常可控**：报错要能被程序捕捉和处理，不要直接把底层异常糊给用户\n- **幂等与副作用隔离**：能做查询就不要顺手做写入；涉及状态变更时，尽量拆成“先确认、再执行”的显式步骤\n- **超时、重试与限流**：外部 API 类 Tool 要设置超时、重试上限和频控，避免 Agent 在异常场景下反复调用\n- **权限受控**：涉及写操作、支付、删除、外呼等工具，需要额外设防\n- **可观测**：最好能记录调用日志、参数、耗时、错误信息，便于排障\n\n这几点其实和普通后端接口设计的原则高度一致。  \n也正因为如此，Tool 本质上并不神秘，它只是把“后端能力”换了一种适合 LLM 使用的暴露方式。",
+			"styleAttributes":{},
+			"x":-5040,
+			"y":2925,
+			"width":720,
+			"height":310,
+			"color":"4"
+		},
+		{
+			"id":"b3874931606b4007",
+			"type":"text",
+			"text":"- 和 记忆与对话历史的关系：工具调用结果经常也要进入消息流，与对话历史一起参与后续推理\n- 和 Agent智能体的关系：Agent 会在 Tool 基础上进一步解决“什么时候调、调几次、按什么顺序调”\n- 和 MCP模型上下文协议 的关系：MCP 解决的是“如何用标准协议把外部能力开放给模型”，可以看作更通用、更标准化的工具接入方式\n\n一句话总结它们的关系：**Tool 提供能力，Memory 提供上下文，Agent 负责决策，MCP 负责标准化接入。**\n虽然只讲 Tool，但它其实是后面很多高级能力的前置地基。",
+			"styleAttributes":{},
+			"x":-5040,
+			"y":3270,
+			"width":680,
+			"height":280,
+			"color":"4"
+		},
+		{
+			"id":"471db85c0874b12b",
+			"type":"text",
+			"text":"# 真实工程项目",
+			"styleAttributes":{},
+			"x":-3900,
+			"y":2960,
+			"width":260,
+			"height":60,
+			"color":"4"
 		}
 	],
 	"edges":[
@@ -531,7 +1716,7 @@
 		{"id":"d319844e48dfaaeb","fromNode":"2edd7c308e5d9e05","fromSide":"right","toNode":"f5e8e478ae0b0068","toSide":"left","color":"2"},
 		{"id":"bdcc180956b4f5e6","fromNode":"f5e8e478ae0b0068","fromSide":"right","toNode":"510e9bb7e15d1f05","toSide":"left"},
 		{"id":"91f30ce8f3765aa3","fromNode":"f5e8e478ae0b0068","fromSide":"right","toNode":"6a7b1977d8f294fb","toSide":"left"},
-		{"id":"c34b424d82d66272","fromNode":"f5e8e478ae0b0068","fromSide":"right","toNode":"d8b28f2a5702d3aa","toSide":"left"},
+		{"id":"c34b424d82d66272","toFloating":false,"fromNode":"f5e8e478ae0b0068","fromSide":"right","toNode":"d8b28f2a5702d3aa","toSide":"left"},
 		{"id":"8da668f43dd35aab","fromNode":"f5e8e478ae0b0068","fromSide":"right","toNode":"46951ebad9e8fa40","toSide":"left"},
 		{"id":"7cd55f2eb04ca922","fromNode":"2edd7c308e5d9e05","fromSide":"right","toNode":"b654fed9d0323721","toSide":"left","color":"2"},
 		{"id":"eeddff1a38711dbd","fromNode":"b654fed9d0323721","fromSide":"right","toNode":"3a8cb90c6069695a","toSide":"left"},
@@ -760,35 +1945,612 @@
 			"toSide":"left"
 		},
 		{
-			"id":"78057e117ecf8a4f",
-			"styleAttributes":{},
-			"toFloating":false,
-			"fromNode":"b4a474cd8ab90b21",
-			"fromSide":"top",
-			"toNode":"9243191a4bd8d3ce",
-			"toSide":"top",
-			"color":"1"
-		},
-		{
-			"id":"e4bb98db0bf3224b",
+			"id":"7c661c6a0f06e945",
 			"styleAttributes":{},
 			"toFloating":false,
 			"fromFloating":false,
-			"fromNode":"f5e8e478ae0b0068",
-			"fromSide":"top",
-			"toNode":"9243191a4bd8d3ce",
-			"toSide":"bottom",
+			"fromNode":"89ba6785834ba073",
+			"fromSide":"right",
+			"toNode":"b654fed9d0323721",
+			"toSide":"left",
 			"color":"1"
 		},
 		{
-			"id":"b958a9a54f270747",
+			"id":"ae74c8788722d18b",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"89ba6785834ba073",
+			"fromSide":"right",
+			"toNode":"f5e8e478ae0b0068",
+			"toSide":"left",
+			"color":"1"
+		},
+		{
+			"id":"db36da81456bc640",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromFloating":false,
+			"fromNode":"89ba6785834ba073",
+			"fromSide":"right",
+			"toNode":"78e9b4615425a149",
+			"toSide":"left",
+			"color":"1"
+		},
+		{
+			"id":"0f36c419fa03c6b1",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"63f350086902fb55",
+			"fromSide":"right",
+			"toNode":"8081f7d59d607437",
+			"toSide":"left"
+		},
+		{
+			"id":"a41799f549fc2c85",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"2cb1b62cb4512b7e",
+			"fromSide":"right",
+			"toNode":"e8994078e2370287",
+			"toSide":"left"
+		},
+		{
+			"id":"e0950c88e12cf240",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"510e9bb7e15d1f05",
+			"fromSide":"right",
+			"toNode":"f234eb5ee8489f07",
+			"toSide":"left"
+		},
+		{
+			"id":"c1f29ecf9769ac80",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"6a7b1977d8f294fb",
+			"fromSide":"right",
+			"toNode":"2b94298b290c50c1",
+			"toSide":"top"
+		},
+		{
+			"id":"5d5b206a17d7e0c4",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"f1bb3b9147d89d71",
+			"fromSide":"right",
+			"toNode":"ce78f5a222bdc4c3",
+			"toSide":"left"
+		},
+		{
+			"id":"a7a898bed17fc61a",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"ce78f5a222bdc4c3",
+			"fromSide":"right",
+			"toNode":"c395dfe814bc591b",
+			"toSide":"left"
+		},
+		{
+			"id":"881128207b2e811a",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"27a4b2f2efb5b9ad",
+			"fromSide":"right",
+			"toNode":"d8f351ef007a7cb2",
+			"toSide":"left"
+		},
+		{
+			"id":"10d3b6e263cf9650",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"27a4b2f2efb5b9ad",
+			"fromSide":"right",
+			"toNode":"4bde74e5d8c8ab46",
+			"toSide":"left"
+		},
+		{
+			"id":"161364dd766f99e9",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"d8f351ef007a7cb2",
+			"fromSide":"right",
+			"toNode":"5b39eba09409cf4f",
+			"toSide":"left"
+		},
+		{
+			"id":"d7ad29deae2c9b38",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"5b39eba09409cf4f",
+			"fromSide":"right",
+			"toNode":"8ee08ae3bc3ff017",
+			"toSide":"left"
+		},
+		{
+			"id":"9ed64b61857b7805",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"f5e8e478ae0b0068",
+			"fromSide":"right",
+			"toNode":"f1bb3b9147d89d71",
+			"toSide":"left"
+		},
+		{
+			"id":"66d80da5347247e1",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"f5e8e478ae0b0068",
+			"fromSide":"right",
+			"toNode":"27a4b2f2efb5b9ad",
+			"toSide":"left"
+		},
+		{
+			"id":"a9f407fce06f7b41",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"d8f351ef007a7cb2",
+			"fromSide":"right",
+			"toNode":"d5e6149700468a8c",
+			"toSide":"left"
+		},
+		{
+			"id":"6539f47eac0445f5",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"4bde74e5d8c8ab46",
+			"fromSide":"right",
+			"toNode":"6789e33b86843553",
+			"toSide":"left"
+		},
+		{
+			"id":"01cf1ebfbf454eb1",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"3a8cb90c6069695a",
+			"fromSide":"right",
+			"toNode":"ce1add691c9e241c",
+			"toSide":"left"
+		},
+		{
+			"id":"7e452ed77eb966c5",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"83f2aec0724bcf7d",
+			"fromSide":"right",
+			"toNode":"65f3ca88ef4209bd",
+			"toSide":"left"
+		},
+		{
+			"id":"4f933ab8b6a02201",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"65f3ca88ef4209bd",
+			"fromSide":"right",
+			"toNode":"24d71aec0006e1b7",
+			"toSide":"left"
+		},
+		{
+			"id":"804711009ca5013f",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"7a0fbd61e9ffd7a9",
+			"fromSide":"right",
+			"toNode":"cf3583fc511f4dff",
+			"toSide":"left"
+		},
+		{
+			"id":"9a9b041557dfc16e",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"7a0fbd61e9ffd7a9",
+			"fromSide":"right",
+			"toNode":"aeec10b15a341336",
+			"toSide":"left"
+		},
+		{
+			"id":"01a76a059912ee86",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"7a0fbd61e9ffd7a9",
+			"fromSide":"right",
+			"toNode":"d3aa3a7612372fd7",
+			"toSide":"left"
+		},
+		{
+			"id":"b8fd7515d9538660",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"cf3583fc511f4dff",
+			"fromSide":"right",
+			"toNode":"d79e851287390f51",
+			"toSide":"left"
+		},
+		{
+			"id":"e09cf95d32fd1328",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"aeec10b15a341336",
+			"fromSide":"right",
+			"toNode":"cee8a0d249f66d6b",
+			"toSide":"left"
+		},
+		{
+			"id":"f6ea5bd683bad065",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"d3aa3a7612372fd7",
+			"fromSide":"right",
+			"toNode":"8b25910f8ce4ce44",
+			"toSide":"left"
+		},
+		{
+			"id":"d9a31eac00ea415a",
 			"styleAttributes":{},
 			"toFloating":false,
 			"fromNode":"b654fed9d0323721",
-			"fromSide":"top",
-			"toNode":"9243191a4bd8d3ce",
-			"toSide":"bottom",
-			"color":"1"
+			"fromSide":"right",
+			"toNode":"5166af7458ec3930",
+			"toSide":"left"
+		},
+		{
+			"id":"da81ca16cec95dad",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"5166af7458ec3930",
+			"fromSide":"right",
+			"toNode":"9cd1842a7bf38914",
+			"toSide":"left"
+		},
+		{
+			"id":"39e6ab66d02afcaf",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"fa1a113ad20ed4d1",
+			"fromSide":"right",
+			"toNode":"985c8ca4a208ebfb",
+			"toSide":"left"
+		},
+		{
+			"id":"55b7d2208bc3e364",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"a4bcea786fdd5ccb",
+			"fromSide":"right",
+			"toNode":"706db8de8221be4c",
+			"toSide":"left"
+		},
+		{
+			"id":"19efea93b1ad719a",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"0a84232e1f03cbfb",
+			"fromSide":"right",
+			"toNode":"19e925027d74bf50",
+			"toSide":"left"
+		},
+		{
+			"id":"c9bed34a7fcd1c57",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"dfc7072468141d34",
+			"fromSide":"right",
+			"toNode":"e90aa0442028a625",
+			"toSide":"left"
+		},
+		{
+			"id":"f0ef82e1b39069ca",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"e90aa0442028a625",
+			"fromSide":"right",
+			"toNode":"6f9b3bda4ca2a5ab",
+			"toSide":"left"
+		},
+		{
+			"id":"a0750d2c2de6f453",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"e90aa0442028a625",
+			"fromSide":"right",
+			"toNode":"6f2d9dbaeb21217b",
+			"toSide":"left"
+		},
+		{
+			"id":"b06bc690f28e0353",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"e90aa0442028a625",
+			"fromSide":"right",
+			"toNode":"ce0c193b6578f812",
+			"toSide":"left"
+		},
+		{
+			"id":"ebfaece7b4dd4df0",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"ce0c193b6578f812",
+			"fromSide":"right",
+			"toNode":"4ae738f0dfad32ee",
+			"toSide":"left"
+		},
+		{
+			"id":"ab36d05a03f9c1d9",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"ce0c193b6578f812",
+			"fromSide":"right",
+			"toNode":"704ef0e557057b02",
+			"toSide":"left"
+		},
+		{
+			"id":"cf39d32ad3356c0e",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"ce0c193b6578f812",
+			"fromSide":"right",
+			"toNode":"54a678505f1f6760",
+			"toSide":"left"
+		},
+		{
+			"id":"8d47539ed29d25f4",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"ce0c193b6578f812",
+			"fromSide":"right",
+			"toNode":"d3a33fa07f8c8427",
+			"toSide":"left"
+		},
+		{
+			"id":"d9f9bec59f465781",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"ce0c193b6578f812",
+			"fromSide":"right",
+			"toNode":"06959d2724447d46",
+			"toSide":"left"
+		},
+		{
+			"id":"d5e8d39571ba7b9b",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"ce0c193b6578f812",
+			"fromSide":"right",
+			"toNode":"763ecf55e28c1852",
+			"toSide":"left"
+		},
+		{
+			"id":"0367c541171ba665",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"ce0c193b6578f812",
+			"fromSide":"right",
+			"toNode":"49dcc908cb5e1989",
+			"toSide":"left"
+		},
+		{
+			"id":"27218d6d6857db61",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"4ae738f0dfad32ee",
+			"fromSide":"right",
+			"toNode":"8101d690ff4d9692",
+			"toSide":"left"
+		},
+		{
+			"id":"0f01ef0d7da9426c",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"704ef0e557057b02",
+			"fromSide":"right",
+			"toNode":"539182dad2a339e5",
+			"toSide":"left"
+		},
+		{
+			"id":"beba7247af96aab6",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"54a678505f1f6760",
+			"fromSide":"right",
+			"toNode":"903cd9823cf9860c",
+			"toSide":"left"
+		},
+		{
+			"id":"14aaa3ca36661fb7",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"d3a33fa07f8c8427",
+			"fromSide":"right",
+			"toNode":"5405a99ba6b24bb8",
+			"toSide":"left"
+		},
+		{
+			"id":"8c4298e9151d0ddf",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"06959d2724447d46",
+			"fromSide":"right",
+			"toNode":"0e817fc5ece1d91b",
+			"toSide":"left"
+		},
+		{
+			"id":"1fc1b85fb941035a",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"49dcc908cb5e1989",
+			"fromSide":"right",
+			"toNode":"ab56f195c88ad9a2",
+			"toSide":"left"
+		},
+		{
+			"id":"15367fdbeda719d1",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"763ecf55e28c1852",
+			"fromSide":"right",
+			"toNode":"4e925ee27a542874",
+			"toSide":"left"
+		},
+		{
+			"id":"4403ff23a6dab8ce",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"0ba426309086f053",
+			"fromSide":"left",
+			"toNode":"e14da980e62fb086",
+			"toSide":"right"
+		},
+		{
+			"id":"71ae0fe69961ea4b",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"8d7ff30ac254d85e",
+			"fromSide":"left",
+			"toNode":"1f6ad4aa6984120a",
+			"toSide":"right"
+		},
+		{
+			"id":"c74ebefe4092983d",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"75f475ba49fdf6e6",
+			"fromSide":"left",
+			"toNode":"fcb76eebd99ed9df",
+			"toSide":"right"
+		},
+		{
+			"id":"01c25122e22a0ca2",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"75f475ba49fdf6e6",
+			"fromSide":"left",
+			"toNode":"841813c38afed084",
+			"toSide":"right"
+		},
+		{
+			"id":"bac4163dedf3726f",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"75f475ba49fdf6e6",
+			"fromSide":"left",
+			"toNode":"ab396e9668c47b4d",
+			"toSide":"right"
+		},
+		{
+			"id":"86042d1405e12fa3",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"75f475ba49fdf6e6",
+			"fromSide":"left",
+			"toNode":"40608d7edb2d730e",
+			"toSide":"right"
+		},
+		{
+			"id":"fbc54c5bc2c3e7ef",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"75f475ba49fdf6e6",
+			"fromSide":"left",
+			"toNode":"90f7eb0b0ab2380c",
+			"toSide":"right"
+		},
+		{
+			"id":"5e84a875bfa9831d",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"fcb76eebd99ed9df",
+			"fromSide":"left",
+			"toNode":"be0e88b2f27399f6",
+			"toSide":"right"
+		},
+		{
+			"id":"3154f9ad80dae0eb",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"841813c38afed084",
+			"fromSide":"left",
+			"toNode":"3012e583df69a886",
+			"toSide":"right"
+		},
+		{
+			"id":"330133afd8920dc0",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"ab396e9668c47b4d",
+			"fromSide":"left",
+			"toNode":"981a6291aea54d40",
+			"toSide":"right"
+		},
+		{
+			"id":"31fbd3e6c9fcd040",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"40608d7edb2d730e",
+			"fromSide":"left",
+			"toNode":"eed12752b2405241",
+			"toSide":"right"
+		},
+		{
+			"id":"c14444c7b358880d",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"90f7eb0b0ab2380c",
+			"fromSide":"left",
+			"toNode":"0a1f417cc398555d",
+			"toSide":"right"
+		},
+		{
+			"id":"0fb0582167569a62",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"4b8af87b59cceeb8",
+			"fromSide":"left",
+			"toNode":"b1d6d0d776400e26",
+			"toSide":"right"
+		},
+		{
+			"id":"018564caf47f44ac",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"c8839c22f43be53f",
+			"fromSide":"left",
+			"toNode":"5c450e5d7d823639",
+			"toSide":"right"
+		},
+		{
+			"id":"039dfc7f56102b71",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"3a39997cf001d72d",
+			"fromSide":"left",
+			"toNode":"b3874931606b4007",
+			"toSide":"right"
+		},
+		{
+			"id":"41f658aa09dc2880",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"471db85c0874b12b",
+			"fromSide":"left",
+			"toNode":"4b8af87b59cceeb8",
+			"toSide":"right"
+		},
+		{
+			"id":"feaaf2271af14651",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"471db85c0874b12b",
+			"fromSide":"left",
+			"toNode":"c8839c22f43be53f",
+			"toSide":"right"
+		},
+		{
+			"id":"c63beb9bd37c10b0",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"471db85c0874b12b",
+			"fromSide":"left",
+			"toNode":"3a39997cf001d72d",
+			"toSide":"right"
 		}
 	],
 	"metadata":{

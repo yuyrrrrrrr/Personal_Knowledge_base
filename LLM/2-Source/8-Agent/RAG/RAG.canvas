@@ -1,11 +1,11 @@
 {
 	"nodes":[
-		{"id":"549f5273e03b378d","type":"text","text":"RAG 检索增强生成学习路线\nby 程序员鱼皮","x":0,"y":35,"width":250,"height":68,"color":"1"},
+		{"id":"549f5273e03b378d","type":"text","text":"RAG 检索增强生成学习路线","x":0,"y":35,"width":250,"height":68,"color":"1"},
 		{"id":"122e9ce3bf9fb6c2","type":"text","text":"RAG 基础","x":570,"y":-1364,"width":250,"height":60,"color":"1"},
-		{"id":"18be54e47ef1a6e9","type":"text","text":"RAG 概念","x":1140,"y":-1502,"width":250,"height":60},
-		{"id":"e2e3b8704bfc4a59","type":"text","text":"RAG 原理","x":1140,"y":-1410,"width":250,"height":60},
-		{"id":"9639197e8f43db22","type":"text","text":"RAG 应用场景","x":1140,"y":-1318,"width":250,"height":60},
-		{"id":"52b15626d33e4e9e","type":"text","text":"RAG vs Fine-tuning","x":1140,"y":-1226,"width":250,"height":60},
+		{"id":"18be54e47ef1a6e9","type":"text","text":"RAG 概念","x":1140,"y":-1502,"width":250,"height":60,"color":"1"},
+		{"id":"e2e3b8704bfc4a59","type":"text","text":"RAG 原理","x":1140,"y":-1410,"width":250,"height":60,"color":"1"},
+		{"id":"9639197e8f43db22","type":"text","text":"RAG 应用场景","x":1140,"y":-1318,"width":250,"height":60,"color":"1"},
+		{"id":"52b15626d33e4e9e","type":"text","text":"RAG vs Fine-tuning","x":1140,"y":-1226,"width":250,"height":60,"color":"1"},
 		{
 			"id":"6ecdb77672a09924",
 			"type":"text",
@@ -14,7 +14,8 @@
 			"x":740,
 			"y":-1080,
 			"width":260,
-			"height":60
+			"height":60,
+			"color":"1"
 		},
 		{
 			"id":"5df390bb3b79231a",
@@ -24,7 +25,8 @@
 			"x":1087,
 			"y":-1130,
 			"width":273,
-			"height":232
+			"height":232,
+			"color":"1"
 		},
 		{
 			"id":"3914cb30220aaf8c",
@@ -34,7 +36,8 @@
 			"x":1450,
 			"y":-1130,
 			"width":297,
-			"height":232
+			"height":232,
+			"color":"1"
 		},
 		{
 			"id":"a31558b514fdd200",
@@ -44,7 +47,8 @@
 			"x":1820,
 			"y":-1086,
 			"width":349,
-			"height":130
+			"height":130,
+			"color":"1"
 		},
 		{
 			"id":"98cb11231099c2dc",
@@ -54,7 +58,8 @@
 			"x":1390,
 			"y":-1603,
 			"width":500,
-			"height":70
+			"height":70,
+			"color":"1"
 		},
 		{
 			"id":"7689b3d6f6e3be01",
@@ -64,7 +69,8 @@
 			"x":2230,
 			"y":-1790,
 			"width":391,
-			"height":60
+			"height":60,
+			"color":"1"
 		},
 		{
 			"id":"b74b4ffa8bd62738",
@@ -74,7 +80,8 @@
 			"x":2230,
 			"y":-1700,
 			"width":391,
-			"height":60
+			"height":60,
+			"color":"1"
 		},
 		{
 			"id":"9936c795746e91de",
@@ -84,7 +91,8 @@
 			"x":2230,
 			"y":-1879,
 			"width":391,
-			"height":60
+			"height":60,
+			"color":"1"
 		},
 		{
 			"id":"29e1e8ae2d9b49bb",
@@ -94,7 +102,8 @@
 			"x":2280,
 			"y":-1593,
 			"width":341,
-			"height":60
+			"height":60,
+			"color":"1"
 		},
 		{
 			"id":"0ed92e2b725e9e8d",
@@ -104,7 +113,8 @@
 			"x":2280,
 			"y":-1513,
 			"width":341,
-			"height":60
+			"height":60,
+			"color":"1"
 		},
 		{
 			"id":"7418e4c983de57ae",
@@ -114,17 +124,8 @@
 			"x":2280,
 			"y":-1433,
 			"width":341,
-			"height":60
-		},
-		{
-			"id":"785115c0543790c5",
-			"type":"text",
-			"text":"基本流程并不复杂：\n\n1. 用户先提问。\n2. 系统先去外部知识库里找相关资料。\n3. 再把“问题 + 检索结果”一起发给大模型。\n4. 由模型基于这些资料生成答案。\n\nRAG 的重点不是“修改模型参数”，而是**在运行时给模型补充它当前需要的上下文**。\n\n先记住这个最短定义：**RAG = 先查资料，再回答问题。**",
-			"styleAttributes":{},
-			"x":1390,
-			"y":-1605,
-			"width":507,
-			"height":184
+			"height":60,
+			"color":"1"
 		},
 		{
 			"id":"69268246cc32878f",
@@ -134,7 +135,8 @@
 			"x":1897,
 			"y":-1605,
 			"width":260,
-			"height":60
+			"height":60,
+			"color":"1"
 		},
 		{
 			"id":"47565830f454185d",
@@ -144,7 +146,8 @@
 			"x":1897,
 			"y":-1541,
 			"width":260,
-			"height":60
+			"height":60,
+			"color":"1"
 		},
 		{
 			"id":"d8a5d28a06412fdf",
@@ -154,7 +157,8 @@
 			"x":1897,
 			"y":-1790,
 			"width":260,
-			"height":60
+			"height":60,
+			"color":"1"
 		},
 		{
 			"id":"a3ea1823d922bb83",
@@ -164,22 +168,9 @@
 			"x":2280,
 			"y":-1350,
 			"width":341,
-			"height":60
+			"height":60,
+			"color":"1"
 		},
-		{
-			"id":"2b8ac33c451691a4",
-			"type":"text",
-			"text":"当你遇到下面这些场景时，优先验证 RAG 通常是比较稳妥的：\n\n- 需要接入**企业内部资料**、产品文档、FAQ、制度手册、接口说明等私有知识\n- 需要回答**最新信息**、时效性很强的问题\n- 希望回答结果能附带**依据和来源**\n- 希望在不改模型参数的情况下，快速迭代知识内容\n\n典型场景包括：\n\n- 企业知识库问答\n- 智能客服与售后助手\n- 研发文档问答\n- 运维排障助手\n- 合同、制度、政策、课程讲义等文档问答",
-			"styleAttributes":{},
-			"x":1450,
-			"y":-1421,
-			"width":611,
-			"height":273
-		},
-		{"id":"7846f77c931594d8","type":"text","text":"项目实战","x":-982,"y":346,"width":250,"height":60,"color":"1"},
-		{"id":"93630919302e8376","type":"text","text":"求职备战","x":-982,"y":484,"width":250,"height":60,"color":"2"},
-		{"id":"ab5179ae27ba180e","type":"text","text":"知识库助手","x":-1322,"y":406,"width":250,"height":60},
-		{"id":"5419b606d87c35b8","type":"text","text":"垂直领域问答","x":-1322,"y":583,"width":250,"height":60},
 		{
 			"id":"daec50863094e4f0",
 			"type":"text",
@@ -188,7 +179,8 @@
 			"x":760,
 			"y":-855,
 			"width":260,
-			"height":155
+			"height":155,
+			"color":"1"
 		},
 		{
 			"id":"1340075ca7ca7bf5",
@@ -198,7 +190,8 @@
 			"x":1087,
 			"y":-837,
 			"width":260,
-			"height":111
+			"height":111,
+			"color":"1"
 		},
 		{
 			"id":"7338392c54dd0b15",
@@ -208,7 +201,8 @@
 			"x":1450,
 			"y":-898,
 			"width":260,
-			"height":260
+			"height":260,
+			"color":"1"
 		},
 		{
 			"id":"692e5e70404bca48",
@@ -218,7 +212,8 @@
 			"x":911,
 			"y":-666,
 			"width":519,
-			"height":95
+			"height":95,
+			"color":"1"
 		},
 		{
 			"id":"00645ded0093f462",
@@ -228,7 +223,8 @@
 			"x":1041,
 			"y":-561,
 			"width":339,
-			"height":181
+			"height":181,
+			"color":"1"
 		},
 		{
 			"id":"1850a2aaade76e81",
@@ -238,7 +234,8 @@
 			"x":1400,
 			"y":-320,
 			"width":180,
-			"height":60
+			"height":60,
+			"color":"1"
 		},
 		{
 			"id":"154bd7a3c55a2423",
@@ -248,7 +245,8 @@
 			"x":1680,
 			"y":-538,
 			"width":390,
-			"height":138
+			"height":138,
+			"color":"1"
 		},
 		{
 			"id":"e9c4c10542da5331",
@@ -258,7 +256,8 @@
 			"x":1680,
 			"y":-380,
 			"width":390,
-			"height":120
+			"height":120,
+			"color":"1"
 		},
 		{
 			"id":"91da7755f55141eb",
@@ -268,7 +267,8 @@
 			"x":1680,
 			"y":-221,
 			"width":390,
-			"height":97
+			"height":97,
+			"color":"1"
 		},
 		{
 			"id":"ee3b1564f003428b",
@@ -278,7 +278,8 @@
 			"x":2099,
 			"y":-410,
 			"width":260,
-			"height":60
+			"height":60,
+			"color":"1"
 		},
 		{
 			"id":"14f67add02b86cf0",
@@ -288,7 +289,8 @@
 			"x":2360,
 			"y":-540,
 			"width":260,
-			"height":60
+			"height":60,
+			"color":"1"
 		},
 		{
 			"id":"f45107cd31b2b2f5",
@@ -298,7 +300,8 @@
 			"x":2420,
 			"y":-400,
 			"width":260,
-			"height":60
+			"height":60,
+			"color":"1"
 		},
 		{
 			"id":"d7192d2500c8fba2",
@@ -308,17 +311,8 @@
 			"x":2811,
 			"y":-440,
 			"width":260,
-			"height":60
-		},
-		{
-			"id":"3fc043599a49dac6",
-			"type":"text",
-			"text":"QLoRA",
-			"styleAttributes":{},
-			"x":2780,
-			"y":-360,
-			"width":260,
-			"height":60
+			"height":60,
+			"color":"1"
 		},
 		{
 			"id":"603809ebd91d93e2",
@@ -328,17 +322,8 @@
 			"x":3160,
 			"y":-440,
 			"width":260,
-			"height":60
-		},
-		{
-			"id":"52195f88cedb7736",
-			"type":"text",
-			"text":"在 LoRA 基础上结合低比特量化，进一步降低显存占用。",
-			"styleAttributes":{},
-			"x":3140,
-			"y":-360,
-			"width":260,
-			"height":60
+			"height":60,
+			"color":"1"
 		},
 		{
 			"id":"a627c7bb0a25d5ce",
@@ -348,7 +333,8 @@
 			"x":2360,
 			"y":-232,
 			"width":260,
-			"height":60
+			"height":60,
+			"color":"1"
 		},
 		{
 			"id":"bdf7914dc613e1ef",
@@ -358,7 +344,8 @@
 			"x":2670,
 			"y":-232,
 			"width":470,
-			"height":117
+			"height":117,
+			"color":"1"
 		},
 		{
 			"id":"dcb1991425089f38",
@@ -368,7 +355,8 @@
 			"x":3014,
 			"y":-2028,
 			"width":769,
-			"height":435
+			"height":435,
+			"color":"1"
 		},
 		{
 			"id":"d9ae9b211b7df972",
@@ -378,17 +366,8 @@
 			"x":2681,
 			"y":-1922,
 			"width":260,
-			"height":112
-		},
-		{
-			"id":"a8b731abdd1cbd86",
-			"type":"text",
-			"text":"RAG常见误区",
-			"styleAttributes":{},
-			"x":2740,
-			"y":-1543,
-			"width":260,
-			"height":60
+			"height":112,
+			"color":"1"
 		},
 		{
 			"id":"3f81664dcaf4221c",
@@ -398,7 +377,8 @@
 			"x":3040,
 			"y":-1426,
 			"width":418,
-			"height":105
+			"height":105,
+			"color":"1"
 		},
 		{
 			"id":"893b2da793b4c2d8",
@@ -408,7 +388,8 @@
 			"x":3040,
 			"y":-1292,
 			"width":418,
-			"height":141
+			"height":141,
+			"color":"1"
 		},
 		{
 			"id":"9b574e466867d856",
@@ -418,7 +399,8 @@
 			"x":3040,
 			"y":-1125,
 			"width":418,
-			"height":130
+			"height":130,
+			"color":"1"
 		},
 		{
 			"id":"9c6f958574300693",
@@ -428,7 +410,8 @@
 			"x":3040,
 			"y":-1577,
 			"width":418,
-			"height":129
+			"height":129,
+			"color":"1"
 		},
 		{
 			"id":"e94af9674be63f3e",
@@ -438,7 +421,8 @@
 			"x":1880,
 			"y":-860,
 			"width":260,
-			"height":60
+			"height":60,
+			"color":"1"
 		},
 		{
 			"id":"5b4a494edbddd7ff",
@@ -448,7 +432,8 @@
 			"x":2100,
 			"y":-940,
 			"width":260,
-			"height":60
+			"height":60,
+			"color":"1"
 		},
 		{
 			"id":"736ae73c823e048c",
@@ -458,9 +443,10 @@
 			"x":2384,
 			"y":-940,
 			"width":521,
-			"height":349
+			"height":349,
+			"color":"1"
 		},
-		{"id":"bb2a6691aa2f8904","type":"file","file":"image/Pasted image 20261119175624.png","x":1769,"y":-800,"width":399,"height":239},
+		{"id":"bb2a6691aa2f8904","type":"file","file":"image/Pasted image 20261119175624.png","x":1769,"y":-800,"width":399,"height":239,"color":"1"},
 		{
 			"id":"638b64c369678825",
 			"type":"text",
@@ -469,17 +455,18 @@
 			"x":2173,
 			"y":-742,
 			"width":187,
-			"height":124
+			"height":124,
+			"color":"1"
 		},
-		{"id":"a39e42aa68e80411","type":"text","text":"按字符分割","x":1735,"y":654,"width":250,"height":60},
-		{"id":"21f187d2d59b8ea1","type":"text","text":"按语义分割","x":1735,"y":746,"width":250,"height":60},
-		{"id":"d94f30fa0668fc27","type":"text","text":"分割策略","x":1735,"y":838,"width":250,"height":60},
-		{"id":"69fbbce7bad4ddc6","type":"text","text":"PDF/Word/Excel","x":1735,"y":470,"width":250,"height":60},
-		{"id":"252f6d43a1decd3f","type":"text","text":"网页/数据库","x":1735,"y":562,"width":250,"height":60},
-		{"id":"dfaea037dbe5ac5a","type":"text","text":"文档加载","x":1165,"y":516,"width":250,"height":60},
+		{"id":"a39e42aa68e80411","type":"text","text":"按字符分割","x":1735,"y":654,"width":250,"height":60,"color":"2"},
+		{"id":"21f187d2d59b8ea1","type":"text","text":"按语义分割","x":1735,"y":746,"width":250,"height":60,"color":"2"},
+		{"id":"d94f30fa0668fc27","type":"text","text":"分割策略","x":1735,"y":838,"width":250,"height":60,"color":"2"},
+		{"id":"69fbbce7bad4ddc6","type":"text","text":"PDF/Word/Excel","x":1735,"y":470,"width":250,"height":60,"color":"2"},
+		{"id":"252f6d43a1decd3f","type":"text","text":"网页/数据库","x":1735,"y":562,"width":250,"height":60,"color":"2"},
+		{"id":"dfaea037dbe5ac5a","type":"text","text":"文档加载","x":1165,"y":516,"width":250,"height":60,"color":"2"},
 		{"id":"28f88174a88e8f50","type":"text","text":"文档处理","x":595,"y":723,"width":250,"height":60,"color":"2"},
-		{"id":"46cbfd6903386147","type":"text","text":"文档分割","x":1165,"y":746,"width":250,"height":60},
-		{"id":"0f01431b77aac18e","type":"text","text":"文档清洗","x":1165,"y":930,"width":250,"height":60},
+		{"id":"46cbfd6903386147","type":"text","text":"文档分割","x":1165,"y":746,"width":250,"height":60,"color":"2"},
+		{"id":"0f01431b77aac18e","type":"text","text":"文档清洗","x":1165,"y":930,"width":250,"height":60,"color":"2"},
 		{
 			"id":"97d1fb1fcb74be57",
 			"type":"text",
@@ -488,7 +475,8 @@
 			"x":780,
 			"y":80,
 			"width":260,
-			"height":60
+			"height":60,
+			"color":"1"
 		},
 		{
 			"id":"d5f2a96aee138459",
@@ -498,7 +486,8 @@
 			"x":1120,
 			"y":7,
 			"width":260,
-			"height":206
+			"height":206,
+			"color":"1"
 		},
 		{
 			"id":"98c41490fc7abdaa",
@@ -508,7 +497,8 @@
 			"x":780,
 			"y":-10,
 			"width":315,
-			"height":90
+			"height":90,
+			"color":"1"
 		},
 		{
 			"id":"a9a33d6298e69d3d",
@@ -518,7 +508,8 @@
 			"x":780,
 			"y":140,
 			"width":315,
-			"height":119
+			"height":119,
+			"color":"1"
 		},
 		{
 			"id":"0ea07cfe33399811",
@@ -528,7 +519,8 @@
 			"x":1435,
 			"y":-57,
 			"width":550,
-			"height":316
+			"height":316,
+			"color":"1"
 		},
 		{
 			"id":"b311046d62c1ad86",
@@ -538,7 +530,8 @@
 			"x":2034,
 			"y":-57,
 			"width":260,
-			"height":60
+			"height":60,
+			"color":"1"
 		},
 		{
 			"id":"4564c952f60c8d1f",
@@ -548,7 +541,8 @@
 			"x":2360,
 			"y":-71,
 			"width":625,
-			"height":330
+			"height":330,
+			"color":"1"
 		},
 		{
 			"id":"5002c331c29d1991",
@@ -558,7 +552,8 @@
 			"x":3335,
 			"y":-545,
 			"width":316,
-			"height":60
+			"height":60,
+			"color":"1"
 		},
 		{
 			"id":"34d8eea1ca01c3dc",
@@ -568,7 +563,8 @@
 			"x":3335,
 			"y":-624,
 			"width":316,
-			"height":60
+			"height":60,
+			"color":"1"
 		},
 		{
 			"id":"bb0e526c4559d683",
@@ -578,7 +574,8 @@
 			"x":3335,
 			"y":-705,
 			"width":316,
-			"height":60
+			"height":60,
+			"color":"1"
 		},
 		{
 			"id":"2f0eb6c570e99f45",
@@ -588,7 +585,8 @@
 			"x":3335,
 			"y":-795,
 			"width":316,
-			"height":60
+			"height":60,
+			"color":"1"
 		},
 		{
 			"id":"84f384fc1b837207",
@@ -598,7 +596,8 @@
 			"x":2985,
 			"y":-675,
 			"width":232,
-			"height":60
+			"height":60,
+			"color":"1"
 		},
 		{
 			"id":"6fbb918b3f6f6a73",
@@ -608,7 +607,8 @@
 			"x":3060,
 			"y":-20,
 			"width":260,
-			"height":60
+			"height":60,
+			"color":"1"
 		},
 		{
 			"id":"c3275b391d6558ae",
@@ -618,7 +618,8 @@
 			"x":3400,
 			"y":-140,
 			"width":727,
-			"height":512
+			"height":512,
+			"color":"1"
 		},
 		{
 			"id":"379b3e6d3bda6228",
@@ -628,7 +629,8 @@
 			"x":526,
 			"y":-2081,
 			"width":587,
-			"height":548
+			"height":548,
+			"color":"1"
 		},
 		{
 			"id":"593571a953c28b17",
@@ -638,9 +640,10 @@
 			"x":1140,
 			"y":-2081,
 			"width":680,
-			"height":476
+			"height":476,
+			"color":"1"
 		},
-		{"id":"9c15dddb759b5e3e","type":"file","file":"image/Pasted image 20261119181118.png","x":0,"y":-818,"width":692,"height":760},
+		{"id":"9c15dddb759b5e3e","type":"file","file":"image/Pasted image 20261119181118.png","x":0,"y":-818,"width":692,"height":760,"color":"1"},
 		{
 			"id":"650c5acdfc820e9e",
 			"type":"text",
@@ -651,17 +654,6 @@
 			"width":420,
 			"height":214
 		},
-		{"id":"293717b58d458a73","type":"text","text":"文档分割优化","x":-1607,"y":-729,"width":250,"height":60},
-		{"id":"0483cc0760c9a6f6","type":"text","text":"Embedding 优化","x":-1607,"y":-637,"width":250,"height":60},
-		{"id":"e09f0d671b97d86b","type":"text","text":"检索优化","x":-1607,"y":-545,"width":250,"height":60},
-		{"id":"037be372ea455d65","type":"text","text":"提示词优化","x":-1607,"y":-453,"width":250,"height":60},
-		{"id":"665554ba1b6557bb","type":"text","text":"结果评估","x":-1607,"y":-361,"width":250,"height":60},
-		{"id":"cfa986206b9e0d61","type":"text","text":"RAG 优化","x":-857,"y":-513,"width":250,"height":60,"color":"5"},
-		{"id":"27a0cc75599744f8","type":"text","text":"文档问答系统","x":-1322,"y":286,"width":250,"height":60},
-		{"id":"40b982430adb9811","type":"text","text":"LangChain","x":-1322,"y":-126,"width":250,"height":60},
-		{"id":"ebff3c8445e28441","type":"text","text":"LlamaIndex","x":-1322,"y":-34,"width":250,"height":60},
-		{"id":"4cd518dc5408712c","type":"text","text":"RAG 框架","x":-940,"y":-34,"width":250,"height":60,"color":"6"},
-		{"id":"f7b9a01aac78d9d8","type":"text","text":"Haystack","x":-1322,"y":58,"width":250,"height":60},
 		{
 			"id":"c1871e0e5a0a7e78",
 			"type":"text",
@@ -670,25 +662,9 @@
 			"x":692,
 			"y":-330,
 			"width":260,
-			"height":60
+			"height":60,
+			"color":"1"
 		},
-		{"id":"01705df65a9ae0f6","type":"text","text":"相似度搜索","x":1165,"y":1958,"width":250,"height":60},
-		{"id":"99105218cd208ee8","type":"text","text":"Embedding 模型","x":1165,"y":1406,"width":250,"height":60},
-		{"id":"7707b3bb348e8420","type":"text","text":"Milvus","x":1735,"y":1636,"width":250,"height":60},
-		{"id":"58bd5763a99e4fd3","type":"text","text":"向量数据库","x":1165,"y":1682,"width":250,"height":60},
-		{"id":"8831722c744ac8a3","type":"text","text":"FAISS","x":1735,"y":1728,"width":250,"height":60},
-		{"id":"9157cc5d943e6284","type":"text","text":"Pinecone","x":1735,"y":1820,"width":250,"height":60},
-		{"id":"4c1700213e693720","type":"text","text":"余弦相似度","x":1735,"y":1912,"width":250,"height":60},
-		{"id":"2de773465fa75a1b","type":"text","text":"欧氏距离","x":1735,"y":2004,"width":250,"height":60},
-		{"id":"998174db963f9253","type":"text","text":"向量化和存储","x":595,"y":1682,"width":250,"height":60,"color":"3"},
-		{"id":"f5eae2753bbff44c","type":"text","text":"OpenAI Embeddings","x":1735,"y":1360,"width":250,"height":60},
-		{"id":"bad129c3352b89a1","type":"text","text":"Chroma","x":1735,"y":1544,"width":250,"height":60},
-		{"id":"2a382c28f62f2db2","type":"text","text":"本地 Embeddings","x":1735,"y":1452,"width":250,"height":60},
-		{"id":"2981fe7f4ad17b85","type":"text","text":"向量检索","x":1165,"y":2440,"width":250,"height":60},
-		{"id":"de90ce80507206ca","type":"text","text":"关键词检索","x":1165,"y":2532,"width":250,"height":60},
-		{"id":"7c7073837e5446a2","type":"text","text":"混合检索","x":1165,"y":2624,"width":250,"height":60},
-		{"id":"c6e223199d9df372","type":"text","text":"重排序 Rerank","x":1165,"y":2716,"width":250,"height":60},
-		{"id":"09d3af0d7f31256d","type":"text","text":"检索策略","x":595,"y":2578,"width":250,"height":60,"color":"4"},
 		{
 			"id":"4ac89fd824762fd5",
 			"type":"text",
@@ -697,7 +673,8 @@
 			"x":1041,
 			"y":-361,
 			"width":339,
-			"height":160
+			"height":160,
+			"color":"1"
 		},
 		{
 			"id":"b26c124cb0c93a08",
@@ -707,7 +684,738 @@
 			"x":1041,
 			"y":-172,
 			"width":339,
-			"height":134
+			"height":134,
+			"color":"1"
+		},
+		{"id":"293717b58d458a73","type":"text","text":"文档分割优化","x":-1520,"y":180,"width":250,"height":60},
+		{"id":"0483cc0760c9a6f6","type":"text","text":"Embedding 优化","x":-1520,"y":272,"width":250,"height":60},
+		{"id":"e09f0d671b97d86b","type":"text","text":"检索优化","x":-1520,"y":364,"width":250,"height":60},
+		{"id":"037be372ea455d65","type":"text","text":"提示词优化","x":-1520,"y":456,"width":250,"height":60},
+		{"id":"665554ba1b6557bb","type":"text","text":"结果评估","x":-1520,"y":548,"width":250,"height":60},
+		{"id":"27a0cc75599744f8","type":"text","text":"文档问答系统","x":-1235,"y":1195,"width":250,"height":60},
+		{"id":"ab5179ae27ba180e","type":"text","text":"知识库助手","x":-1235,"y":1315,"width":250,"height":60},
+		{"id":"5419b606d87c35b8","type":"text","text":"垂直领域问答","x":-1235,"y":1492,"width":250,"height":60},
+		{"id":"7846f77c931594d8","type":"text","text":"项目实战","x":-895,"y":1255,"width":250,"height":60,"color":"1"},
+		{"id":"93630919302e8376","type":"text","text":"求职备战","x":-895,"y":1393,"width":250,"height":60,"color":"2"},
+		{"id":"40b982430adb9811","type":"text","text":"LangChain","x":-1235,"y":783,"width":250,"height":60},
+		{"id":"ebff3c8445e28441","type":"text","text":"LlamaIndex","x":-1235,"y":875,"width":250,"height":60},
+		{"id":"f7b9a01aac78d9d8","type":"text","text":"Haystack","x":-1235,"y":967,"width":250,"height":60},
+		{"id":"4cd518dc5408712c","type":"text","text":"RAG 框架","x":-853,"y":875,"width":250,"height":60,"color":"6"},
+		{"id":"cfa986206b9e0d61","type":"text","text":"RAG 优化","x":-770,"y":396,"width":250,"height":60,"color":"5"},
+		{"id":"2981fe7f4ad17b85","type":"text","text":"向量检索","x":-1527,"y":-400,"width":250,"height":60},
+		{"id":"de90ce80507206ca","type":"text","text":"关键词检索","x":-1527,"y":-308,"width":250,"height":60},
+		{"id":"7c7073837e5446a2","type":"text","text":"混合检索","x":-1527,"y":-216,"width":250,"height":60},
+		{"id":"c6e223199d9df372","type":"text","text":"重排序 Rerank","x":-1527,"y":-124,"width":250,"height":60},
+		{"id":"09d3af0d7f31256d","type":"text","text":"检索策略","x":-895,"y":-216,"width":250,"height":60,"color":"4"},
+		{
+			"id":"c3039bb49955b3a0",
+			"type":"text",
+			"text":"# 向量与向量化",
+			"styleAttributes":{},
+			"x":700,
+			"y":1535,
+			"width":260,
+			"height":60,
+			"color":"3"
+		},
+		{
+			"id":"7cd010e047c30367",
+			"type":"text",
+			"text":"### 向量的定义",
+			"styleAttributes":{},
+			"x":1085,
+			"y":1390,
+			"width":260,
+			"height":60,
+			"color":"3"
+		},
+		{
+			"id":"79561756281c2bad",
+			"type":"text",
+			"text":"### 向量化的定义",
+			"styleAttributes":{},
+			"x":1085,
+			"y":1610,
+			"width":260,
+			"height":60,
+			"color":"3"
+		},
+		{
+			"id":"fed19d15b681cbe2",
+			"type":"text",
+			"text":"用更直白的话说，Embedding 解决的是：\n\n- 文本本身不能直接做“语义上的数学比较”\n- 向量可以做距离和相似度计算\n- 所以只要把文本变成向量，就能做“按意思查找相近内容”",
+			"styleAttributes":{},
+			"x":1005,
+			"y":2240,
+			"width":400,
+			"height":176,
+			"color":"3"
+		},
+		{"id":"99105218cd208ee8","type":"text","text":"Embedding 模型","x":1155,"y":2416,"width":250,"height":60,"color":"3"},
+		{"id":"998174db963f9253","type":"text","text":"向量化和存储","x":585,"y":2692,"width":250,"height":60,"color":"3"},
+		{"id":"f5eae2753bbff44c","type":"text","text":"OpenAI Embeddings","x":1725,"y":2370,"width":250,"height":60,"color":"3"},
+		{"id":"2a382c28f62f2db2","type":"text","text":"本地 Embeddings","x":1725,"y":2462,"width":250,"height":60,"color":"3"},
+		{
+			"id":"a139be27c70d8dcf",
+			"type":"text",
+			"text":"### 语义相近与向量相近",
+			"styleAttributes":{},
+			"x":1085,
+			"y":1840,
+			"width":260,
+			"height":60,
+			"color":"3"
+		},
+		{
+			"id":"b7017bff64677778",
+			"type":"text",
+			"text":"### 向量维度的定义",
+			"styleAttributes":{},
+			"x":1085,
+			"y":2030,
+			"width":260,
+			"height":60,
+			"color":"3"
+		},
+		{
+			"id":"da95c7c293f01dfa",
+			"type":"text",
+			"text":"Embedding 的核心价值，不是“把文本编码成数字”这么简单，而是：**它希望把“语义关系”映射成“空间关系”。**\n\n也就是说：语义接近的文本，向量更接近；语义差异大的文本，向量更远。比如：“我喜欢吃苹果”、“苹果是我最喜欢吃的水果”。\n\n这两句话虽然字面不完全一样，但语义接近，所以向量通常也会更接近。  \n而“我喜欢用苹果手机”虽然也有“苹果”两个字，但语义已经部分转向“手机品牌”，和前两句的关系就没那么近。\n\n这正是向量检索比关键词检索更强的地方：**它找的是“意思接近”，不只是“词面一致”。**",
+			"styleAttributes":{},
+			"x":1490,
+			"y":1750,
+			"width":710,
+			"height":270,
+			"color":"3"
+		},
+		{"id":"d193da6c4581dcf0","type":"file","file":"image/Pasted image 20261126091319.png","x":2200,"y":1450,"width":810,"height":350,"color":"3"},
+		{
+			"id":"80fdae3485777ce6",
+			"type":"text",
+			"text":"把文本、图片、音频等原始内容转换成向量的过程，通常叫 **向量化**；在大模型与检索领域里，更常见的名字是 **Embedding（嵌入）**。\n\n平时说 Embedding，有时指“向量化这个过程”，有时也指“向量化之后得到的向量表示”。结合上下文判断即可，不需要把它们拆成两个完全无关的概念。\n\nLangChain 官方文档把文本 Embedding 说得很清楚：**Embedding 模型会把句子、段落等原始文本转换成固定长度的数字向量，并尽量让语义相近的文本在向量空间里靠得更近。**\n\n下图可以帮助你建立整体印象：左边是原始内容，中间是嵌入模型，右边是一串串向量。",
+			"styleAttributes":{},
+			"x":1490,
+			"y":1430,
+			"width":570,
+			"height":320,
+			"color":"3"
+		},
+		{
+			"id":"e41dd37e73f8116c",
+			"type":"text",
+			"text":"**云端API服务**",
+			"styleAttributes":{},
+			"x":2040,
+			"y":2370,
+			"width":260,
+			"height":60,
+			"color":"3"
+		},
+		{
+			"id":"ad3c75db5e3d0a54",
+			"type":"text",
+			"text":"**本地化部署**",
+			"styleAttributes":{},
+			"x":2040,
+			"y":2462,
+			"width":260,
+			"height":60,
+			"color":"3"
+		},
+		{
+			"id":"8439edbb4f6584ff",
+			"type":"text",
+			"text":"核心优势是**数据不出境、无 API 调用费用、可离线使用**，特别适合对数据隐私敏感或网络受限的场景。",
+			"styleAttributes":{},
+			"x":1975,
+			"y":2522,
+			"width":420,
+			"height":64,
+			"color":"3"
+		},
+		{
+			"id":"3f08a34feb698e0e",
+			"type":"text",
+			"text":"许多本地部署方案（如通过 `local-embed`、Ollama 或 TEI 部署）也会**将其服务封装成兼容 OpenAI `/v1/embeddings` 的接口**。这意味着，即使是本地模型，前端调用时也可能采用“OpenAI 协议”。",
+			"styleAttributes":{},
+			"x":1535,
+			"y":2522,
+			"width":440,
+			"height":120,
+			"color":"3"
+		},
+		{"id":"8831722c744ac8a3","type":"text","text":"FAISS","x":1725,"y":2984,"width":250,"height":60,"color":"3"},
+		{"id":"9157cc5d943e6284","type":"text","text":"Pinecone","x":1725,"y":3076,"width":250,"height":60,"color":"3"},
+		{"id":"bad129c3352b89a1","type":"text","text":"Chroma","x":1725,"y":2800,"width":250,"height":60,"color":"3"},
+		{"id":"7707b3bb348e8420","type":"text","text":"Milvus","x":1725,"y":2892,"width":250,"height":60,"color":"3"},
+		{"id":"58bd5763a99e4fd3","type":"text","text":"向量数据库","x":1155,"y":2938,"width":250,"height":60,"color":"3"},
+		{
+			"id":"f62e857a7d1ab547",
+			"type":"text",
+			"text":"LangChain 官方概括非常直接：**向量存储（Vector Store）就是存储嵌入后的数据，并支持相似性搜索。**Redis 官方文档则强调了另一个重点：**向量检索不是只存向量，而是围绕向量建立索引，并结合元数据做搜索与过滤。**\n\n所以，可以先把“向量数据库”理解成：**一种专门面向“相似度检索”的存储系统。**",
+			"styleAttributes":{},
+			"x":953,
+			"y":3026,
+			"width":655,
+			"height":142,
+			"color":"3"
+		},
+		{
+			"id":"886347b74e375467",
+			"type":"text",
+			"text":"最核心的区别不在“能不能存数据”，而在“怎么查数据”。\n\n|对比维度|传统关系型数据库 / 普通 KV 存储|向量数据库|\n|---|---|---|\n|核心查询方式|精确匹配、范围查询、条件过滤|相似性搜索、最近邻检索|\n|典型问题|“id=1001 的记录是什么？”|“和这段文本语义最接近的内容是什么？”|\n|主要依据|字段值相等、大小、排序|向量距离 / 相似度|\n|常见用途|订单、用户、交易、配置|RAG、搜索、推荐、去重、聚类|",
+			"styleAttributes":{},
+			"x":3800,
+			"y":2480,
+			"width":640,
+			"height":300,
+			"color":"3"
+		},
+		{"id":"5eef7b591fc1f967","type":"file","file":"image/Pasted image 20261126093559.png","x":3800,"y":2080,"width":400,"height":400,"color":"3"},
+		{
+			"id":"aae25d2d0b95d341",
+			"type":"text",
+			"text":"### 与传统数据库的区别",
+			"styleAttributes":{},
+			"x":3010,
+			"y":2600,
+			"width":260,
+			"height":60,
+			"color":"3"
+		},
+		{
+			"id":"078733fd3b86104f",
+			"type":"text",
+			"text":"### 向量数据库里存什么",
+			"styleAttributes":{},
+			"x":3010,
+			"y":2920,
+			"width":260,
+			"height":60,
+			"color":"3"
+		},
+		{
+			"id":"6a34633629a02ee7",
+			"type":"text",
+			"text":"### 稠密向量, 稀疏向量, 标量字段定义",
+			"styleAttributes":{},
+			"x":3010,
+			"y":3220,
+			"width":260,
+			"height":60,
+			"color":"3"
+		},
+		{
+			"id":"90ee4faded4fdfac",
+			"type":"text",
+			"text":"\n|名称|简要说明|\n|---|---|\n|**FAISS**|偏本地、偏算法库，适合快速做向量检索实验|\n|**Chroma**|轻量、好上手，适合本地原型验证|\n|**Milvus**|开源专业向量数据库，适合大规模生产环境|\n|**Pgvector**|PostgreSQL 扩展，适合已有 PG 体系的项目|\n|**Redis / Redis Stack**|既能做缓存，也能做向量检索，适合工程整合|\n|**Elasticsearch / OpenSearch**|搜索体系成熟，也支持向量搜索|\n",
+			"styleAttributes":{},
+			"x":1975,
+			"y":2794,
+			"width":480,
+			"height":380,
+			"color":"3"
+		},
+		{
+			"id":"331c3e9d75e5f6f3",
+			"type":"text",
+			"text":"这是很多人第一次学时最容易混淆的地方。向量数据库里通常不只是“一个向量数组”，而是至少会包含下面几类信息：\n\n- **原始内容**：例如文本正文 `page_content`\n- **向量值**：Embedding 模型算出来的高维数组\n- **元数据**：例如 `source`、`page`、`segment_id`、业务标签等\n- **索引结构**：用于加速相似度检索\n\n也就是说，向量数据库真正做的是：**把“内容 + 向量 + 元数据”组织起来，并支持按相似度查最相关内容。**\n\n这件事对 RAG 非常关键，因为检索阶段不仅要拿到“最像的向量”，还要拿回对应的文本片段和元数据，最后才能交给大模型生成答案。",
+			"styleAttributes":{},
+			"x":3420,
+			"y":2840,
+			"width":1020,
+			"height":260,
+			"color":"3"
+		},
+		{
+			"id":"e7116a9570dd40b1",
+			"type":"text",
+			"text":"学到这里，很多人会先入为主地以为：向量数据库里只存“一个文本向量字段”。真实项目里当然可以这么做，但更完整的理解是：**一个可检索的数据对象，往往同时包含稠密向量、标量字段，某些系统里还会额外使用稀疏向量。**\n\n- **稠密向量（Dense Vector）**：最常见，就是 Embedding 模型输出的一长串浮点数。它擅长表达整体语义，所以“意思相近”的文本通常会更接近。\n- **稀疏向量（Sparse Vector）**：不是每一维都有值，而是只有少数维度非零。它更像“关键词及权重”的表达方式，常和词项匹配、倒排索引、BM25 一类思路联系在一起。\n- **标量字段（Scalar Fields）**：例如 `source`、`author`、`category`、`created_at`、`doc_id` 这类普通字段。它们不参与语义向量计算，但常用于过滤、排序、权限控制和结果展示。\n\n可以先把它们看成三类互补能力：\n\n- 稠密向量负责“按语义找相近内容”\n- 稀疏向量更偏“按关键词和词权重找相关内容”\n- 标量字段负责“按业务条件过滤结果”",
+			"styleAttributes":{},
+			"x":3420,
+			"y":3100,
+			"width":860,
+			"height":460,
+			"color":"3"
+		},
+		{"id":"525250604e9eae58","type":"file","file":"image/Pasted image 20261126102038.png","x":4280,"y":3100,"width":460,"height":460,"color":"3"},
+		{
+			"id":"868d3cae95cdf0cd",
+			"type":"text",
+			"text":"**扩展：BGE-M3 与混合检索**\n\n以 BGE-M3 这类 Embedding 模型为例，它可以同时支持稠密向量、稀疏向量等多种表示方式。放到检索系统里，就可以形成这样的搭配：\n\n|检索信号|更擅长解决的问题|\n|---|---|\n|稠密向量|用户换一种说法提问时，仍然能按语义找到相关内容|\n|稀疏向量|产品型号、错误码、专有名词、精确关键词匹配|\n|标量字段|权限、分类、时间、来源、业务标签过滤|\n\n所以生产 RAG 里经常会看到“稠密检索 + 稀疏检索 + metadata filter + rerank”的组合。它不是为了把系统做复杂，而是因为单一路径很难同时兼顾语义、关键词和业务约束。\n\n本章的 Redis 案例主线，主要聚焦在**文本 Embedding 生成的稠密向量 + 元数据字段**。这样已经足够搭建一条清晰的入门链路。但你后面如果看到“混合检索”“稠密+稀疏召回”“metadata filter”这些词，就不会觉得陌生了。",
+			"styleAttributes":{},
+			"x":4740,
+			"y":3100,
+			"width":660,
+			"height":460,
+			"color":"3"
+		},
+		{
+			"id":"6119b04ca0bf440b",
+			"type":"text",
+			"text":"### RAG 与向量数据库的关系",
+			"styleAttributes":{},
+			"x":3010,
+			"y":3560,
+			"width":260,
+			"height":60,
+			"color":"3"
+		},
+		{
+			"id":"f26d60039226741c",
+			"type":"text",
+			"text":"因为大多数人第一次接触向量数据库，往往就是在做 RAG。\nRAG 的底层链路通常是：\n\n1. 把文档切成片段\n2. 用 Embedding 模型把片段转成向量\n3. 把“片段 + 向量 + 元数据”写入向量数据库\n4. 用户提问时，把问题也转成向量\n5. 在向量数据库里查最相关片段\n6. 把片段和问题一起交给大模型生成答案\n\n也就是说，**向量数据库是 RAG 的底层基础设施之一，但它本身不等于完整 RAG。**",
+			"styleAttributes":{},
+			"x":3420,
+			"y":3560,
+			"width":620,
+			"height":308,
+			"color":"3"
+		},
+		{"id":"2b7de1415b59d41d","type":"file","file":"image/Pasted image 20261126102151.jpg","x":4040,"y":3560,"width":400,"height":308,"color":"3"},
+		{
+			"id":"82b7389ec6a10ea1",
+			"type":"text",
+			"text":"### Redis 与 Milvus 怎么选",
+			"styleAttributes":{},
+			"x":3010,
+			"y":3920,
+			"width":260,
+			"height":60,
+			"color":"3"
+		},
+		{
+			"id":"75375905ed30abc9",
+			"type":"text",
+			"text":"本教程选择 Redis Stack，是因为它容易和缓存、会话、队列等工程场景放在一起，安装和演示成本也低。入门阶段用它理解“写入向量、建立索引、相似检索”非常合适。\n\n但如果你的项目进入更大规模，例如数据量很大、索引策略复杂、混合检索和高并发检索要求更高，就可以把 **Milvus** 作为生产级扩展方向。先记一个简单判断：\n\n|场景|更适合|\n|---|---|\n|课程学习、个人项目、和 Redis 生态整合|Redis Stack|\n|大规模向量检索、专业索引管理、生产级检索平台|Milvus|",
+			"styleAttributes":{},
+			"x":3420,
+			"y":3868,
+			"width":740,
+			"height":260,
+			"color":"3"
+		},
+		{
+			"id":"0cd0da83422b8789",
+			"type":"text",
+			"text":"- **Redis**：基础内存数据库 / 键值存储\n- **Redis Stack**：在 Redis 基础上打包了搜索、JSON、时间序列、布隆过滤器等扩展能力\n- **RediSearch**：Redis Stack 中和搜索、全文检索、向量检索强相关的模块\n**我们之所以能用 Redis 做向量检索，关键是 Redis Stack / RediSearch 提供了向量字段、索引和 KNN 搜索能力。**",
+			"styleAttributes":{},
+			"x":1540,
+			"y":3240,
+			"width":440,
+			"height":220,
+			"color":"3"
+		},
+		{
+			"id":"d42ed3bd220964ef",
+			"type":"text",
+			"text":"# 为什么选择 Redis\n从真实项目角度看，Redis 作为向量存储有几个很实用的优点：\n\n- **上手成本低**：很多团队本来就已经有 Redis\n- **工程整合方便**：缓存、会话、历史记录、向量检索可以放在同一套基础设施里\n- **适合中小型知识库**：做课程演示、内部工具、轻量 RAG 很顺手\n\n当然，工程里也要知道它的边界：如果向量规模非常大、检索需求非常复杂，团队也可能选择 Milvus、Weaviate、Pinecone 等更专门的方案；这不是“谁绝对更好”的问题，而是“你的场景更适合哪种方案”。",
+			"styleAttributes":{},
+			"x":2120,
+			"y":3220,
+			"width":600,
+			"height":320,
+			"color":"3"
+		},
+		{
+			"id":"3b4d87afe14fc9b2",
+			"type":"text",
+			"text":"Pinecone 是用金钱购买时间和确定性的生产捷径。",
+			"styleAttributes":{},
+			"x":1720,
+			"y":3136,
+			"width":260,
+			"height":60,
+			"color":"3"
+		},
+		{
+			"id":"3fc043599a49dac6",
+			"type":"text",
+			"text":"QLoRA",
+			"styleAttributes":{},
+			"x":2811,
+			"y":-350,
+			"width":260,
+			"height":60,
+			"color":"1"
+		},
+		{
+			"id":"52195f88cedb7736",
+			"type":"text",
+			"text":"在 LoRA 基础上结合低比特量化，进一步降低显存占用。",
+			"styleAttributes":{},
+			"x":3160,
+			"y":-350,
+			"width":260,
+			"height":60,
+			"color":"1"
+		},
+		{
+			"id":"2b8ac33c451691a4",
+			"type":"text",
+			"text":"当你遇到下面这些场景时，优先验证 RAG 通常是比较稳妥的：\n\n- 需要接入**企业内部资料**、产品文档、FAQ、制度手册、接口说明等私有知识\n- 需要回答**最新信息**、时效性很强的问题\n- 希望回答结果能附带**依据和来源**\n- 希望在不改模型参数的情况下，快速迭代知识内容\n\n典型场景包括：\n\n- 企业知识库问答\n- 智能客服与售后助手\n- 研发文档问答\n- 运维排障助手\n- 合同、制度、政策、课程讲义等文档问答",
+			"styleAttributes":{},
+			"x":1450,
+			"y":-1424,
+			"width":611,
+			"height":273,
+			"color":"1"
+		},
+		{
+			"id":"785115c0543790c5",
+			"type":"text",
+			"text":"基本流程并不复杂：\n\n1. 用户先提问。\n2. 系统先去外部知识库里找相关资料。\n3. 再把“问题 + 检索结果”一起发给大模型。\n4. 由模型基于这些资料生成答案。\n\nRAG 的重点不是“修改模型参数”，而是**在运行时给模型补充它当前需要的上下文**。\n\n先记住这个最短定义：**RAG = 先查资料，再回答问题。**",
+			"styleAttributes":{},
+			"x":1390,
+			"y":-1608,
+			"width":507,
+			"height":184,
+			"color":"1"
+		},
+		{
+			"id":"a8b731abdd1cbd86",
+			"type":"text",
+			"text":"RAG常见误区",
+			"styleAttributes":{},
+			"x":2681,
+			"y":-1322,
+			"width":260,
+			"height":60,
+			"color":"1"
+		},
+		{
+			"id":"4b9434c1c0929146",
+			"type":"text",
+			"text":"mbedding 输出的向量，一般是固定长度的浮点数列表。这个长度就叫 **维度（dimension）**。\n例如：\n\n- 某个模型输出 1024 维向量\n- 就意味着每段文本最终会变成一个长度为 1024 的数组\n\n这里先记住两个结论：\n1. **不同 Embedding 模型输出维度可能不同。**\n2. **即便维度相同，不同模型的向量空间通常也不能直接混用。**\n\n所以真实项目里要保证：**建库时用的 Embedding 模型，和查询时用的 Embedding 模型保持一致。**\n\n否则要么维度不匹配直接报错，要么即使能算，相似度结果也没有意义。",
+			"styleAttributes":{},
+			"x":1490,
+			"y":2020,
+			"width":940,
+			"height":338,
+			"color":"3"
+		},
+		{
+			"id":"b395c86986fbb459",
+			"type":"text",
+			"text":"LangChain 官方文档把文本 Embedding 说得很清楚：**Embedding 模型会把句子、段落等原始文本转换成固定长度的数字向量，并尽量让语义相近的文本在向量空间里靠得更近。**",
+			"styleAttributes":{},
+			"x":1025,
+			"y":2476,
+			"width":380,
+			"height":136,
+			"color":"3"
+		},
+		{
+			"id":"00868e2a010a6b34",
+			"type":"text",
+			"text":"**向量（Vector）** 本来是数学概念，指的是：**用一组有顺序的数字来表示某个对象在空间中的位置或特征。**\n\n比如：\n\n- 二维向量可以写成 `(x, y)`\n- 三维向量可以写成 `(x, y, z)`\n- 在 AI 场景里，常见的是几百维、上千维的高维向量，例如 `1024` 维、`1536` 维\n\n入门阶段不必先纠结高维空间的数学细节，先建立这个直觉即可：\n\n**向量就是一串数字，而这串数字可以拿来表示一段文本、一张图片，或者其他对象的“特征”。**",
+			"styleAttributes":{},
+			"x":1490,
+			"y":1150,
+			"width":845,
+			"height":280,
+			"color":"3"
+		},
+		{"id":"01705df65a9ae0f6","type":"text","text":"相似度搜索","x":1200,"y":4646,"width":250,"height":60,"color":"3"},
+		{
+			"id":"99ee9ea95ae739be",
+			"type":"text",
+			"text":"# 用 Milvus 作为向量存储",
+			"styleAttributes":{},
+			"x":1155,
+			"y":3540,
+			"width":260,
+			"height":100,
+			"color":"3"
+		},
+		{
+			"id":"0cba6192c86e5e65",
+			"type":"text",
+			"text":"# 用 Redis Stack 作为向量存储",
+			"styleAttributes":{},
+			"x":1155,
+			"y":3310,
+			"width":260,
+			"height":80,
+			"color":"3"
+		},
+		{
+			"id":"cc493ed181fd7e65",
+			"type":"text",
+			"text":"# Embedding 文本向量化",
+			"styleAttributes":{},
+			"x":1140,
+			"y":3880,
+			"width":260,
+			"height":80,
+			"color":"3"
+		},
+		{
+			"id":"d2c19d87dc9ef363",
+			"type":"text",
+			"text":"### 案例：用 LangChain 的统一接口做单条与批量向量化",
+			"styleAttributes":{},
+			"x":1540,
+			"y":4240,
+			"width":550,
+			"height":60,
+			"color":"3"
+		},
+		{
+			"id":"0d5c85a384d8155b",
+			"type":"text",
+			"text":"### 案例：OpenAI 兼容写法，理解“同一能力，不同接法”",
+			"styleAttributes":{},
+			"x":1540,
+			"y":4140,
+			"width":550,
+			"height":60,
+			"color":"3"
+		},
+		{
+			"id":"d3242f84f9d47025",
+			"type":"text",
+			"text":"### 案例：DashScope 原生调用，先看到“向量长什么样”",
+			"styleAttributes":{},
+			"x":1540,
+			"y":4020,
+			"width":550,
+			"height":60,
+			"color":"3"
+		},
+		{
+			"id":"ab55faaaf7a176e4",
+			"type":"text",
+			"text":"### 重要实践规则",
+			"styleAttributes":{},
+			"x":1540,
+			"y":3920,
+			"width":260,
+			"height":60,
+			"color":"3"
+		},
+		{
+			"id":"f325f32696a0a7a5",
+			"type":"text",
+			"text":"### 定义",
+			"styleAttributes":{},
+			"x":1540,
+			"y":3810,
+			"width":260,
+			"height":60,
+			"color":"3"
+		},
+		{"id":"4c1700213e693720","type":"text","text":"余弦相似度","x":1800,"y":4446,"width":250,"height":60,"color":"3"},
+		{"id":"2de773465fa75a1b","type":"text","text":"欧氏距离","x":1800,"y":4538,"width":250,"height":60,"color":"3"},
+		{
+			"id":"98ff2c57ca0af3a9",
+			"type":"text",
+			"text":"点积",
+			"styleAttributes":{},
+			"x":1800,
+			"y":4646,
+			"width":250,
+			"height":60,
+			"color":"3"
+		},
+		{
+			"id":"2c1c4a2e2bcbbb47",
+			"type":"text",
+			"text":"### 为什么常用余弦相似度",
+			"styleAttributes":{},
+			"x":1790,
+			"y":4860,
+			"width":260,
+			"height":60,
+			"color":"3"
+		},
+		{
+			"id":"e4856576d23ffeb6",
+			"type":"text",
+			"text":"**Embedding（嵌入）** 是将文本字符串表示为**向量（浮点数列表）**的过程。通过计算向量之间的距离或相似度，可以衡量文本之间的相关性：**距离越小（或相似度越高），相关性越高**；距离越大，相关性越低。\n\n**一句话概括：** Embeddings 用来衡量文本之间的相关性。\n\n**常见应用包括：**\n\n- **搜索**：按与查询的相关性对结果排序\n- **聚类**：按文本相似性分组\n- **推荐**：根据相关文本推荐内容\n- **异常检测**：找出与多数内容相关性较低的异常点\n- **多样性测量**：分析相似性分布\n- **分类**：按与标签的相似性对文本分类\n\nLangChain 官方则进一步强调了两个 API：\n\n- `embed_query(text)`：把单条查询文本转成向量\n- `embed_documents(texts)`：把多条文档文本批量转成向量\n\n这一组区分正好对应真实项目里的两个阶段：\n\n- **索引阶段**：把文档片段批量向量化，通常用 `embed_documents`\n- **查询阶段**：把用户问题向量化，通常用 `embed_query`",
+			"styleAttributes":{},
+			"x":1560,
+			"y":3470,
+			"width":560,
+			"height":240,
+			"color":"3"
+		},
+		{
+			"id":"660ab80d4830f4d8",
+			"type":"text",
+			"text":"跑案例前，先看清这几条经验：\n\n1. Embedding 模型输出的是向量，不是自然语言。\n2. 不同 Embedding 模型的维度可能不同。\n3. 建索引和查询必须使用同一套 Embedding 模型。\n4. Embedding 适合做语义相似度计算，但它本身不负责“回答问题”。\n5. 本章主线是文本 Embedding；多模态 Embedding 属于进阶扩展。\n\n第 5 条专门解释一下。LangChain 当前官方 Embeddings 总览页主要聚焦 **文本 Embedding**；本章保留的多模态案例是通过 **DashScope 原生 SDK** 来展示扩展能力，目的是帮助你建立“Embedding 不只可用于文本”的认知",
+			"styleAttributes":{},
+			"x":1925,
+			"y":3710,
+			"width":860,
+			"height":270,
+			"color":"3"
+		},
+		{
+			"id":"8d8ed8cf8c513e78",
+			"type":"text",
+			"text":"这是最简单的 Hello 级示例，目标不是马上做检索，而是先看到：\n\n- 文本是怎么传给 Embedding 模型的\n- 返回结果结构大概长什么样\n- 向量通常是怎样的一串浮点数\n\n【案例源码】`案例与源码-2-LangChain框架/09-embedding/Text2Embedding_DashScopeHello.py`\n\n```python\n\"\"\"\n【案例】DashScope 原生调用：单句文本向量化（Hello 级）\n\n对应教程章节：第 18 章 - 向量数据库与 Embedding 实战 → 4.3 案例：DashScope 原生调用，先看到“向量长什么样”\n\n知识点速览：\n- 这是本章最小的 Embedding HelloWorld，重点是先看到“文本怎样被转成向量”，暂时还不涉及相似度计算和向量库检索。\n- Embedding（嵌入）是把文本变成一串数字（向量）的过程；后续做语义检索、相似度排序、RAG，底层都会用到这个结果。\n- 百炼提供原生文本嵌入接口，可直接用 dashscope.TextEmbedding.call() 传入模型名和文本，返回向量结果。\n- 若要单独取出向量数组，可从 output.embeddings[0].embedding 获取；向量长度由当前模型决定。\n\n模型文档链接：https://bailian.console.aliyun.com/cn-beijing/?productCode=p_efm&tab=doc#/doc/?type=model&url=2842587\n\"\"\"\n\nimport os\nimport dashscope\nfrom http import HTTPStatus\nfrom dotenv import load_dotenv\n\nload_dotenv()\ndashscope.api_key = os.getenv(\"aliQwen-api\")\n\n# 待向量化的单句文本\ninput_text = \"衣服的质量杠杠的\"\n\n# 调用百炼文本嵌入接口：先看清“请求长什么样、返回结构长什么样”\nresp = dashscope.TextEmbedding.call(\n    model=\"text-embedding-v4\",\n    input=input_text,\n)\n\nif resp.status_code == HTTPStatus.OK:\n    # 这里直接打印完整响应，是为了先观察响应结构；后续案例再逐步只取 embedding 向量使用\n    print(resp)\n\n\"\"\"\n【输出示例】\n{\"status_code\": 200, \"request_id\": \"0a76a5db-f4af-4e5a-b0c4-1689d81ba154\", \"code\": \"\", \"message\": \"\", \"output\": {\"embeddings\": [{\"embedding\": [0.02258586511015892, -0.08700370043516159, -0.013521800749003887, -0.05904024466872215, 0.027100207284092903, -0.03104848973453045, 0.01432843878865242, -0.0008265386568382382,……], \"text_index\": 0}]}, \"usage\": {\"total_tokens\": 6}}\n\"\"\"\n```\n\n学习这个案例时，建议你重点观察：\n\n- `model` 指定的是哪个 Embedding 模型\n- 返回对象里 `embedding` 在哪一层\n- 这一条文本最终输出的是多长的向量",
+			"styleAttributes":{},
+			"x":2240,
+			"y":3980,
+			"width":680,
+			"height":210,
+			"color":"3"
+		},
+		{
+			"id":"d2a24b6c31c1f1e4",
+			"type":"text",
+			"text":"### 案例：进阶扩展，多模态 Embedding\n",
+			"styleAttributes":{},
+			"x":1540,
+			"y":4340,
+			"width":550,
+			"height":60,
+			"color":"3"
+		},
+		{
+			"id":"4cf114a90c8b18bd",
+			"type":"text",
+			"text":"很多平台虽然不是 OpenAI，但会提供 **OpenAI 兼容接口**。这意味着你可以继续用 OpenAI SDK 的调用方式，只是把：`base_url`、`api_key`、`model`改成对应平台的配置即可。\n\n这个案例的价值在真实项目里非常大，因为它会让你意识到：**很多时候你真正学的不是“某一家厂商的私有 SDK”，而是一种通用接入模式。**\n\n【案例源码】`案例与源码-2-LangChain框架/09-embedding/Text2Embedding_OpenAiHello.py`\n\n```python\n\"\"\"\n【案例】OpenAI 兼容接口调用阿里百炼 Embedding（Hello 级）\n\n对应教程章节：第 18 章 - 向量数据库与 Embedding 实战 → 4.4 案例：OpenAI 兼容写法，理解“同一能力，不同接法”\n\n知识点速览：\n- 这个案例演示的是“同一类 Embedding 能力，可以通过 OpenAI 兼容协议来调用”，重点不在 SDK 名字，而在兼容接口思想。\n- 对真实项目来说，这种写法很常见，因为保留同一套调用方式后，切换厂商时通常只需要调整 base_url、api_key、model。\n- client.embeddings.create() 的 input 可以是单字符串或字符串列表；返回结果中的 data[i].embedding 就是向量。\n- 若平台存在不同地域或不同网关，base_url 与对应 API Key 需要保持匹配。\n\"\"\"\n\nimport os\nfrom openai import OpenAI\nfrom dotenv import load_dotenv\n\nload_dotenv()\n\ninput_text = \"衣服的质量杠杠的\"\n\n# 使用 OpenAI 兼容接口连接阿里百炼：调用方式仍是 OpenAI SDK，只是连接地址改成百炼的兼容网关\nclient = OpenAI(\n    api_key=os.getenv(\"aliQwen-api\"),\n    base_url=\"https://dashscope.aliyuncs.com/compatible-mode/v1\",\n)\n\n# 与 OpenAI Embedding 调用方式一致：model 为百炼模型名，input 为待向量化的文本\ncompletion = client.embeddings.create(model=\"text-embedding-v4\", input=input_text)\n\nprint(completion.model_dump_json())\n\n\"\"\"\n【输出示例】\n注：embedding共1024维度，即len(completion.data[0].embedding) == 1024\n{\"data\":[{\"embedding\":[0.02258586511015892,-0.08700370043516159,-0.013521800749003887,-0.05904024466872215,0.027100207284092903,-0.03104848973453045,0.01432843878865242,0.01706676371395588,'.....'],\"index\":0,\"object\":\"embedding\"}],\"model\":\"text-embedding-v4\",\"object\":\"list\",\"usage\":{\"prompt_tokens\":6,\"total_tokens\":6},\"id\":\"37989997-27b1-9416-98af-091ae0b5c118\"}\n\"\"\"\n```",
+			"styleAttributes":{},
+			"x":2240,
+			"y":4205,
+			"width":680,
+			"height":200,
+			"color":"3"
+		},
+		{
+			"id":"38d894558b643b12",
+			"type":"text",
+			"text":"当你开始做 LangChain 项目时，更推荐理解这一层封装。因为后面不管是检索器、向量库、RAG，很多组件都是围绕 LangChain 的 Embeddings 接口来协作的。\n\n这个案例非常关键，因为它直接演示了：\n\n- `embed_query(text)`：单条查询文本向量化\n- `embed_documents(texts)`：多条文档文本批量向量化\n\n这两个方法，基本就是后面做检索的“索引阶段”和“查询阶段”的缩影。\n\n【案例源码】`案例与源码-2-LangChain框架/09-embedding/Text2Embedding_DashScope.py`\n\n```python\n\"\"\"\n【案例】LangChain DashScope 封装：单条与批量文本向量化\n\n对应教程章节：第 18 章 - 向量数据库与 Embedding 实战 → 4.5 案例：用 LangChain 的统一接口做单条与批量向量化\n\n知识点速览：\n- 这是最贴近后续 LangChain 检索器、向量库、RAG 用法的 Embedding 案例，因为它使用的是 LangChain 统一接口。\n- embed_query(text)：更偏“查询阶段”，常用于把用户问题转成向量。\n- embed_documents(texts)：更偏“索引阶段”，常用于把文档片段批量转成向量。\n- 返回值分别是“单个向量”和“向量列表”；向量维度由当前模型决定，建索引和查询时应保持模型一致。\n\n模型文档链接：https://bailian.console.aliyun.com/cn-beijing/?tab=api#/api/?type=model&url=2587654\n\"\"\"\n\n# pip install langchain-community dashscope\nimport os\nfrom langchain_community.embeddings import DashScopeEmbeddings\nfrom dotenv import load_dotenv\n\nload_dotenv()\n\n# 使用项目统一的 aliQwen-api；DashScopeEmbeddings 默认只读 DASHSCOPE_API_KEY，故显式传入\nembeddings = DashScopeEmbeddings(\n    model=\"text-embedding-v4\",\n    dashscope_api_key=os.getenv(\"aliQwen-api\"),\n)\n\ntext = \"This is a test document.\"\n\n# 单条文本 → 一个向量（列表）；这类写法更贴近“把用户问题转成查询向量”\nquery_result = embeddings.embed_query(text)\n# sep=\"\"：print 多个参数时用空字符串连接，默认是空格；这里让「文本向量长度：」和数字紧挨着输出，中间不留空\nprint(\"文本向量长度：\", len(query_result), sep=\"\")\n\n# 多条文本 → 多个向量（列表的列表）；这类写法更贴近“批量建索引”\ndoc_results = embeddings.embed_documents(\n    [\n        \"Hi there!\",\n        \"Oh, hello!\",\n        \"What's your name?\",\n        \"My friends call me World\",\n        \"Hello World!\",\n    ]\n)\nprint(doc_results)\n# sep=\"\"：多个参数之间不加空格，输出如「文本向量数量：5，文本向量长度：1024」\nprint(\n    \"文本向量数量：\", len(doc_results), \"，文本向量长度：\", len(doc_results[0]), sep=\"\"\n)\n```\n\n运行时你可以特别留意：单条返回的是一个向量；批量返回的是“向量列表”；len(向量)对应维度。",
+			"styleAttributes":{},
+			"x":2240,
+			"y":4420,
+			"width":680,
+			"height":206,
+			"color":"3"
+		},
+		{
+			"id":"a432df524655a252",
+			"type":"text",
+			"text":"这一节不作为本章主线要求，主要帮助你知道：Embedding 不只可以处理文本，也可以扩展到图文等多模态输入。不过要注意，本案例使用的是 **DashScope 原生多模态 Embedding 接口**，并不是 LangChain 统一文本 Embeddings 接口本身。\n\n初学者先知道两件事就够了：\n\n1. **Embedding 的思想不只适用于文本。**\n2. **本章先把文本 Embedding 学稳，多模态后面按需拓展。**\n\n【案例源码】`案例与源码-2-LangChain框架/09-embedding/Text2Embedding_DashScopePro.py`\n\n```python\n\"\"\"\n【案例】DashScope 多模态 Embedding：文本/图像向量化（进阶）\n\n对应教程章节：第 18 章 - 向量数据库与 Embedding 实战 → 4.6 案例：进阶扩展，多模态 Embedding\n\n知识点速览：\n- 这个案例属于本章的“扩展视野”部分，用来说明 Embedding 的思想不只适用于文本，也可以扩展到图文等多模态内容。\n- 多模态嵌入模型可同时处理文本和图像，input 为列表，每项可为 {\"text\": \"...\"} 或 {\"image\": \"url\"}。\n- 返回结构与单模态类似，output.embeddings 为列表，每项都包含 embedding 向量。\n- 本示例只演示文本输入，目的是先看懂多模态接口的返回结构；图像输入通常需要 URL 或 base64。\n\n模型文档链接：https://bailian.console.aliyun.com/?productCode=p_efm&tab=model#/model-market/all?capabilities=ME\n\"\"\"\n\nimport dashscope\nimport json\nimport os\nfrom http import HTTPStatus\nfrom dotenv import load_dotenv\n\nload_dotenv()\n# 多模态 call 内部用 get_default_api_key()，必须提前设置 dashscope.api_key，否则报 No api key provided\ndashscope.api_key = os.getenv(\"aliQwen-api\")\n\n# 调用多模态 embedding 接口：支持文本或图像输入，本例只保留最小的文本演示\nresp = dashscope.MultiModalEmbedding.call(\n    model=\"tongyi-embedding-vision-plus\",\n    input=[{\"text\": \"尚硅谷AI\"}],\n)\n\nresult = \"\"\n\nif resp.status_code == HTTPStatus.OK:\n    result = {\n        \"status_code\": resp.status_code,\n        \"request_id\": getattr(resp, \"request_id\", \"\"),\n        \"code\": getattr(resp, \"code\", \"\"),\n        \"message\": getattr(resp, \"message\", \"\"),\n        \"output\": resp.output,\n        \"usage\": resp.usage,\n    }\n    # ensure_ascii=False：中文等非 ASCII 按原样输出，不转成 \\uxxxx；indent=4：每层缩进 4 格，便于阅读\n    print(json.dumps(result, ensure_ascii=False, indent=4))\n\nprint(\"=================================\")\nprint()\n\n# 从完整结果中取出第一条 embedding 向量；后续若要做相似度比较，可直接使用这组数值\nembedding_values = result[\"output\"][\"embeddings\"][0][\"embedding\"]\nprint(json.dumps(embedding_values, ensure_ascii=False)\n```",
+			"styleAttributes":{},
+			"x":2240,
+			"y":4640,
+			"width":680,
+			"height":200,
+			"color":"3"
+		},
+		{
+			"id":"3af514abd4d51cd1",
+			"type":"text",
+			"text":"在向量相似度计算里，常见指标有：\n\n- **余弦相似度（Cosine Similarity）**\n- **欧氏距离（Euclidean Distance）**\n- **点积（Dot Product）**\n\n其中最适合入门先建立直觉的，通常是 **余弦相似度**。它关注的重点不是“两个向量长度有多像”，而是“两个向量方向有多接近”。对语义检索来说，这通常很有价值，因为我们更关心“意思是否接近”。\n\n余弦相似度公式：\n\n```\ncos(theta) = (A · B) / (|A| |B|)\n```\n\n它的结果通常在 `[-1, 1]` 范围内：\n\n- 越接近 `1`，通常表示越相似\n- 越接近 `0`，表示相关性较弱\n- 越接近 `-1`，表示方向相反\n\nOpenAI 官方文档里也明确提到：在很多 Embedding 场景里，**余弦相似度是非常常见、非常实用的选择**。",
+			"styleAttributes":{},
+			"x":2240,
+			"y":4860,
+			"width":820,
+			"height":360,
+			"color":"3"
+		},
+		{
+			"id":"85c5ed750f8f4df7",
+			"type":"text",
+			"text":"### 检索里常见的距离度量怎么选",
+			"styleAttributes":{},
+			"x":1790,
+			"y":5220,
+			"width":260,
+			"height":60,
+			"color":"3"
+		},
+		{
+			"id":"683a58811ed8cc3a",
+			"type":"text",
+			"text":"前面我们用余弦相似度建立了直觉，但真实项目里，你在向量库、索引或 SDK 参数中还会经常看到这几个名字：\n\n- **COSINE**：更关注向量方向是否接近，是文本语义检索里最常见、也最容易理解的一类度量。\n- **L2**：欧氏距离，关注两个点在空间里的直线距离。距离越小，通常表示越接近。\n- **IP（Inner Product）**：内积。某些模型或系统会直接用它做相似度计算；在向量已归一化时，它和余弦相似度往往会非常接近。\n\n这里不要纠结“谁永远最好”，先看这条规则：\n\n**Embedding 模型的特性、索引建立时选择的度量方式、查询时传入的 metric，三者必须保持一致。**\n\n否则常见问题有两个：轻则结果变差，明明是相关内容却排不上来；重则索引配置和查询配置不匹配，直接报错。\n\n所以当你看到某个向量库示例里写的是 `COSINE`、`L2` 或 `IP`，不要把它当成无关紧要的参数；它本质上决定了系统如何理解“相似”。",
+			"styleAttributes":{},
+			"x":2240,
+			"y":5260,
+			"width":820,
+			"height":200,
+			"color":"3"
+		},
+		{
+			"id":"700c716351a42654",
+			"type":"text",
+			"text":"### 精确检索, 近似检索与索引",
+			"styleAttributes":{},
+			"x":1790,
+			"y":5500,
+			"width":260,
+			"height":60,
+			"color":"3"
+		},
+		{
+			"id":"81f1509e5b811a12",
+			"type":"text",
+			"text":"另一个很值得尽早建立的工程概念是：**不是所有相似度检索，都会老老实实把查询向量和库里每一个向量逐个比较。**\n\n从思路上看，大致可以分成两类：\n\n- **精确检索（Exact KNN / FLAT）**：把查询向量和库里的所有向量都算一遍，结果最直接，也最容易理解。\n- **近似检索（ANN, Approximate Nearest Neighbor）**：通过索引结构加速搜索，只近似地找到“最可能接近”的一批结果。\n\n为什么需要近似检索？因为数据一旦上规模，逐个比较会越来越慢。于是很多向量数据库会建立索引，用空间换时间。你在不同系统里经常会见到：\n\n- **FLAT**：更偏暴力搜索，准确但慢\n- **HNSW**：工程里很常见的 ANN 索引，通常能在召回率和延迟之间取得较好平衡",
+			"styleAttributes":{},
+			"x":2240,
+			"y":5500,
+			"width":540,
+			"height":420,
+			"color":"3"
+		},
+		{"id":"f396ec4d0b8d76d1","type":"file","file":"image/Pasted image 20261126115449.png","x":2780,"y":5500,"width":420,"height":420,"color":"3"},
+		{
+			"id":"1fd0caa842618ffc",
+			"type":"text",
+			"text":"入门阶段可以先记住一句话：**索引的作用不是改变“语义相似”的定义，而是让“找最相似内容”这件事在大规模数据下也能跑得动。**\n\n这也是为什么本章前面一直强调：检索效果不只取决于 Embedding 模型，还和索引质量、参数配置、数据切分方式一起决定最终结果。",
+			"styleAttributes":{},
+			"x":3200,
+			"y":5500,
+			"width":180,
+			"height":420,
+			"color":"3"
+		},
+		{
+			"id":"3a58d68c2a0cb47c",
+			"type":"text",
+			"text":"### 案例: 把多句话转成向量, 再两两比较",
+			"styleAttributes":{},
+			"x":1790,
+			"y":5920,
+			"width":260,
+			"height":60,
+			"color":"3"
+		},
+		{
+			"id":"5bf04c30e3d91cfa",
+			"type":"text",
+			"text":"这个案例会：\n\n1. 准备多句文本\n2. 调用 Embedding 接口拿到每句文本的向量\n3. 用 `numpy` 手动计算余弦相似度\n4. 打印两两比较结果\n\n【案例源码】`案例与源码-2-LangChain框架/09-embedding/Text2Embedding_CosSimilarity.py`\n\n```python\n\"\"\"\n【案例】通过向量计算语义相似度：余弦相似度\n\n对应教程章节：第 18 章 - 向量数据库与 Embedding 实战 → 5.2 案例：把多句话转成向量，再两两比较\n\n知识点速览：\n- 这个案例的重点不是特定模型，而是“向量一旦拿到手，就可以做数学比较”，这是语义检索的底层基础。\n- 文本转成向量后，可用余弦相似度衡量两段文本的语义是否接近：值通常在 [-1, 1]，越接近 1 一般表示越相似。\n- 公式：cos(theta) = (A·B) / (|A||B|)；在 Python 里常用 np.dot 和 np.linalg.norm 实现。\n- 相似度比较常用于检索排序、文本去重、聚类、推荐等任务。\n\"\"\"\n\nimport dashscope\nimport os\nfrom http import HTTPStatus\nimport numpy as np\nfrom dotenv import load_dotenv\n\nload_dotenv()\n\n# 准备多句文本，用于观察“语义越接近，相似度通常越高”\ntexts = [\"我喜欢吃苹果\", \"苹果是我最喜欢吃的水果\", \"我喜欢用苹果手机\"]\n\nembeddings = []\n# 这里选用多模态 embedding 接口来处理文本输入，主要是为了演示“拿到向量后如何做比较”\n# 若你在真实项目里只处理文本，也完全可以换成常规文本 embedding 模型\nfor text in texts:\n    input_data = [{\"text\": text}]\n    resp = dashscope.MultiModalEmbedding.call(\n        model=\"multimodal-embedding-v1\",\n        api_key=os.getenv(\"aliQwen-api\"),\n        base_url=\"https://dashscope.aliyuncs.com/compatible-mode/v1\",\n        input=input_data,\n    )\n    if resp.status_code == HTTPStatus.OK:\n        embedding = resp.output[\"embeddings\"][0][\"embedding\"]\n        embeddings.append(embedding)\n\n\ndef cosine_similarity(vec1, vec2):\n    \"\"\"计算两个向量的余弦相似度：点积 / (模长之积)，结果越接近 1 一般越相似\"\"\"\n    dot_product = np.dot(vec1, vec2)\n    norm_vec1 = np.linalg.norm(vec1)\n    norm_vec2 = np.linalg.norm(vec2)\n    return dot_product / (norm_vec1 * norm_vec2)\n\n\nprint(\"文本相似度比较结果:\")\nprint(\"=\" * 60)\n\nfor i in range(len(texts)):\n    for j in range(i + 1, len(texts)):\n        similarity = cosine_similarity(embeddings[i], embeddings[j])\n        print(f\"文本{i+1} vs 文本{j+1}:\")\n        print(f\"  文本{i+1}: {texts[i]}\")\n        print(f\"  文本{j+1}: {texts[j]}\")\n        print(f\"  余弦相似度: {similarity:.4f}\")\n        print(\"-\" * 40)\n\n\"\"\"\n【输出示例】\n文本相似度比较结果:\n============================================================\n文本1 vs 文本2:\n  文本1: 我喜欢吃苹果\n  文本2: 苹果是我最喜欢吃的水果\n  余弦相似度: 0.9064\n----------------------------------------\n文本1 vs 文本3:\n  文本1: 我喜欢吃苹果\n  文本3: 我喜欢用苹果手机\n  余弦相似度: 0.7656\n----------------------------------------\n文本2 vs 文本3:\n  文本2: 苹果是我最喜欢吃的水果\n  文本3: 我喜欢用苹果手机\n  余弦相似度: 0.7421\n----------------------------------------\n\"\"\"\n```\n\n学习这个案例时，建议重点抓住两件事：\n\n- 重点不是“必须用哪一个模型”，而是**拿到向量后怎么做相似度计算**\n- 当两句话主题更接近时，余弦相似度通常会更高\n\n这个案例里使用的是多模态 Embedding 接口来处理文本输入，课程想演示的是“**向量一旦拿到手，就可以做数学比较**”这件事。这并不表示相似度计算必须用多模态模型；真实项目里，你完全可以用常规文本 Embedding 模型完成同样的计算。",
+			"styleAttributes":{},
+			"x":2240,
+			"y":5950,
+			"width":540,
+			"height":260,
+			"color":"3"
+		},
+		{
+			"id":"e294d3d789e9ef8b",
+			"type":"text",
+			"text":"### 相似度结果在项目里怎么用",
+			"styleAttributes":{},
+			"x":1790,
+			"y":6340,
+			"width":260,
+			"height":60,
+			"color":"3"
+		},
+		{
+			"id":"ecb8bd3aec930d69",
+			"type":"text",
+			"text":"这类分数在真实项目里最常见的用途有：\n\n- **语义检索排序**：把最相关的文本排在前面\n- **文本去重**：判断两段内容是否高度重复\n- **推荐**：找相似商品、相似文章、相似问题\n- **聚类分析**：把语义相近的内容分成一组\n\n所以，不要把“余弦相似度”只理解成一道数学题。在工程里，它通常直接决定了：**检索结果排前面的内容是不是你真正想要的内容。**",
+			"styleAttributes":{},
+			"x":2240,
+			"y":6300,
+			"width":580,
+			"height":240,
+			"color":"3"
 		}
 	],
 	"edges":[
@@ -734,14 +1442,13 @@
 		{"id":"80335d01e4cae959","fromNode":"58bd5763a99e4fd3","fromSide":"right","toNode":"7707b3bb348e8420","toSide":"left"},
 		{"id":"18ebcaee0d555cdd","fromNode":"58bd5763a99e4fd3","fromSide":"right","toNode":"8831722c744ac8a3","toSide":"left"},
 		{"id":"d1d0774667f145ae","fromNode":"58bd5763a99e4fd3","fromSide":"right","toNode":"9157cc5d943e6284","toSide":"left"},
-		{"id":"ba731cb1cec048d7","fromNode":"998174db963f9253","fromSide":"right","toNode":"01705df65a9ae0f6","toSide":"left","color":"3"},
 		{"id":"c19503a341cee9b4","fromNode":"01705df65a9ae0f6","fromSide":"right","toNode":"4c1700213e693720","toSide":"left"},
-		{"id":"85e534a22c913611","fromNode":"01705df65a9ae0f6","fromSide":"right","toNode":"2de773465fa75a1b","toSide":"left"},
-		{"id":"0f6daa98067cd699","fromNode":"549f5273e03b378d","fromSide":"right","toNode":"09d3af0d7f31256d","toSide":"left","color":"4"},
-		{"id":"77799dde06f31fa8","fromNode":"09d3af0d7f31256d","fromSide":"right","toNode":"2981fe7f4ad17b85","toSide":"left","color":"4"},
-		{"id":"1e04b7fa3ed4651b","fromNode":"09d3af0d7f31256d","fromSide":"right","toNode":"de90ce80507206ca","toSide":"left","color":"4"},
-		{"id":"4b2baa1ca728a890","fromNode":"09d3af0d7f31256d","fromSide":"right","toNode":"7c7073837e5446a2","toSide":"left","color":"4"},
-		{"id":"c381a8cc77ff5a9c","fromNode":"09d3af0d7f31256d","fromSide":"right","toNode":"c6e223199d9df372","toSide":"left","color":"4"},
+		{"id":"85e534a22c913611","fromFloating":false,"fromNode":"01705df65a9ae0f6","fromSide":"right","toNode":"2de773465fa75a1b","toSide":"left"},
+		{"id":"0f6daa98067cd699","toFloating":false,"fromFloating":false,"fromNode":"549f5273e03b378d","fromSide":"left","toNode":"09d3af0d7f31256d","toSide":"right","color":"4"},
+		{"id":"77799dde06f31fa8","fromFloating":false,"toFloating":false,"fromNode":"09d3af0d7f31256d","fromSide":"left","toNode":"2981fe7f4ad17b85","toSide":"right","color":"4"},
+		{"id":"1e04b7fa3ed4651b","fromFloating":false,"toFloating":false,"fromNode":"09d3af0d7f31256d","fromSide":"left","toNode":"de90ce80507206ca","toSide":"right","color":"4"},
+		{"id":"4b2baa1ca728a890","fromFloating":false,"toFloating":false,"fromNode":"09d3af0d7f31256d","fromSide":"left","toNode":"7c7073837e5446a2","toSide":"right","color":"4"},
+		{"id":"c381a8cc77ff5a9c","fromFloating":false,"toFloating":false,"fromNode":"09d3af0d7f31256d","fromSide":"left","toNode":"c6e223199d9df372","toSide":"right","color":"4"},
 		{"id":"2c85c851859dc679","toFloating":false,"fromFloating":false,"fromNode":"549f5273e03b378d","fromSide":"left","toNode":"cfa986206b9e0d61","toSide":"right","color":"5"},
 		{"id":"db28b52725533288","fromFloating":false,"toFloating":false,"fromNode":"cfa986206b9e0d61","fromSide":"left","toNode":"293717b58d458a73","toSide":"right","color":"5"},
 		{"id":"9560378ef4258e88","fromFloating":false,"toFloating":false,"fromNode":"cfa986206b9e0d61","fromSide":"left","toNode":"0483cc0760c9a6f6","toSide":"right","color":"5"},
@@ -1161,6 +1868,480 @@
 			"toNode":"e09f0d671b97d86b",
 			"toSide":"right",
 			"color":"5"
+		},
+		{
+			"id":"15e466e3650b7003",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"c3039bb49955b3a0",
+			"fromSide":"right",
+			"toNode":"7cd010e047c30367",
+			"toSide":"left"
+		},
+		{
+			"id":"e161c0ecb4d19154",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromFloating":false,
+			"fromNode":"79561756281c2bad",
+			"fromSide":"right",
+			"toNode":"d193da6c4581dcf0",
+			"toSide":"left"
+		},
+		{
+			"id":"8044601b95f2430b",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"c3039bb49955b3a0",
+			"fromSide":"right",
+			"toNode":"79561756281c2bad",
+			"toSide":"left"
+		},
+		{
+			"id":"08267905b6dd60be",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"c3039bb49955b3a0",
+			"fromSide":"right",
+			"toNode":"a139be27c70d8dcf",
+			"toSide":"left"
+		},
+		{
+			"id":"d3e78aa032184766",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"c3039bb49955b3a0",
+			"fromSide":"right",
+			"toNode":"b7017bff64677778",
+			"toSide":"left"
+		},
+		{
+			"id":"0ec1f5a13a4df1e3",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"7cd010e047c30367",
+			"fromSide":"right",
+			"toNode":"00868e2a010a6b34",
+			"toSide":"left"
+		},
+		{
+			"id":"c1c5abe918c5f99f",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"79561756281c2bad",
+			"fromSide":"right",
+			"toNode":"80fdae3485777ce6",
+			"toSide":"left"
+		},
+		{
+			"id":"045ee07db4ffa006",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"80fdae3485777ce6",
+			"fromSide":"right",
+			"toNode":"d193da6c4581dcf0",
+			"toSide":"left"
+		},
+		{
+			"id":"0fb27ecc6aee41a7",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"549f5273e03b378d",
+			"fromSide":"right",
+			"toNode":"c3039bb49955b3a0",
+			"toSide":"left"
+		},
+		{
+			"id":"bc35ff70ff912ca2",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"a139be27c70d8dcf",
+			"fromSide":"right",
+			"toNode":"da95c7c293f01dfa",
+			"toSide":"left"
+		},
+		{
+			"id":"cfbff7f9f63e4255",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"b7017bff64677778",
+			"fromSide":"right",
+			"toNode":"4b9434c1c0929146",
+			"toSide":"left"
+		},
+		{
+			"id":"81906e572ab2ee90",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"58bd5763a99e4fd3",
+			"fromSide":"bottom",
+			"toNode":"f62e857a7d1ab547",
+			"toSide":"top"
+		},
+		{
+			"id":"ad74bd7ed1b79837",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"58bd5763a99e4fd3",
+			"fromSide":"right",
+			"toNode":"aae25d2d0b95d341",
+			"toSide":"left"
+		},
+		{
+			"id":"cb922e52e62a7317",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"aae25d2d0b95d341",
+			"fromSide":"right",
+			"toNode":"886347b74e375467",
+			"toSide":"left"
+		},
+		{
+			"id":"465f89e0558fe9e2",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"f5eae2753bbff44c",
+			"fromSide":"right",
+			"toNode":"e41dd37e73f8116c",
+			"toSide":"left"
+		},
+		{
+			"id":"94cee68505bed355",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"2a382c28f62f2db2",
+			"fromSide":"right",
+			"toNode":"ad3c75db5e3d0a54",
+			"toSide":"left"
+		},
+		{
+			"id":"35b38402cfc509df",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"58bd5763a99e4fd3",
+			"fromSide":"right",
+			"toNode":"078733fd3b86104f",
+			"toSide":"left"
+		},
+		{
+			"id":"94132be7098b7c7b",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"58bd5763a99e4fd3",
+			"fromSide":"right",
+			"toNode":"6a34633629a02ee7",
+			"toSide":"left"
+		},
+		{
+			"id":"df358c56cee1d412",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"58bd5763a99e4fd3",
+			"fromSide":"right",
+			"toNode":"6119b04ca0bf440b",
+			"toSide":"left"
+		},
+		{
+			"id":"3bf579e0aecd2b93",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"58bd5763a99e4fd3",
+			"fromSide":"right",
+			"toNode":"82b7389ec6a10ea1",
+			"toSide":"left"
+		},
+		{
+			"id":"279ac94a3966216b",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"078733fd3b86104f",
+			"fromSide":"right",
+			"toNode":"331c3e9d75e5f6f3",
+			"toSide":"left"
+		},
+		{
+			"id":"22418607ceedc9fa",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"6a34633629a02ee7",
+			"fromSide":"right",
+			"toNode":"e7116a9570dd40b1",
+			"toSide":"left"
+		},
+		{
+			"id":"001c518aab24d2b5",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"6119b04ca0bf440b",
+			"fromSide":"right",
+			"toNode":"f26d60039226741c",
+			"toSide":"left"
+		},
+		{
+			"id":"3b83143c624a1d4c",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"82b7389ec6a10ea1",
+			"fromSide":"right",
+			"toNode":"75375905ed30abc9",
+			"toSide":"left"
+		},
+		{
+			"id":"57ae02450d33ab1f",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"998174db963f9253",
+			"fromSide":"right",
+			"toNode":"0cba6192c86e5e65",
+			"toSide":"left",
+			"color":"3"
+		},
+		{
+			"id":"8413734e1e1942e5",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromFloating":false,
+			"fromNode":"998174db963f9253",
+			"fromSide":"right",
+			"toNode":"99ee9ea95ae739be",
+			"toSide":"left",
+			"color":"3"
+		},
+		{
+			"id":"1c21205b955ba7e4",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"0cba6192c86e5e65",
+			"fromSide":"right",
+			"toNode":"0cd0da83422b8789",
+			"toSide":"left"
+		},
+		{
+			"id":"bd2b305e99acb495",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"0cd0da83422b8789",
+			"fromSide":"right",
+			"toNode":"d42ed3bd220964ef",
+			"toSide":"left"
+		},
+		{"id":"ba731cb1cec048d7","toFloating":false,"fromNode":"998174db963f9253","fromSide":"right","toNode":"01705df65a9ae0f6","toSide":"left","color":"3"},
+		{
+			"id":"b83bd3dd48227480",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"998174db963f9253",
+			"fromSide":"right",
+			"toNode":"cc493ed181fd7e65",
+			"toSide":"left",
+			"color":"3"
+		},
+		{
+			"id":"be41ff06224e7858",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"cc493ed181fd7e65",
+			"fromSide":"right",
+			"toNode":"f325f32696a0a7a5",
+			"toSide":"left"
+		},
+		{
+			"id":"bf75f5e97c70b3ec",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"cc493ed181fd7e65",
+			"fromSide":"right",
+			"toNode":"ab55faaaf7a176e4",
+			"toSide":"left"
+		},
+		{
+			"id":"fd313c7a8b244535",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"cc493ed181fd7e65",
+			"fromSide":"right",
+			"toNode":"d3242f84f9d47025",
+			"toSide":"left"
+		},
+		{
+			"id":"20b085e8b609c5c6",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"cc493ed181fd7e65",
+			"fromSide":"right",
+			"toNode":"0d5c85a384d8155b",
+			"toSide":"left"
+		},
+		{
+			"id":"6ac101c4cb46db73",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"cc493ed181fd7e65",
+			"fromSide":"right",
+			"toNode":"d2c19d87dc9ef363",
+			"toSide":"left"
+		},
+		{
+			"id":"0ee79ee87f87735d",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"cc493ed181fd7e65",
+			"fromSide":"right",
+			"toNode":"d2a24b6c31c1f1e4",
+			"toSide":"left"
+		},
+		{
+			"id":"bf7f09d2778f7346",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"01705df65a9ae0f6",
+			"fromSide":"right",
+			"toNode":"98ff2c57ca0af3a9",
+			"toSide":"left"
+		},
+		{
+			"id":"1450f595c9cb29be",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"01705df65a9ae0f6",
+			"fromSide":"right",
+			"toNode":"2c1c4a2e2bcbbb47",
+			"toSide":"left"
+		},
+		{
+			"id":"800fb2dbf0af3ed6",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"01705df65a9ae0f6",
+			"fromSide":"right",
+			"toNode":"85c5ed750f8f4df7",
+			"toSide":"left"
+		},
+		{
+			"id":"4b5309b257500857",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"01705df65a9ae0f6",
+			"fromSide":"right",
+			"toNode":"700c716351a42654",
+			"toSide":"left"
+		},
+		{
+			"id":"89e4fa85f04b09b9",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"01705df65a9ae0f6",
+			"fromSide":"right",
+			"toNode":"3a58d68c2a0cb47c",
+			"toSide":"left"
+		},
+		{
+			"id":"9eafab68861ba260",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"01705df65a9ae0f6",
+			"fromSide":"right",
+			"toNode":"e294d3d789e9ef8b",
+			"toSide":"left"
+		},
+		{
+			"id":"694fab7e5599c8dd",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"f325f32696a0a7a5",
+			"fromSide":"right",
+			"toNode":"e4856576d23ffeb6",
+			"toSide":"left"
+		},
+		{
+			"id":"a4df7e4bb2d88a74",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"ab55faaaf7a176e4",
+			"fromSide":"right",
+			"toNode":"660ab80d4830f4d8",
+			"toSide":"left"
+		},
+		{
+			"id":"6c315af61c3e52c3",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"d3242f84f9d47025",
+			"fromSide":"right",
+			"toNode":"8d8ed8cf8c513e78",
+			"toSide":"left"
+		},
+		{
+			"id":"7a92ce467b0a4dba",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"0d5c85a384d8155b",
+			"fromSide":"right",
+			"toNode":"4cf114a90c8b18bd",
+			"toSide":"left"
+		},
+		{
+			"id":"5716c9f58a2f3766",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"d2c19d87dc9ef363",
+			"fromSide":"right",
+			"toNode":"38d894558b643b12",
+			"toSide":"left"
+		},
+		{
+			"id":"9e4bd1c77c618626",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"d2a24b6c31c1f1e4",
+			"fromSide":"right",
+			"toNode":"a432df524655a252",
+			"toSide":"left"
+		},
+		{
+			"id":"01c2a1c6f1d546ec",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"2c1c4a2e2bcbbb47",
+			"fromSide":"right",
+			"toNode":"3af514abd4d51cd1",
+			"toSide":"left"
+		},
+		{
+			"id":"c6bb3d20e68983c7",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"85c5ed750f8f4df7",
+			"fromSide":"right",
+			"toNode":"683a58811ed8cc3a",
+			"toSide":"left"
+		},
+		{
+			"id":"cb88c06254d1489b",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"700c716351a42654",
+			"fromSide":"right",
+			"toNode":"81f1509e5b811a12",
+			"toSide":"left"
+		},
+		{
+			"id":"5b8f40c448fafbe4",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"3a58d68c2a0cb47c",
+			"fromSide":"right",
+			"toNode":"5bf04c30e3d91cfa",
+			"toSide":"left"
+		},
+		{
+			"id":"36f5516f689b4a7a",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"e294d3d789e9ef8b",
+			"fromSide":"right",
+			"toNode":"ecb8bd3aec930d69",
+			"toSide":"left"
 		}
 	],
 	"metadata":{

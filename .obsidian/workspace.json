@@ -15,9 +15,9 @@
               "state": {
                 "file": "LLM/2-Source/8-Agent/RAG/RAG.canvas",
                 "viewState": {
-                  "x": 1266.9649255376794,
-                  "y": -169.41365884487192,
-                  "zoom": -1.7286912554500697
+                  "x": -1353.2925140800178,
+                  "y": -468.71302818156335,
+                  "zoom": -0.3333333333333334
                 }
               },
               "icon": "lucide-layout-dashboard",
@@ -32,30 +32,13 @@
               "state": {
                 "file": "LLM/2-Source/8-Agent/Agent.canvas",
                 "viewState": {
-                  "x": 1957.6346578756081,
-                  "y": 3978.4880387687504,
-                  "zoom": -1.0000000000000002
+                  "x": 600.8811112364674,
+                  "y": 813.5806160655429,
+                  "zoom": -1
                 }
               },
               "icon": "lucide-layout-dashboard",
               "title": "Agent"
-            }
-          },
-          {
-            "id": "9b3a3670026b864e",
-            "type": "leaf",
-            "state": {
-              "type": "canvas",
-              "state": {
-                "file": "LLM/2-Source/8-Agent/智能旅行助手.canvas",
-                "viewState": {
-                  "x": -71.27209254833883,
-                  "y": 89.84935733654086,
-                  "zoom": -0.3333333333333334
-                }
-              },
-              "icon": "lucide-layout-dashboard",
-              "title": "智能旅行助手"
             }
           },
           {
@@ -66,17 +49,33 @@
               "state": {
                 "file": "LLM/2-Source/8-Agent/LangChain/LangChain.canvas",
                 "viewState": {
-                  "x": 1717.7587990889476,
-                  "y": -4.603306387655721,
-                  "zoom": -1.3333333333333333
+                  "x": 208.42992895836485,
+                  "y": 226.7640412231973,
+                  "zoom": -1.666666666666666
                 }
               },
               "icon": "lucide-layout-dashboard",
               "title": "LangChain"
             }
+          },
+          {
+            "id": "ab01a62553350547",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "LLM/2-Source/7-Deep Learning/Minimind.canvas",
+                "viewState": {
+                  "x": 1119.371151270591,
+                  "y": 23.735489856235063,
+                  "zoom": -0.9999999999999996
+                }
+              },
+              "icon": "lucide-layout-dashboard",
+              "title": "Minimind"
+            }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -110,7 +109,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "幻觉",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -138,8 +137,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 255.5,
-    "collapsed": true
+    "width": 255.5
   },
   "right": {
     "id": "cffc2ac093d9b5b0",
@@ -257,31 +255,31 @@
       "bases:新建数据库": false
     }
   },
-  "active": "3158273d58283ebd",
+  "active": "be023ac01acada4f",
   "lastOpenFiles": [
+    "image/Pasted image 20261126115449.png",
+    "LLM/2-Source/8-Agent/LangChain/LangChain.canvas",
+    "LLM/2-Source/8-Agent/Agent.canvas",
+    "LLM/2-Source/8-Agent/RAG/RAG.canvas",
+    "LLM/2-Source/7-Deep Learning/Minimind.canvas",
+    "image/Pasted image 20261126102151.jpg",
+    "image/Pasted image 20261126102038.png",
+    "image/Pasted image 20261126093559.png",
+    "image/Pasted image 20261126091319.png",
+    "LLM/2-Source/8-Agent/智能旅行助手.canvas",
+    "image/13-7-5-1.svg",
+    "image/Pasted image 20261125172858.png",
+    "image/Pasted image 20261125172349.png",
     "image/Pasted image 20261125162605.png",
     "image/Pasted image 20261125162530.png",
     "image/Pasted image 20261125150503.png",
-    "LLM/2-Source/8-Agent/RAG/RAG.canvas",
-    "LLM/2-Source/8-Agent/Agent.canvas",
-    "LLM/2-Source/8-Agent/LangChain/LangChain.canvas",
-    "image/Pasted image 20261125143102.png",
-    "LLM/2-Source/8-Agent/智能旅行助手.canvas",
-    "image/Pasted image 20261125091153.png",
     "LLM/2-Source/8-Agent/Agent_learn/智能体评估基础.md",
     "LLM/2-Source/8-Agent/Agent_learn/Agentic-RL.md",
-    "LLM/2-Source/7-Deep Learning/Minimind.canvas",
     "LLM/2-Source/8-Agent/Agent_learn/构建自定义MCP服务器.md",
     "LLM/2-Source/8-Agent/Agent_learn/A2A协议实战.md",
     "LLM/2-Source/8-Agent/Agent_learn/MCP协议实战.md",
     "LLM/2-Source/8-Agent/Agent_learn/ANP协议实战.md",
     "LLM/2-Source/6-Machine Learning/Machine Learning.canvas",
-    "image/Pasted image 20261122142801.png",
-    "image/Pasted image 20261122142511.png",
-    "image/Pasted image 20261122142044.png",
-    "image/Pasted image 20261122141929.png",
-    "image/Pasted image 20261122141554.png",
-    "image/Pasted image 20261122111003.png",
     "LLM/2-Source/8-Agent/Agent_learn/ReAct 智能体编码实现.md",
     "LLM/2-Source/7-Deep Learning/Deep Learning.canvas",
     "LLM/2-Source/7-Deep Learning/3-RNN/0-Embedding 与word2vec：模型如何理解一个词.md",
