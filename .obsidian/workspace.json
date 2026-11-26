@@ -15,9 +15,9 @@
               "state": {
                 "file": "LLM/2-Source/8-Agent/RAG/RAG.canvas",
                 "viewState": {
-                  "x": -1353.2925140800178,
-                  "y": -468.71302818156335,
-                  "zoom": -0.3333333333333334
+                  "x": 2499.257589645185,
+                  "y": 4765.7102346956135,
+                  "zoom": -2.195889129705973
                 }
               },
               "icon": "lucide-layout-dashboard",
@@ -32,9 +32,9 @@
               "state": {
                 "file": "LLM/2-Source/8-Agent/Agent.canvas",
                 "viewState": {
-                  "x": 600.8811112364674,
-                  "y": 813.5806160655429,
-                  "zoom": -1
+                  "x": -2204.9501473374285,
+                  "y": -1413.0549188931284,
+                  "zoom": -0.6655482700029405
                 }
               },
               "icon": "lucide-layout-dashboard",
@@ -49,33 +49,17 @@
               "state": {
                 "file": "LLM/2-Source/8-Agent/LangChain/LangChain.canvas",
                 "viewState": {
-                  "x": 208.42992895836485,
-                  "y": 226.7640412231973,
-                  "zoom": -1.666666666666666
+                  "x": 4023.4781458834486,
+                  "y": -1737.4608758755007,
+                  "zoom": -0.6666666666666663
                 }
               },
               "icon": "lucide-layout-dashboard",
               "title": "LangChain"
             }
-          },
-          {
-            "id": "ab01a62553350547",
-            "type": "leaf",
-            "state": {
-              "type": "canvas",
-              "state": {
-                "file": "LLM/2-Source/7-Deep Learning/Minimind.canvas",
-                "viewState": {
-                  "x": 1119.371151270591,
-                  "y": 23.735489856235063,
-                  "zoom": -0.9999999999999996
-                }
-              },
-              "icon": "lucide-layout-dashboard",
-              "title": "Minimind"
-            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -109,7 +93,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "幻觉",
+                "query": "BF",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -137,7 +121,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 255.5
+    "width": 255.5,
+    "collapsed": true
   },
   "right": {
     "id": "cffc2ac093d9b5b0",
@@ -255,13 +240,15 @@
       "bases:新建数据库": false
     }
   },
-  "active": "be023ac01acada4f",
+  "active": "3158273d58283ebd",
   "lastOpenFiles": [
-    "image/Pasted image 20261126115449.png",
-    "LLM/2-Source/8-Agent/LangChain/LangChain.canvas",
     "LLM/2-Source/8-Agent/Agent.canvas",
+    "LLM/2-Source/8-Agent/LangChain/LangChain.canvas",
     "LLM/2-Source/8-Agent/RAG/RAG.canvas",
     "LLM/2-Source/7-Deep Learning/Minimind.canvas",
+    "LLM/2-Source/8-Agent/Agent_learn/智能体评估基础.md",
+    "image/Pasted image 20261126152424.png",
+    "image/Pasted image 20261126115449.png",
     "image/Pasted image 20261126102151.jpg",
     "image/Pasted image 20261126102038.png",
     "image/Pasted image 20261126093559.png",
@@ -271,9 +258,6 @@
     "image/Pasted image 20261125172858.png",
     "image/Pasted image 20261125172349.png",
     "image/Pasted image 20261125162605.png",
-    "image/Pasted image 20261125162530.png",
-    "image/Pasted image 20261125150503.png",
-    "LLM/2-Source/8-Agent/Agent_learn/智能体评估基础.md",
     "LLM/2-Source/8-Agent/Agent_learn/Agentic-RL.md",
     "LLM/2-Source/8-Agent/Agent_learn/构建自定义MCP服务器.md",
     "LLM/2-Source/8-Agent/Agent_learn/A2A协议实战.md",

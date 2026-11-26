@@ -3309,17 +3309,6 @@
 			"color":"2"
 		},
 		{
-			"id":"881313a3e8d68887",
-			"type":"text",
-			"text":"也就是说，**Tool Calling 不是脱离消息机制另起炉灶，它本质上仍然发生在消息流之中。**\n\n![bind_tools 与 Agent 自动执行工具的边界：绑定工具只提供 schema，Agent 才负责循环执行工具并写回观察结果](https://didilili.github.io/ai-agents-from-zero/images/17/17-2-1-2.svg)",
-			"styleAttributes":{},
-			"x":2095,
-			"y":2709,
-			"width":560,
-			"height":325,
-			"color":"2"
-		},
-		{
 			"id":"b0cb8686928a5b9b",
 			"type":"text",
 			"text":"# 在LangChain中也有一部分工具调用内容\n[LangChain](LangChain.canvas)",
@@ -3405,6 +3394,17 @@
 			"y":3016,
 			"width":560,
 			"height":220,
+			"color":"2"
+		},
+		{
+			"id":"881313a3e8d68887",
+			"type":"text",
+			"text":"也就是说，**Tool Calling 不是脱离消息机制另起炉灶，它本质上仍然发生在消息流之中。**\n\n![bind_tools 与 Agent 自动执行工具的边界：绑定工具只提供 schema，Agent 才负责循环执行工具并写回观察结果](https://didilili.github.io/ai-agents-from-zero/images/17/17-2-1-2.svg)",
+			"styleAttributes":{},
+			"x":1940,
+			"y":2803,
+			"width":560,
+			"height":325,
 			"color":"2"
 		}
 	],
@@ -6290,6 +6290,33 @@
 			"fromSide":"left",
 			"toNode":"7f568cba5b2f8d39",
 			"toSide":"right"
+		},
+		{
+			"id":"2e9e0ab3dee2c6d3",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"bc2c4cbbafae91dc",
+			"fromSide":"top",
+			"toNode":"81336f8c009a1d09",
+			"toSide":"bottom"
+		},
+		{
+			"id":"8c46e7f10e04db86",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"bc2c4cbbafae91dc",
+			"fromSide":"right",
+			"toNode":"3e6a4101db5e6855",
+			"toSide":"left"
+		},
+		{
+			"id":"214c707b23bd376e",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"99b7f53c7081d0c7",
+			"fromSide":"right",
+			"toNode":"69f6b2c3f702d033",
+			"toSide":"left"
 		}
 	],
 	"metadata":{
