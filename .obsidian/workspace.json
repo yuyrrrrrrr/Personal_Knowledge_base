@@ -8,16 +8,16 @@
         "type": "tabs",
         "children": [
           {
-            "id": "be023ac01acada4f",
+            "id": "427aa469856b6790",
             "type": "leaf",
             "state": {
               "type": "canvas",
               "state": {
                 "file": "LLM/2-Source/8-Agent/RAG/RAG.canvas",
                 "viewState": {
-                  "x": 2499.257589645185,
-                  "y": 4765.7102346956135,
-                  "zoom": -2.195889129705973
+                  "x": 202.8334791727586,
+                  "y": 367.89501836256943,
+                  "zoom": -0.333333333333333
                 }
               },
               "icon": "lucide-layout-dashboard",
@@ -25,16 +25,16 @@
             }
           },
           {
-            "id": "b0022d0b1a4bc824",
+            "id": "d8c35b24f17942c7",
             "type": "leaf",
             "state": {
               "type": "canvas",
               "state": {
                 "file": "LLM/2-Source/8-Agent/Agent.canvas",
                 "viewState": {
-                  "x": -2204.9501473374285,
-                  "y": -1413.0549188931284,
-                  "zoom": -0.6655482700029405
+                  "x": 1330.610938449715,
+                  "y": 2409.3891813310584,
+                  "zoom": -4
                 }
               },
               "icon": "lucide-layout-dashboard",
@@ -42,20 +42,17 @@
             }
           },
           {
-            "id": "3158273d58283ebd",
+            "id": "188d450440138acc",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "LLM/2-Source/8-Agent/LangChain/LangChain.canvas",
-                "viewState": {
-                  "x": 4023.4781458834486,
-                  "y": -1737.4608758755007,
-                  "zoom": -0.6666666666666663
-                }
+                "file": "简历.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "LangChain"
+              "icon": "lucide-file",
+              "title": "简历"
             }
           }
         ],
@@ -121,8 +118,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 255.5,
-    "collapsed": true
+    "width": 255.5
   },
   "right": {
     "id": "cffc2ac093d9b5b0",
@@ -240,24 +236,29 @@
       "bases:新建数据库": false
     }
   },
-  "active": "3158273d58283ebd",
+  "active": "188d450440138acc",
   "lastOpenFiles": [
-    "LLM/2-Source/8-Agent/Agent.canvas",
     "LLM/2-Source/8-Agent/LangChain/LangChain.canvas",
+    "LLM/2-Source/8-Agent/Agent.canvas",
     "LLM/2-Source/8-Agent/RAG/RAG.canvas",
+    "LLM/2-Source/7-Deep Learning/Deep Learning.canvas",
+    "AI使用法则.md",
+    "image/Pasted image 20261127160449.png",
+    "image/Pasted image 20261127160419.png",
+    "简历.md",
+    "image/Pasted image 20261127112353.png",
+    "image/Pasted image 20261127112248.png",
+    "image/Pasted image 20261127112201.png",
+    "image/Pasted image 20261127112125.png",
+    "image/Pasted image 20261127112037.png",
+    "AI编程规范.md",
+    "面试技巧.md",
     "LLM/2-Source/7-Deep Learning/Minimind.canvas",
     "LLM/2-Source/8-Agent/Agent_learn/智能体评估基础.md",
     "image/Pasted image 20261126152424.png",
     "image/Pasted image 20261126115449.png",
     "image/Pasted image 20261126102151.jpg",
-    "image/Pasted image 20261126102038.png",
-    "image/Pasted image 20261126093559.png",
-    "image/Pasted image 20261126091319.png",
     "LLM/2-Source/8-Agent/智能旅行助手.canvas",
-    "image/13-7-5-1.svg",
-    "image/Pasted image 20261125172858.png",
-    "image/Pasted image 20261125172349.png",
-    "image/Pasted image 20261125162605.png",
     "LLM/2-Source/8-Agent/Agent_learn/Agentic-RL.md",
     "LLM/2-Source/8-Agent/Agent_learn/构建自定义MCP服务器.md",
     "LLM/2-Source/8-Agent/Agent_learn/A2A协议实战.md",
@@ -265,7 +266,6 @@
     "LLM/2-Source/8-Agent/Agent_learn/ANP协议实战.md",
     "LLM/2-Source/6-Machine Learning/Machine Learning.canvas",
     "LLM/2-Source/8-Agent/Agent_learn/ReAct 智能体编码实现.md",
-    "LLM/2-Source/7-Deep Learning/Deep Learning.canvas",
     "LLM/2-Source/7-Deep Learning/3-RNN/0-Embedding 与word2vec：模型如何理解一个词.md",
     "LLM/2-Source/8-Agent/Agent_learn/0-初识agent.md",
     "LLM/2-Source/7-Deep Learning/MiniMind 相关面试题.md",
@@ -285,10 +285,6 @@
     "LLM/2-Source/8-Agent/Thinking.md",
     "LLM/2-Source/8-Agent/Agent_learn/Plan and Reflection.md",
     "LLM/2-Source/8-Agent/Agent_learn/1-Agent = LLM + Harness.md",
-    "LLM/2-Source/8-Agent/大模型应用开发.md",
-    "Full_Stack/Zero-to-FullStack.md",
-    "LLM/2-Source/8-Agent/Agent 开发第一课-50行代码实现极简Agent.md",
-    "LLM/Data analysis/数据科学.md",
     "LLM/2-Source/7-Deep Learning/OpenCV.canvas",
     "LLM/5-Guide/transformers-docs-zh.pdf",
     "LLM/2-Source/7-Deep Learning/Deep Learning.canvas.transforms.new",

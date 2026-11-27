@@ -1738,7 +1738,17 @@
 			"width":380,
 			"height":228
 		},
-		{"id":"c06cd4e02465251c","type":"file","file":"image/Pasted image 20261119165146.png","x":-400,"y":383,"width":400,"height":215}
+		{"id":"c06cd4e02465251c","type":"file","file":"image/Pasted image 20261119165146.png","x":-400,"y":383,"width":400,"height":215},
+		{
+			"id":"9b15f58b1dc6eecb",
+			"type":"text",
+			"text":"蒸馏成熟的模型\n为了降低成本提高推理速度\n但要注意\n模型的泛化能力\n如果答错下一轮如何进行修改\n新数据哪里来\n反馈怎么收\n训练要改什么\n如何验证新方向",
+			"styleAttributes":{},
+			"x":-3120,
+			"y":-3720,
+			"width":260,
+			"height":300
+		}
 	],
 	"edges":[
 		{"id":"ce833c11b4634b2e","fromFloating":false,"toFloating":false,"fromNode":"b256180110ac1065","fromSide":"right","toNode":"e6262301f99b0347","toSide":"left"},

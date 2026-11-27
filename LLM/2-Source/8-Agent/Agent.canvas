@@ -2333,7 +2333,7 @@
 			"x":-1065,
 			"y":4825,
 			"width":578,
-			"height":262,
+			"height":715,
 			"color":"2"
 		},
 		{
@@ -3406,6 +3406,56 @@
 			"width":560,
 			"height":325,
 			"color":"2"
+		},
+		{
+			"id":"a6bb335c655cbbee",
+			"type":"text",
+			"text":"好的工作记忆\n1.保留当前状态\n2.维护任务状态\n3.清理已经失去价值的信息\n工作记忆的核心不是大而是专注",
+			"styleAttributes":{},
+			"x":-1460,
+			"y":4846,
+			"width":260,
+			"height":156
+		},
+		{
+			"id":"90ae2454f3cc0f59",
+			"type":"text",
+			"text":"程序性记忆",
+			"styleAttributes":{},
+			"x":-960,
+			"y":5700,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"fbccc39ed0be4422",
+			"type":"text",
+			"text":"skill",
+			"styleAttributes":{},
+			"x":-1480,
+			"y":5660,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"a860db483ef8f99a",
+			"type":"text",
+			"text":"情景记忆\n带有历史背景的信息",
+			"styleAttributes":{},
+			"x":-1460,
+			"y":5100,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"4f078e3bcda1dfc1",
+			"type":"text",
+			"text":"语义记忆\n让agent记住规则,事实,偏好",
+			"styleAttributes":{},
+			"x":-1460,
+			"y":5240,
+			"width":260,
+			"height":60
 		}
 	],
 	"edges":[
@@ -6317,6 +6367,15 @@
 			"fromSide":"right",
 			"toNode":"69f6b2c3f702d033",
 			"toSide":"left"
+		},
+		{
+			"id":"22db39a5fdbe38ee",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"90ae2454f3cc0f59",
+			"fromSide":"left",
+			"toNode":"fbccc39ed0be4422",
+			"toSide":"right"
 		}
 	],
 	"metadata":{
